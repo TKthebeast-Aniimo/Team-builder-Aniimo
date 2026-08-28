@@ -10,266 +10,163 @@
 
     <title>Aniimo Team Builder</title>
 
-    <meta
-        name="description"
-        content="Aniimo team building and synergy analysis tool"
-    >
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="site-header">
-
-    <div class="header-inner">
-
-        <div>
-            <h1>Aniimo Team Builder</h1>
-
-            <p>
-                Build teams, explore synergies,
-                roles, elements and weaknesses.
-            </p>
-        </div>
-
+<header class="topbar">
+    <div>
+        <h1>⚔️ Aniimo Team Builder</h1>
+        <p>Build teams. Find synergies. Discover weaknesses.</p>
     </div>
-
 </header>
-
 
 <main class="container">
 
-    <!-- =====================================================
-         TEAM BUILDER
-    ====================================================== -->
+    <!-- TEAM -->
 
-    <section class="builder-section">
+    <section class="panel">
 
-        <div class="section-heading">
+        <h2>Your Team</h2>
 
-            <div>
+        <p class="help">
+            Choose an Aniimo for each slot. You can use any combination
+            of DPS, Support, Regen, Break and Heal.
+        </p>
 
-                <h2>Your Team</h2>
+        <div id="teamSlots" class="team-slots">
 
-                <p>
-                    Select up to 4 Aniimo.
-                    Any role combination is allowed.
-                </p>
+            <button class="team-slot empty" data-slot="0">
+                <span class="slot-number">1</span>
+                <span class="slot-text">Select Aniimo</span>
+            </button>
 
-            </div>
+            <button class="team-slot empty" data-slot="1">
+                <span class="slot-number">2</span>
+                <span class="slot-text">Select Aniimo</span>
+            </button>
 
-            <button
-                id="clearTeam"
-                type="button"
-                class="secondary-button"
-            >
-                Clear Team
+            <button class="team-slot empty" data-slot="2">
+                <span class="slot-number">3</span>
+                <span class="slot-text">Select Aniimo</span>
+            </button>
+
+            <button class="team-slot empty" data-slot="3">
+                <span class="slot-number">4</span>
+                <span class="slot-text">Select Aniimo</span>
             </button>
 
         </div>
 
+        <button id="clearTeam" class="danger-button">
+            Clear Team
+        </button>
 
-        <div
-            id="teamSlots"
-            class="team-slots"
-        >
+    </section>
 
-            <!-- JavaScript creates the four slots -->
+
+    <!-- TEAM ANALYSIS -->
+
+    <section class="panel">
+
+        <h2>Team Analysis</h2>
+
+        <div id="analysis">
+
+            <div class="empty-analysis">
+                Select Aniimo to begin building your team.
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- =====================================================
-         TEAM ANALYSIS
-    ====================================================== -->
+    <!-- FILTERS -->
+
+    <section class="panel">
+
+        <h2>Aniimo Roster</h2>
+
+        <div class="controls">
+
+            <input
+                id="searchInput"
+                type="search"
+                placeholder="Search Aniimo..."
+            >
+
+            <select id="elementFilter">
+
+                <option value="all">
+                    All Elements
+                </option>
+
+                <option value="fire">🔥 Fire</option>
+                <option value="water">💧 Water</option>
+                <option value="grass">🌿 Grass</option>
+                <option value="ice">❄️ Ice</option>
+                <option value="electric">⚡ Electric</option>
+                <option value="wind">🌪️ Wind</option>
+                <option value="rock">🪨 Rock</option>
+                <option value="dark">🌑 Dark</option>
+                <option value="holy">✨ Holy</option>
+
+            </select>
+
+        </div>
+
+
+        <div id="roleFilters" class="role-filters">
+
+            <button class="role-button active" data-role="all">
+                All
+            </button>
+
+            <button class="role-button" data-role="DPS">
+                DPS
+            </button>
+
+            <button class="role-button" data-role="Support">
+                Support
+            </button>
+
+            <button class="role-button" data-role="REGEN">
+                Regen
+            </button>
+
+            <button class="role-button" data-role="BREAK">
+                Break
+            </button>
+
+            <button class="role-button" data-role="Heal">
+                Heal
+            </button>
+
+        </div>
+
+        <div id="rosterStatus" class="status">
+            Loading roster...
+        </div>
+
+        <div id="roster" class="roster"></div>
+
+    </section>
+
+
+    <!-- DETAILS -->
 
     <section
-        id="analysis"
-        class="analysis-section hidden"
+        id="detailsPanel"
+        class="panel hidden"
     >
 
-        <div class="analysis-header">
-
-            <div>
-
-                <h2 id="teamTitle">
-                    Team Analysis
-                </h2>
-
-                <p id="teamSubtitle">
-                    Select at least two Aniimo.
-                </p>
-
-            </div>
-
-
-            <div class="score-circle">
-
-                <span id="overallScore">
-                    0
-                </span>
-
-                <small>
-                    SCORE
-                </small>
-
-            </div>
-
-        </div>
-
-
-        <div id="analysisBody">
-
-            <!-- JavaScript creates analysis -->
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         ANIIMO ROSTER
-    ====================================================== -->
-
-    <section class="roster-section">
-
-        <div class="section-heading">
-
-            <div>
-
-                <h2>
-                    Aniimo Roster
-                </h2>
-
-                <p>
-                    <span id="rosterCount">
-                        0
-                    </span>
-                    Aniimo available
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- SEARCH -->
-
-        <div class="filters">
-
-            <div class="filter-group">
-
-                <label for="search">
-                    Search
-                </label>
-
-                <input
-                    id="search"
-                    type="search"
-                    placeholder="Search Aniimo..."
-                    autocomplete="off"
-                >
-
-            </div>
-
-
-            <!-- ROLE -->
-
-            <div class="filter-group">
-
-                <label for="roleFilter">
-                    Role
-                </label>
-
-                <select id="roleFilter">
-
-                    <option value="">
-                        All roles
-                    </option>
-
-                    <option value="DPS">
-                        DPS
-                    </option>
-
-                    <option value="Support">
-                        Support
-                    </option>
-
-                    <option value="Regen">
-                        Regen
-                    </option>
-
-                    <option value="Break">
-                        Break
-                    </option>
-
-                    <option value="Heal">
-                        Heal
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <!-- ELEMENT -->
-
-            <div class="filter-group">
-
-                <label for="elementFilter">
-                    Element
-                </label>
-
-                <select id="elementFilter">
-
-                    <option value="">
-                        All elements
-                    </option>
-
-                </select>
-
-            </div>
-
-        </div>
-
-
-        <!-- ROSTER -->
-
-        <div
-            id="roster"
-            class="roster"
-        >
-
-            <div class="loading">
-                Loading Aniimo...
-            </div>
-
-        </div>
+        <div id="details"></div>
 
     </section>
 
 </main>
-
-
-<footer class="site-footer">
-
-    <p>
-        Unofficial fan-made Aniimo team-building
-        and synergy analysis tool.
-    </p>
-
-    <p>
-        Game data may change as the game develops.
-    </p>
-
-</footer>
-
 
 <script src="app.js"></script>
 
