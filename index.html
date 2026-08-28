@@ -1,146 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Aniimo Team Builder</title>
-  <meta name="description" content="Unofficial Aniimo team builder with synergy, strategy and weakness analysis.">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Aniimo Team Builder</title>
+
+    <meta
+        name="description"
+        content="Aniimo team building and synergy analysis tool"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
+
 <body>
-<header class="topbar">
-  <div class="brand">
-    <div class="logo">A</div>
-    <div><strong>Aniimo Team Builder</strong><small>Fan-made synergy lab</small></div>
-  </div>
-  <a class="source-link" href="https://wiki.aniimo.com/" target="_blank" rel="noopener">Official Wiki ↗</a>
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <div>
+            <h1>Aniimo Team Builder</h1>
+
+            <p>
+                Build teams, explore synergies,
+                roles, elements and weaknesses.
+            </p>
+        </div>
+
+    </div>
+
 </header>
 
+
 <main class="container">
-  <section class="hero">
-    <div>
-      <p class="eyebrow">BUILD • ANALYZE • COUNTER</p>
-      <h1>Build a team around the Aniimo you actually want to use.</h1>
-      <p>Choose any four Aniimo. There are no forced role slots. The builder looks at roles, stats, elements, traits, skills, buffs, debuffs, Break and sustain to explain how the team can work.</p>
-    </div>
-    <div class="hero-badge">
-      <span id="rosterCount">94</span>
-      <small>numbered Aniimo</small>
-    </div>
-  </section>
 
-  <section class="panel">
-    <div class="panel-head">
-      <div>
-        <h2>1. Choose your four Aniimo</h2>
-        <p>Duplicate role combinations are allowed. You can use four DPS, two Supports, three Break, etc.</p>
-      </div>
-      <button id="clearTeam" class="ghost">Clear team</button>
-    </div>
+    <!-- =====================================================
+         TEAM BUILDER
+    ====================================================== -->
 
-    <div id="teamSlots" class="team-slots"></div>
-  </section>
+    <section class="builder-section">
 
-  <section class="panel">
-    <div class="panel-head">
-      <div>
-        <h2>2. Aniimo roster</h2>
-        <p>Search, filter by role or element, then tap an Aniimo to add it to the next empty slot.</p>
-      </div>
-    </div>
+        <div class="section-heading">
 
-    <div class="filters">
-      <input id="search" placeholder="Search Aniimo..." autocomplete="off">
+            <div>
 
-      <select id="roleFilter">
-        <option value="">All roles</option>
-        <option>DPS</option>
-        <option>Support</option>
-        <option>Regen</option>
-        <option>Break</option>
-        <option>Heal</option>
-      </select>
+                <h2>Your Team</h2>
 
-      <select id="elementFilter">
-        <option value="">All elements</option>
-        <option>Fire</option>
-        <option>Water</option>
-        <option>Grass</option>
-        <option>Lightning</option>
-        <option>Earth</option>
-        <option>Wind</option>
-        <option>Dark</option>
-        <option>Ice</option>
-        <option>Light</option>
-      </select>
-    </div>
+                <p>
+                    Select up to 4 Aniimo.
+                    Any role combination is allowed.
+                </p>
 
-    <div id="roster" class="roster"></div>
-  </section>
+            </div>
 
-  <section id="analysis" class="panel analysis hidden">
-    <div class="panel-head">
-      <div>
-        <p class="eyebrow">TEAM REPORT</p>
-        <h2 id="teamTitle">Team analysis</h2>
-        <p id="teamSubtitle"></p>
-      </div>
+            <button
+                id="clearTeam"
+                type="button"
+                class="secondary-button"
+            >
+                Clear Team
+            </button>
 
-      <div class="score" id="overallScore">—</div>
-    </div>
+        </div>
 
-    <div id="analysisBody"></div>
-  </section>
 
-  <section class="panel">
-    <div class="panel-head">
-      <div>
-        <h2>How the score works</h2>
-        <p>This is an explainable heuristic, not an official in-game rating.</p>
-      </div>
-    </div>
+        <div
+            id="teamSlots"
+            class="team-slots"
+        >
 
-    <div class="method">
-      <div>
-        <b>Synergy</b>
-        <span>buffs, debuffs, Break windows, elemental interactions and role complementarity</span>
-      </div>
+            <!-- JavaScript creates the four slots -->
 
-      <div>
-        <b>Damage</b>
-        <span>Attack, DPS presence and offensive skill evidence</span>
-      </div>
+        </div>
 
-      <div>
-        <b>Sustain</b>
-        <span>Heal/Regen roles and healing/EP evidence</span>
-      </div>
+    </section>
 
-      <div>
-        <b>Weakness</b>
-        <span>directional elemental matchups and over-reliance on one damage element</span>
-      </div>
-    </div>
-  </section>
+
+    <!-- =====================================================
+         TEAM ANALYSIS
+    ====================================================== -->
+
+    <section
+        id="analysis"
+        class="analysis-section hidden"
+    >
+
+        <div class="analysis-header">
+
+            <div>
+
+                <h2 id="teamTitle">
+                    Team Analysis
+                </h2>
+
+                <p id="teamSubtitle">
+                    Select at least two Aniimo.
+                </p>
+
+            </div>
+
+
+            <div class="score-circle">
+
+                <span id="overallScore">
+                    0
+                </span>
+
+                <small>
+                    SCORE
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div id="analysisBody">
+
+            <!-- JavaScript creates analysis -->
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ANIIMO ROSTER
+    ====================================================== -->
+
+    <section class="roster-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2>
+                    Aniimo Roster
+                </h2>
+
+                <p>
+                    <span id="rosterCount">
+                        0
+                    </span>
+                    Aniimo available
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="filters">
+
+            <div class="filter-group">
+
+                <label for="search">
+                    Search
+                </label>
+
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="Search Aniimo..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- ROLE -->
+
+            <div class="filter-group">
+
+                <label for="roleFilter">
+                    Role
+                </label>
+
+                <select id="roleFilter">
+
+                    <option value="">
+                        All roles
+                    </option>
+
+                    <option value="DPS">
+                        DPS
+                    </option>
+
+                    <option value="Support">
+                        Support
+                    </option>
+
+                    <option value="Regen">
+                        Regen
+                    </option>
+
+                    <option value="Break">
+                        Break
+                    </option>
+
+                    <option value="Heal">
+                        Heal
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ELEMENT -->
+
+            <div class="filter-group">
+
+                <label for="elementFilter">
+                    Element
+                </label>
+
+                <select id="elementFilter">
+
+                    <option value="">
+                        All elements
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROSTER -->
+
+        <div
+            id="roster"
+            class="roster"
+        >
+
+            <div class="loading">
+                Loading Aniimo...
+            </div>
+
+        </div>
+
+    </section>
+
 </main>
 
-<footer>
-  <p>Unofficial fan project. Aniimo names, artwork and game information belong to their respective owners.</p>
 
-  <p>
-    Factual data is intended to be sourced from the
-    <a href="https://wiki.aniimo.com/" target="_blank" rel="noopener">
-      Official Aniimo Wiki
-    </a>.
-    Aniidex is used as a secondary reference.
-  </p>
+<footer class="site-footer">
 
-  <p>
-    Data is refreshed by the included GitHub Action.
-    Always re-check game information after official patches.
-  </p>
+    <p>
+        Unofficial fan-made Aniimo team-building
+        and synergy analysis tool.
+    </p>
+
+    <p>
+        Game data may change as the game develops.
+    </p>
+
 </footer>
 
+
 <script src="app.js"></script>
+
 </body>
 </html>
