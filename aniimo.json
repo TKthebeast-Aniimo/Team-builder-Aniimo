@@ -1,0 +1,1694 @@
+[
+  {
+    "id": 1,
+    "name": "Emberpup",
+    "number": "001",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 2,
+    "name": "Flameruff",
+    "number": "002",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 3,
+    "name": "Scorchhowl",
+    "number": "003",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 4,
+    "name": "Inferlupa",
+    "number": "004",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 5,
+    "name": "Celestis",
+    "number": "005",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 6,
+    "name": "Stellarys",
+    "number": "006",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 7,
+    "name": "Chirpi",
+    "number": "007",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 8,
+    "name": "Tromber",
+    "number": "008",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 9,
+    "name": "Cornet",
+    "number": "009",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 10,
+    "name": "Tubster",
+    "number": "010",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 11,
+    "name": "Iris",
+    "number": "011",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 12,
+    "name": "Irisal",
+    "number": "012",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 14,
+    "name": "Skippy",
+    "number": "014",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 15,
+    "name": "Pranky",
+    "number": "015",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 16,
+    "name": "Glacy",
+    "number": "016",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 17,
+    "name": "Leafy",
+    "number": "017",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 18,
+    "name": "Nimbi",
+    "number": "018",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 19,
+    "name": "Turbo",
+    "number": "019",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 20,
+    "name": "Dreaple",
+    "number": "020",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 21,
+    "name": "Hummin",
+    "number": "021",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 22,
+    "name": "Witchin",
+    "number": "022",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 23,
+    "name": "Tuckin",
+    "number": "023",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 24,
+    "name": "Budclaw",
+    "number": "024",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 25,
+    "name": "Shrubclaw",
+    "number": "025",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 26,
+    "name": "Geoclaw",
+    "number": "026",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 27,
+    "name": "Sparki",
+    "number": "027",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 28,
+    "name": "Flamerion",
+    "number": "028",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 29,
+    "name": "Flutternym",
+    "number": "029",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 30,
+    "name": "Gracewing",
+    "number": "030",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 31,
+    "name": "Somniwing",
+    "number": "031",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 32,
+    "name": "Eko",
+    "number": "032",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 33,
+    "name": "Eklue",
+    "number": "033",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 34,
+    "name": "Budsquire",
+    "number": "034",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 35,
+    "name": "Thornblade",
+    "number": "035",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 36,
+    "name": "Melloblum",
+    "number": "036",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 37,
+    "name": "Pomegg",
+    "number": "037",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 38,
+    "name": "Dazmand",
+    "number": "038",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 39,
+    "name": "Pomawk",
+    "number": "039",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 40,
+    "name": "Dewy",
+    "number": "040",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 41,
+    "name": "Fragrancier",
+    "number": "041",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 42,
+    "name": "Wisptis",
+    "number": "042",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 43,
+    "name": "Ignitis",
+    "number": "043",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 44,
+    "name": "Fulmintis",
+    "number": "044",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 45,
+    "name": "Bonesky",
+    "number": "045",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 46,
+    "name": "Fenrier",
+    "number": "046",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 47,
+    "name": "Glynsera",
+    "number": "047",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 48,
+    "name": "Bolty",
+    "number": "048",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 49,
+    "name": "Blazen",
+    "number": "049",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 50,
+    "name": "Susuta",
+    "number": "050",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 51,
+    "name": "Popota",
+    "number": "051",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 52,
+    "name": "Piopiota",
+    "number": "052",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 53,
+    "name": "Panpanta",
+    "number": "053",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 54,
+    "name": "Shelly",
+    "number": "054",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 55,
+    "name": "Sheldon",
+    "number": "055",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 56,
+    "name": "Sherro",
+    "number": "056",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 57,
+    "name": "Baleetle",
+    "number": "057",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 58,
+    "name": "Waleetle",
+    "number": "058",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 59,
+    "name": "Bouldus",
+    "number": "059",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 60,
+    "name": "Fentuft",
+    "number": "060",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 61,
+    "name": "Fenmane",
+    "number": "061",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 62,
+    "name": "Helmut",
+    "number": "062",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 63,
+    "name": "Pawney",
+    "number": "063",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 64,
+    "name": "Rookey",
+    "number": "064",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 65,
+    "name": "Jawling",
+    "number": "065",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 66,
+    "name": "Helmwhelp",
+    "number": "066",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 67,
+    "name": "Helgon",
+    "number": "067",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 68,
+    "name": "Infergon",
+    "number": "068",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 69,
+    "name": "Cubbo",
+    "number": "069",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 70,
+    "name": "Grizbo",
+    "number": "070",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 71,
+    "name": "Pebbling",
+    "number": "071",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 72,
+    "name": "Lavazar",
+    "number": "072",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 73,
+    "name": "Magmarex",
+    "number": "073",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 74,
+    "name": "Geodeback",
+    "number": "074",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 75,
+    "name": "Minespine",
+    "number": "075",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 76,
+    "name": "Cozite",
+    "number": "076",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 77,
+    "name": "Bailite",
+    "number": "077",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 78,
+    "name": "Bulbly",
+    "number": "078",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 79,
+    "name": "Veilfloat",
+    "number": "079",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 80,
+    "name": "Luminelle",
+    "number": "080",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 81,
+    "name": "Fahloo",
+    "number": "081",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 82,
+    "name": "Erlath",
+    "number": "082",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 83,
+    "name": "Besauce",
+    "number": "083",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 84,
+    "name": "Reefish",
+    "number": "084",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 85,
+    "name": "Coraliz",
+    "number": "085",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 86,
+    "name": "Cheekie",
+    "number": "086",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 87,
+    "name": "Wavwal",
+    "number": "087",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 88,
+    "name": "Bubbeep",
+    "number": "088",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 89,
+    "name": "Glameep",
+    "number": "089",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 90,
+    "name": "Popapus",
+    "number": "090",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 91,
+    "name": "Gachapus",
+    "number": "091",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 92,
+    "name": "Malangel",
+    "number": "092",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 93,
+    "name": "Malevsera",
+    "number": "093",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 9997,
+    "name": "Fennelun",
+    "number": "9997",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  },
+  {
+    "id": 9998,
+    "name": "Helion",
+    "number": "9998",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "elements": [],
+    "roles": [],
+    "stats": {},
+    "forms": [],
+    "trait": null,
+    "skills": [],
+    "analysis": {
+      "tags": [],
+      "notes": []
+    },
+    "lastVerified": null
+  }
+]

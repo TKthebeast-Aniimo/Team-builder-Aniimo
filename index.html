@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aniimo Team Builder</title>
+  <meta name="description" content="Unofficial Aniimo team builder with synergy, strategy and weakness analysis.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">A</div>
+    <div><strong>Aniimo Team Builder</strong><small>Fan-made synergy lab</small></div>
+  </div>
+  <a class="source-link" href="https://wiki.aniimo.com/" target="_blank" rel="noopener">Official Wiki ↗</a>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">BUILD • ANALYZE • COUNTER</p>
+      <h1>Build a team around the Aniimo you actually want to use.</h1>
+      <p>Choose any four Aniimo. There are no forced role slots. The builder looks at roles, stats, elements, traits, skills, buffs, debuffs, Break and sustain to explain how the team can work.</p>
+    </div>
+    <div class="hero-badge"><span id="rosterCount">94</span><small>numbered Aniimo</small></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <div>
+        <h2>1. Choose your four Aniimo</h2>
+        <p>Duplicate role combinations are allowed. You can use four DPS, two Supports, three Break, etc.</p>
+      </div>
+      <button id="clearTeam" class="ghost">Clear team</button>
+    </div>
+
+    <div id="teamSlots" class="team-slots"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <div><h2>2. Aniimo roster</h2><p>Search, filter by role or element, then tap an Aniimo to add it to the next empty slot.</p></div>
+    </div>
+    <div class="filters">
+      <input id="search" placeholder="Search Aniimo..." autocomplete="off">
+      <select id="roleFilter">
+        <option value="">All roles</option>
+        <option>DPS</option><option>Support</option><option>Regen</option><option>Break</option><option>Heal</option>
+      </select>
+      <select id="elementFilter">
+        <option value="">All elements</option>
+        <option>Fire</option><option>Water</option><option>Grass</option><option>Lightning</option><option>Earth</option><option>Wind</option><option>Dark</option><option>Ice</option><option>Light</option>
+      </select>
+    </div>
+    <div id="roster" class="roster"></div>
+  </section>
+
+  <section id="analysis" class="panel analysis hidden">
+    <div class="panel-head">
+      <div><p class="eyebrow">TEAM REPORT</p><h2 id="teamTitle">Team analysis</h2><p id="teamSubtitle"></p></div>
+      <div class="score" id="overallScore">—</div>
+    </div>
+    <div id="analysisBody"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><h2>How the score works</h2><p>This is an explainable heuristic, not an official in-game rating.</p></div></div>
+    <div class="method">
+      <div><b>Synergy</b><span>buffs, debuffs, Break windows, elemental interactions and role complementarity</span></div>
+      <div><b>Damage</b><span>Attack, DPS presence and offensive skill evidence</span></div>
+      <div><b>Sustain</b><span>Heal/Regen roles and healing/EP evidence</span></div>
+      <div><b>Weakness</b><span>directional elemental matchups and over-reliance on one damage element</span></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan project. Aniimo names, artwork and game information belong to their respective owners.</p>
+  <p>Factual data is intended to be sourced from the <a href="https://wiki.aniimo.com/" target="_blank" rel="noopener">Official Aniimo Wiki</a>; Aniidex is used as a secondary reference.</p>
+  <p>Data is refreshed by the included GitHub Action. Always re-check game information after official patches.</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

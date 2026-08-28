@@ -1,0 +1,105 @@
+{
+  "_source": "Current public matchup chart cross-checked against Aniidex's Elements Chart. Verify after official patches.",
+  "source": "https://aniidex.com/aniimo/elements/",
+  "multipliers": {
+    "Fire": {
+      "Fire": 0.625,
+      "Water": 0.625,
+      "Grass": 1.6,
+      "Lightning": 1,
+      "Earth": 0.625,
+      "Wind": 1,
+      "Dark": 1,
+      "Ice": 1.6,
+      "Light": 0.625
+    },
+    "Water": {
+      "Fire": 1.6,
+      "Water": 0.625,
+      "Grass": 0.625,
+      "Lightning": 1,
+      "Earth": 1.6,
+      "Wind": 1,
+      "Dark": 1,
+      "Ice": 0.625,
+      "Light": 0.625
+    },
+    "Grass": {
+      "Fire": 0.625,
+      "Water": 1.6,
+      "Grass": 0.625,
+      "Lightning": 1,
+      "Earth": 1.6,
+      "Wind": 1,
+      "Dark": 0.625,
+      "Ice": 1,
+      "Light": 0.625
+    },
+    "Lightning": {
+      "Fire": 1,
+      "Water": 1.6,
+      "Grass": 1,
+      "Lightning": 0.625,
+      "Earth": 0.625,
+      "Wind": 1.6,
+      "Dark": 1,
+      "Ice": 0.625,
+      "Light": 1
+    },
+    "Earth": {
+      "Fire": 1,
+      "Water": 0.625,
+      "Grass": 0.625,
+      "Lightning": 1.6,
+      "Earth": 0.625,
+      "Wind": 1,
+      "Dark": 0.625,
+      "Ice": 1.6,
+      "Light": 1
+    },
+    "Wind": {
+      "Fire": 1,
+      "Water": 1,
+      "Grass": 1.6,
+      "Lightning": 0.625,
+      "Earth": 1,
+      "Wind": 0.625,
+      "Dark": 1.6,
+      "Ice": 1,
+      "Light": 1
+    },
+    "Dark": {
+      "Fire": 1.6,
+      "Water": 0.625,
+      "Grass": 1.6,
+      "Lightning": 1,
+      "Earth": 1,
+      "Wind": 0.625,
+      "Dark": 1,
+      "Ice": 1,
+      "Light": 1.6
+    },
+    "Ice": {
+      "Fire": 0.625,
+      "Water": 1.6,
+      "Grass": 1,
+      "Lightning": 1.6,
+      "Earth": 0.625,
+      "Wind": 0.625,
+      "Dark": 1,
+      "Ice": 0.625,
+      "Light": 1
+    },
+    "Light": {
+      "Fire": 1,
+      "Water": 1,
+      "Grass": 1,
+      "Lightning": 0.625,
+      "Earth": 1,
+      "Wind": 1.6,
+      "Dark": 1.6,
+      "Ice": 1,
+      "Light": 0.625
+    }
+  }
+}
