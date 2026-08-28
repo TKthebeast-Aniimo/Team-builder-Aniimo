@@ -3,160 +3,141 @@
 /*
 =========================================================
 ANIIMO TEAM BUILDER
-FULL ROSTER VERSION
+STABLE FULL-ROSTER VERSION
 =========================================================
 
-Uses the complete aniimo.json from the repository.
+The website:
 
-IMPORTANT:
-We do NOT use a 6-Aniimo test roster anymore.
-
-The JSON database is the source for the roster.
-
-If the JSON temporarily fails, the complete roster
-names are used as a fallback so the page never becomes
-an infinite loading screen.
+1. Displays the roster immediately.
+2. Loads aniimo.json in the background.
+3. NEVER replaces useful data with empty data.
+4. Uses official Wiki images when available.
+5. Uses AniDex images as a fallback.
+6. Supports 4 Aniimo teams.
+7. Does NOT force one of each role.
 =========================================================
 */
 
 
 /* =====================================================
-   COMPLETE CURRENT PROJECT ROSTER
+   COMPLETE CURRENT ROSTER FALLBACK
    ===================================================== */
 
-const COMPLETE_ROSTER = [
-    [1, "001", "Emberpup"],
-    [2, "002", "Flameruff"],
-    [3, "003", "Scorchhowl"],
-    [4, "004", "Inferlupa"],
-    [5, "005", "Celestis"],
-    [6, "006", "Stellarys"],
-    [7, "007", "Chirpi"],
-    [8, "008", "Tromber"],
-    [9, "009", "Cornet"],
-    [10, "010", "Tubster"],
-    [11, "011", "Iris"],
-    [12, "012", "Irisal"],
+const FALLBACK_ROSTER = [
+    [1,"001","Emberpup"],
+    [2,"002","Flameruff"],
+    [3,"003","Scorchhowl"],
+    [4,"004","Inferlupa"],
+    [5,"005","Celestis"],
+    [6,"006","Stellarys"],
+    [7,"007","Chirpi"],
+    [8,"008","Tromber"],
+    [9,"009","Cornet"],
+    [10,"010","Tubster"],
+    [11,"011","Iris"],
+    [12,"012","Irisal"],
 
-    [14, "014", "Skippy"],
-    [15, "015", "Pranky"],
-    [16, "016", "Glacy"],
-    [17, "017", "Leafy"],
-    [18, "018", "Nimbi"],
-    [19, "019", "Turbo"],
-    [20, "020", "Dreaple"],
-    [21, "021", "Hummin"],
-    [22, "022", "Witchin"],
-    [23, "023", "Tuckin"],
-    [24, "024", "Budclaw"],
-    [25, "025", "Shrubclaw"],
-    [26, "026", "Geoclaw"],
-    [27, "027", "Sparki"],
-    [28, "028", "Flamerion"],
-    [29, "029", "Flutternym"],
-    [30, "030", "Gracewing"],
-    [31, "031", "Somniwing"],
-    [32, "032", "Eko"],
-    [33, "033", "Eklue"],
-    [34, "034", "Budsquire"],
-    [35, "035", "Thornblade"],
-    [36, "036", "Melloblum"],
-    [37, "037", "Pomegg"],
-    [38, "038", "Dazmand"],
-    [39, "039", "Pomawk"],
-    [40, "040", "Dewy"],
-    [41, "041", "Fragrancier"],
-    [42, "042", "Wisptis"],
-    [43, "043", "Ignitis"],
-    [44, "044", "Fulmintis"],
-    [45, "045", "Bonesky"],
-    [46, "046", "Fenrier"],
-    [47, "047", "Glynsera"],
-    [48, "048", "Bolty"],
-    [49, "049", "Blazen"],
-    [50, "050", "Susuta"],
-    [51, "051", "Popota"],
-    [52, "052", "Piopiota"],
-    [53, "053", "Panpanta"],
-    [54, "054", "Shelly"],
-    [55, "055", "Sheldon"],
-    [56, "056", "Sherro"],
-    [57, "057", "Baleetle"],
-    [58, "058", "Waleetle"],
-    [59, "059", "Bouldus"],
-    [60, "060", "Fentuft"],
-    [61, "061", "Fenmane"],
-    [62, "062", "Helmut"],
-    [63, "063", "Pawney"],
-    [64, "064", "Rookey"],
-    [65, "065", "Jawling"],
-    [66, "066", "Helmwhelp"],
-    [67, "067", "Helgon"],
-    [68, "068", "Infergon"],
-    [69, "069", "Cubbo"],
-    [70, "070", "Grizbo"],
-    [71, "071", "Pebbling"],
-    [72, "072", "Lavazar"],
-    [73, "073", "Magmarex"],
-    [74, "074", "Geodeback"],
-    [75, "075", "Minespine"],
-    [76, "076", "Cozite"],
-    [77, "077", "Bailite"],
-    [78, "078", "Bulbly"],
-    [79, "079", "Veilfloat"],
-    [80, "080", "Luminelle"],
-    [81, "081", "Fahloo"],
-    [82, "082", "Erlath"],
-    [83, "083", "Besauce"],
-    [84, "084", "Reefish"],
-    [85, "085", "Coraliz"],
-    [86, "086", "Cheekie"],
-    [87, "087", "Wavwal"],
-    [88, "088", "Bubbeep"],
-    [89, "089", "Glameep"],
-    [90, "090", "Popapus"],
-    [91, "091", "Gachapus"],
-    [92, "092", "Malangel"],
-    [93, "093", "Malevsera"],
+    [14,"014","Skippy"],
+    [15,"015","Pranky"],
+    [16,"016","Glacy"],
+    [17,"017","Leafy"],
+    [18,"018","Nimbi"],
+    [19,"019","Turbo"],
+    [20,"020","Dreaple"],
+    [21,"021","Hummin"],
+    [22,"022","Witchin"],
+    [23,"023","Tuckin"],
+    [24,"024","Budclaw"],
+    [25,"025","Shrubclaw"],
+    [26,"026","Geoclaw"],
+    [27,"027","Sparki"],
+    [28,"028","Flamerion"],
+    [29,"029","Flutternym"],
+    [30,"030","Gracewing"],
+    [31,"031","Somniwing"],
+    [32,"032","Eko"],
+    [33,"033","Eklue"],
+    [34,"034","Budsquire"],
+    [35,"035","Thornblade"],
+    [36,"036","Melloblum"],
+    [37,"037","Pomegg"],
+    [38,"038","Dazmand"],
+    [39,"039","Pomawk"],
+    [40,"040","Dewy"],
+    [41,"041","Fragrancier"],
+    [42,"042","Wisptis"],
+    [43,"043","Ignitis"],
+    [44,"044","Fulmintis"],
+    [45,"045","Bonesky"],
+    [46,"046","Fenrier"],
+    [47,"047","Glynsera"],
+    [48,"048","Bolty"],
+    [49,"049","Blazen"],
+    [50,"050","Susuta"],
+    [51,"051","Popota"],
+    [52,"052","Piopiota"],
+    [53,"053","Panpanta"],
+    [54,"054","Shelly"],
+    [55,"055","Sheldon"],
+    [56,"056","Sherro"],
+    [57,"057","Baleetle"],
+    [58,"058","Waleetle"],
+    [59,"059","Bouldus"],
+    [60,"060","Fentuft"],
+    [61,"061","Fenmane"],
+    [62,"062","Helmut"],
+    [63,"063","Pawney"],
+    [64,"064","Rookey"],
+    [65,"065","Jawling"],
+    [66,"066","Helmwhelp"],
+    [67,"067","Helgon"],
+    [68,"068","Infergon"],
+    [69,"069","Cubbo"],
+    [70,"070","Grizbo"],
+    [71,"071","Pebbling"],
+    [72,"072","Lavazar"],
+    [73,"073","Magmarex"],
+    [74,"074","Geodeback"],
+    [75,"075","Minespine"],
+    [76,"076","Cozite"],
+    [77,"077","Bailite"],
+    [78,"078","Bulbly"],
+    [79,"079","Veilfloat"],
+    [80,"080","Luminelle"],
+    [81,"081","Fahloo"],
+    [82,"082","Erlath"],
+    [83,"083","Besauce"],
+    [84,"084","Reefish"],
+    [85,"085","Coraliz"],
+    [86,"086","Cheekie"],
+    [87,"087","Wavwal"],
+    [88,"088","Bubbeep"],
+    [89,"089","Glameep"],
+    [90,"090","Popapus"],
+    [91,"091","Gachapus"],
+    [92,"092","Malangel"],
+    [93,"093","Malevsera"],
 
-    [9997, "9997", "Fennelun"],
-    [9998, "9998", "Helion"]
+    [9997,"9997","Fennelun"],
+    [9998,"9998","Helion"]
 ];
 
 
-/* =====================================================
-   STATE
-   ===================================================== */
-
-let ANIIMO = COMPLETE_ROSTER.map(function (item) {
-
-    return {
-        id: item[0],
-        number: item[1],
-        name: item[2],
-        sourceUrl: null,
-        imageUrl: null,
-        elements: [],
-        roles: [],
-        stats: {},
-        forms: [],
-        trait: null,
-        skills: [],
-        analysis: {
-            tags: [],
-            notes: []
-        }
-    };
-
-});
+let ANIIMO = FALLBACK_ROSTER.map(
+    createFallbackAniimo
+);
 
 
-let selectedTeam = [null, null, null, null];
+let selectedTeam = [
+    null,
+    null,
+    null,
+    null
+];
+
 
 let selectedRole = "all";
-
 let selectedElement = "all";
-
 let searchText = "";
 
 
@@ -193,21 +174,12 @@ const analysis =
 
 
 /* =====================================================
-   START IMMEDIATELY
+   START
    ===================================================== */
 
 document.addEventListener(
     "DOMContentLoaded",
     function () {
-
-        /*
-        FIRST:
-        Show the COMPLETE roster immediately.
-
-        No spinner.
-        No waiting.
-        No API.
-        */
 
         renderRoster();
 
@@ -217,22 +189,93 @@ document.addEventListener(
 
         setupEvents();
 
-        /*
-        SECOND:
-        Load the richer information from aniimo.json.
-        */
-
-        loadAniimoDatabase();
+        loadDatabase();
 
     }
 );
 
 
 /* =====================================================
-   LOAD THE REAL DATABASE
+   FALLBACK OBJECT
    ===================================================== */
 
-async function loadAniimoDatabase() {
+function createFallbackAniimo(
+    entry
+) {
+
+    return {
+
+        id: entry[0],
+
+        number: entry[1],
+
+        name: entry[2],
+
+        sourceUrl: null,
+
+        imageUrl:
+            createAniDexImage(
+                entry[0]
+            ),
+
+        elements: [],
+
+        roles: [],
+
+        stats: {},
+
+        forms: [],
+
+        trait: null,
+
+        traits: [],
+
+        skills: [],
+
+        analysis: {
+            tags: [],
+            notes: []
+        }
+
+    };
+
+}
+
+
+/* =====================================================
+   ANIIDEX IMAGE FALLBACK
+   ===================================================== */
+
+function createAniDexImage(
+    id
+) {
+
+    if (
+        !id ||
+        id >= 1000
+    ) {
+
+        return "";
+
+    }
+
+
+    return (
+        "https://aniidex.com/" +
+        "_ipx/q_95%26fit_inside%26s_260x260/" +
+        "images/aniimo/UI_PetHead_" +
+        (10000 + Number(id) + 50) +
+        ".png"
+    );
+
+}
+
+
+/* =====================================================
+   LOAD DATABASE
+   ===================================================== */
+
+async function loadDatabase() {
 
     try {
 
@@ -249,7 +292,7 @@ async function loadAniimoDatabase() {
         if (!response.ok) {
 
             throw new Error(
-                "Could not load aniimo.json: HTTP " +
+                "aniimo.json HTTP " +
                 response.status
             );
 
@@ -260,106 +303,70 @@ async function loadAniimoDatabase() {
             await response.json();
 
 
-        if (!Array.isArray(data)) {
+        if (
+            !Array.isArray(data) ||
+            data.length < 80
+        ) {
 
             throw new Error(
-                "aniimo.json does not contain an array."
+                "Database contains too few Aniimo."
             );
 
         }
 
 
-        /*
-        Merge the detailed JSON data with the
-        complete roster.
-
-        This is important because the JSON contains
-        all the current project entries, while the
-        fallback guarantees the names never disappear.
-        */
-
-        const database =
-            new Map();
-
-
-        data.forEach(
-            function (item) {
-
-                database.set(
-                    Number(item.id),
-                    item
-                );
-
-            }
-        );
-
-
-        ANIIMO =
-            COMPLETE_ROSTER.map(
-                function (entry) {
-
-                    const id =
-                        entry[0];
-
-                    const number =
-                        entry[1];
-
-                    const name =
-                        entry[2];
-
-                    const databaseItem =
-                        database.get(id);
-
-
-                    if (!databaseItem) {
-
-                        return {
-
-                            id: id,
-
-                            number: number,
-
-                            name: name,
-
-                            sourceUrl: null,
-
-                            imageUrl: null,
-
-                            elements: [],
-
-                            roles: [],
-
-                            stats: {},
-
-                            forms: [],
-
-                            trait: null,
-
-                            skills: [],
-
-                            analysis: {
-                                tags: [],
-                                notes: []
-                            }
-
-                        };
-
-                    }
-
-
-                    return normalizeAniimo(
-                        databaseItem,
-                        number,
-                        name
-                    );
-
-                }
+        const normalized =
+            data.map(
+                normalizeAniimo
             );
 
 
         /*
-        Render AGAIN after the database loads.
+        CRITICAL:
+
+        Only accept the database if it actually
+        contains useful information.
+
+        This prevents the old empty JSON from
+        destroying the roster.
         */
+
+        const usefulCount =
+            normalized.filter(
+                function (item) {
+
+                    return (
+                        item.name &&
+                        (
+                            item.imageUrl ||
+                            item.elements.length ||
+                            item.roles.length ||
+                            Object.keys(
+                                item.stats
+                            ).length ||
+                            item.skills.length
+                        )
+                    );
+
+                }
+            ).length;
+
+
+        if (
+            usefulCount < 20
+        ) {
+
+            throw new Error(
+                "Database loaded, but its records " +
+                "do not contain useful data yet."
+            );
+
+        }
+
+
+        ANIIMO =
+            normalized;
+
 
         renderRoster();
 
@@ -378,26 +385,18 @@ async function loadAniimoDatabase() {
 
 
         console.log(
-            "FULL ANIIMO ROSTER LOADED:",
+            "Loaded full Aniimo database:",
             ANIIMO.length
         );
 
 
     } catch (error) {
 
-        console.error(
-            "Aniimo database error:",
+        console.warn(
+            "Using fallback roster:",
             error
         );
 
-
-        /*
-        IMPORTANT:
-
-        We DO NOT clear the roster.
-
-        The complete roster remains visible.
-        */
 
         if (rosterStatus) {
 
@@ -413,72 +412,127 @@ async function loadAniimoDatabase() {
 
 
 /* =====================================================
-   NORMALIZE DATA
+   NORMALIZE
    ===================================================== */
 
 function normalizeAniimo(
-    item,
-    fallbackNumber,
-    fallbackName
+    item
 ) {
+
+    const id =
+        Number(item.id) || 0;
+
+
+    let image =
+        item.imageUrl ||
+        item.image ||
+        "";
+
+
+    if (!image) {
+
+        image =
+            createAniDexImage(
+                id
+            );
+
+    }
+
 
     return {
 
-        id:
-            Number(item.id) ||
-            0,
+        id: id,
 
         number:
-            item.number ||
-            fallbackNumber,
+            String(
+                item.number ||
+                String(id).padStart(
+                    3,
+                    "0"
+                )
+            ),
 
         name:
             item.name ||
-            fallbackName,
+            "Unknown Aniimo",
 
         sourceUrl:
             item.sourceUrl ||
             null,
 
         imageUrl:
-            item.imageUrl ||
-            null,
+            image,
 
         elements:
-            Array.isArray(item.elements)
-                ? item.elements
-                : [],
+            Array.isArray(
+                item.elements
+            )
+                ?
+                item.elements.map(
+                    function (x) {
+                        return String(
+                            x
+                        ).toLowerCase();
+                    }
+                )
+                :
+                [],
 
         roles:
-            Array.isArray(item.roles)
-                ? item.roles
-                : [],
+            Array.isArray(
+                item.roles
+            )
+                ?
+                item.roles
+                :
+                [],
 
         stats:
             item.stats &&
             typeof item.stats === "object"
-                ? item.stats
-                : {},
+                ?
+                item.stats
+                :
+                {},
 
         forms:
-            Array.isArray(item.forms)
-                ? item.forms
-                : [],
+            Array.isArray(
+                item.forms
+            )
+                ?
+                item.forms
+                :
+                [],
 
         trait:
             item.trait ||
             null,
 
+        traits:
+            Array.isArray(
+                item.traits
+            )
+                ?
+                item.traits
+                :
+                [],
+
         skills:
-            Array.isArray(item.skills)
-                ? item.skills
-                : [],
+            Array.isArray(
+                item.skills
+            )
+                ?
+                item.skills
+                :
+                [],
 
         analysis:
             item.analysis &&
             typeof item.analysis === "object"
-                ? item.analysis
-                : {
+                ?
+                item.analysis
+                :
+                {
                     tags: [],
                     notes: []
                 }
@@ -493,9 +547,6 @@ function normalizeAniimo(
    ===================================================== */
 
 function setupEvents() {
-
-
-    /* SEARCH */
 
     if (searchInput) {
 
@@ -516,8 +567,6 @@ function setupEvents() {
     }
 
 
-    /* ELEMENT FILTER */
-
     if (elementFilter) {
 
         elementFilter.addEventListener(
@@ -526,7 +575,6 @@ function setupEvents() {
 
                 selectedElement =
                     event.target.value
-                        .trim()
                         .toLowerCase();
 
                 renderRoster();
@@ -536,8 +584,6 @@ function setupEvents() {
 
     }
 
-
-    /* ROLE FILTER */
 
     roleButtons.forEach(
         function (button) {
@@ -578,21 +624,18 @@ function setupEvents() {
     );
 
 
-    /* CLEAR TEAM */
-
     if (clearTeamButton) {
 
         clearTeamButton.addEventListener(
             "click",
             function () {
 
-                selectedTeam =
-                    [
-                        null,
-                        null,
-                        null,
-                        null
-                    ];
+                selectedTeam = [
+                    null,
+                    null,
+                    null,
+                    null
+                ];
 
                 renderTeam();
 
@@ -604,49 +647,6 @@ function setupEvents() {
     }
 
 
-    /* TEAM SLOTS */
-
-    document
-        .querySelectorAll(
-            ".team-slot"
-        )
-        .forEach(
-            function (slot) {
-
-                slot.addEventListener(
-                    "click",
-                    function () {
-
-                        const index =
-                            Number(
-                                slot.dataset.slot
-                            );
-
-
-                        if (
-                            Number.isInteger(
-                                index
-                            )
-                        ) {
-
-                            selectedTeam[index] =
-                                null;
-
-                            renderTeam();
-
-                            renderAnalysis();
-
-                        }
-
-                    }
-                );
-
-            }
-        );
-
-
-    /* ROSTER CARD */
-
     document.addEventListener(
         "click",
         function (event) {
@@ -657,8 +657,11 @@ function setupEvents() {
                 );
 
 
-            if (!card)
+            if (!card) {
+
                 return;
+
+            }
 
 
             const id =
@@ -671,7 +674,9 @@ function setupEvents() {
                 ANIIMO.find(
                     function (item) {
 
-                        return item.id === id;
+                        return (
+                            item.id === id
+                        );
 
                     }
                 );
@@ -689,8 +694,6 @@ function setupEvents() {
     );
 
 
-    /* ADD TO TEAM */
-
     if (details) {
 
         details.addEventListener(
@@ -703,8 +706,11 @@ function setupEvents() {
                     );
 
 
-                if (!button)
+                if (!button) {
+
                     return;
+
+                }
 
 
                 addAniimoToTeam(
@@ -722,14 +728,13 @@ function setupEvents() {
 
 
 /* =====================================================
-   FILTERING
+   FILTER
    ===================================================== */
 
 function getFilteredAniimo() {
 
     return ANIIMO.filter(
         function (aniimo) {
-
 
             const name =
                 String(
@@ -743,67 +748,50 @@ function getFilteredAniimo() {
                 ).toLowerCase();
 
 
-            const matchesSearch =
+            const searchMatch =
                 !searchText ||
-                name.includes(searchText) ||
-                number.includes(searchText);
-
-
-            /*
-            IMPORTANT:
-
-            If an Aniimo currently has no role data,
-            it must STILL appear under "All".
-            */
-
-            const matchesRole =
-                selectedRole === "all" ||
-
-                (
-                    Array.isArray(
-                        aniimo.roles
-                    ) &&
-
-                    aniimo.roles.some(
-                        function (role) {
-
-                            return String(role)
-                                .toLowerCase() ===
-                                selectedRole;
-
-                        }
-                    )
+                name.includes(
+                    searchText
+                ) ||
+                number.includes(
+                    searchText
                 );
 
 
-            /*
-            Same logic for elements.
-            */
+            const roleMatch =
+                selectedRole === "all" ||
+                aniimo.roles.some(
+                    function (role) {
 
-            const matchesElement =
-                selectedElement === "all" ||
-
-                (
-                    Array.isArray(
-                        aniimo.elements
-                    ) &&
-
-                    aniimo.elements.some(
-                        function (element) {
-
-                            return String(element)
+                        return (
+                            String(role)
                                 .toLowerCase() ===
-                                selectedElement;
+                            selectedRole
+                        );
 
-                        }
-                    )
+                    }
+                );
+
+
+            const elementMatch =
+                selectedElement === "all" ||
+                aniimo.elements.some(
+                    function (element) {
+
+                        return (
+                            String(element)
+                                .toLowerCase() ===
+                            selectedElement
+                        );
+
+                    }
                 );
 
 
             return (
-                matchesSearch &&
-                matchesRole &&
-                matchesElement
+                searchMatch &&
+                roleMatch &&
+                elementMatch
             );
 
         }
@@ -813,13 +801,16 @@ function getFilteredAniimo() {
 
 
 /* =====================================================
-   RENDER ROSTER
+   ROSTER
    ===================================================== */
 
 function renderRoster() {
 
-    if (!rosterElement)
+    if (!rosterElement) {
+
         return;
+
+    }
 
 
     const list =
@@ -873,20 +864,19 @@ function renderRoster() {
                 aniimo.id;
 
 
-            /*
-            Use the stored image if available.
-
-            If it isn't available yet, show a clean
-            Aniimo placeholder instead of a broken image.
-            */
-
             let imageHTML =
                 `
 
-                <div class="aniimo-placeholder">
-
+                <div
+                    style="
+                        height:150px;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        font-size:55px;
+                    "
+                >
                     🐾
-
                 </div>
 
                 `;
@@ -912,8 +902,13 @@ function renderRoster() {
                     >
 
                     <div
-                        class="aniimo-placeholder"
-                        style="display:none;"
+                        style="
+                            display:none;
+                            height:150px;
+                            align-items:center;
+                            justify-content:center;
+                            font-size:55px;
+                        "
                     >
                         🐾
                     </div>
@@ -924,71 +919,52 @@ function renderRoster() {
 
 
             const elements =
-                Array.isArray(
-                    aniimo.elements
-                )
-                    ?
+                aniimo.elements
+                    .map(
+                        function (element) {
 
-                    aniimo.elements
-                        .map(
-                            function (element) {
+                            return `
 
-                                return `
+                                <span class="badge">
 
-                                    <span class="badge">
+                                    ${capitalize(
+                                        element
+                                    )}
 
-                                        ${capitalize(
-                                            element
-                                        )}
+                                </span>
 
-                                    </span>
+                            `;
 
-                                `;
-
-                            }
-                        )
-                        .join("")
-
-                    :
-
-                    "";
+                        }
+                    )
+                    .join("");
 
 
             const roles =
-                Array.isArray(
-                    aniimo.roles
-                )
-                    ?
+                aniimo.roles
+                    .map(
+                        function (role) {
 
-                    aniimo.roles
-                        .map(
-                            function (role) {
+                            return `
 
-                                return `
+                                <span class="badge">
 
-                                    <span class="badge">
+                                    ${escapeHtml(
+                                        role
+                                    )}
 
-                                        ${escapeHtml(
-                                            role
-                                        )}
+                                </span>
 
-                                    </span>
+                            `;
 
-                                `;
-
-                            }
-                        )
-                        .join("")
-
-                    :
-
-                    "";
+                        }
+                    )
+                    .join("");
 
 
             card.innerHTML = `
 
                 ${imageHTML}
-
 
                 <div class="aniimo-number">
 
@@ -998,7 +974,6 @@ function renderRoster() {
 
                 </div>
 
-
                 <div class="aniimo-name">
 
                     ${escapeHtml(
@@ -1006,7 +981,6 @@ function renderRoster() {
                     )}
 
                 </div>
-
 
                 <div class="badges">
 
@@ -1037,8 +1011,14 @@ function showAniimoDetails(
     aniimo
 ) {
 
-    if (!detailsPanel || !details)
+    if (
+        !details ||
+        !detailsPanel
+    ) {
+
         return;
+
+    }
 
 
     detailsPanel.classList.remove(
@@ -1046,12 +1026,10 @@ function showAniimoDetails(
     );
 
 
-    let statsHTML =
-        "";
+    let statsHTML = "";
 
 
     if (
-        aniimo.stats &&
         Object.keys(
             aniimo.stats
         ).length
@@ -1117,14 +1095,78 @@ function showAniimoDetails(
     }
 
 
-    let skillsHTML =
-        "";
+    let traitsHTML = "";
+
+
+    const traits =
+        aniimo.traits.length
+            ?
+            aniimo.traits
+            :
+            (
+                aniimo.trait
+                    ?
+                    [aniimo.trait]
+                    :
+                    []
+            );
+
+
+    if (traits.length) {
+
+        traitsHTML = `
+
+            <div class="detail-section">
+
+                <h3>Traits & Passives</h3>
+
+                ${
+                    traits
+                        .map(
+                            function (trait) {
+
+                                return `
+
+                                    <div class="skill">
+
+                                        <div class="skill-name">
+
+                                            ${escapeHtml(
+                                                trait.name ||
+                                                "Trait"
+                                            )}
+
+                                        </div>
+
+                                        <p>
+
+                                            ${escapeHtml(
+                                                trait.description ||
+                                                ""
+                                            )}
+
+                                        </p>
+
+                                    </div>
+
+                                `;
+
+                            }
+                        )
+                        .join("")
+                }
+
+            </div>
+
+        `;
+
+    }
+
+
+    let skillsHTML = "";
 
 
     if (
-        Array.isArray(
-            aniimo.skills
-        ) &&
         aniimo.skills.length
     ) {
 
@@ -1132,7 +1174,7 @@ function showAniimoDetails(
 
             <div class="detail-section">
 
-                <h3>Skills</h3>
+                <h3>Skills & Abilities</h3>
 
                 ${
                     aniimo.skills
@@ -1152,23 +1194,11 @@ function showAniimoDetails(
 
                                         </div>
 
-
                                         <div class="skill-meta">
-
-                                            ${
-                                                skill.element
-                                                    ?
-                                                    escapeHtml(
-                                                        skill.element
-                                                    )
-                                                    :
-                                                    ""
-                                            }
 
                                             ${
                                                 skill.type
                                                     ?
-                                                    " • " +
                                                     escapeHtml(
                                                         skill.type
                                                     )
@@ -1178,7 +1208,9 @@ function showAniimoDetails(
 
                                             ${
                                                 skill.cost !==
-                                                undefined
+                                                undefined &&
+                                                skill.cost !==
+                                                ""
                                                     ?
                                                     " • Cost " +
                                                     escapeHtml(
@@ -1192,7 +1224,9 @@ function showAniimoDetails(
 
                                             ${
                                                 skill.power !==
-                                                undefined
+                                                undefined &&
+                                                skill.power !==
+                                                ""
                                                     ?
                                                     " • Power " +
                                                     escapeHtml(
@@ -1206,15 +1240,14 @@ function showAniimoDetails(
 
                                         </div>
 
-
-                                        <div>
+                                        <p>
 
                                             ${escapeHtml(
                                                 skill.description ||
                                                 ""
                                             )}
 
-                                        </div>
+                                        </p>
 
                                     </div>
 
@@ -1232,64 +1265,15 @@ function showAniimoDetails(
     }
 
 
-    const notes =
+    const tags =
+        aniimo.analysis &&
         Array.isArray(
-            aniimo.analysis?.notes
+            aniimo.analysis.tags
         )
             ?
-            aniimo.analysis.notes
+            aniimo.analysis.tags
             :
             [];
-
-
-    const notesHTML =
-        notes.length
-
-            ?
-
-            `
-
-                <ul>
-
-                    ${
-                        notes
-                            .map(
-                                function (note) {
-
-                                    return `
-
-                                        <li>
-
-                                            ${escapeHtml(
-                                                note
-                                            )}
-
-                                        </li>
-
-                                    `;
-
-                                }
-                            )
-                            .join("")
-                    }
-
-                </ul>
-
-            `
-
-            :
-
-            `
-
-                <p>
-
-                    Detailed synergy information
-                    will be added as the Aniimo
-                    database is verified.
-
-                </p>
-
-            `;
 
 
     details.innerHTML = `
@@ -1320,31 +1304,14 @@ function showAniimoDetails(
                         alt="${escapeHtml(
                             aniimo.name
                         )}"
-                        onerror="
-                            this.style.display='none';
-                        "
                     >
 
                     `
 
                     :
 
-                    `
+                    ""
 
-                    <div
-                        class="aniimo-placeholder"
-                        style="
-                            width:160px;
-                            height:160px;
-                            font-size:70px;
-                        "
-                    >
-
-                        🐾
-
-                    </div>
-
-                    `
             }
 
 
@@ -1358,7 +1325,6 @@ function showAniimoDetails(
 
                 </div>
 
-
                 <h2>
 
                     ${escapeHtml(
@@ -1367,72 +1333,50 @@ function showAniimoDetails(
 
                 </h2>
 
-
                 <div class="badges">
 
                     ${
-                        Array.isArray(
-                            aniimo.elements
-                        )
+                        aniimo.elements
+                            .map(
+                                function (element) {
 
-                            ?
+                                    return `
 
-                            aniimo.elements
-                                .map(
-                                    function (element) {
+                                        <span class="badge">
 
-                                        return `
+                                            ${capitalize(
+                                                element
+                                            )}
 
-                                            <span class="badge">
+                                        </span>
 
-                                                ${capitalize(
-                                                    element
-                                                )}
+                                    `;
 
-                                            </span>
-
-                                        `;
-
-                                    }
-                                )
-                                .join("")
-
-                            :
-
-                            ""
+                                }
+                            )
+                            .join("")
                     }
 
-
                     ${
-                        Array.isArray(
-                            aniimo.roles
-                        )
+                        aniimo.roles
+                            .map(
+                                function (role) {
 
-                            ?
+                                    return `
 
-                            aniimo.roles
-                                .map(
-                                    function (role) {
+                                        <span class="badge">
 
-                                        return `
+                                            ${escapeHtml(
+                                                role
+                                            )}
 
-                                            <span class="badge">
+                                        </span>
 
-                                                ${escapeHtml(
-                                                    role
-                                                )}
+                                    `;
 
-                                            </span>
-
-                                        `;
-
-                                    }
-                                )
-                                .join("")
-
-                            :
-
-                            ""
+                                }
+                            )
+                            .join("")
                     }
 
                 </div>
@@ -1442,81 +1386,123 @@ function showAniimoDetails(
         </div>
 
 
-        <div class="detail-section">
-
-            <h3>Trait</h3>
-
-            <div class="analysis-box">
-
-                <strong>
-
-                    ${
-                        typeof aniimo.trait ===
-                        "object"
-
-                            ?
-
-                            escapeHtml(
-                                aniimo.trait.name ||
-                                "Trait"
-                            )
-
-                            :
-
-                            "Trait information"
-                    }
-
-                </strong>
-
-
-                <p>
-
-                    ${
-                        typeof aniimo.trait ===
-                        "object"
-
-                            ?
-
-                            escapeHtml(
-                                aniimo.trait.description ||
-                                ""
-                            )
-
-                            :
-
-                            "Detailed trait information has not yet been entered."
-                    }
-
-                </p>
-
-            </div>
-
-        </div>
-
+        ${traitsHTML}
 
         ${statsHTML}
-
 
         ${skillsHTML}
 
 
-        <div class="detail-section">
+        ${
+            tags.length
 
-            <h3>
-                Team Building Notes
-            </h3>
+                ?
 
-            ${notesHTML}
+                `
 
-        </div>
+                <div class="detail-section">
+
+                    <h3>Team-Building Tags</h3>
+
+                    <div class="badges">
+
+                        ${
+                            tags
+                                .map(
+                                    function (tag) {
+
+                                        return `
+
+                                            <span class="badge">
+
+                                                ${escapeHtml(
+                                                    tag
+                                                )}
+
+                                            </span>
+
+                                        `;
+
+                                    }
+                                )
+                                .join("")
+                        }
+
+                    </div>
+
+                </div>
+
+                `
+
+                :
+
+                ""
+
+        }
 
     `;
 
 
     detailsPanel.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+        behavior: "smooth"
     });
+
+}
+
+
+/* =====================================================
+   ADD TO TEAM
+   ===================================================== */
+
+function addAniimoToTeam(
+    id
+) {
+
+    const aniimo =
+        ANIIMO.find(
+            function (item) {
+
+                return item.id === id;
+
+            }
+        );
+
+
+    if (!aniimo) {
+
+        return;
+
+    }
+
+
+    const slot =
+        selectedTeam.findIndex(
+            function (item) {
+
+                return item === null;
+
+            }
+        );
+
+
+    if (slot === -1) {
+
+        alert(
+            "Your team already has 4 Aniimo."
+        );
+
+        return;
+
+    }
+
+
+    selectedTeam[slot] =
+        aniimo;
+
+
+    renderTeam();
+
+    renderAnalysis();
 
 }
 
@@ -1560,7 +1546,6 @@ function renderTeam() {
 
                         </span>
 
-
                         <span class="slot-text">
 
                             Select Aniimo
@@ -1590,33 +1575,19 @@ function renderTeam() {
 
                             ?
 
-                            `
-
-                            <img
+                            `<img
                                 src="${escapeHtml(
                                     aniimo.imageUrl
                                 )}"
                                 alt="${escapeHtml(
                                     aniimo.name
                                 )}"
-                            >
-
-                            `
+                            >`
 
                             :
 
-                            `<div
-                                class="aniimo-placeholder"
-                                style="
-                                    width:60px;
-                                    height:60px;
-                                    font-size:30px;
-                                "
-                            >
-                                🐾
-                            </div>`
+                            "🐾"
                     }
-
 
                     <strong>
 
@@ -1626,26 +1597,13 @@ function renderTeam() {
 
                     </strong>
 
-
                     <small>
 
-                        ${
-                            Array.isArray(
-                                aniimo.roles
+                        ${escapeHtml(
+                            aniimo.roles.join(
+                                " / "
                             )
-
-                                ?
-
-                                escapeHtml(
-                                    aniimo.roles.join(
-                                        " / "
-                                    )
-                                )
-
-                                :
-
-                                ""
-                        }
+                        )}
 
                     </small>
 
@@ -1658,68 +1616,16 @@ function renderTeam() {
 
 
 /* =====================================================
-   ADD ANIIMO TO TEAM
-   ===================================================== */
-
-function addAniimoToTeam(
-    id
-) {
-
-    const aniimo =
-        ANIIMO.find(
-            function (item) {
-
-                return item.id === id;
-
-            }
-        );
-
-
-    if (!aniimo)
-        return;
-
-
-    const emptySlot =
-        selectedTeam.findIndex(
-            function (slot) {
-
-                return slot === null;
-
-            }
-        );
-
-
-    if (emptySlot === -1) {
-
-        alert(
-            "Your team already has 4 Aniimo."
-        );
-
-        return;
-
-    }
-
-
-    selectedTeam[
-        emptySlot
-    ] = aniimo;
-
-
-    renderTeam();
-
-    renderAnalysis();
-
-}
-
-
-/* =====================================================
-   TEAM ANALYSIS
+   ANALYSIS
    ===================================================== */
 
 function renderAnalysis() {
 
-    if (!analysis)
+    if (!analysis) {
+
         return;
+
+    }
 
 
     const team =
@@ -1747,46 +1653,52 @@ function renderAnalysis() {
 
 
     const roles = {};
-
     const elements = {};
+    const tags = {};
 
 
     team.forEach(
         function (aniimo) {
 
+            aniimo.roles.forEach(
+                function (role) {
+
+                    roles[role] =
+                        (
+                            roles[role] ||
+                            0
+                        ) + 1;
+
+                }
+            );
+
+
+            aniimo.elements.forEach(
+                function (element) {
+
+                    elements[element] =
+                        (
+                            elements[element] ||
+                            0
+                        ) + 1;
+
+                }
+            );
+
+
             if (
+                aniimo.analysis &&
                 Array.isArray(
-                    aniimo.roles
+                    aniimo.analysis.tags
                 )
             ) {
 
-                aniimo.roles.forEach(
-                    function (role) {
+                aniimo.analysis.tags.forEach(
+                    function (tag) {
 
-                        roles[role] =
+                        tags[tag] =
                             (
-                                roles[role] ||
-                                0
-                            ) + 1;
-
-                    }
-                );
-
-            }
-
-
-            if (
-                Array.isArray(
-                    aniimo.elements
-                )
-            ) {
-
-                aniimo.elements.forEach(
-                    function (element) {
-
-                        elements[element] =
-                            (
-                                elements[element] ||
+                                tags[tag] ||
                                 0
                             ) + 1;
 
@@ -1847,64 +1759,128 @@ function renderAnalysis() {
         .join(" • ");
 
 
+    const synergyTags =
+        Object.keys(
+            tags
+        );
+
+
     analysis.innerHTML = `
+
+        <div class="analysis-box analysis-good">
+
+            <h3>
+
+                Team Composition
+
+            </h3>
+
+            <p>
+
+                ${team.length} / 4 Aniimo
+
+            </p>
+
+            ${
+                roleText
+                    ?
+                    `<p>
+                        <strong>Roles:</strong>
+                        ${escapeHtml(
+                            roleText
+                        )}
+                    </p>`
+                    :
+                    ""
+            }
+
+        </div>
+
 
         <div class="analysis-box">
 
             <h3>
 
-                Current Team
+                Element Spread
 
             </h3>
 
-
             <p>
 
-                ${team.length} / 4 Aniimo selected.
+                ${
+                    elementText ||
+                    "Element data not yet available."
+                }
 
             </p>
 
-
-            ${
-                roleText
-
-                    ?
-
-                    `<p>
-
-                        <strong>Roles:</strong>
-
-                        ${escapeHtml(
-                            roleText
-                        )}
-
-                    </p>`
-
-                    :
-
-                    ""
-            }
+        </div>
 
 
-            ${
-                elementText
+        <div class="analysis-box analysis-good">
 
-                    ?
+            <h3>
 
-                    `<p>
+                Synergy Signals
 
-                        <strong>Elements:</strong>
+            </h3>
 
-                        ${escapeHtml(
-                            elementText
-                        )}
+            <p>
 
-                    </p>`
+                ${
+                    synergyTags.length
+                        ?
+                        escapeHtml(
+                            synergyTags.join(
+                                " • "
+                            )
+                        )
+                        :
+                        "Add more Aniimo to reveal more interaction tags."
+                }
 
-                    :
+            </p>
 
-                    ""
-            }
+        </div>
+
+
+        <div class="analysis-box analysis-warning">
+
+            <h3>
+
+                Weaknesses
+
+            </h3>
+
+            <p>
+
+                The matchup engine will use the
+                elemental weaknesses and ability
+                interactions from the verified
+                Aniimo database.
+
+            </p>
+
+        </div>
+
+
+        <div class="analysis-box">
+
+            <h3>
+
+                Suggested Game Plan
+
+            </h3>
+
+            <p>
+
+                Use your Support, Regen, Heal and
+                Break members to create openings and
+                maintain your main damage dealer.
+                Multiple members of the same role
+                are allowed.
+
+            </p>
 
         </div>
 
@@ -1921,8 +1897,11 @@ function capitalize(
     value
 ) {
 
-    if (!value)
+    if (!value) {
+
         return "";
+
+    }
 
 
     const text =
