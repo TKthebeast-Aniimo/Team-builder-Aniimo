@@ -1,218 +1,17 @@
+/* =========================================================
+   ANIIMO TEAM BUILDER
+   Main application
+========================================================= */
+
 const state = {
   aniimo: [],
   team: [null, null, null, null]
 };
 
-const elementChart = {
-  Fire: {
-    Fire: .625,
-    Water: .625,
-    Grass: 1.6,
-    Lightning: 1,
-    Earth: .625,
-    Wind: 1,
-    Dark: 1,
-    Ice: 1.6,
-    Light: .625
-  },
 
-  Water: {
-    Fire: 1.6,
-    Water: .625,
-    Grass: .625,
-    Lightning: 1,
-    Earth: 1.6,
-    Wind: 1,
-    Dark: 1,
-    Ice: .625,
-    Light: .625
-  },
-
-  Grass: {
-    Fire: .625,
-    Water: 1.6,
-    Grass: .625,
-    Lightning: 1,
-    Earth: 1.6,
-    Wind: 1,
-    Dark: .625,
-    Ice: 1,
-    Light: .625
-  },
-
-  Lightning: {
-    Fire: 1,
-    Water: 1.6,
-    Grass: 1,
-    Lightning: .625,
-    Earth: .625,
-    Wind: 1.6,
-    Dark: 1,
-    Ice: .625,
-    Light: 1
-  },
-
-  Earth: {
-    Fire: 1,
-    Water: .625,
-    Grass: .625,
-    Lightning: 1.6,
-    Earth: .625,
-    Wind: 1,
-    Dark: .625,
-    Ice: 1.6,
-    Light: 1
-  },
-
-  Wind: {
-    Fire: 1,
-    Water: 1,
-    Grass: 1.6,
-    Lightning: .625,
-    Earth: 1,
-    Wind: .625,
-    Dark: 1.6,
-    Ice: 1,
-    Light: 1
-  },
-
-  Dark: {
-    Fire: 1.6,
-    Water: .625,
-    Grass: 1.6,
-    Lightning: 1,
-    Earth: 1,
-    Wind: .625,
-    Dark: 1,
-    Ice: 1,
-    Light: 1.6
-  },
-
-  Ice: {
-    Fire: .625,
-    Water: 1.6,
-    Grass: 1,
-    Lightning: 1.6,
-    Earth: .625,
-    Wind: .625,
-    Dark: 1,
-    Ice: .625,
-    Light: 1
-  },
-
-  Light: {
-    Fire: 1,
-    Water: 1,
-    Grass: 1,
-    Lightning: .625,
-    Earth: 1,
-    Wind: 1.6,
-    Dark: 1.6,
-    Ice: 1,
-    Light: .625
-  }
-};
-
-const tagRules = [
-  [
-    "attack_up",
-    /increase.*(attack|damage)|increases.*damage|increased.*damage|damage.*increase/i
-  ],
-  [
-    "defense_down",
-    /reduce.*defen|defense.*down|defence.*down|damage taken.*increase/i
-  ],
-  [
-    "debuff",
-    /debuff|curse|mark|weakness|reduc.*healing|paraly|silence|stun/i
-  ],
-  ["fire_synergy", /fire damage|fire debuff/i],
-  ["water_synergy", /water damage|water debuff/i],
-  ["ice_synergy", /ice damage|ice debuff/i],
-  ["dark_synergy", /dark damage|dark debuff/i],
-  ["grass_synergy", /grass damage|grass debuff/i],
-  ["wind_synergy", /wind damage|wind debuff/i],
-  [
-    "lightning_synergy",
-    /lightning damage|lightning debuff|electric damage/i
-  ],
-  ["earth_synergy", /earth damage|earth debuff|rock damage/i],
-  ["light_synergy", /light damage|holy damage|light debuff/i],
-  [
-    "break_support",
-    /break damage|increases.*break|break.*damage|stagger|break.*taken/i
-  ],
-  ["heal", /heal|healing|restores hp|restore hp/i],
-  ["regen", /regen|energy|ep cost|restor.*energy|restor.*ep/i],
-  ["shield", /shield|damage reduction/i],
-  [
-    "control",
-    /stun|silence|paraly|pull|slow|freeze|immobil/i
-  ],
-  ["burst", /ultimate|massive|heavy|extra damage|bonus damage/i],
-  ["self_scaling", /stacks?|stacking|each hit|critical/i]
-];
-
-function normalize(a) {
-  a = { ...a };
-
-  a.elements = Array.isArray(a.elements)
-    ? a.elements
-    : a.element
-      ? [a.element]
-      : [];
-
-  a.roles = Array.isArray(a.roles)
-    ? a.roles
-    : a.role
-      ? [a.role]
-      : [];
-
-  a.stats = a.stats || {};
-  a.skills = a.skills || [];
-
-  const text = [
-    a.trait?.name || "",
-    a.trait?.description || "",
-    ...(a.skills || []).flatMap(s => [
-      s.name || "",
-      s.description || "",
-      s.element || "",
-      s.type || ""
-    ])
-  ].join(" ");
-
-  const tags = new Set(a.analysis?.tags || []);
-
-  for (const [tag, re] of tagRules) {
-    if (re.test(text)) {
-      tags.add(tag);
-    }
-  }
-
-  a.analysis = a.analysis || {};
-  a.analysis.tags = [...tags];
-
-  return a;
-}
-
-async function loadData() {
-  const response = await fetch("aniimo.json?" + Date.now());
-
-  if (!response.ok) {
-    throw new Error(
-      "Could not load aniimo.json. Check that the file exists in the repository."
-    );
-  }
-
-  state.aniimo = (await response.json()).map(normalize);
-
-  document.getElementById("rosterCount").textContent =
-    state.aniimo.length;
-
-  renderRoster();
-  renderSlots();
-}
+/* =========================================================
+   BASIC HELPERS
+========================================================= */
 
 function esc(value) {
   return String(value ?? "").replace(
@@ -227,826 +26,3226 @@ function esc(value) {
   );
 }
 
-function imgFor(a) {
-  return a.imageUrl || "";
+
+/*
+ * Convert almost anything into an array.
+ *
+ * Supports:
+ *   ["DPS", "Support"]
+ *   "DPS"
+ *   "DPS, Support"
+ *   "DPS / Support"
+ */
+function normalizeArray(value) {
+
+  if (Array.isArray(value)) {
+    return value
+      .flatMap(item => normalizeArray(item))
+      .filter(Boolean);
+  }
+
+  if (
+    value === undefined ||
+    value === null
+  ) {
+    return [];
+  }
+
+  if (typeof value === "string") {
+
+    return value
+      .split(/[,/|;]/)
+      .map(item =>
+        item
+          .trim()
+      )
+      .filter(Boolean);
+  }
+
+  return [String(value)];
 }
 
-function fallback(name) {
+
+/*
+ * Normalise a role so filtering doesn't care
+ * about capitalization or minor naming differences.
+ */
+function normalizeRole(value) {
+
+  const text =
+    String(value ?? "")
+      .trim()
+      .toLowerCase();
+
+  if (!text) {
+    return "";
+  }
+
+  if (
+    text === "dps" ||
+    text === "damage" ||
+    text === "damage dealer" ||
+    text === "attacker" ||
+    text === "offense" ||
+    text === "offensive"
+  ) {
+    return "DPS";
+  }
+
+  if (
+    text === "support" ||
+    text === "buffer" ||
+    text === "debuffer" ||
+    text === "utility"
+  ) {
+    return "Support";
+  }
+
+  if (
+    text === "regen" ||
+    text === "regeneration" ||
+    text === "recovery"
+  ) {
+    return "Regen";
+  }
+
+  if (
+    text === "break" ||
+    text === "breaker" ||
+    text === "break damage"
+  ) {
+    return "Break";
+  }
+
+  if (
+    text === "heal" ||
+    text === "healer" ||
+    text === "healing"
+  ) {
+    return "Heal";
+  }
+
+  /*
+   * If the database contains something
+   * unexpected, preserve it in a readable
+   * format rather than throwing it away.
+   */
+  return String(value)
+    .trim()
+    .replace(/\b\w/g, letter =>
+      letter.toUpperCase()
+    );
+}
+
+
+/*
+ * Normalise elements.
+ */
+function normalizeElement(value) {
+
+  const text =
+    String(value ?? "")
+      .trim()
+      .toLowerCase();
+
+  if (!text) {
+    return "";
+  }
+
+  const known = {
+    fire: "Fire",
+    water: "Water",
+    grass: "Grass",
+    lightning: "Lightning",
+    electric: "Lightning",
+    earth: "Earth",
+    wind: "Wind",
+    dark: "Dark",
+    ice: "Ice",
+    light: "Light"
+  };
+
+  return (
+    known[text] ||
+    String(value)
+      .trim()
+      .replace(/\b\w/g, letter =>
+        letter.toUpperCase()
+      )
+  );
+}
+
+
+/*
+ * Determines whether a filter means
+ * "show everything".
+ */
+function isAllFilter(value) {
+
+  const text =
+    String(value ?? "")
+      .trim()
+      .toLowerCase();
+
+  return (
+    text === "" ||
+    text === "all" ||
+    text === "all roles" ||
+    text === "all role" ||
+    text === "all elements" ||
+    text === "all element" ||
+    text === "*" ||
+    text === "any"
+  );
+}
+
+
+/* =========================================================
+   NORMALISE ANIIMO DATA
+========================================================= */
+
+function normalizeAniimo(a, index) {
+
+  const aniimo = {
+    ...a
+  };
+
+
+  /*
+   * ID
+   */
+  aniimo.id =
+    aniimo.id ??
+    aniimo.number ??
+    aniimo.no ??
+    index + 1;
+
+
+  /*
+   * Name
+   */
+  aniimo.name =
+    aniimo.name ??
+    aniimo.title ??
+    `Aniimo ${index + 1}`;
+
+
+  /*
+   * Number
+   */
+  aniimo.number =
+    aniimo.number ??
+    aniimo.no ??
+    index + 1;
+
+
+  /*
+   * Roles
+   *
+   * The database may call this:
+   *   role
+   *   roles
+   */
+  const rawRoles =
+    aniimo.roles ??
+    aniimo.role ??
+    aniimo.type ??
+    [];
+
+  aniimo.roles =
+    normalizeArray(
+      rawRoles
+    )
+      .map(normalizeRole)
+      .filter(Boolean);
+
+
+  /*
+   * Elements
+   *
+   * The database may call this:
+   *   element
+   *   elements
+   */
+  const rawElements =
+    aniimo.elements ??
+    aniimo.element ??
+    [];
+
+  aniimo.elements =
+    normalizeArray(
+      rawElements
+    )
+      .map(normalizeElement)
+      .filter(Boolean);
+
+
+  /*
+   * Skills
+   */
+  aniimo.skills =
+    Array.isArray(
+      aniimo.skills
+    )
+      ? aniimo.skills
+      : [];
+
+
+  /*
+   * Forms
+   */
+  aniimo.forms =
+    Array.isArray(
+      aniimo.forms
+    )
+      ? aniimo.forms
+      : [];
+
+
+  /*
+   * Stats
+   */
+  aniimo.stats =
+    aniimo.stats &&
+    typeof aniimo.stats === "object"
+      ? aniimo.stats
+      : {};
+
+
+  /*
+   * Analysis data
+   */
+  aniimo.analysis =
+    aniimo.analysis &&
+    typeof aniimo.analysis === "object"
+      ? aniimo.analysis
+      : {};
+
+
+  aniimo.analysis.tags =
+    Array.isArray(
+      aniimo.analysis.tags
+    )
+      ? aniimo.analysis.tags
+      : [];
+
+
+  /*
+   * Automatically create useful tags
+   * from the skill descriptions.
+   */
+  const searchableText = [
+
+    aniimo.name,
+
+    ...(aniimo.roles || []),
+
+    ...(aniimo.elements || []),
+
+    aniimo.trait?.name || "",
+    aniimo.trait?.description || "",
+
+    ...(aniimo.traits || [])
+      .flatMap(trait => [
+        trait.name || "",
+        trait.description || ""
+      ]),
+
+    ...(aniimo.skills || [])
+      .flatMap(skill => [
+        skill.name || "",
+        skill.description || "",
+        skill.element || "",
+        skill.type || ""
+      ])
+
+  ].join(" ");
+
+
+  const tags = [
+
+    [
+      "attack_up",
+      /increase.*attack|attack.*increase|increase.*damage|damage.*increase|damage.*up/i
+    ],
+
+    [
+      "defense_down",
+      /reduce.*defen|defen.*down|defence.*down|damage taken.*increase/i
+    ],
+
+    [
+      "debuff",
+      /debuff|curse|mark|weakness|reduce.*healing|silence|stun|paraly/i
+    ],
+
+    [
+      "break_support",
+      /break damage|increase.*break|break.*damage|break.*taken|stagger/i
+    ],
+
+    [
+      "heal",
+      /heal|healing|restore.*hp|restores hp/i
+    ],
+
+    [
+      "regen",
+      /regen|regeneration|restore.*energy|energy.*restore|recovery/i
+    ],
+
+    [
+      "shield",
+      /shield|damage reduction/i
+    ],
+
+    [
+      "control",
+      /stun|silence|paraly|pull|slow|freeze|immobil/i
+    ],
+
+    [
+      "burst",
+      /ultimate|massive damage|heavy damage|bonus damage|extra damage/i
+    ],
+
+    [
+      "self_scaling",
+      /stack|stacking|critical|crit/i
+    ]
+
+  ];
+
+
+  for (
+    const [tag, regex]
+    of tags
+  ) {
+
+    if (
+      regex.test(
+        searchableText
+      )
+    ) {
+
+      if (
+        !aniimo.analysis.tags.includes(
+          tag
+        )
+      ) {
+
+        aniimo.analysis.tags.push(
+          tag
+        );
+
+      }
+
+    }
+
+  }
+
+
+  return aniimo;
+}
+
+
+/* =========================================================
+   PORTRAITS
+========================================================= */
+
+function getPortraitCandidates(a) {
+
+  const candidates = [];
+
+  const possibleFields = [
+
+    a.imageUrl,
+    a.image,
+    a.image_url,
+
+    a.portrait,
+    a.portraitUrl,
+    a.portrait_url,
+
+    a.icon,
+    a.iconUrl,
+    a.icon_url,
+
+    a.avatar,
+    a.sprite
+
+  ];
+
+
+  for (
+    const value
+    of possibleFields
+  ) {
+
+    if (
+      typeof value === "string" &&
+      value.trim()
+    ) {
+
+      candidates.push(
+        value.trim()
+      );
+
+    }
+
+  }
+
+
+  /*
+   * Support image arrays.
+   */
+  if (
+    Array.isArray(
+      a.images
+    )
+  ) {
+
+    for (
+      const image
+      of a.images
+    ) {
+
+      if (
+        typeof image ===
+        "string"
+      ) {
+
+        candidates.push(
+          image
+        );
+
+      }
+
+
+      if (
+        image &&
+        typeof image ===
+          "object"
+      ) {
+
+        for (
+          const key
+          of [
+            "url",
+            "src",
+            "imageUrl",
+            "portrait"
+          ]
+        ) {
+
+          if (
+            typeof image[key] ===
+              "string" &&
+            image[key].trim()
+          ) {
+
+            candidates.push(
+              image[key].trim()
+            );
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+  return [
+    ...new Set(
+      candidates
+    )
+  ];
+}
+
+
+/*
+ * Placeholder if an Aniimo doesn't
+ * have a working image.
+ */
+function placeholderImage(
+  name
+) {
+
+  const first =
+    String(name || "?")
+      .trim()
+      .charAt(0)
+      .toUpperCase();
+
+
   return (
     "data:image/svg+xml;charset=UTF-8," +
     encodeURIComponent(`
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="500"
-           height="500">
-        <rect width="100%" height="100%" fill="#1a232e"/>
-        <text x="50%"
-              y="50%"
-              fill="#9eacb8"
-              font-size="80"
-              text-anchor="middle"
-              dominant-baseline="middle">
-          ${(name || "?").slice(0, 1)}
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="500"
+        height="500"
+        viewBox="0 0 500 500"
+      >
+
+        <rect
+          width="500"
+          height="500"
+          rx="40"
+          fill="#18232d"
+        />
+
+        <circle
+          cx="250"
+          cy="205"
+          r="100"
+          fill="#263746"
+        />
+
+        <text
+          x="250"
+          y="235"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="110"
+          font-weight="bold"
+          fill="#8fb8d8"
+        >
+          ${first}
         </text>
+
+        <text
+          x="250"
+          y="390"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="28"
+          fill="#9eacb8"
+        >
+          ANIIMO
+        </text>
+
       </svg>
+
     `)
   );
 }
 
-function role(a) {
-  return (a.roles || [])[0] || "Unclassified";
-}
 
-function elements(a) {
-  return a.elements?.length ? a.elements : ["Unknown"];
-}
+function imageHTML(
+  a,
+  className = ""
+) {
 
-function renderRoster() {
-  const q = document
-    .getElementById("search")
-    .value
-    .trim()
-    .toLowerCase();
-
-  const roleFilter =
-    document.getElementById("roleFilter").value;
-
-  const elementFilter =
-    document.getElementById("elementFilter").value;
-
-  const box = document.getElementById("roster");
-
-  const list = state.aniimo.filter(a =>
-    (!q ||
-      a.name.toLowerCase().includes(q) ||
-      String(a.number).includes(q)) &&
-    (!roleFilter || a.roles.includes(roleFilter)) &&
-    (!elementFilter || a.elements.includes(elementFilter))
-  );
-
-  box.innerHTML =
-    list
-      .map(a => {
-        const selected = state.team.some(
-          x => x?.id === a.id
-        );
-
-        return `
-          <article
-            class="card ${selected ? "selected" : ""}"
-            data-id="${a.id}"
-          >
-            <img
-              loading="lazy"
-              src="${esc(imgFor(a) || fallback(a.name))}"
-              onerror="this.src='${fallback(a.name)}'"
-              alt="${esc(a.name)}"
-            >
-
-            <div class="card-body">
-              <div class="card-name">
-                #${esc(a.number)} ${esc(a.name)}
-              </div>
-
-              <div class="chips">
-                ${a.roles
-                  .map(
-                    x =>
-                      `<span class="chip role">${esc(x)}</span>`
-                  )
-                  .join("")}
-
-                ${a.elements
-                  .map(
-                    x =>
-                      `<span class="chip element">${esc(x)}</span>`
-                  )
-                  .join("")}
-              </div>
-            </div>
-          </article>
-        `;
-      })
-      .join("") ||
-    `<p style="color:var(--muted)">
-      No Aniimo match your filters.
-    </p>`;
-
-  box
-    .querySelectorAll(".card")
-    .forEach(card => {
-      card.onclick = () =>
-        addToTeam(Number(card.dataset.id));
-    });
-}
-
-function renderSlots() {
-  const box = document.getElementById("teamSlots");
-
-  box.innerHTML = state.team
-    .map((a, index) => {
-      if (!a) {
-        return `
-          <div class="slot empty">
-            <div>
-              <b>Slot ${index + 1}</b><br>
-              Choose an Aniimo below
-            </div>
-          </div>
-        `;
-      }
-
-      return `
-        <div class="slot">
-          <span class="slot-number">
-            Slot ${index + 1}
-          </span>
-
-          <button
-            class="remove"
-            aria-label="Remove"
-            data-index="${index}"
-          >
-            ×
-          </button>
-
-          <img
-            src="${esc(imgFor(a) || fallback(a.name))}"
-            onerror="this.src='${fallback(a.name)}'"
-            alt="${esc(a.name)}"
-          >
-
-          <div class="slot-content">
-            <div class="slot-name">
-              ${esc(a.name)}
-            </div>
-
-            <div class="slot-meta">
-              ${esc(role(a))} ·
-              ${esc(elements(a).join(" / "))}
-            </div>
-          </div>
-        </div>
-      `;
-    })
-    .join("");
-
-  box
-    .querySelectorAll(".remove")
-    .forEach(button => {
-      button.onclick = () => {
-        state.team[
-          Number(button.dataset.index)
-        ] = null;
-
-        renderSlots();
-        renderRoster();
-        renderAnalysis();
-      };
-    });
-
-  renderAnalysis();
-}
-
-function addToTeam(id) {
-  const aniimo = state.aniimo.find(
-    x => x.id === id
-  );
-
-  if (!aniimo) return;
-
-  const existing = state.team.findIndex(
-    x => x?.id === id
-  );
-
-  if (existing >= 0) {
-    state.team[existing] = null;
-  } else {
-    const empty = state.team.findIndex(
-      x => !x
+  const candidates =
+    getPortraitCandidates(
+      a
     );
 
-    if (empty < 0) {
-      alert(
-        "Your team already has four Aniimo. Remove one first."
-      );
-      return;
+  const fallback =
+    placeholderImage(
+      a.name
+    );
+
+
+  if (
+    candidates.length
+  ) {
+
+    return `
+
+      <img
+        class="${esc(className)}"
+        src="${esc(candidates[0])}"
+        data-image-candidates="${esc(
+          JSON.stringify(
+            candidates
+          )
+        )}"
+        data-image-index="0"
+        alt="${esc(a.name)}"
+        loading="lazy"
+        onerror="handleImageError(this)"
+      >
+
+    `;
+
+  }
+
+
+  return `
+
+    <img
+      class="${esc(className)}"
+      src="${fallback}"
+      alt="${esc(a.name)}"
+      loading="lazy"
+    >
+
+  `;
+}
+
+
+window.handleImageError =
+  function(img) {
+
+    let candidates = [];
+
+    try {
+
+      candidates =
+        JSON.parse(
+          img.dataset
+            .imageCandidates ||
+          "[]"
+        );
+
+    } catch {
+
+      candidates = [];
+
     }
 
-    state.team[empty] = aniimo;
+
+    let index =
+      Number(
+        img.dataset
+          .imageIndex ||
+        0
+      );
+
+
+    index++;
+
+
+    if (
+      index <
+      candidates.length
+    ) {
+
+      img.dataset.imageIndex =
+        index;
+
+      img.src =
+        candidates[index];
+
+      return;
+
+    }
+
+
+    /*
+     * Nothing worked.
+     */
+    img.onerror =
+      null;
+
+    img.src =
+      placeholderImage(
+        img.alt ||
+        "Aniimo"
+      );
+
+  };
+
+
+/* =========================================================
+   DATA LOADING
+========================================================= */
+
+async function loadData() {
+
+  const response =
+    await fetch(
+      `aniimo.json?v=${Date.now()}`,
+      {
+        cache: "no-store"
+      }
+    );
+
+
+  if (
+    !response.ok
+  ) {
+
+    throw new Error(
+      `aniimo.json could not be loaded. HTTP ${response.status}`
+    );
+
   }
+
+
+  const raw =
+    await response.json();
+
+
+  if (
+    !Array.isArray(raw)
+  ) {
+
+    throw new Error(
+      "aniimo.json was loaded but it does not contain an array."
+    );
+
+  }
+
+
+  state.aniimo =
+    raw.map(
+      normalizeAniimo
+    );
+
+
+  updateRosterCount();
+
+  populateFilters();
+
+  renderRoster();
+
+  renderSlots();
+
+}
+
+
+/* =========================================================
+   ROSTER COUNT
+========================================================= */
+
+function updateRosterCount() {
+
+  const count =
+    document.getElementById(
+      "rosterCount"
+    );
+
+
+  if (count) {
+
+    count.textContent =
+      state.aniimo.length;
+
+  }
+
+}
+
+
+/* =========================================================
+   FILTER DROPDOWNS
+========================================================= */
+
+function populateFilters() {
+
+  const roleFilter =
+    document.getElementById(
+      "roleFilter"
+    );
+
+
+  const elementFilter =
+    document.getElementById(
+      "elementFilter"
+    );
+
+
+  /*
+   * Keep the user's current
+   * selection if possible.
+   */
+  const currentRole =
+    roleFilter?.value || "";
+
+
+  const currentElement =
+    elementFilter?.value || "";
+
+
+  /*
+   * Build roles directly from
+   * the loaded Aniimo data.
+   */
+  const roles = [
+    "DPS",
+    "Support",
+    "Regen",
+    "Break",
+    "Heal"
+  ];
+
+
+  if (roleFilter) {
+
+    roleFilter.innerHTML = `
+
+      <option value="">
+        All roles
+      </option>
+
+      ${roles
+        .map(
+          role => `
+            <option
+              value="${role}"
+            >
+              ${role}
+            </option>
+          `
+        )
+        .join("")}
+
+    `;
+
+
+    /*
+     * Restore selection if
+     * it still exists.
+     */
+    if (
+      !isAllFilter(
+        currentRole
+      ) &&
+      roles.includes(
+        normalizeRole(
+          currentRole
+        )
+      )
+    ) {
+
+      roleFilter.value =
+        normalizeRole(
+          currentRole
+        );
+
+    } else {
+
+      roleFilter.value =
+        "";
+
+    }
+
+  }
+
+
+  /*
+   * Elements found in actual data.
+   */
+  const elements = [
+    ...new Set(
+      state.aniimo
+        .flatMap(
+          a =>
+            a.elements
+        )
+        .filter(Boolean)
+    )
+  ].sort();
+
+
+  if (elementFilter) {
+
+    elementFilter.innerHTML = `
+
+      <option value="">
+        All elements
+      </option>
+
+      ${elements
+        .map(
+          element => `
+            <option
+              value="${esc(element)}"
+            >
+              ${esc(element)}
+            </option>
+          `
+        )
+        .join("")}
+
+    `;
+
+
+    if (
+      !isAllFilter(
+        currentElement
+      ) &&
+      elements.includes(
+        normalizeElement(
+          currentElement
+        )
+      )
+    ) {
+
+      elementFilter.value =
+        normalizeElement(
+          currentElement
+        );
+
+    } else {
+
+      elementFilter.value =
+        "";
+
+    }
+
+  }
+
+}
+
+
+/* =========================================================
+   FILTER MATCHING
+========================================================= */
+
+function aniimoMatchesRole(
+  aniimo,
+  selectedRole
+) {
+
+  /*
+   * "All roles" means don't
+   * filter anything.
+   */
+  if (
+    isAllFilter(
+      selectedRole
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  const wanted =
+    normalizeRole(
+      selectedRole
+    );
+
+
+  if (!wanted) {
+    return true;
+  }
+
+
+  const aniimoRoles =
+    normalizeArray(
+      aniimo.roles
+    )
+      .map(
+        normalizeRole
+      );
+
+
+  /*
+   * This is the important fix.
+   *
+   * We compare NORMALISED values,
+   * not the original strings.
+   */
+  return aniimoRoles.some(
+    role =>
+      role === wanted
+  );
+
+}
+
+
+function aniimoMatchesElement(
+  aniimo,
+  selectedElement
+) {
+
+  if (
+    isAllFilter(
+      selectedElement
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  const wanted =
+    normalizeElement(
+      selectedElement
+    );
+
+
+  if (!wanted) {
+    return true;
+  }
+
+
+  const aniimoElements =
+    normalizeArray(
+      aniimo.elements
+    )
+      .map(
+        normalizeElement
+      );
+
+
+  return aniimoElements.some(
+    element =>
+      element === wanted
+  );
+
+}
+
+
+/* =========================================================
+   ROSTER
+========================================================= */
+
+function renderRoster() {
+
+  const roster =
+    document.getElementById(
+      "roster"
+    );
+
+
+  if (!roster) {
+    return;
+  }
+
+
+  const searchInput =
+    document.getElementById(
+      "search"
+    );
+
+
+  const roleFilter =
+    document.getElementById(
+      "roleFilter"
+    );
+
+
+  const elementFilter =
+    document.getElementById(
+      "elementFilter"
+    );
+
+
+  const search =
+    searchInput?.value
+      ?.trim()
+      .toLowerCase() ||
+    "";
+
+
+  const selectedRole =
+    roleFilter?.value ||
+    "";
+
+
+  const selectedElement =
+    elementFilter?.value ||
+    "";
+
+
+  const results =
+    state.aniimo.filter(
+      aniimo => {
+
+        /*
+         * Search.
+         */
+        const searchText = [
+
+          aniimo.name,
+
+          aniimo.number,
+
+          ...(aniimo.roles || []),
+
+          ...(aniimo.elements || [])
+
+        ]
+          .join(" ")
+          .toLowerCase();
+
+
+        const matchesSearch =
+          !search ||
+          searchText.includes(
+            search
+          );
+
+
+        /*
+         * Role.
+         */
+        const matchesRole =
+          aniimoMatchesRole(
+            aniimo,
+            selectedRole
+          );
+
+
+        /*
+         * Element.
+         */
+        const matchesElement =
+          aniimoMatchesElement(
+            aniimo,
+            selectedElement
+          );
+
+
+        return (
+          matchesSearch &&
+          matchesRole &&
+          matchesElement
+        );
+
+      }
+    );
+
+
+  /*
+   * No results.
+   */
+  if (
+    results.length === 0
+  ) {
+
+    const roleText =
+      isAllFilter(
+        selectedRole
+      )
+        ? "all roles"
+        : normalizeRole(
+            selectedRole
+          );
+
+
+    const elementText =
+      isAllFilter(
+        selectedElement
+      )
+        ? "all elements"
+        : normalizeElement(
+            selectedElement
+          );
+
+
+    roster.innerHTML = `
+
+      <div class="report-box">
+
+        <h3>
+          No Aniimo match your filters
+        </h3>
+
+        <p>
+          Role:
+          <b>
+            ${esc(roleText)}
+          </b>
+        </p>
+
+        <p>
+          Element:
+          <b>
+            ${esc(elementText)}
+          </b>
+        </p>
+
+        <button
+          type="button"
+          id="resetFilters"
+          class="reset-button"
+        >
+          Clear filters
+        </button>
+
+      </div>
+
+    `;
+
+
+    document
+      .getElementById(
+        "resetFilters"
+      )
+      ?.addEventListener(
+        "click",
+        () => {
+
+          if (searchInput) {
+            searchInput.value =
+              "";
+          }
+
+          if (roleFilter) {
+            roleFilter.value =
+              "";
+          }
+
+          if (elementFilter) {
+            elementFilter.value =
+              "";
+          }
+
+          renderRoster();
+
+        }
+      );
+
+
+    return;
+
+  }
+
+
+  /*
+   * Build cards.
+   */
+  roster.innerHTML =
+    results
+      .map(
+        aniimo => {
+
+          const selected =
+            state.team.some(
+              member =>
+                member &&
+                String(
+                  member.id
+                ) ===
+                  String(
+                    aniimo.id
+                  )
+            );
+
+
+          const roles =
+            aniimo.roles
+              .map(
+                role => `
+
+                  <span
+                    class="chip role"
+                  >
+                    ${esc(role)}
+                  </span>
+
+                `
+              )
+              .join("");
+
+
+          const elements =
+            aniimo.elements
+              .map(
+                element => `
+
+                  <span
+                    class="chip element"
+                  >
+                    ${esc(element)}
+                  </span>
+
+                `
+              )
+              .join("");
+
+
+          return `
+
+            <button
+              type="button"
+              class="card ${
+                selected
+                  ? "selected"
+                  : ""
+              }"
+              data-id="${esc(
+                aniimo.id
+              )}"
+              aria-label="${
+                selected
+                  ? `Remove ${aniimo.name}`
+                  : `Add ${aniimo.name}`
+              }"
+            >
+
+              ${imageHTML(
+                aniimo,
+                "card-image"
+              )}
+
+
+              <div class="card-body">
+
+                <div class="card-name">
+
+                  #${esc(
+                    aniimo.number
+                  )}
+
+                  ${esc(
+                    aniimo.name
+                  )}
+
+                </div>
+
+
+                <div class="chips">
+
+                  ${
+                    roles ||
+                    `
+                      <span class="chip">
+                        Role unknown
+                      </span>
+                    `
+                  }
+
+                  ${
+                    elements ||
+                    `
+                      <span class="chip">
+                        Element unknown
+                      </span>
+                    `
+                  }
+
+                </div>
+
+
+                <div class="add-hint">
+
+                  ${
+                    selected
+                      ? "✓ In team — tap to remove"
+                      : "＋ Tap to add"
+                  }
+
+                </div>
+
+              </div>
+
+            </button>
+
+          `;
+
+        }
+      )
+      .join("");
+
+
+  /*
+   * Make every card clickable.
+   */
+  roster
+    .querySelectorAll(
+      ".card"
+    )
+    .forEach(
+      card => {
+
+        card.addEventListener(
+          "click",
+          event => {
+
+            event.preventDefault();
+
+
+            const id =
+              card.dataset.id;
+
+
+            addToTeam(
+              id
+            );
+
+          }
+        );
+
+      }
+    );
+
+}
+
+
+/* =========================================================
+   TEAM SLOTS
+========================================================= */
+
+function renderSlots() {
+
+  const container =
+    document.getElementById(
+      "teamSlots"
+    );
+
+
+  if (!container) {
+    return;
+  }
+
+
+  container.innerHTML =
+    state.team
+      .map(
+        (aniimo, index) => {
+
+          /*
+           * Empty slot.
+           */
+          if (!aniimo) {
+
+            return `
+
+              <button
+                type="button"
+                class="slot empty"
+                data-slot="${index}"
+              >
+
+                <div
+                  class="empty-slot-icon"
+                >
+                  ＋
+                </div>
+
+
+                <div>
+
+                  <b>
+                    Slot ${index + 1}
+                  </b>
+
+                  <small>
+                    Tap an Aniimo below
+                    to add one
+                  </small>
+
+                </div>
+
+              </button>
+
+            `;
+
+          }
+
+
+          /*
+           * Filled slot.
+           */
+          return `
+
+            <div
+              class="slot filled"
+              data-slot="${index}"
+            >
+
+              <span
+                class="slot-number"
+              >
+                Slot ${index + 1}
+              </span>
+
+
+              <button
+                type="button"
+                class="remove"
+                data-index="${index}"
+                aria-label="Remove ${esc(
+                  aniimo.name
+                )}"
+              >
+                ×
+              </button>
+
+
+              ${imageHTML(
+                aniimo,
+                "slot-image"
+              )}
+
+
+              <div
+                class="slot-content"
+              >
+
+                <div
+                  class="slot-name"
+                >
+                  ${esc(
+                    aniimo.name
+                  )}
+                </div>
+
+
+                <div
+                  class="slot-meta"
+                >
+
+                  ${esc(
+                    aniimo.roles.join(
+                      " / "
+                    ) ||
+                    "Role unknown"
+                  )}
+
+                  ·
+
+                  ${esc(
+                    aniimo.elements.join(
+                      " / "
+                    ) ||
+                    "Element unknown"
+                  )}
+
+                </div>
+
+              </div>
+
+            </div>
+
+          `;
+
+        }
+      )
+      .join("");
+
+
+  /*
+   * Empty slots scroll down to
+   * the Aniimo roster.
+   */
+  container
+    .querySelectorAll(
+      ".slot.empty"
+    )
+    .forEach(
+      slot => {
+
+        slot.addEventListener(
+          "click",
+          () => {
+
+            document
+              .getElementById(
+                "roster"
+              )
+              ?.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+              });
+
+          }
+        );
+
+      }
+    );
+
+
+  /*
+   * Remove buttons.
+   */
+  container
+    .querySelectorAll(
+      ".remove"
+    )
+    .forEach(
+      button => {
+
+        button.addEventListener(
+          "click",
+          event => {
+
+            event.stopPropagation();
+
+
+            const index =
+              Number(
+                button.dataset.index
+              );
+
+
+            state.team[
+              index
+            ] = null;
+
+
+            renderSlots();
+            renderRoster();
+
+          }
+        );
+
+      }
+    );
+
+
+  renderAnalysis();
+
+}
+
+
+/* =========================================================
+   ADD ANIIMO
+========================================================= */
+
+function addToTeam(
+  id
+) {
+
+  const aniimo =
+    state.aniimo.find(
+      item =>
+        String(
+          item.id
+        ) ===
+          String(id)
+    );
+
+
+  if (!aniimo) {
+
+    console.error(
+      "Aniimo not found:",
+      id
+    );
+
+    return;
+
+  }
+
+
+  /*
+   * If already in team,
+   * remove it.
+   */
+  const existingIndex =
+    state.team.findIndex(
+      member =>
+        member &&
+        String(
+          member.id
+        ) ===
+          String(
+            aniimo.id
+          )
+    );
+
+
+  if (
+    existingIndex !== -1
+  ) {
+
+    state.team[
+      existingIndex
+    ] = null;
+
+
+    renderSlots();
+    renderRoster();
+
+    return;
+
+  }
+
+
+  /*
+   * Four total Aniimo.
+   *
+   * NO role restriction.
+   */
+  const emptyIndex =
+    state.team.findIndex(
+      member =>
+        !member
+    );
+
+
+  if (
+    emptyIndex === -1
+  ) {
+
+    alert(
+      "Your team already has 4 Aniimo. Tap × on a team member first."
+    );
+
+    return;
+
+  }
+
+
+  state.team[
+    emptyIndex
+  ] = aniimo;
+
 
   renderSlots();
   renderRoster();
-  renderAnalysis();
+
+
+  /*
+   * Scroll to the team.
+   */
+  document
+    .getElementById(
+      "teamSlots"
+    )
+    ?.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
 }
 
-function avg(numbers) {
-  const valid = numbers.filter(
-    n => Number.isFinite(n)
-  );
 
-  return valid.length
-    ? valid.reduce((a, b) => a + b, 0) /
-        valid.length
-    : 0;
-}
+/* =========================================================
+   ELEMENT EFFECTIVENESS
+========================================================= */
 
-function stat(a, key) {
-  const number = Number(a.stats?.[key]);
+const elementChart = {
 
-  return Number.isFinite(number)
-    ? number
-    : 0;
-}
+  Fire: {
+    Fire: 0.625,
+    Water: 0.625,
+    Grass: 1.6,
+    Lightning: 1,
+    Earth: 0.625,
+    Wind: 1,
+    Dark: 1,
+    Ice: 1.6,
+    Light: 0.625
+  },
 
-function hasTag(a, tag) {
-  return a.analysis?.tags?.includes(tag);
-}
+  Water: {
+    Fire: 1.6,
+    Water: 0.625,
+    Grass: 0.625,
+    Lightning: 1,
+    Earth: 1.6,
+    Wind: 1,
+    Dark: 1,
+    Ice: 0.625,
+    Light: 0.625
+  },
 
-function teamText() {
-  return state.team
-    .filter(Boolean)
-    .map(a => a.name)
-    .join(" + ");
-}
+  Grass: {
+    Fire: 0.625,
+    Water: 1.6,
+    Grass: 0.625,
+    Lightning: 1,
+    Earth: 1.6,
+    Wind: 1,
+    Dark: 0.625,
+    Ice: 1,
+    Light: 0.625
+  },
 
-function calc() {
-  const team = state.team.filter(Boolean);
+  Lightning: {
+    Fire: 1,
+    Water: 1.6,
+    Grass: 1,
+    Lightning: 0.625,
+    Earth: 0.625,
+    Wind: 1.6,
+    Dark: 1,
+    Ice: 0.625,
+    Light: 1
+  },
 
-  if (team.length < 2) {
-    return null;
+  Earth: {
+    Fire: 1,
+    Water: 0.625,
+    Grass: 0.625,
+    Lightning: 1.6,
+    Earth: 0.625,
+    Wind: 1,
+    Dark: 0.625,
+    Ice: 1.6,
+    Light: 1
+  },
+
+  Wind: {
+    Fire: 1,
+    Water: 1,
+    Grass: 1.6,
+    Lightning: 0.625,
+    Earth: 1,
+    Wind: 0.625,
+    Dark: 1.6,
+    Ice: 1,
+    Light: 1
+  },
+
+  Dark: {
+    Fire: 1.6,
+    Water: 0.625,
+    Grass: 1.6,
+    Lightning: 1,
+    Earth: 1,
+    Wind: 0.625,
+    Dark: 1,
+    Ice: 1,
+    Light: 1.6
+  },
+
+  Ice: {
+    Fire: 0.625,
+    Water: 1.6,
+    Grass: 1,
+    Lightning: 1.6,
+    Earth: 0.625,
+    Wind: 0.625,
+    Dark: 1,
+    Ice: 0.625,
+    Light: 1
+  },
+
+  Light: {
+    Fire: 1,
+    Water: 1,
+    Grass: 1,
+    Lightning: 0.625,
+    Earth: 1,
+    Wind: 1.6,
+    Dark: 1.6,
+    Ice: 1,
+    Light: 0.625
   }
 
-  const dps = team.filter(
-    a => role(a) === "DPS"
+};
+
+
+/* =========================================================
+   STAT HELPERS
+========================================================= */
+
+function getStat(
+  aniimo,
+  names
+) {
+
+  for (
+    const name
+    of names
+  ) {
+
+    const value =
+      Number(
+        aniimo.stats?.[
+          name
+        ]
+      );
+
+
+    if (
+      Number.isFinite(
+        value
+      )
+    ) {
+
+      return value;
+
+    }
+
+  }
+
+
+  return 0;
+
+}
+
+
+function average(
+  values
+) {
+
+  const valid =
+    values.filter(
+      value =>
+        Number.isFinite(
+          value
+        )
+    );
+
+
+  if (
+    !valid.length
+  ) {
+
+    return 0;
+
+  }
+
+
+  return (
+    valid.reduce(
+      (sum, value) =>
+        sum + value,
+      0
+    ) /
+    valid.length
   );
 
-  const breakers = team.filter(
-    a => role(a) === "Break"
+}
+
+
+/* =========================================================
+   TAG CHECKING
+========================================================= */
+
+function hasTag(
+  aniimo,
+  tag
+) {
+
+  return Boolean(
+    aniimo.analysis?.tags?.includes(
+      tag
+    )
   );
 
-  const supports = team.filter(
-    a => role(a) === "Support"
-  );
+}
 
-  const regen = team.filter(
-    a => role(a) === "Regen"
-  );
 
-  const healers = team.filter(
-    a => role(a) === "Heal"
-  );
+/* =========================================================
+   TEAM ANALYSIS
+========================================================= */
+
+function calculateTeam() {
+
+  const team =
+    state.team.filter(
+      Boolean
+    );
+
+
+  if (
+    team.length < 2
+  ) {
+
+    return null;
+
+  }
+
+
+  /*
+   * Roles.
+   *
+   * These are NOT exclusive.
+   */
+  const dps =
+    team.filter(
+      a =>
+        a.roles.includes(
+          "DPS"
+        )
+    );
+
+
+  const supports =
+    team.filter(
+      a =>
+        a.roles.includes(
+          "Support"
+        )
+    );
+
+
+  const breakers =
+    team.filter(
+      a =>
+        a.roles.includes(
+          "Break"
+        )
+    );
+
+
+  const regens =
+    team.filter(
+      a =>
+        a.roles.includes(
+          "Regen"
+        )
+    );
+
+
+  const healers =
+    team.filter(
+      a =>
+        a.roles.includes(
+          "Heal"
+        )
+    );
+
 
   let synergy = 45;
+
 
   const reasons = [];
   const warnings = [];
 
-  if (dps.length) {
-    synergy += Math.min(12, dps.length * 4);
 
-    reasons.push(
-      `${dps.length} DPS slot${
-        dps.length > 1 ? "s" : ""
-      } provide the team's damage payload.`
-    );
-  }
-
-  if (breakers.length) {
-    synergy += Math.min(
-      10,
-      breakers.length * 5
-    );
-
-    reasons.push(
-      `${breakers.length} Break unit${
-        breakers.length > 1 ? "s" : ""
-      } can create damage windows.`
-    );
-  }
-
-  if (supports.length) {
-    synergy += Math.min(
-      10,
-      supports.length * 5
-    );
-
-    reasons.push(
-      `${supports.length} Support unit${
-        supports.length > 1 ? "s" : ""
-      } can add utility, buffs or debuffs.`
-    );
-  }
-
-  if (regen.length) {
-    synergy += Math.min(
-      8,
-      regen.length * 4
-    );
-
-    reasons.push(
-      `${regen.length} Regen unit${
-        regen.length > 1 ? "s" : ""
-      } improve sustained resource/survival value.`
-    );
-  }
-
-  if (healers.length) {
-    synergy += Math.min(
-      8,
-      healers.length * 4
-    );
-
-    reasons.push(
-      `${healers.length} Heal unit${
-        healers.length > 1 ? "s" : ""
-      } improve HP recovery.`
-    );
-  }
-
-  for (const a of team) {
-    for (const b of team) {
-      if (a === b) continue;
-
-      if (
-        hasTag(a, "attack_up") &&
-        role(b) === "DPS"
-      ) {
-        synergy += 3;
-
-        reasons.push(
-          `${a.name} has offensive buff evidence that can benefit ${b.name}.`
-        );
-      }
-
-      if (
-        hasTag(a, "defense_down") &&
-        (
-          role(b) === "DPS" ||
-          role(b) === "Break"
-        )
-      ) {
-        synergy += 3;
-
-        reasons.push(
-          `${a.name} applies a defense/down-type effect that can amplify ${b.name}'s damage.`
-        );
-      }
-
-      if (
-        hasTag(a, "break_support") &&
-        role(b) === "DPS"
-      ) {
-        synergy += 3;
-
-        reasons.push(
-          `${a.name} has Break-related effects that can help ${b.name} capitalize on openings.`
-        );
-      }
-
-      if (
-        hasTag(a, "heal") &&
-        role(b) === "DPS"
-      ) {
-        synergy += 1;
-      }
-
-      if (
-        hasTag(a, "debuff") &&
-        hasTag(b, "burst")
-      ) {
-        synergy += 2;
-
-        reasons.push(
-          `${a.name} provides debuff/control evidence while ${b.name} has burst-oriented skill evidence.`
-        );
-      }
-
-      for (const element of elements(b)) {
-        if (
-          hasTag(
-            a,
-            `${element.toLowerCase()}_synergy`
-          )
-        ) {
-          synergy += 3;
-
-          reasons.push(
-            `${a.name} has ${element}-specific synergy evidence for ${b.name}.`
-          );
-        }
-      }
-    }
-  }
-
-  const offensiveElements = [
-    ...new Set(
-      team
-        .flatMap(elements)
-        .filter(e => elementChart[e])
-    )
-  ];
-
-  if (offensiveElements.length >= 3) {
-    synergy += 5;
-
-    reasons.push(
-      `The team has ${offensiveElements.length} distinct elements for broader coverage.`
-    );
-  }
-
-  if (offensiveElements.length === 1) {
-    synergy -= 6;
-
-    warnings.push(
-      `The team is heavily dependent on ${offensiveElements[0]} coverage.`
-    );
-  }
-
-  const attack = avg(
-    team.map(a => stat(a, "ATK"))
-  );
-
-  const breakStat = avg(
-    team.map(a => stat(a, "BREAK"))
-  );
-
-  const hp = avg(
-    team.map(a => stat(a, "HP"))
-  );
-
-  const regenStat = avg(
-    team.map(a => stat(a, "REGEN"))
-  );
-
-  const damage = Math.max(
-    0,
-    Math.min(
-      100,
-      Math.round(
-        35 +
-        dps.length * 18 +
-        Math.min(25, attack / 6)
-      )
-    )
-  );
-
-  const breakScore = Math.max(
-    0,
-    Math.min(
-      100,
-      Math.round(
-        30 +
-        breakers.length * 18 +
-        breakStat / 5
-      )
-    )
-  );
-
-  const sustain = Math.max(
-    0,
-    Math.min(
-      100,
-      Math.round(
-        25 +
-        healers.length * 20 +
-        regen.length * 15 +
-        regenStat / 10 +
-        hp / 20
-      )
-    )
-  );
-
-  const score = Math.max(
-    0,
-    Math.min(
-      100,
-      Math.round(
-        (
-          synergy +
-          damage +
-          breakScore +
-          sustain
-        ) / 4
-      )
-    )
-  );
-
-  const exposure = {};
-
-  for (
-    const enemy of Object.keys(elementChart)
+  /*
+   * Role contributions.
+   */
+  if (
+    dps.length
   ) {
-    let best = 0;
+
+    synergy +=
+      dps.length * 4;
+
+
+    reasons.push(
+      `${dps.length} DPS provide the team's damage pressure.`
+    );
+
+  }
+
+
+  if (
+    supports.length
+  ) {
+
+    synergy +=
+      supports.length * 5;
+
+
+    reasons.push(
+      `${supports.length} Support unit${supports.length === 1 ? "" : "s"} provide buff/debuff/utility potential.`
+    );
+
+  }
+
+
+  if (
+    breakers.length
+  ) {
+
+    synergy +=
+      breakers.length * 5;
+
+
+    reasons.push(
+      `${breakers.length} Break unit${breakers.length === 1 ? "" : "s"} provide Break pressure and potential damage windows.`
+    );
+
+  }
+
+
+  if (
+    regens.length
+  ) {
+
+    synergy +=
+      regens.length * 4;
+
+
+    reasons.push(
+      `${regens.length} Regen unit${regens.length === 1 ? "" : "s"} provide recovery/resource sustain.`
+    );
+
+  }
+
+
+  if (
+    healers.length
+  ) {
+
+    synergy +=
+      healers.length * 4;
+
+
+    reasons.push(
+      `${healers.length} Heal unit${healers.length === 1 ? "" : "s"} provide HP recovery.`
+    );
+
+  }
+
+
+  /*
+   * Ability interactions.
+   */
+  for (
+    const source
+    of team
+  ) {
 
     for (
-      const defense of offensiveElements
+      const target
+      of team
     ) {
-      best = Math.max(
-        best,
-        elementChart[enemy]?.[defense] || 1
-      );
+
+      if (
+        source === target
+      ) {
+
+        continue;
+
+      }
+
+
+      if (
+        hasTag(
+          source,
+          "attack_up"
+        ) &&
+        target.roles.includes(
+          "DPS"
+        )
+      ) {
+
+        synergy += 3;
+
+
+        reasons.push(
+          `${source.name} has offensive-buff evidence that may benefit ${target.name}.`
+        );
+
+      }
+
+
+      if (
+        hasTag(
+          source,
+          "defense_down"
+        ) &&
+        (
+          target.roles.includes(
+            "DPS"
+          ) ||
+          target.roles.includes(
+            "Break"
+          )
+        )
+      ) {
+
+        synergy += 3;
+
+
+        reasons.push(
+          `${source.name} has defense-reduction/debuff evidence that may improve ${target.name}'s damage window.`
+        );
+
+      }
+
+
+      if (
+        hasTag(
+          source,
+          "break_support"
+        ) &&
+        target.roles.includes(
+          "DPS"
+        )
+      ) {
+
+        synergy += 3;
+
+
+        reasons.push(
+          `${source.name} has Break-related effects that may help ${target.name} capitalize on openings.`
+        );
+
+      }
+
+
+      if (
+        hasTag(
+          source,
+          "debuff"
+        ) &&
+        hasTag(
+          target,
+          "burst"
+        )
+      ) {
+
+        synergy += 2;
+
+
+        reasons.push(
+          `${source.name}'s debuff/control effects may complement ${target.name}'s burst-oriented kit.`
+        );
+
+      }
+
     }
 
-    if (best > 1) {
-      exposure[enemy] = best;
-    }
   }
 
-  const weak = Object.entries(exposure)
-    .sort((a, b) => b[1] - a[1])
-    .map(([element]) => element);
 
-  if (weak.length) {
+  /*
+   * Element coverage.
+   */
+  const teamElements =
+    [
+      ...new Set(
+        team.flatMap(
+          a =>
+            a.elements
+        )
+      )
+    ].filter(
+      element =>
+        elementChart[
+          element
+        ]
+    );
+
+
+  if (
+    teamElements.length >= 3
+  ) {
+
+    synergy += 5;
+
+
+    reasons.push(
+      `The team covers ${teamElements.length} elements, giving it broader matchup coverage.`
+    );
+
+  }
+
+
+  if (
+    teamElements.length === 1
+  ) {
+
+    synergy -= 6;
+
+
     warnings.push(
-      `Enemy ${weak
-        .slice(0, 3)
-        .join(", ")} teams have at least one favourable elemental matchup into your roster.`
+      `The team is heavily dependent on ${teamElements[0]} elemental coverage.`
     );
+
   }
 
-  const primary =
-    [...dps].sort(
-      (a, b) =>
-        stat(b, "ATK") -
-        stat(a, "ATK")
-    )[0] ||
-    [...team].sort(
-      (a, b) =>
-        stat(b, "ATK") -
-        stat(a, "ATK")
-    )[0];
 
-  const steps = [];
-
-  if (breakers.length) {
-    steps.push(
-      `Open with ${breakers[0].name} when practical and build Break pressure.`
+  /*
+   * Stats.
+   */
+  const averageAttack =
+    average(
+      team.map(
+        a =>
+          getStat(
+            a,
+            [
+              "ATK",
+              "Attack",
+              "attack"
+            ]
+          )
+      )
     );
-  }
 
-  if (supports.length) {
-    steps.push(
-      `Use ${supports[0].name}'s buff, debuff or utility effects before the main damage window where their descriptions support doing so.`
+
+  const averageBreak =
+    average(
+      team.map(
+        a =>
+          getStat(
+            a,
+            [
+              "BREAK",
+              "Break",
+              "break"
+            ]
+      )
     );
-  }
 
-  if (primary) {
-    steps.push(
-      `Use ${primary.name} as the main damage payload and spend high-impact skills during favourable windows.`
+
+  const averageHP =
+    average(
+      team.map(
+        a =>
+          getStat(
+            a,
+            [
+              "HP",
+              "Hp",
+              "hp"
+            ]
+          )
+      )
     );
-  }
 
-  if (regen.length) {
-    steps.push(
-      `Cycle ${regen[0].name} when the fight needs sustained resource or recovery value.`
+
+  const averageRegen =
+    average(
+      team.map(
+        a =>
+          getStat(
+            a,
+            [
+              "REGEN",
+              "Regen",
+              "regen"
+            ]
+          )
+      )
     );
-  }
 
-  if (healers.length) {
-    steps.push(
-      `Hold ${healers[0].name} for recovery when HP pressure makes continued DPS unsafe.`
-    );
-  }
 
-  if (!breakers.length) {
-    steps.unshift(
-      "No Break role is present; the team may need to create damage windows through raw pressure or control instead."
-    );
-  }
-
-  if (!healers.length && !regen.length) {
-    warnings.push(
-      "There is no Heal or Regen role, so sustained recovery may be limited."
-    );
-  }
-
-  if (!dps.length) {
-    warnings.push(
-      "There is no DPS role; damage must come from other roles and skill kits."
-    );
-  }
-
-  return {
-    team,
-    score,
-    damage,
-    breakScore,
-    sustain,
-    synergy: Math.max(
+  const damage =
+    Math.max(
       0,
       Math.min(
         100,
-        Math.round(synergy)
+        Math.round(
+          30 +
+          dps.length * 18 +
+          Math.min(
+            30,
+            averageAttack / 5
+          )
+        )
       )
-    ),
+    );
+
+
+  const breakScore =
+    Math.max(
+      0,
+      Math.min(
+        100,
+        Math.round(
+          30 +
+          breakers.length * 20 +
+          averageBreak / 4
+        )
+      )
+    );
+
+
+  const sustain =
+    Math.max(
+      0,
+      Math.min(
+        100,
+        Math.round(
+          20 +
+          healers.length * 22 +
+          regens.length * 18 +
+          averageRegen / 5 +
+          averageHP / 25
+        )
+      )
+    );
+
+
+  /*
+   * Enemy elemental threats.
+   */
+  const weaknesses = [];
+
+
+  for (
+    const enemyElement
+    of Object.keys(
+      elementChart
+    )
+  ) {
+
+    let strongest =
+      1;
+
+
+    for (
+      const ourElement
+      of teamElements
+    ) {
+
+      const multiplier =
+        elementChart[
+          enemyElement
+        ]?.[
+          ourElement
+        ] ?? 1;
+
+
+      strongest =
+        Math.max(
+          strongest,
+          multiplier
+        );
+
+    }
+
+
+    if (
+      strongest > 1
+    ) {
+
+      weaknesses.push({
+        element:
+          enemyElement,
+
+        multiplier:
+          strongest
+      });
+
+    }
+
+  }
+
+
+  weaknesses.sort(
+    (a, b) =>
+      b.multiplier -
+      a.multiplier
+  );
+
+
+  /*
+   * Warnings.
+   */
+  if (
+    !healers.length &&
+    !regens.length
+  ) {
+
+    warnings.push(
+      "There is no Heal or Regen role, so sustained recovery may be limited."
+    );
+
+  }
+
+
+  if (
+    !dps.length
+  ) {
+
+    warnings.push(
+      "There is no Aniimo classified as DPS. The team will rely on the other selected kits for damage."
+    );
+
+  }
+
+
+  if (
+    weaknesses.length
+  ) {
+
+    warnings.push(
+      `Watch ${weaknesses
+        .slice(0, 3)
+        .map(
+          item =>
+            item.element
+        )
+        .join(", ")} enemy compositions because they have favourable elemental interactions against at least one element represented by this team.`
+    );
+
+  }
+
+
+  /*
+   * Overall score.
+   */
+  const overall =
+    Math.max(
+      0,
+      Math.min(
+        100,
+        Math.round(
+          (
+            synergy +
+            damage +
+            breakScore +
+            sustain
+          ) /
+          4
+        )
+      )
+    );
+
+
+  /*
+   * Game plan.
+   */
+  const steps = [];
+
+
+  if (
+    breakers.length
+  ) {
+
+    steps.push(
+      `Use ${breakers[0].name} to create Break pressure and look for the team's main damage window.`
+    );
+
+  }
+
+
+  if (
+    supports.length
+  ) {
+
+    steps.push(
+      `Use ${supports[0].name}'s documented support effects before or during the team's main offensive window.`
+    );
+
+  }
+
+
+  if (
+    dps.length
+  ) {
+
+    const mainDPS =
+      [...dps].sort(
+        (a, b) =>
+          getStat(
+            b,
+            [
+              "ATK",
+              "Attack",
+              "attack"
+            ]
+          ) -
+          getStat(
+            a,
+            [
+              "ATK",
+              "Attack",
+              "attack"
+            ]
+          )
+      )[0];
+
+
+    steps.push(
+      `${mainDPS.name} should be treated as the primary damage focus based on its DPS classification and available ATK data.`
+    );
+
+  }
+
+
+  if (
+    regens.length
+  ) {
+
+    steps.push(
+      `Use ${regens[0].name} when sustained recovery or resource management becomes important.`
+    );
+
+  }
+
+
+  if (
+    healers.length
+  ) {
+
+    steps.push(
+      `Use ${healers[0].name} to recover HP when necessary while preserving the team's main damage window.`
+    );
+
+  }
+
+
+  if (
+    !breakers.length
+  ) {
+
+    steps.unshift(
+      "No Break role is present, so the team should rely more heavily on raw pressure, buffs, debuffs and individual skill effects."
+    );
+
+  }
+
+
+  return {
+
+    team,
+
+    overall,
+
+    synergy:
+      Math.max(
+        0,
+        Math.min(
+          100,
+          Math.round(
+            synergy
+          )
+        )
+      ),
+
+    damage,
+
+    breakScore,
+
+    sustain,
+
     reasons: [
-      ...new Set(reasons)
-    ].slice(0, 10),
+      ...new Set(
+        reasons
+      )
+    ].slice(
+      0,
+      12
+    ),
+
     warnings: [
-      ...new Set(warnings)
+      ...new Set(
+        warnings
+      )
     ],
-    steps,
-    weak: weak.slice(0, 5)
+
+    weaknesses:
+      weaknesses.slice(
+        0,
+        5
+      ),
+
+    steps
+
   };
+
 }
 
-function bar(label, value) {
-  return `
-    <div class="bar-row">
-      <span>${label}</span>
 
-      <div class="bar">
-        <i style="width:${value}%"></i>
+/* =========================================================
+   ANALYSIS DISPLAY
+========================================================= */
+
+function progressBar(
+  label,
+  value
+) {
+
+  return `
+
+    <div
+      class="bar-row"
+    >
+
+      <span>
+        ${esc(label)}
+      </span>
+
+
+      <div
+        class="bar"
+      >
+
+        <i
+          style="
+            width:${value}%
+          "
+        ></i>
+
       </div>
 
-      <b>${value}</b>
+
+      <b>
+        ${value}
+      </b>
+
     </div>
+
   `;
+
 }
 
+
 function renderAnalysis() {
+
   const section =
-    document.getElementById("analysis");
+    document.getElementById(
+      "analysis"
+    );
 
-  const result = calc();
 
-  if (!result) {
-    section.classList.add("hidden");
+  if (!section) {
     return;
   }
 
-  section.classList.remove("hidden");
 
-  document.getElementById(
-    "teamTitle"
-  ).textContent = teamText();
+  const result =
+    calculateTeam();
 
-  document.getElementById(
-    "teamSubtitle"
-  ).textContent =
-    `${result.team.length}/4 selected · role stacking is allowed`;
 
-  document.getElementById(
-    "overallScore"
-  ).textContent = result.score;
+  if (!result) {
 
-  document.getElementById(
-    "analysisBody"
-  ).innerHTML = `
-    <div class="analysis-grid">
+    section.classList.add(
+      "hidden"
+    );
 
-      <div class="report-box">
+    return;
 
-        <h3>Team profile</h3>
+  }
 
-        <div class="bars">
-          ${bar("Overall", result.score)}
-          ${bar("Synergy", result.synergy)}
-          ${bar("Damage", result.damage)}
-          ${bar("Break", result.breakScore)}
-          ${bar("Sustain", result.sustain)}
+
+  section.classList.remove(
+    "hidden"
+  );
+
+
+  const title =
+    document.getElementById(
+      "teamTitle"
+    );
+
+
+  const subtitle =
+    document.getElementById(
+      "teamSubtitle"
+    );
+
+
+  const score =
+    document.getElementById(
+      "overallScore"
+    );
+
+
+  if (title) {
+
+    title.textContent =
+      result.team
+        .map(
+          a =>
+            a.name
+        )
+        .join(
+          " + "
+        );
+
+  }
+
+
+  if (subtitle) {
+
+    subtitle.textContent =
+      `${result.team.length}/4 selected · duplicate roles are allowed`;
+
+  }
+
+
+  if (score) {
+
+    score.textContent =
+      result.overall;
+
+  }
+
+
+  const body =
+    document.getElementById(
+      "analysisBody"
+    );
+
+
+  if (!body) {
+    return;
+  }
+
+
+  body.innerHTML = `
+
+    <div
+      class="analysis-grid"
+    >
+
+      <div
+        class="report-box"
+      >
+
+        <h3>
+          Team profile
+        </h3>
+
+
+        <div
+          class="bars"
+        >
+
+          ${progressBar(
+            "Overall",
+            result.overall
+          )}
+
+          ${progressBar(
+            "Synergy",
+            result.synergy
+          )}
+
+          ${progressBar(
+            "Damage",
+            result.damage
+          )}
+
+          ${progressBar(
+            "Break",
+            result.breakScore
+          )}
+
+          ${progressBar(
+            "Sustain",
+            result.sustain
+          )}
+
         </div>
 
-        <h3 style="margin-top:18px">
+
+        <h3
+          style="
+            margin-top:20px
+          "
+        >
           Why this works
         </h3>
 
+
         <ul>
+
           ${
-            result.reasons
-              .map(
-                reason =>
-                  `<li class="good">${esc(reason)}</li>`
-              )
-              .join("") ||
-            "<li>Not enough confirmed interaction data yet.</li>"
+            result.reasons.length
+              ? result.reasons
+                  .map(
+                    reason =>
+                      `
+                        <li
+                          class="good"
+                        >
+                          ${esc(
+                            reason
+                          )}
+                        </li>
+                      `
+                  )
+                  .join("")
+              :
+              `
+                <li>
+                  Select more Aniimo to
+                  generate interaction
+                  analysis.
+                </li>
+              `
           }
+
         </ul>
 
       </div>
 
-      <div class="report-box">
 
-        <h3>Weaknesses / watch-outs</h3>
+      <div
+        class="report-box"
+      >
+
+        <h3>
+          Weaknesses
+        </h3>
+
 
         <ul>
+
           ${
-            result.warnings
-              .map(
-                warning =>
-                  `<li class="warn">${esc(warning)}</li>`
-              )
-              .join("") ||
-            "<li class='good'>No major heuristic warning.</li>"
+            result.warnings.length
+              ? result.warnings
+                  .map(
+                    warning =>
+                      `
+                        <li
+                          class="warn"
+                        >
+                          ${esc(
+                            warning
+                          )}
+                        </li>
+                      `
+                  )
+                  .join("")
+              :
+              `
+                <li
+                  class="good"
+                >
+                  No major heuristic
+                  warning detected.
+                </li>
+              `
           }
+
         </ul>
 
-        <p>
-          <b>Enemy elements to watch:</b>
+
+        <h3>
+          Elements to watch
+        </h3>
+
+
+        <div
+          class="chips"
+        >
+
           ${
-            result.weak.length
-              ? result.weak
+            result.weaknesses.length
+              ? result.weaknesses
                   .map(
-                    element =>
-                      `<span class="chip element">${esc(element)}</span>`
+                    item =>
+                      `
+                        <span
+                          class="chip element"
+                        >
+                          ${esc(
+                            item.element
+                          )}
+                        </span>
+                      `
                   )
-                  .join(" ")
-              : "No confirmed exposure from the current matrix."
+                  .join("")
+              :
+              `
+                <span>
+                  No major elemental
+                  exposure detected.
+                </span>
+              `
           }
-        </p>
+
+        </div>
 
       </div>
 
     </div>
+
 
     <div
       class="report-box"
-      style="margin-top:14px"
+      style="
+        margin-top:14px
+      "
     >
 
-      <h3>Suggested game plan</h3>
+      <h3>
+        Suggested game plan
+      </h3>
 
-      <div class="steps">
+
+      <div
+        class="steps"
+      >
+
         ${
           result.steps
             .map(
-              step =>
-                `<div class="step">${esc(step)}</div>`
+              (step, index) =>
+                `
+                  <div
+                    class="step"
+                  >
+
+                    <b>
+                      ${index + 1}.
+                    </b>
+
+                    ${esc(
+                      step
+                    )}
+
+                  </div>
+                `
             )
             .join("")
         }
+
       </div>
+
 
       <p
         style="
-          margin-top:12px;
-          color:var(--muted)
+          color:var(--muted);
+          margin-top:14px
         "
       >
-        The strategy text is deliberately explainable:
-        it is generated from the roles, stats and
-        ability descriptions in the dataset rather
-        than pretending to know an undocumented
-        rotation.
+
+        Strategy recommendations are
+        generated from the available
+        role, stat, elemental and skill
+        data.
+
       </p>
 
     </div>
+
   `;
+
 }
 
-document
-  .getElementById("search")
-  .addEventListener(
-    "input",
-    renderRoster
+
+/* =========================================================
+   EVENT LISTENERS
+========================================================= */
+
+function setupEventListeners() {
+
+  document
+    .getElementById(
+      "search"
+    )
+    ?.addEventListener(
+      "input",
+      renderRoster
+    );
+
+
+  document
+    .getElementById(
+      "roleFilter"
+    )
+    ?.addEventListener(
+      "change",
+      renderRoster
+    );
+
+
+  document
+    .getElementById(
+      "elementFilter"
+    )
+    ?.addEventListener(
+      "change",
+      renderRoster
+    );
+
+
+  document
+    .getElementById(
+      "clearTeam"
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+
+        state.team = [
+          null,
+          null,
+          null,
+          null
+        ];
+
+
+        renderSlots();
+        renderRoster();
+
+      }
+    );
+
+}
+
+
+/* =========================================================
+   ERROR DISPLAY
+========================================================= */
+
+function showLoadError(
+  error
+) {
+
+  console.error(
+    "Aniimo Team Builder error:",
+    error
   );
 
-document
-  .getElementById("roleFilter")
-  .addEventListener(
-    "change",
-    renderRoster
-  );
 
-document
-  .getElementById("elementFilter")
-  .addEventListener(
-    "change",
-    renderRoster
-  );
+  const roster =
+    document.getElementById(
+      "roster"
+    );
 
-document
-  .getElementById("clearTeam")
-  .onclick = () => {
-    state.team = [
-      null,
-      null,
-      null,
-      null
-    ];
 
-    renderSlots();
-    renderRoster();
-  };
+  if (!roster) {
+    return;
+  }
 
-loadData().catch(error => {
-  document.getElementById(
-    "roster"
-  ).innerHTML = `
-    <div class="report-box">
 
-      <b>Data could not be loaded.</b>
+  roster.innerHTML = `
+
+    <div
+      class="report-box"
+    >
+
+      <h3>
+        Could not load Aniimo data
+      </h3>
+
 
       <p>
-        ${esc(error.message)}
+        ${esc(
+          error.message
+        )}
       </p>
 
+
       <p>
-        Check that <b>aniimo.json</b>
-        is in the root of the repository.
+        Make sure
+        <b>aniimo.json</b>
+        is in the same folder as
+        <b>index.html</b>.
       </p>
 
     </div>
+
   `;
-});
+
+}
+
+
+/* =========================================================
+   START APPLICATION
+========================================================= */
+
+async function startApp() {
+
+  try {
+
+    setupEventListeners();
+
+    await loadData();
+
+  } catch (
+    error
+  ) {
+
+    showLoadError(
+      error
+    );
+
+  }
+
+}
+
+
+/*
+ * DOMContentLoaded makes this work
+ * whether app.js is loaded in the
+ * <head> or at the bottom of index.html.
+ */
+if (
+  document.readyState ===
+  "loading"
+) {
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    startApp
+  );
+
+} else {
+
+  startApp();
+
+}
