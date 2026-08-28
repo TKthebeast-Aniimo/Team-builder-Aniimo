@@ -1,22 +1,5 @@
 #!/usr/bin/env python3
 
-"""
-ANIIMO TEAM BUILDER DATA BUILDER
-
-Primary source:
-https://wiki.aniimo.com/
-
-Secondary source:
-https://aniidex.com/
-
-This script downloads the complete Aniimo roster and
-writes it directly to:
-
-aniimo.json
-
-The website reads that exact file.
-"""
-
 import json
 import re
 import time
@@ -28,68 +11,37 @@ from bs4 import BeautifulSoup
 
 
 # =========================================================
-# CONFIGURATION
+# CONFIG
 # =========================================================
 
 ROOT = Path(__file__).resolve().parent
 
 OUTPUT_FILE = ROOT / "aniimo.json"
 
-OFFICIAL_INDEX = "https://wiki.aniimo.com/"
-
-ANIIDEX_INDEX = "https://aniidex.com/aniimo/"
+WIKI_HOME = "https://wiki.aniimo.com/"
+ANIIDEX_HOME = "https://aniidex.com/"
 
 HEADERS = {
     "User-Agent":
-        "Aniimo-Team-Builder/1.0 "
-        "(fan project; automated data refresh)"
+        "Mozilla/5.0 (Aniimo Team Builder fan project)"
 }
 
-
-STAT_KEYS = [
-    "HP",
-    "BREAK",
-    "ATK",
-    "M.DEF",
-    "P.DEF",
-    "REGEN"
-]
-
-
-ROLE_MAP = {
-    "DPS": "DPS",
-    "HEAL": "Heal",
-    "SUPPORT": "Support",
-    "BREAK": "BREAK",
-    "REGEN": "REGEN"
-}
-
-
-ELEMENT_MAP = {
-    "fire": "Fire",
-    "water": "Water",
-    "grass": "Grass",
-    "ice": "Ice",
-    "dark": "Dark",
-    "electric": "Lightning",
-    "lightning": "Lightning",
-    "rock": "Earth",
-    "earth": "Earth",
-    "wind": "Wind",
-    "holy": "Light",
-    "light": "Light"
-}
+TIMEOUT = 30
 
 
 # =========================================================
 # HTTP
 # =========================================================
 
-def get_page(url):
-    response = requests.get(
+session = requests.Session()
+session.headers.update(HEADERS)
+
+
+def get_html(url):
+
+    response = session.get(
         url,
-        headers=HEADERS,
-        timeout=30
+        timeout=TIMEOUT
     )
 
     response.raise_for_status()
@@ -98,7 +50,7 @@ def get_page(url):
 
 
 # =========================================================
-# TEXT CLEANING
+# CLEAN TEXT
 # =========================================================
 
 def clean_lines(text):
@@ -116,15 +68,6 @@ def clean_lines(text):
         if not line:
             continue
 
-        if line == "Image":
-            continue
-
-        if line.startswith("Image:"):
-            continue
-
-        if line.startswith("[Image"):
-            continue
-
         result.append(line)
 
     return result
@@ -134,18 +77,21 @@ def clean_lines(text):
 # NUMBER
 # =========================================================
 
-def extract_number(lines):
+def get_number(lines):
 
-    for line in lines[:40]:
+    for line in lines:
 
         match = re.search(
             r"NO\.\s*(\d+)",
             line,
-            re.IGNORECASE
+            re.I
         )
 
         if match:
-            return int(match.group(1))
+
+            return int(
+                match.group(1)
+            )
 
     return None
 
@@ -154,191 +100,136 @@ def extract_number(lines):
 # NAME
 # =========================================================
 
-def extract_name(soup, lines):
+def get_name(soup, lines):
 
-    heading = soup.find("h1")
+    h1 = soup.find("h1")
 
-    if heading:
+    if h1:
 
-        name = heading.get_text(
+        name = h1.get_text(
             " ",
             strip=True
         )
 
         if name:
+
             return name
 
 
-    for line in lines[:40]:
+    number_seen = False
 
-        if re.fullmatch(
+    for line in lines:
+
+        if re.match(
             r"NO\.\s*\d+",
             line,
-            re.IGNORECASE
+            re.I
         ):
+
+            number_seen = True
+
             continue
 
-        if line.lower() in [
-            "official aniimo wiki",
-            "aniimo wiki"
-        ]:
-            continue
 
-        if len(line) > 1:
-            return line
+        if number_seen:
+
+            if len(line) > 1:
+
+                return line
 
 
     return "Unknown"
 
 
 # =========================================================
-# IMAGE
-# =========================================================
-
-def extract_image(
-    soup,
-    page_url,
-    name
-):
-
-    # -----------------------------------------------------
-    # First choice: OpenGraph image
-    # -----------------------------------------------------
-
-    meta = soup.find(
-        "meta",
-        property="og:image"
-    )
-
-    if meta:
-
-        content = meta.get("content")
-
-        if content:
-
-            return urljoin(
-                page_url,
-                content
-            )
-
-
-    # -----------------------------------------------------
-    # Second choice: image whose alt contains the name
-    # -----------------------------------------------------
-
-    for image in soup.find_all("img"):
-
-        alt = (
-            image.get("alt") or ""
-        ).lower()
-
-        source = (
-            image.get("src")
-            or image.get("data-src")
-            or ""
-        )
-
-        if (
-            source
-            and name.lower() in alt
-        ):
-
-            return urljoin(
-                page_url,
-                source
-            )
-
-
-    # -----------------------------------------------------
-    # Third choice: first usable large image
-    # -----------------------------------------------------
-
-    for image in soup.find_all("img"):
-
-        source = (
-            image.get("src")
-            or image.get("data-src")
-            or ""
-        )
-
-        if source:
-
-            return urljoin(
-                page_url,
-                source
-            )
-
-
-    return None
-
-
-# =========================================================
 # ELEMENTS
 # =========================================================
 
-def extract_elements(lines):
-
-    elements = []
-
-    for line in lines[:50]:
-
-        value = (
-            line
-            .strip()
-            .lower()
-        )
-
-        if value in ELEMENT_MAP:
-
-            element = ELEMENT_MAP[value]
-
-            if element not in elements:
-
-                elements.append(element)
+ELEMENTS = {
+    "fire": "Fire",
+    "ice": "Ice",
+    "dark": "Dark",
+    "electric": "Electric",
+    "grass": "Grass",
+    "water": "Water",
+    "rock": "Rock",
+    "wind": "Wind",
+    "holy": "Holy"
+}
 
 
-    return elements
+def get_elements(lines):
+
+    found = []
+
+    for line in lines[:80]:
+
+        value = line.lower().strip()
+
+        if value in ELEMENTS:
+
+            element = ELEMENTS[value]
+
+            if element not in found:
+
+                found.append(
+                    element
+                )
+
+    return found
 
 
 # =========================================================
 # ROLES
 # =========================================================
 
-def extract_roles(lines):
-
-    roles = []
-
-    for line in lines[:50]:
-
-        value = (
-            line
-            .strip()
-            .upper()
-        )
-
-        if value in ROLE_MAP:
-
-            role = ROLE_MAP[value]
-
-            if role not in roles:
-
-                roles.append(role)
+ROLES = {
+    "DPS",
+    "Heal",
+    "Support",
+    "BREAK",
+    "REGEN"
+}
 
 
-    return roles
+def get_roles(lines):
+
+    found = []
+
+    for line in lines[:80]:
+
+        if line.strip() in ROLES:
+
+            if line.strip() not in found:
+
+                found.append(
+                    line.strip()
+                )
+
+    return found
 
 
 # =========================================================
 # STATS
 # =========================================================
 
-def extract_stats(lines):
+STAT_NAMES = [
+    "HP",
+    "BREAK",
+    "ATK",
+    "M.DEF",
+    "P.DEF",
+    "REGEN"
+]
+
+
+def get_stats(lines):
 
     stats = {}
 
-    for index, line in enumerate(lines):
+    for i, line in enumerate(lines):
 
-        clean = (
+        current = (
             line
             .strip()
             .upper()
@@ -346,143 +237,314 @@ def extract_stats(lines):
         )
 
 
-        # -------------------------------------------------
         # Format:
         #
         # HP:
         # 67
         #
-        # -------------------------------------------------
 
-        for key in STAT_KEYS:
+        for stat in STAT_NAMES:
 
-            if clean == key + ":":
+            if current == stat + ":":
 
-                if index + 1 < len(lines):
-
-                    value_line = (
-                        lines[index + 1]
-                        .strip()
-                    )
+                if i + 1 < len(lines):
 
                     match = re.search(
                         r"(\d+(?:\.\d+)?)",
-                        value_line
+                        lines[i + 1]
                     )
 
                     if match:
 
-                        value = match.group(1)
+                        number = match.group(1)
 
-                        if "." in value:
+                        if "." in number:
 
-                            stats[key] = float(value)
+                            stats[stat] = float(
+                                number
+                            )
 
                         else:
 
-                            stats[key] = int(value)
+                            stats[stat] = int(
+                                number
+                            )
 
 
-        # -------------------------------------------------
-        # Also support:
+        # Format:
         #
         # HP: 67
         #
-        # -------------------------------------------------
 
-        for key in STAT_KEYS:
-
-            pattern = (
-                r"^"
-                + re.escape(key)
-                + r"\s*:\s*"
-                r"(\d+(?:\.\d+)?)$"
-            )
+        for stat in STAT_NAMES:
 
             match = re.match(
-                pattern,
-                clean
+                r"^"
+                + re.escape(stat)
+                + r"\s*:\s*"
+                r"(\d+(?:\.\d+)?)$",
+                current
             )
 
             if match:
 
-                value = match.group(1)
+                number = match.group(1)
 
-                if "." in value:
+                if "." in number:
 
-                    stats[key] = float(value)
+                    stats[stat] = float(
+                        number
+                    )
 
                 else:
 
-                    stats[key] = int(value)
-
+                    stats[stat] = int(
+                        number
+                    )
 
     return stats
 
 
 # =========================================================
-# FORMS
+# PORTRAIT
 # =========================================================
 
-def extract_forms(lines):
+def get_portrait(
+    soup,
+    page_url,
+    name,
+    number
+):
 
-    forms = []
+    """
+    IMPORTANT:
 
-    try:
+    Do NOT use og:image.
 
-        start = lines.index(
-            "Forms"
-        )
+    The Wiki can return:
 
-    except ValueError:
+        /undefinedimages/ogImage.png
 
-        return forms
+    which is not an Aniimo portrait.
 
-
-    for line in lines[
-        start + 1:
-        start + 30
-    ]:
-
-        if line in [
-            "Basic Info",
-            "Evolution",
-            "Stats",
-            "Traits & Passives"
-        ]:
-
-            break
+    Instead we inspect every image on the page and
+    look for an image associated with the Aniimo.
+    """
 
 
-        if (
-            "Form" in line
-            and len(line) < 80
-        ):
+    candidates = []
 
-            found = re.findall(
-                r"[A-Z][A-Za-z ]+Form",
-                line
+
+    # -----------------------------------------------------
+    # Collect image URLs
+    # -----------------------------------------------------
+
+    for img in soup.find_all("img"):
+
+        sources = [
+
+            img.get("src"),
+
+            img.get("data-src"),
+
+            img.get("data-lazy-src"),
+
+            img.get("data-original"),
+
+            img.get("srcset")
+
+        ]
+
+
+        for source in sources:
+
+            if not source:
+
+                continue
+
+
+            # srcset can contain multiple URLs
+
+            if "," in source:
+
+                source = source.split(
+                    ","
+                )[0].strip()
+
+
+            # Remove width descriptor
+
+            source = re.sub(
+                r"\s+\d+w$",
+                "",
+                source
             )
 
-            for form in found:
 
-                form = form.strip()
-
-                if form not in forms:
-
-                    forms.append(form)
+            absolute = urljoin(
+                page_url,
+                source
+            )
 
 
-    return forms
+            candidates.append(
+                absolute
+            )
+
+
+    # -----------------------------------------------------
+    # Score candidates
+    # -----------------------------------------------------
+
+    scored = []
+
+
+    lower_name = name.lower()
+
+
+    for url in candidates:
+
+        lower = url.lower()
+
+        score = 0
+
+
+        # Reject known bad image
+
+        if (
+            "undefinedimages" in lower
+            or "ogimage" in lower
+        ):
+
+            continue
+
+
+        # Reject UI icons
+
+        if any(
+            x in lower
+            for x in [
+                "favicon",
+                "logo",
+                "icon",
+                "arrow",
+                "button",
+                "close",
+                "search"
+            ]
+        ):
+
+            score -= 20
+
+
+        # Aniimo image hints
+
+        if "aniimo" in lower:
+
+            score += 10
+
+
+        if "pethead" in lower:
+
+            score += 50
+
+
+        if "pet" in lower:
+
+            score += 10
+
+
+        # Name in URL
+
+        compact_name = re.sub(
+            r"[^a-z0-9]",
+            "",
+            lower_name
+        )
+
+
+        compact_url = re.sub(
+            r"[^a-z0-9]",
+            "",
+            lower
+        )
+
+
+        if compact_name in compact_url:
+
+            score += 50
+
+
+        # Number in URL
+
+        if number is not None:
+
+            number_text = str(
+                number
+            )
+
+            if number_text in lower:
+
+                score += 5
+
+
+        # Common image formats
+
+        if any(
+            lower.endswith(
+                extension
+            )
+            for extension in [
+                ".png",
+                ".jpg",
+                ".jpeg",
+                ".webp"
+            ]
+        ):
+
+            score += 5
+
+
+        scored.append(
+            (
+                score,
+                url
+            )
+        )
+
+
+    # -----------------------------------------------------
+    # Best candidate
+    # -----------------------------------------------------
+
+    scored.sort(
+        reverse=True
+    )
+
+
+    if scored:
+
+        best_score, best_url = (
+            scored[0]
+        )
+
+
+        if best_score >= 0:
+
+            return best_url
+
+
+    return None
 
 
 # =========================================================
 # TRAITS
 # =========================================================
 
-def extract_traits(lines):
+def get_traits(lines):
 
     traits = []
+
 
     try:
 
@@ -495,26 +557,10 @@ def extract_traits(lines):
         return traits
 
 
-    try:
-
-        end = lines.index(
-            "Homeland Abilities"
-        )
-
-    except ValueError:
-
-        try:
-
-            end = lines.index(
-                "Basic Attacks"
-            )
-
-        except ValueError:
-
-            end = min(
-                start + 30,
-                len(lines)
-            )
+    end = min(
+        start + 30,
+        len(lines)
+    )
 
 
     section = lines[
@@ -525,46 +571,38 @@ def extract_traits(lines):
 
     i = 0
 
-    while i < len(section):
 
-        line = section[i]
+    while i + 1 < len(section):
 
+        name = section[i]
 
-        # Skip obvious noise
+        description = section[i + 1]
+
 
         if (
-            line.startswith("Lv ")
-            or line.isdigit()
+            len(name) < 100
+            and len(description) > 10
+            and name not in [
+                "Image",
+                "Skill Details"
+            ]
         ):
 
+            traits.append({
+
+                "name":
+                    name,
+
+                "description":
+                    description
+
+            })
+
+            i += 2
+
+        else:
+
             i += 1
-
-            continue
-
-
-        # Trait names tend to be followed immediately
-        # by their descriptions.
-
-        if i + 1 < len(section):
-
-            description = section[i + 1]
-
-            if (
-                len(line) < 100
-                and len(description) > 5
-            ):
-
-                traits.append({
-                    "name": line,
-                    "description": description
-                })
-
-                i += 2
-
-                continue
-
-
-        i += 1
 
 
     return traits
@@ -574,7 +612,7 @@ def extract_traits(lines):
 # SKILLS
 # =========================================================
 
-def extract_skills(lines):
+def get_skills(lines):
 
     skills = []
 
@@ -600,18 +638,6 @@ def extract_skills(lines):
 
     while i < len(section):
 
-        # -------------------------------------------------
-        # Expected structure:
-        #
-        # Skill Name
-        # Description
-        # Element:
-        # Type: Physical
-        # Cost: 0
-        # Power: 72
-        #
-        # -------------------------------------------------
-
         if (
             i + 2 < len(section)
             and section[i + 2] == "Element:"
@@ -634,7 +660,7 @@ def extract_skills(lines):
                     r"^Type:\s*",
                     "",
                     section[i + 3],
-                    flags=re.IGNORECASE
+                    flags=re.I
                 )
 
 
@@ -644,7 +670,7 @@ def extract_skills(lines):
                     r"^Cost:\s*",
                     "",
                     section[i + 4],
-                    flags=re.IGNORECASE
+                    flags=re.I
                 )
 
 
@@ -658,18 +684,8 @@ def extract_skills(lines):
                         r"^Power:\s*",
                         "",
                         section[i + 5],
-                        flags=re.IGNORECASE
+                        flags=re.I
                     )
-
-                    i += 6
-
-                else:
-
-                    i += 5
-
-            else:
-
-                i += 5
 
 
             skills.append({
@@ -695,71 +711,100 @@ def extract_skills(lines):
             })
 
 
-            continue
+            i += 6
 
+        else:
 
-        i += 1
+            i += 1
 
 
     return skills
 
 
 # =========================================================
-# ANALYSIS TAGS
+# TEAM ANALYSIS TAGS
 # =========================================================
 
-def make_tags(text):
+def get_tags(
+    traits,
+    skills
+):
+
+    text = ""
+
+
+    for trait in traits:
+
+        text += " "
+
+        text += trait.get(
+            "description",
+            ""
+        )
+
+
+    for skill in skills:
+
+        text += " "
+
+        text += skill.get(
+            "description",
+            ""
+        )
+
 
     rules = {
 
         "attack_up":
-            r"increase.*(?:attack|damage)|"
+            r"increase.*attack|"
             r"increases.*damage|"
-            r"increased.*damage",
+            r"damage.*increase",
 
-        "defense_down":
-            r"reduce.*(?:defen|defence)|"
-            r"defense down|"
-            r"defence down|"
-            r"damage taken.*increase",
+        "damage_up":
+            r"increases damage|"
+            r"damage is increased",
 
         "debuff":
-            r"debuff|curse|mark|"
+            r"debuff|"
             r"weakness|"
-            r"paraly|silence|stun|"
-            r"freeze|slow",
+            r"mark|"
+            r"curse",
 
-        "break_support":
+        "break":
             r"break damage|"
-            r"break.*taken|"
             r"increases.*break|"
-            r"stagger",
+            r"break.*increase",
 
         "heal":
-            r"heal|healing|"
-            r"restores? HP|"
+            r"heal|"
+            r"healing|"
             r"restore.*HP",
 
         "regen":
-            r"regen|energy|EP|"
-            r"restor.*energy|"
-            r"reduces? the EP cost",
+            r"regen|"
+            r"energy|"
+            r"EP",
 
         "shield":
-            r"shield|damage reduction",
+            r"shield|"
+            r"damage reduction",
 
         "control":
-            r"stun|silence|paraly|"
-            r"pull|slow|freeze|immobil",
+            r"stun|"
+            r"freeze|"
+            r"slow|"
+            r"silence|"
+            r"paraly",
 
-        "burst":
-            r"massive|heavy|"
-            r"bonus damage|"
-            r"extra damage",
+        "critical":
+            r"critical|"
+            r"crit",
 
-        "self_scaling":
-            r"stack|stacking|"
-            r"each hit|critical"
+        "fire_debuff":
+            r"fire debuff",
+
+        "ice_debuff":
+            r"ice debuff"
 
     }
 
@@ -772,34 +817,37 @@ def make_tags(text):
         if re.search(
             pattern,
             text,
-            re.IGNORECASE
+            re.I
         ):
 
-            tags.append(tag)
+            tags.append(
+                tag
+            )
 
 
-    return sorted(
-        set(tags)
-    )
+    return tags
 
 
 # =========================================================
-# PARSE ONE ANIIMO
+# ANIIMO PAGE
 # =========================================================
 
 def parse_aniimo(
     url,
-    fallback_name=None,
-    fallback_number=None
+    fallback_name,
+    fallback_number
 ):
 
     print(
-        "Downloading:",
-        url
+        "  Fetching:",
+        fallback_name
     )
 
 
-    html = get_page(url)
+    html = get_html(
+        url
+    )
+
 
     soup = BeautifulSoup(
         html,
@@ -807,98 +855,63 @@ def parse_aniimo(
     )
 
 
-    text = soup.get_text(
-        "\n"
-    )
-
-
     lines = clean_lines(
-        text
+        soup.get_text("\n")
     )
 
 
     number = (
-        extract_number(lines)
+        get_number(lines)
         or fallback_number
     )
 
 
     name = (
-        extract_name(
+        get_name(
             soup,
             lines
         )
         or fallback_name
-        or "Unknown"
     )
 
 
-    image = extract_image(
+    image = get_portrait(
         soup,
         url,
-        name
+        name,
+        number
     )
 
 
-    elements = extract_elements(
+    elements = get_elements(
         lines
     )
 
 
-    roles = extract_roles(
+    roles = get_roles(
         lines
     )
 
 
-    stats = extract_stats(
+    stats = get_stats(
         lines
     )
 
 
-    forms = extract_forms(
+    traits = get_traits(
         lines
     )
 
 
-    traits = extract_traits(
+    skills = get_skills(
         lines
     )
 
 
-    skills = extract_skills(
-        lines
+    tags = get_tags(
+        traits,
+        skills
     )
-
-
-    all_text = " ".join(
-        lines
-    )
-
-
-    trait = (
-        traits[0]
-        if traits
-        else None
-    )
-
-
-    number_string = (
-        str(number)
-        if number is not None
-        else str(
-            fallback_number or ""
-        )
-    )
-
-
-    if (
-        number is not None
-        and number < 1000
-    ):
-
-        number_string = (
-            f"{number:03d}"
-        )
 
 
     return {
@@ -910,7 +923,14 @@ def parse_aniimo(
             name,
 
         "number":
-            number_string,
+            (
+                f"{number:03d}"
+                if number is not None
+                and number < 1000
+                else str(
+                    number or ""
+                )
+            ),
 
         "sourceUrl":
             url,
@@ -928,10 +948,14 @@ def parse_aniimo(
             stats,
 
         "forms":
-            forms,
+            [],
 
         "trait":
-            trait,
+            (
+                traits[0]
+                if traits
+                else None
+            ),
 
         "traits":
             traits,
@@ -942,9 +966,7 @@ def parse_aniimo(
         "analysis": {
 
             "tags":
-                make_tags(
-                    all_text
-                ),
+                tags,
 
             "notes":
                 []
@@ -960,31 +982,18 @@ def parse_aniimo(
 
 
 # =========================================================
-# MAIN
+# FIND ALL ANIIMO
 # =========================================================
 
-def main():
-
-    print("")
-    print(
-        "=========================================="
-    )
-    print(
-        " ANIIMO TEAM BUILDER DATA REFRESH"
-    )
-    print(
-        "=========================================="
-    )
-    print("")
-
+def find_aniimo():
 
     print(
         "Downloading official Aniimo index..."
     )
 
 
-    html = get_page(
-        OFFICIAL_INDEX
+    html = get_html(
+        WIKI_HOME
     )
 
 
@@ -994,19 +1003,19 @@ def main():
     )
 
 
-    links = []
+    found = []
 
     seen = set()
 
 
-    for anchor in soup.find_all(
+    for a in soup.find_all(
         "a",
         href=True
     ):
 
         href = urljoin(
-            OFFICIAL_INDEX,
-            anchor["href"]
+            WIKI_HOME,
+            a["href"]
         )
 
 
@@ -1015,7 +1024,7 @@ def main():
             continue
 
 
-        text = anchor.get_text(
+        text = a.get_text(
             " ",
             strip=True
         )
@@ -1024,22 +1033,25 @@ def main():
         match = re.search(
             r"NO\.\s*(\d+)",
             text,
-            re.IGNORECASE
+            re.I
         )
 
 
-        number = (
-            int(match.group(1))
-            if match
-            else None
+        if not match:
+
+            continue
+
+
+        number = int(
+            match.group(1)
         )
 
 
         name = re.sub(
-            r"^NO\.\s*\d+\s*",
+            r"NO\.\s*\d+",
             "",
             text,
-            flags=re.IGNORECASE
+            flags=re.I
         ).strip()
 
 
@@ -1050,7 +1062,7 @@ def main():
 
         key = (
             number,
-            name.lower()
+            href
         )
 
 
@@ -1059,30 +1071,64 @@ def main():
             continue
 
 
-        seen.add(key)
+        seen.add(
+            key
+        )
 
 
-        links.append(
+        found.append(
             (
-                href,
+                number,
                 name,
-                number
+                href
             )
         )
 
 
-    print(
-        f"Found {len(links)} Aniimo pages."
+    found.sort(
+        key=lambda x: x[0]
     )
 
 
-    if len(links) < 80:
+    return found
+
+
+# =========================================================
+# MAIN
+# =========================================================
+
+def main():
+
+    print("")
+    print(
+        "=========================================="
+    )
+    print(
+        " ANIIMO DATABASE BUILDER"
+    )
+    print(
+        "=========================================="
+    )
+    print("")
+
+
+    pages = find_aniimo()
+
+
+    print(
+        "Found",
+        len(pages),
+        "Aniimo pages."
+    )
+
+
+    if len(pages) < 80:
 
         raise RuntimeError(
-            "The official Wiki returned "
-            "too few Aniimo pages. "
-            "Data refresh aborted so we "
-            "don't overwrite good data."
+            "Only "
+            + str(len(pages))
+            + " Aniimo pages found. "
+            "Refusing to overwrite database."
         )
 
 
@@ -1090,17 +1136,17 @@ def main():
 
 
     for index, (
-        url,
+        number,
         name,
-        number
+        url
     ) in enumerate(
-        links,
-        start=1
+        pages,
+        1
     ):
 
         print(
-            f"[{index}/{len(links)}] "
-            f"{name}"
+            f"[{index}/{len(pages)}] "
+            f"NO.{number:03d} {name}"
         )
 
 
@@ -1121,13 +1167,13 @@ def main():
         except Exception as error:
 
             print(
-                "ERROR:",
+                "  ERROR:",
                 error
             )
 
 
-            # Preserve the Aniimo in the
-            # database even if one page fails.
+            # Keep the record rather than
+            # losing the Aniimo completely.
 
             output.append({
 
@@ -1140,11 +1186,8 @@ def main():
                 "number":
                     (
                         f"{number:03d}"
-                        if number is not None
-                        and number < 1000
-                        else str(
-                            number or ""
-                        )
+                        if number < 1000
+                        else str(number)
                     ),
 
                 "sourceUrl":
@@ -1180,8 +1223,7 @@ def main():
                         [],
 
                     "notes": [
-                        "Refresh error: "
-                        + str(error)
+                        "Page could not be parsed."
                     ]
 
                 },
@@ -1194,39 +1236,40 @@ def main():
             })
 
 
+        # Be polite to the Wiki.
+
         time.sleep(
-            0.15
+            0.2
         )
 
 
-    # Sort numerically
+    # -----------------------------------------------------
+    # PORTRAIT CHECK
+    # -----------------------------------------------------
 
-    output.sort(
-        key=lambda item:
-            int(
-                item.get(
-                    "id"
-                ) or 999999
-            )
+    portrait_count = sum(
+        1
+        for item in output
+        if item.get(
+            "imageUrl"
+        )
     )
 
 
-    # -----------------------------------------------------
-    # SAFETY CHECK
-    # -----------------------------------------------------
-
-    valid = [
-        item
-        for item in output
-        if item.get("name")
-    ]
+    print("")
+    print(
+        "Portraits found:",
+        portrait_count,
+        "/",
+        len(output)
+    )
 
 
-    if len(valid) < 80:
+    if portrait_count < 20:
 
         raise RuntimeError(
-            "Refresh produced too few valid Aniimo. "
-            "Existing aniimo.json was NOT replaced."
+            "Too few portraits were found. "
+            "Database was NOT replaced."
         )
 
 
@@ -1249,10 +1292,19 @@ def main():
         "=========================================="
     )
     print(
-        f"Successfully wrote {len(output)} Aniimo."
+        " DATABASE COMPLETE"
     )
     print(
-        f"File: {OUTPUT_FILE}"
+        " Aniimo:",
+        len(output)
+    )
+    print(
+        " Portraits:",
+        portrait_count
+    )
+    print(
+        " Output:",
+        OUTPUT_FILE
     )
     print(
         "=========================================="
