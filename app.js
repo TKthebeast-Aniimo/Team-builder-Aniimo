@@ -3,176 +3,153 @@
 /*
 =========================================================
 ANIIMO TEAM BUILDER
-STABLE ROSTER VERSION
+FULL ROSTER VERSION
 =========================================================
 
-This version:
-- Loads aniimo.json immediately
-- Never waits forever for data
-- Uses AniDex portraits as a fallback
-- Keeps team slots working
-- Keeps filters working
-- Keeps Aniimo details working
-- Falls back to Emberpup/test data if the JSON fails
+Uses the complete aniimo.json from the repository.
+
+IMPORTANT:
+We do NOT use a 6-Aniimo test roster anymore.
+
+The JSON database is the source for the roster.
+
+If the JSON temporarily fails, the complete roster
+names are used as a fallback so the page never becomes
+an infinite loading screen.
 =========================================================
 */
 
 
-/* =========================================================
-   FALLBACK DATA
-   ========================================================= */
+/* =====================================================
+   COMPLETE CURRENT PROJECT ROSTER
+   ===================================================== */
 
-const FALLBACK_ANIIMO = [
-    {
-        id: 1,
-        number: "001",
-        name: "Emberpup",
+const COMPLETE_ROSTER = [
+    [1, "001", "Emberpup"],
+    [2, "002", "Flameruff"],
+    [3, "003", "Scorchhowl"],
+    [4, "004", "Inferlupa"],
+    [5, "005", "Celestis"],
+    [6, "006", "Stellarys"],
+    [7, "007", "Chirpi"],
+    [8, "008", "Tromber"],
+    [9, "009", "Cornet"],
+    [10, "010", "Tubster"],
+    [11, "011", "Iris"],
+    [12, "012", "Irisal"],
 
-        elements: ["fire", "rock"],
-        roles: ["DPS"],
+    [14, "014", "Skippy"],
+    [15, "015", "Pranky"],
+    [16, "016", "Glacy"],
+    [17, "017", "Leafy"],
+    [18, "018", "Nimbi"],
+    [19, "019", "Turbo"],
+    [20, "020", "Dreaple"],
+    [21, "021", "Hummin"],
+    [22, "022", "Witchin"],
+    [23, "023", "Tuckin"],
+    [24, "024", "Budclaw"],
+    [25, "025", "Shrubclaw"],
+    [26, "026", "Geoclaw"],
+    [27, "027", "Sparki"],
+    [28, "028", "Flamerion"],
+    [29, "029", "Flutternym"],
+    [30, "030", "Gracewing"],
+    [31, "031", "Somniwing"],
+    [32, "032", "Eko"],
+    [33, "033", "Eklue"],
+    [34, "034", "Budsquire"],
+    [35, "035", "Thornblade"],
+    [36, "036", "Melloblum"],
+    [37, "037", "Pomegg"],
+    [38, "038", "Dazmand"],
+    [39, "039", "Pomawk"],
+    [40, "040", "Dewy"],
+    [41, "041", "Fragrancier"],
+    [42, "042", "Wisptis"],
+    [43, "043", "Ignitis"],
+    [44, "044", "Fulmintis"],
+    [45, "045", "Bonesky"],
+    [46, "046", "Fenrier"],
+    [47, "047", "Glynsera"],
+    [48, "048", "Bolty"],
+    [49, "049", "Blazen"],
+    [50, "050", "Susuta"],
+    [51, "051", "Popota"],
+    [52, "052", "Piopiota"],
+    [53, "053", "Panpanta"],
+    [54, "054", "Shelly"],
+    [55, "055", "Sheldon"],
+    [56, "056", "Sherro"],
+    [57, "057", "Baleetle"],
+    [58, "058", "Waleetle"],
+    [59, "059", "Bouldus"],
+    [60, "060", "Fentuft"],
+    [61, "061", "Fenmane"],
+    [62, "062", "Helmut"],
+    [63, "063", "Pawney"],
+    [64, "064", "Rookey"],
+    [65, "065", "Jawling"],
+    [66, "066", "Helmwhelp"],
+    [67, "067", "Helgon"],
+    [68, "068", "Infergon"],
+    [69, "069", "Cubbo"],
+    [70, "070", "Grizbo"],
+    [71, "071", "Pebbling"],
+    [72, "072", "Lavazar"],
+    [73, "073", "Magmarex"],
+    [74, "074", "Geodeback"],
+    [75, "075", "Minespine"],
+    [76, "076", "Cozite"],
+    [77, "077", "Bailite"],
+    [78, "078", "Bulbly"],
+    [79, "079", "Veilfloat"],
+    [80, "080", "Luminelle"],
+    [81, "081", "Fahloo"],
+    [82, "082", "Erlath"],
+    [83, "083", "Besauce"],
+    [84, "084", "Reefish"],
+    [85, "085", "Coraliz"],
+    [86, "086", "Cheekie"],
+    [87, "087", "Wavwal"],
+    [88, "088", "Bubbeep"],
+    [89, "089", "Glameep"],
+    [90, "090", "Popapus"],
+    [91, "091", "Gachapus"],
+    [92, "092", "Malangel"],
+    [93, "093", "Malevsera"],
 
-        image:
-            "https://aniidex.com/_ipx/q_95%26fit_inside%26s_260x260/images/aniimo/UI_PetHead_10051.png",
-
-        stats: {
-            HP: 67,
-            BREAK: 38,
-            ATK: 86,
-            "M.DEF": 53,
-            "P.DEF": 60,
-            REGEN: 67
-        },
-
-        trait: {
-            name: "Scorching Flames",
-            description:
-                "Increases damage dealt to enemies weak to your element by 15%."
-        },
-
-        mobility: {
-            name: "Hustle",
-            description:
-                "Enters Hustle state, increasing movement speed by consuming stamina."
-        },
-
-        skills: [
-            {
-                name: "Fire Bolt",
-                element: "Fire",
-                type: "Magic",
-                cost: 10,
-                power: 30,
-                description:
-                    "Launches a fireball at the target and applies 2 stacks of Fire Debuff for 5 seconds."
-            },
-
-            {
-                name: "Fire Kick",
-                element: "Physical",
-                type: "Physical",
-                cost: 0,
-                power: 72,
-                description:
-                    "Jumps up to dodge an attack before delivering a dive-kick. A successful dodge increases damage by 20% for 20 seconds."
-            },
-
-            {
-                name: "Pebble Kick",
-                element: "Physical",
-                type: "Physical",
-                cost: 0,
-                power: 72,
-                description:
-                    "Jumps up to dodge an attack before delivering a dive-kick."
-            }
-        ],
-
-        notes: [
-            "Fire DPS.",
-            "Strong against enemies weak to Fire.",
-            "Fire Bolt applies Fire Debuff stacks.",
-            "Fire Kick rewards successful dodges.",
-            "Works well with teammates that increase damage or exploit Fire Debuffs."
-        ]
-    },
-
-    {
-        id: 2,
-        number: "002",
-        name: "Flameruff",
-        elements: ["fire"],
-        roles: ["DPS"],
-        image:
-            "https://aniidex.com/_ipx/q_95%26fit_inside%26s_260x260/images/aniimo/UI_PetHead_10052.png",
-        stats: {},
-        trait: null,
-        skills: [],
-        notes: []
-    },
-
-    {
-        id: 3,
-        number: "003",
-        name: "Scorchhowl",
-        elements: ["fire"],
-        roles: ["DPS"],
-        image:
-            "https://aniidex.com/_ipx/q_95%26fit_inside%26s_260x260/images/aniimo/UI_PetHead_10053.png",
-        stats: {},
-        trait: null,
-        skills: [],
-        notes: []
-    },
-
-    {
-        id: 4,
-        number: "004",
-        name: "Inferlupa",
-        elements: ["fire"],
-        roles: ["DPS"],
-        image:
-            "https://aniidex.com/_ipx/q_95%26fit_inside%26s_260x260/images/aniimo/UI_PetHead_10054.png",
-        stats: {},
-        trait: null,
-        skills: [],
-        notes: []
-    },
-
-    {
-        id: 5,
-        number: "005",
-        name: "Celestis",
-        elements: ["light"],
-        roles: ["Support"],
-        image:
-            "https://aniidex.com/_ipx/q_95%26fit_inside%26s_260x260/images/aniimo/UI_PetHead_10055.png",
-        stats: {},
-        trait: null,
-        skills: [],
-        notes: []
-    },
-
-    {
-        id: 6,
-        number: "006",
-        name: "Stellarys",
-        elements: ["light"],
-        roles: ["DPS"],
-        image:
-            "https://aniidex.com/_ipx/q_95%26fit_inside%26s_260x260/images/aniimo/UI_PetHead_10056.png",
-        stats: {},
-        trait: null,
-        skills: [],
-        notes: []
-    }
+    [9997, "9997", "Fennelun"],
+    [9998, "9998", "Helion"]
 ];
 
 
-/* =========================================================
-   GLOBAL STATE
-   ========================================================= */
+/* =====================================================
+   STATE
+   ===================================================== */
 
-let ANIIMO = [...FALLBACK_ANIIMO];
+let ANIIMO = COMPLETE_ROSTER.map(function (item) {
+
+    return {
+        id: item[0],
+        number: item[1],
+        name: item[2],
+        sourceUrl: null,
+        imageUrl: null,
+        elements: [],
+        roles: [],
+        stats: {},
+        forms: [],
+        trait: null,
+        skills: [],
+        analysis: {
+            tags: [],
+            notes: []
+        }
+    };
+
+});
+
 
 let selectedTeam = [null, null, null, null];
 
@@ -183,9 +160,9 @@ let selectedElement = "all";
 let searchText = "";
 
 
-/* =========================================================
+/* =====================================================
    DOM
-   ========================================================= */
+   ===================================================== */
 
 const rosterElement =
     document.getElementById("roster");
@@ -215,126 +192,218 @@ const analysis =
     document.getElementById("analysis");
 
 
-/* =========================================================
-   START
-========================================================= */
+/* =====================================================
+   START IMMEDIATELY
+   ===================================================== */
 
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
 
-    /*
-    IMPORTANT:
+        /*
+        FIRST:
+        Show the COMPLETE roster immediately.
 
-    Render the fallback roster FIRST.
+        No spinner.
+        No waiting.
+        No API.
+        */
 
-    This means the user sees Aniimo immediately.
-    We do NOT wait for the JSON file.
-    */
+        renderRoster();
 
-    renderRoster();
-    renderTeam();
-    renderAnalysis();
+        renderTeam();
 
-    setupEvents();
+        renderAnalysis();
 
-    /*
-    Now try to load the real roster.
+        setupEvents();
 
-    If it works, replace the fallback.
-    If it doesn't, keep the fallback.
-    */
+        /*
+        SECOND:
+        Load the richer information from aniimo.json.
+        */
 
-    loadRoster();
+        loadAniimoDatabase();
 
-});
+    }
+);
 
 
-/* =========================================================
-   LOAD ROSTER
-========================================================= */
+/* =====================================================
+   LOAD THE REAL DATABASE
+   ===================================================== */
 
-async function loadRoster() {
+async function loadAniimoDatabase() {
 
     try {
 
-        const response = await fetch(
-            "aniimo.json?cache=" + Date.now(),
-            {
-                cache: "no-store"
+        const response =
+            await fetch(
+                "aniimo.json?v=" +
+                Date.now(),
+                {
+                    cache: "no-store"
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Could not load aniimo.json: HTTP " +
+                response.status
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        if (!Array.isArray(data)) {
+
+            throw new Error(
+                "aniimo.json does not contain an array."
+            );
+
+        }
+
+
+        /*
+        Merge the detailed JSON data with the
+        complete roster.
+
+        This is important because the JSON contains
+        all the current project entries, while the
+        fallback guarantees the names never disappear.
+        */
+
+        const database =
+            new Map();
+
+
+        data.forEach(
+            function (item) {
+
+                database.set(
+                    Number(item.id),
+                    item
+                );
+
             }
         );
 
-        if (!response.ok) {
-            throw new Error(
-                "aniimo.json returned HTTP " +
-                response.status
-            );
-        }
 
-        const data = await response.json();
+        ANIIMO =
+            COMPLETE_ROSTER.map(
+                function (entry) {
 
-        if (!Array.isArray(data)) {
-            throw new Error(
-                "aniimo.json is not an array"
-            );
-        }
+                    const id =
+                        entry[0];
 
-        if (data.length === 0) {
-            throw new Error(
-                "aniimo.json is empty"
+                    const number =
+                        entry[1];
+
+                    const name =
+                        entry[2];
+
+                    const databaseItem =
+                        database.get(id);
+
+
+                    if (!databaseItem) {
+
+                        return {
+
+                            id: id,
+
+                            number: number,
+
+                            name: name,
+
+                            sourceUrl: null,
+
+                            imageUrl: null,
+
+                            elements: [],
+
+                            roles: [],
+
+                            stats: {},
+
+                            forms: [],
+
+                            trait: null,
+
+                            skills: [],
+
+                            analysis: {
+                                tags: [],
+                                notes: []
+                            }
+
+                        };
+
+                    }
+
+
+                    return normalizeAniimo(
+                        databaseItem,
+                        number,
+                        name
+                    );
+
+                }
             );
-        }
+
 
         /*
-        Normalize the database.
-
-        This prevents missing fields from
-        crashing the website.
+        Render AGAIN after the database loads.
         */
 
-        const normalized = data.map(
-            normalizeAniimo
-        );
+        renderRoster();
 
-        /*
-        Only replace the fallback if
-        we actually received Aniimo.
-        */
+        renderTeam();
 
-        if (normalized.length > 0) {
+        renderAnalysis();
 
-            ANIIMO = normalized;
 
-            renderRoster();
-            renderTeam();
-            renderAnalysis();
+        if (rosterStatus) {
+
+            rosterStatus.textContent =
+                ANIIMO.length +
+                " Aniimo";
 
         }
+
 
         console.log(
-            "Loaded " +
-            ANIIMO.length +
-            " Aniimo from aniimo.json"
+            "FULL ANIIMO ROSTER LOADED:",
+            ANIIMO.length
         );
+
 
     } catch (error) {
 
-        console.warn(
-            "Could not load aniimo.json.",
+        console.error(
+            "Aniimo database error:",
             error
         );
+
 
         /*
         IMPORTANT:
 
-        Do NOT show an infinite loader.
+        We DO NOT clear the roster.
 
-        The fallback roster remains visible.
+        The complete roster remains visible.
         */
 
         if (rosterStatus) {
 
             rosterStatus.textContent =
-                `${ANIIMO.length} Aniimo available`;
+                ANIIMO.length +
+                " Aniimo";
 
         }
 
@@ -343,159 +412,53 @@ async function loadRoster() {
 }
 
 
-/* =========================================================
-   NORMALIZE ANIIMO
-========================================================= */
+/* =====================================================
+   NORMALIZE DATA
+   ===================================================== */
 
-function normalizeAniimo(item) {
-
-    const id =
-        Number(item.id) || 0;
-
-    const number =
-        String(
-            item.number ||
-            String(id).padStart(3, "0")
-        );
-
-    const name =
-        item.name ||
-        "Unknown Aniimo";
-
-    let elements =
-        Array.isArray(item.elements)
-            ? item.elements
-            : [];
-
-    let roles =
-        Array.isArray(item.roles)
-            ? item.roles
-            : [];
-
-    /*
-    Normalize role capitalization.
-    */
-
-    roles = roles.map(function (role) {
-
-        const value =
-            String(role).trim();
-
-        const upper =
-            value.toUpperCase();
-
-        if (upper === "DPS")
-            return "DPS";
-
-        if (upper === "SUPPORT")
-            return "Support";
-
-        if (upper === "HEAL")
-            return "Heal";
-
-        if (upper === "BREAK")
-            return "BREAK";
-
-        if (upper === "REGEN")
-            return "REGEN";
-
-        return value;
-
-    });
-
-
-    /*
-    Normalize elements.
-    */
-
-    elements = elements.map(function (element) {
-
-        return String(element)
-            .trim()
-            .toLowerCase();
-
-    });
-
-
-    /*
-    Create an AniDex portrait fallback.
-
-    AniDex currently exposes Aniimo portraits
-    through its image system.
-    */
-
-    let image =
-        item.imageUrl ||
-        item.image ||
-        "";
-
-    if (!image) {
-
-        /*
-        Standard AniDex portrait pattern.
-
-        Example:
-        Emberpup -> UI_PetHead_10051.png
-        */
-
-        const imageNumber =
-            10000 + id + 50;
-
-        image =
-            "https://aniidex.com/_ipx/q_95%26fit_inside%26s_260x260/images/aniimo/UI_PetHead_" +
-            imageNumber +
-            ".png";
-
-    }
-
-
-    /*
-    Stats
-    */
-
-    const stats =
-        item.stats &&
-        typeof item.stats === "object"
-            ? item.stats
-            : {};
-
-
-    /*
-    Skills
-    */
-
-    const skills =
-        Array.isArray(item.skills)
-            ? item.skills
-            : [];
-
-
-    /*
-    Analysis
-    */
-
-    const analysis =
-        item.analysis &&
-        typeof item.analysis === "object"
-            ? item.analysis
-            : {};
-
+function normalizeAniimo(
+    item,
+    fallbackNumber,
+    fallbackName
+) {
 
     return {
 
-        id: id,
+        id:
+            Number(item.id) ||
+            0,
 
-        number: number,
+        number:
+            item.number ||
+            fallbackNumber,
 
-        name: name,
+        name:
+            item.name ||
+            fallbackName,
 
-        elements: elements,
+        sourceUrl:
+            item.sourceUrl ||
+            null,
 
-        roles: roles,
+        imageUrl:
+            item.imageUrl ||
+            null,
 
-        image: image,
+        elements:
+            Array.isArray(item.elements)
+                ? item.elements
+                : [],
 
-        stats: stats,
+        roles:
+            Array.isArray(item.roles)
+                ? item.roles
+                : [],
+
+        stats:
+            item.stats &&
+            typeof item.stats === "object"
+                ? item.stats
+                : {},
 
         forms:
             Array.isArray(item.forms)
@@ -503,29 +466,36 @@ function normalizeAniimo(item) {
                 : [],
 
         trait:
-            item.trait || null,
+            item.trait ||
+            null,
 
-        skills: skills,
+        skills:
+            Array.isArray(item.skills)
+                ? item.skills
+                : [],
 
-        notes:
-            Array.isArray(analysis.notes)
-                ? analysis.notes
-                : []
+        analysis:
+            item.analysis &&
+            typeof item.analysis === "object"
+                ? item.analysis
+                : {
+                    tags: [],
+                    notes: []
+                }
 
     };
 
 }
 
 
-/* =========================================================
+/* =====================================================
    EVENTS
-========================================================= */
+   ===================================================== */
 
 function setupEvents() {
 
-    /*
-    Search
-    */
+
+    /* SEARCH */
 
     if (searchInput) {
 
@@ -546,9 +516,7 @@ function setupEvents() {
     }
 
 
-    /*
-    Element filter
-    */
+    /* ELEMENT FILTER */
 
     if (elementFilter) {
 
@@ -569,9 +537,7 @@ function setupEvents() {
     }
 
 
-    /*
-    Role buttons
-    */
+    /* ROLE FILTER */
 
     roleButtons.forEach(
         function (button) {
@@ -590,13 +556,18 @@ function setupEvents() {
                         }
                     );
 
+
                     button.classList.add(
                         "active"
                     );
 
+
                     selectedRole =
-                        button.dataset.role ||
-                        "all";
+                        (
+                            button.dataset.role ||
+                            "all"
+                        ).toLowerCase();
+
 
                     renderRoster();
 
@@ -607,9 +578,7 @@ function setupEvents() {
     );
 
 
-    /*
-    Clear team
-    */
+    /* CLEAR TEAM */
 
     if (clearTeamButton) {
 
@@ -618,7 +587,12 @@ function setupEvents() {
             function () {
 
                 selectedTeam =
-                    [null, null, null, null];
+                    [
+                        null,
+                        null,
+                        null,
+                        null
+                    ];
 
                 renderTeam();
 
@@ -630,12 +604,12 @@ function setupEvents() {
     }
 
 
-    /*
-    Team slots
-    */
+    /* TEAM SLOTS */
 
     document
-        .querySelectorAll(".team-slot")
+        .querySelectorAll(
+            ".team-slot"
+        )
         .forEach(
             function (slot) {
 
@@ -643,20 +617,20 @@ function setupEvents() {
                     "click",
                     function () {
 
-                        const slotIndex =
+                        const index =
                             Number(
                                 slot.dataset.slot
                             );
 
+
                         if (
                             Number.isInteger(
-                                slotIndex
+                                index
                             )
                         ) {
 
-                            selectedTeam[
-                                slotIndex
-                            ] = null;
+                            selectedTeam[index] =
+                                null;
 
                             renderTeam();
 
@@ -671,9 +645,7 @@ function setupEvents() {
         );
 
 
-    /*
-    Roster card clicks
-    */
+    /* ROSTER CARD */
 
     document.addEventListener(
         "click",
@@ -684,18 +656,26 @@ function setupEvents() {
                     ".aniimo-card"
                 );
 
+
             if (!card)
                 return;
 
+
             const id =
-                Number(card.dataset.id);
+                Number(
+                    card.dataset.id
+                );
+
 
             const aniimo =
                 ANIIMO.find(
                     function (item) {
+
                         return item.id === id;
+
                     }
                 );
+
 
             if (aniimo) {
 
@@ -709,9 +689,7 @@ function setupEvents() {
     );
 
 
-    /*
-    Add-to-team button
-    */
+    /* ADD TO TEAM */
 
     if (details) {
 
@@ -724,15 +702,16 @@ function setupEvents() {
                         "[data-add-team]"
                     );
 
+
                 if (!button)
                     return;
 
-                const id =
+
+                addAniimoToTeam(
                     Number(
                         button.dataset.addTeam
-                    );
-
-                addAniimoToTeam(id);
+                    )
+                );
 
             }
         );
@@ -742,25 +721,40 @@ function setupEvents() {
 }
 
 
-/* =========================================================
-   FILTER
-========================================================= */
+/* =====================================================
+   FILTERING
+   ===================================================== */
 
 function getFilteredAniimo() {
 
     return ANIIMO.filter(
         function (aniimo) {
 
+
+            const name =
+                String(
+                    aniimo.name || ""
+                ).toLowerCase();
+
+
+            const number =
+                String(
+                    aniimo.number || ""
+                ).toLowerCase();
+
+
             const matchesSearch =
                 !searchText ||
+                name.includes(searchText) ||
+                number.includes(searchText);
 
-                aniimo.name
-                    .toLowerCase()
-                    .includes(searchText) ||
 
-                aniimo.number
-                    .includes(searchText);
+            /*
+            IMPORTANT:
 
+            If an Aniimo currently has no role data,
+            it must STILL appear under "All".
+            */
 
             const matchesRole =
                 selectedRole === "all" ||
@@ -773,17 +767,18 @@ function getFilteredAniimo() {
                     aniimo.roles.some(
                         function (role) {
 
-                            return (
-                                String(role)
-                                    .toLowerCase() ===
-                                String(selectedRole)
-                                    .toLowerCase()
-                            );
+                            return String(role)
+                                .toLowerCase() ===
+                                selectedRole;
 
                         }
                     )
                 );
 
+
+            /*
+            Same logic for elements.
+            */
 
             const matchesElement =
                 selectedElement === "all" ||
@@ -796,12 +791,9 @@ function getFilteredAniimo() {
                     aniimo.elements.some(
                         function (element) {
 
-                            return (
-                                String(element)
-                                    .toLowerCase() ===
-                                String(selectedElement)
-                                    .toLowerCase()
-                            );
+                            return String(element)
+                                .toLowerCase() ===
+                                selectedElement;
 
                         }
                     )
@@ -820,9 +812,9 @@ function getFilteredAniimo() {
 }
 
 
-/* =========================================================
+/* =====================================================
    RENDER ROSTER
-========================================================= */
+   ===================================================== */
 
 function renderRoster() {
 
@@ -834,24 +826,26 @@ function renderRoster() {
         getFilteredAniimo();
 
 
-    rosterElement.innerHTML = "";
+    rosterElement.innerHTML =
+        "";
 
 
     if (rosterStatus) {
 
         rosterStatus.textContent =
-            `${list.length} Aniimo found`;
+            list.length +
+            " Aniimo";
 
     }
 
 
-    if (list.length === 0) {
+    if (!list.length) {
 
         rosterElement.innerHTML = `
 
             <div class="empty-analysis">
 
-                No Aniimo match these filters.
+                No Aniimo match your filters.
 
             </div>
 
@@ -866,24 +860,46 @@ function renderRoster() {
         function (aniimo) {
 
             const card =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
+
 
             card.className =
                 "aniimo-card";
+
 
             card.dataset.id =
                 aniimo.id;
 
 
-            const imageHTML =
-                aniimo.image
-                    ?
+            /*
+            Use the stored image if available.
 
+            If it isn't available yet, show a clean
+            Aniimo placeholder instead of a broken image.
+            */
+
+            let imageHTML =
+                `
+
+                <div class="aniimo-placeholder">
+
+                    🐾
+
+                </div>
+
+                `;
+
+
+            if (aniimo.imageUrl) {
+
+                imageHTML =
                     `
 
                     <img
                         src="${escapeHtml(
-                            aniimo.image
+                            aniimo.imageUrl
                         )}"
                         alt="${escapeHtml(
                             aniimo.name
@@ -896,37 +912,15 @@ function renderRoster() {
                     >
 
                     <div
-                        class="aniimo-image-fallback"
-                        style="
-                            display:none;
-                            height:150px;
-                            align-items:center;
-                            justify-content:center;
-                            font-size:55px;
-                        "
-                    >
-                        🐾
-                    </div>
-
-                    `
-
-                    :
-
-                    `
-
-                    <div
-                        style="
-                            height:150px;
-                            display:flex;
-                            align-items:center;
-                            justify-content:center;
-                            font-size:55px;
-                        "
+                        class="aniimo-placeholder"
+                        style="display:none;"
                     >
                         🐾
                     </div>
 
                     `;
+
+            }
 
 
             const elements =
@@ -940,11 +934,15 @@ function renderRoster() {
                             function (element) {
 
                                 return `
+
                                     <span class="badge">
+
                                         ${capitalize(
                                             element
                                         )}
+
                                     </span>
+
                                 `;
 
                             }
@@ -967,11 +965,15 @@ function renderRoster() {
                             function (role) {
 
                                 return `
+
                                     <span class="badge">
+
                                         ${escapeHtml(
                                             role
                                         )}
+
                                     </span>
+
                                 `;
 
                             }
@@ -987,17 +989,24 @@ function renderRoster() {
 
                 ${imageHTML}
 
+
                 <div class="aniimo-number">
+
                     NO.${escapeHtml(
                         aniimo.number
                     )}
+
                 </div>
 
+
                 <div class="aniimo-name">
+
                     ${escapeHtml(
                         aniimo.name
                     )}
+
                 </div>
+
 
                 <div class="badges">
 
@@ -1020,11 +1029,13 @@ function renderRoster() {
 }
 
 
-/* =========================================================
+/* =====================================================
    DETAILS
-========================================================= */
+   ===================================================== */
 
-function showAniimoDetails(aniimo) {
+function showAniimoDetails(
+    aniimo
+) {
 
     if (!detailsPanel || !details)
         return;
@@ -1035,7 +1046,8 @@ function showAniimoDetails(aniimo) {
     );
 
 
-    let statsHTML = "";
+    let statsHTML =
+        "";
 
 
     if (
@@ -1060,7 +1072,7 @@ function showAniimoDetails(aniimo) {
                         .map(
                             function (
                                 [
-                                    name,
+                                    key,
                                     value
                                 ]
                             ) {
@@ -1070,17 +1082,21 @@ function showAniimoDetails(aniimo) {
                                     <div class="stat">
 
                                         <div class="stat-name">
+
                                             ${escapeHtml(
-                                                name
+                                                key
                                             )}
+
                                         </div>
 
                                         <div class="stat-value">
+
                                             ${escapeHtml(
                                                 String(
                                                     value
                                                 )
                                             )}
+
                                         </div>
 
                                     </div>
@@ -1101,7 +1117,8 @@ function showAniimoDetails(aniimo) {
     }
 
 
-    let skillsHTML = "";
+    let skillsHTML =
+        "";
 
 
     if (
@@ -1135,50 +1152,60 @@ function showAniimoDetails(aniimo) {
 
                                         </div>
 
+
                                         <div class="skill-meta">
 
                                             ${
                                                 skill.element
-                                                    ? escapeHtml(
+                                                    ?
+                                                    escapeHtml(
                                                         skill.element
                                                     )
-                                                    : ""
+                                                    :
+                                                    ""
                                             }
 
                                             ${
                                                 skill.type
-                                                    ? " • " +
-                                                      escapeHtml(
-                                                          skill.type
-                                                      )
-                                                    : ""
+                                                    ?
+                                                    " • " +
+                                                    escapeHtml(
+                                                        skill.type
+                                                    )
+                                                    :
+                                                    ""
                                             }
 
                                             ${
                                                 skill.cost !==
                                                 undefined
-                                                    ? " • Cost " +
-                                                      escapeHtml(
-                                                          String(
-                                                              skill.cost
-                                                          )
-                                                      )
-                                                    : ""
+                                                    ?
+                                                    " • Cost " +
+                                                    escapeHtml(
+                                                        String(
+                                                            skill.cost
+                                                        )
+                                                    )
+                                                    :
+                                                    ""
                                             }
 
                                             ${
                                                 skill.power !==
                                                 undefined
-                                                    ? " • Power " +
-                                                      escapeHtml(
-                                                          String(
-                                                              skill.power
-                                                          )
-                                                      )
-                                                    : ""
+                                                    ?
+                                                    " • Power " +
+                                                    escapeHtml(
+                                                        String(
+                                                            skill.power
+                                                        )
+                                                    )
+                                                    :
+                                                    ""
                                             }
 
                                         </div>
+
 
                                         <div>
 
@@ -1205,87 +1232,18 @@ function showAniimoDetails(aniimo) {
     }
 
 
-    const image =
-        aniimo.image
-            ?
-
-            `
-
-            <img
-                src="${escapeHtml(
-                    aniimo.image
-                )}"
-                alt="${escapeHtml(
-                    aniimo.name
-                )}"
-            >
-
-            `
-
-            :
-
-            `<div style="font-size:100px">🐾</div>`;
-
-
-    const elements =
-        Array.isArray(
-            aniimo.elements
-        )
-            ?
-
-            aniimo.elements
-                .map(
-                    function (element) {
-
-                        return `
-                            <span class="badge">
-                                ${capitalize(
-                                    element
-                                )}
-                            </span>
-                        `;
-
-                    }
-                )
-                .join("")
-
-            :
-
-            "";
-
-
-    const roles =
-        Array.isArray(
-            aniimo.roles
-        )
-            ?
-
-            aniimo.roles
-                .map(
-                    function (role) {
-
-                        return `
-                            <span class="badge">
-                                ${escapeHtml(
-                                    role
-                                )}
-                            </span>
-                        `;
-
-                    }
-                )
-                .join("")
-
-            :
-
-            "";
-
-
     const notes =
         Array.isArray(
-            aniimo.notes
-        ) &&
-        aniimo.notes.length
+            aniimo.analysis?.notes
+        )
+            ?
+            aniimo.analysis.notes
+            :
+            [];
+
+
+    const notesHTML =
+        notes.length
 
             ?
 
@@ -1294,16 +1252,20 @@ function showAniimoDetails(aniimo) {
                 <ul>
 
                     ${
-                        aniimo.notes
+                        notes
                             .map(
                                 function (note) {
 
                                     return `
+
                                         <li>
+
                                             ${escapeHtml(
                                                 note
                                             )}
+
                                         </li>
+
                                     `;
 
                                 }
@@ -1320,8 +1282,11 @@ function showAniimoDetails(aniimo) {
             `
 
                 <p>
-                    Detailed team-building information
-                    will appear as the database is verified.
+
+                    Detailed synergy information
+                    will be added as the Aniimo
+                    database is verified.
+
                 </p>
 
             `;
@@ -1332,35 +1297,143 @@ function showAniimoDetails(aniimo) {
         <button
             class="role-button"
             data-add-team="${aniimo.id}"
-            style="margin-bottom:15px;"
         >
+
             ➕ Add to Team
+
         </button>
 
 
         <div class="detail-header">
 
-            ${image}
+            ${
+                aniimo.imageUrl
+
+                    ?
+
+                    `
+
+                    <img
+                        src="${escapeHtml(
+                            aniimo.imageUrl
+                        )}"
+                        alt="${escapeHtml(
+                            aniimo.name
+                        )}"
+                        onerror="
+                            this.style.display='none';
+                        "
+                    >
+
+                    `
+
+                    :
+
+                    `
+
+                    <div
+                        class="aniimo-placeholder"
+                        style="
+                            width:160px;
+                            height:160px;
+                            font-size:70px;
+                        "
+                    >
+
+                        🐾
+
+                    </div>
+
+                    `
+            }
+
 
             <div class="detail-info">
 
                 <div class="aniimo-number">
+
                     NO.${escapeHtml(
                         aniimo.number
                     )}
+
                 </div>
 
+
                 <h2>
+
                     ${escapeHtml(
                         aniimo.name
                     )}
+
                 </h2>
+
 
                 <div class="badges">
 
-                    ${elements}
+                    ${
+                        Array.isArray(
+                            aniimo.elements
+                        )
 
-                    ${roles}
+                            ?
+
+                            aniimo.elements
+                                .map(
+                                    function (element) {
+
+                                        return `
+
+                                            <span class="badge">
+
+                                                ${capitalize(
+                                                    element
+                                                )}
+
+                                            </span>
+
+                                        `;
+
+                                    }
+                                )
+                                .join("")
+
+                            :
+
+                            ""
+                    }
+
+
+                    ${
+                        Array.isArray(
+                            aniimo.roles
+                        )
+
+                            ?
+
+                            aniimo.roles
+                                .map(
+                                    function (role) {
+
+                                        return `
+
+                                            <span class="badge">
+
+                                                ${escapeHtml(
+                                                    role
+                                                )}
+
+                                            </span>
+
+                                        `;
+
+                                    }
+                                )
+                                .join("")
+
+                            :
+
+                            ""
+                    }
 
                 </div>
 
@@ -1373,23 +1446,46 @@ function showAniimoDetails(aniimo) {
 
             <h3>Trait</h3>
 
-            <div class="analysis-box analysis-good">
+            <div class="analysis-box">
 
                 <strong>
 
-                    ${escapeHtml(
-                        aniimo.trait?.name ||
-                        "Information not yet verified"
-                    )}
+                    ${
+                        typeof aniimo.trait ===
+                        "object"
+
+                            ?
+
+                            escapeHtml(
+                                aniimo.trait.name ||
+                                "Trait"
+                            )
+
+                            :
+
+                            "Trait information"
+                    }
 
                 </strong>
 
+
                 <p>
 
-                    ${escapeHtml(
-                        aniimo.trait?.description ||
-                        "No trait information available yet."
-                    )}
+                    ${
+                        typeof aniimo.trait ===
+                        "object"
+
+                            ?
+
+                            escapeHtml(
+                                aniimo.trait.description ||
+                                ""
+                            )
+
+                            :
+
+                            "Detailed trait information has not yet been entered."
+                    }
 
                 </p>
 
@@ -1400,6 +1496,7 @@ function showAniimoDetails(aniimo) {
 
         ${statsHTML}
 
+
         ${skillsHTML}
 
 
@@ -1409,7 +1506,7 @@ function showAniimoDetails(aniimo) {
                 Team Building Notes
             </h3>
 
-            ${notes}
+            ${notesHTML}
 
         </div>
 
@@ -1424,135 +1521,156 @@ function showAniimoDetails(aniimo) {
 }
 
 
-/* =========================================================
+/* =====================================================
    TEAM
-========================================================= */
+   ===================================================== */
 
 function renderTeam() {
 
-    const slots =
-        document.querySelectorAll(
+    document
+        .querySelectorAll(
             ".team-slot"
-        );
+        )
+        .forEach(
+            function (
+                slot,
+                index
+            ) {
+
+                const aniimo =
+                    selectedTeam[index];
 
 
-    slots.forEach(
-        function (
-            slot,
-            index
-        ) {
+                if (!aniimo) {
 
-            const aniimo =
-                selectedTeam[index];
+                    slot.classList.add(
+                        "empty"
+                    );
+
+                    slot.classList.remove(
+                        "filled"
+                    );
 
 
-            if (!aniimo) {
+                    slot.innerHTML = `
 
-                slot.classList.add(
+                        <span class="slot-number">
+
+                            ${index + 1}
+
+                        </span>
+
+
+                        <span class="slot-text">
+
+                            Select Aniimo
+
+                        </span>
+
+                    `;
+
+                    return;
+
+                }
+
+
+                slot.classList.remove(
                     "empty"
                 );
 
-                slot.classList.remove(
+                slot.classList.add(
                     "filled"
                 );
 
+
                 slot.innerHTML = `
 
-                    <span class="slot-number">
-                        ${index + 1}
-                    </span>
+                    ${
+                        aniimo.imageUrl
 
-                    <span class="slot-text">
-                        Select Aniimo
-                    </span>
+                            ?
+
+                            `
+
+                            <img
+                                src="${escapeHtml(
+                                    aniimo.imageUrl
+                                )}"
+                                alt="${escapeHtml(
+                                    aniimo.name
+                                )}"
+                            >
+
+                            `
+
+                            :
+
+                            `<div
+                                class="aniimo-placeholder"
+                                style="
+                                    width:60px;
+                                    height:60px;
+                                    font-size:30px;
+                                "
+                            >
+                                🐾
+                            </div>`
+                    }
+
+
+                    <strong>
+
+                        ${escapeHtml(
+                            aniimo.name
+                        )}
+
+                    </strong>
+
+
+                    <small>
+
+                        ${
+                            Array.isArray(
+                                aniimo.roles
+                            )
+
+                                ?
+
+                                escapeHtml(
+                                    aniimo.roles.join(
+                                        " / "
+                                    )
+                                )
+
+                                :
+
+                                ""
+                        }
+
+                    </small>
 
                 `;
 
-                return;
-
             }
-
-
-            slot.classList.remove(
-                "empty"
-            );
-
-            slot.classList.add(
-                "filled"
-            );
-
-
-            const image =
-                aniimo.image
-                    ?
-
-                    `
-
-                    <img
-                        src="${escapeHtml(
-                            aniimo.image
-                        )}"
-                        alt="${escapeHtml(
-                            aniimo.name
-                        )}"
-                        onerror="
-                            this.style.display='none'
-                        "
-                    >
-
-                    `
-
-                    :
-
-                    `<div style="font-size:45px">🐾</div>`;
-
-
-            slot.innerHTML = `
-
-                ${image}
-
-                <strong>
-                    ${escapeHtml(
-                        aniimo.name
-                    )}
-                </strong>
-
-                <small>
-
-                    ${
-                        Array.isArray(
-                            aniimo.roles
-                        )
-                            ?
-                            escapeHtml(
-                                aniimo.roles.join(
-                                    " / "
-                                )
-                            )
-                            :
-                            ""
-                    }
-
-                </small>
-
-            `;
-
-        }
-    );
+        );
 
 }
 
 
-/* =========================================================
-   ADD ANIIMO
-========================================================= */
+/* =====================================================
+   ADD ANIIMO TO TEAM
+   ===================================================== */
 
-function addAniimoToTeam(id) {
+function addAniimoToTeam(
+    id
+) {
 
     const aniimo =
         ANIIMO.find(
             function (item) {
+
                 return item.id === id;
+
             }
         );
 
@@ -1561,25 +1679,17 @@ function addAniimoToTeam(id) {
         return;
 
 
-    /*
-    Allow duplicate Aniimo for now.
-
-    We are not imposing any unnecessary
-    team-composition restrictions.
-    */
-
-
     const emptySlot =
         selectedTeam.findIndex(
             function (slot) {
+
                 return slot === null;
+
             }
         );
 
 
-    if (
-        emptySlot === -1
-    ) {
+    if (emptySlot === -1) {
 
         alert(
             "Your team already has 4 Aniimo."
@@ -1602,9 +1712,9 @@ function addAniimoToTeam(id) {
 }
 
 
-/* =========================================================
+/* =====================================================
    TEAM ANALYSIS
-========================================================= */
+   ===================================================== */
 
 function renderAnalysis() {
 
@@ -1702,7 +1812,9 @@ function renderAnalysis() {
             ) {
 
                 return (
-                    `${role}: ${count}`
+                    role +
+                    ": " +
+                    count
                 );
 
             }
@@ -1723,9 +1835,11 @@ function renderAnalysis() {
             ) {
 
                 return (
-                    `${capitalize(
+                    capitalize(
                         element
-                    )}: ${count}`
+                    ) +
+                    ": " +
+                    count
                 );
 
             }
@@ -1738,22 +1852,32 @@ function renderAnalysis() {
         <div class="analysis-box">
 
             <h3>
+
                 Current Team
+
             </h3>
 
+
             <p>
+
                 ${team.length} / 4 Aniimo selected.
+
             </p>
+
 
             ${
                 roleText
+
                     ?
 
                     `<p>
+
                         <strong>Roles:</strong>
+
                         ${escapeHtml(
                             roleText
                         )}
+
                     </p>`
 
                     :
@@ -1761,15 +1885,20 @@ function renderAnalysis() {
                     ""
             }
 
+
             ${
                 elementText
+
                     ?
 
                     `<p>
+
                         <strong>Elements:</strong>
+
                         ${escapeHtml(
                             elementText
                         )}
+
                     </p>`
 
                     :
@@ -1784,49 +1913,56 @@ function renderAnalysis() {
 }
 
 
-/* =========================================================
+/* =====================================================
    HELPERS
-========================================================= */
+   ===================================================== */
 
-function capitalize(value) {
+function capitalize(
+    value
+) {
 
     if (!value)
         return "";
 
+
     const text =
         String(value);
 
+
     return (
-        text.charAt(0)
-            .toUpperCase() +
+        text.charAt(0).toUpperCase() +
         text.slice(1)
     );
 
 }
 
 
-function escapeHtml(value) {
+function escapeHtml(
+    value
+) {
 
-    return String(value ?? "")
-        .replace(
-            /&/g,
-            "&amp;"
-        )
-        .replace(
-            /</g,
-            "&lt;"
-        )
-        .replace(
-            />/g,
-            "&gt;"
-        )
-        .replace(
-            /"/g,
-            "&quot;"
-        )
-        .replace(
-            /'/g,
-            "&#039;"
-        );
+    return String(
+        value ?? ""
+    )
+    .replace(
+        /&/g,
+        "&amp;"
+    )
+    .replace(
+        /</g,
+        "&lt;"
+    )
+    .replace(
+        />/g,
+        "&gt;"
+    )
+    .replace(
+        /"/g,
+        "&quot;"
+    )
+    .replace(
+        /'/g,
+        "&#039;"
+    );
 
 }
