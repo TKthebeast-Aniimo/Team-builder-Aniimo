@@ -4,7 +4,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "001",
     "sourceUrl": "https://wiki.aniimo.com/item/10002767",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10055.png",
     "elements": [
       "Fire"
     ],
@@ -60,8 +60,7 @@
       "tags": [
         "attack_up",
         "debuff",
-        "regen",
-        "self_scaling"
+        "fire_debuff"
       ],
       "notes": []
     },
@@ -72,7 +71,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "002",
     "sourceUrl": "https://wiki.aniimo.com/item/10002859",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10052.png",
     "elements": [
       "Fire"
     ],
@@ -128,8 +127,7 @@
       "tags": [
         "attack_up",
         "debuff",
-        "regen",
-        "self_scaling"
+        "fire_debuff"
       ],
       "notes": []
     },
@@ -140,7 +138,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "003",
     "sourceUrl": "https://wiki.aniimo.com/item/10002760",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10053.png",
     "elements": [
       "Fire"
     ],
@@ -219,11 +217,9 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "burst",
         "debuff",
         "regen",
-        "self_scaling"
+        "fire_debuff"
       ],
       "notes": []
     },
@@ -234,7 +230,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "004",
     "sourceUrl": "https://wiki.aniimo.com/item/10002753",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10055.png",
     "elements": [
       "Fire",
       "Dark"
@@ -298,9 +294,8 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "regen",
-        "self_scaling"
+        "break",
+        "regen"
       ],
       "notes": []
     },
@@ -311,7 +306,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "005",
     "sourceUrl": "https://wiki.aniimo.com/item/10002903",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10012.png",
     "elements": [
       "Dark"
     ],
@@ -358,7 +353,6 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
         "regen"
       ],
       "notes": []
@@ -370,12 +364,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "006",
     "sourceUrl": "https://wiki.aniimo.com/item/10002742",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10012.png",
     "elements": [
       "Dark"
     ],
     "roles": [
-      "DPS"
+      "DPS",
+      "Support"
     ],
     "stats": {
       "HP": 90,
@@ -449,8 +444,8 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "regen",
-        "self_scaling"
+        "break",
+        "regen"
       ],
       "notes": []
     },
@@ -461,7 +456,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "007",
     "sourceUrl": "https://wiki.aniimo.com/item/10002813",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10187.png",
     "elements": [
       "Wind"
     ],
@@ -531,10 +526,7 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "control",
-        "heal",
-        "regen"
+        "attack_up"
       ],
       "notes": []
     },
@@ -545,7 +537,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "008",
     "sourceUrl": "https://wiki.aniimo.com/item/10002873",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10187.png",
     "elements": [
       "Wind"
     ],
@@ -624,9 +616,7 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "control",
-        "regen",
-        "self_scaling"
+        "critical"
       ],
       "notes": []
     },
@@ -637,7 +627,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "009",
     "sourceUrl": "https://wiki.aniimo.com/item/10002799",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10187.png",
     "elements": [
       "Wind"
     ],
@@ -723,10 +713,7 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "control",
-        "regen",
-        "self_scaling"
+        "attack_up"
       ],
       "notes": []
     },
@@ -737,7 +724,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "010",
     "sourceUrl": "https://wiki.aniimo.com/item/10002792",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10187.png",
     "elements": [
       "Wind"
     ],
@@ -816,10 +803,7 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "control",
-        "regen",
-        "self_scaling",
+        "break",
         "shield"
       ],
       "notes": []
@@ -831,7 +815,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "011",
     "sourceUrl": "https://wiki.aniimo.com/item/10002717",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10211.png",
     "elements": [
       "Grass"
     ],
@@ -877,10 +861,7 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "control",
-        "debuff",
-        "regen"
+        "attack_up"
       ],
       "notes": []
     },
@@ -891,7 +872,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "012",
     "sourceUrl": "https://wiki.aniimo.com/item/10002835",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10212.png",
     "elements": [
       "Grass"
     ],
@@ -965,12 +946,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "014",
     "sourceUrl": "https://wiki.aniimo.com/item/10002802",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10045.png",
     "elements": [
       "Water"
     ],
     "roles": [
-      "Heal"
+      "Heal",
+      "Support"
     ],
     "stats": {
       "HP": 69,
@@ -1019,8 +1001,7 @@
     ],
     "analysis": {
       "tags": [
-        "heal",
-        "regen"
+        "heal"
       ],
       "notes": []
     },
@@ -1031,12 +1012,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "015",
     "sourceUrl": "https://wiki.aniimo.com/item/10002894",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10045.png",
     "elements": [
       "Water"
     ],
     "roles": [
-      "Heal"
+      "Heal",
+      "Support"
     ],
     "stats": {
       "HP": 106,
@@ -1085,8 +1067,7 @@
     ],
     "analysis": {
       "tags": [
-        "heal",
-        "regen"
+        "heal"
       ],
       "notes": []
     },
@@ -1097,13 +1078,14 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "016",
     "sourceUrl": "https://wiki.aniimo.com/item/10002795",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10045.png",
     "elements": [
       "Water",
       "Ice"
     ],
     "roles": [
-      "Heal"
+      "Heal",
+      "Support"
     ],
     "stats": {
       "HP": 118,
@@ -1177,8 +1159,6 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "control",
-        "debuff",
         "heal",
         "regen"
       ],
@@ -1191,13 +1171,14 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "017",
     "sourceUrl": "https://wiki.aniimo.com/item/10002788",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10045.png",
     "elements": [
       "Grass",
       "Water"
     ],
     "roles": [
-      "REGEN"
+      "REGEN",
+      "Support"
     ],
     "stats": {
       "HP": 120,
@@ -1266,7 +1247,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "018",
     "sourceUrl": "https://wiki.aniimo.com/item/10002793",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10263.png",
     "elements": [
       "Wind"
     ],
@@ -1320,7 +1301,6 @@
     ],
     "analysis": {
       "tags": [
-        "regen",
         "shield"
       ],
       "notes": []
@@ -1332,7 +1312,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "019",
     "sourceUrl": "https://wiki.aniimo.com/item/10002690",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10263.png",
     "elements": [
       "Wind"
     ],
@@ -1411,9 +1391,8 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
+        "break",
         "heal",
-        "regen",
         "shield"
       ],
       "notes": []
@@ -1425,7 +1404,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "020",
     "sourceUrl": "https://wiki.aniimo.com/item/10002786",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10263.png",
     "elements": [
       "Dark"
     ],
@@ -1488,9 +1467,7 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "heal",
-        "regen",
-        "self_scaling"
+        "heal"
       ],
       "notes": []
     },
@@ -1501,7 +1478,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "021",
     "sourceUrl": "https://wiki.aniimo.com/item/10002746",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10207.png",
     "elements": [
       "Grass"
     ],
@@ -1555,8 +1532,6 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "break_support",
         "regen"
       ],
       "notes": []
@@ -1568,7 +1543,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "022",
     "sourceUrl": "https://wiki.aniimo.com/item/10002739",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10207.png",
     "elements": [
       "Dark",
       "Grass"
@@ -1647,9 +1622,6 @@
     ],
     "analysis": {
       "tags": [
-        "burst",
-        "control",
-        "debuff",
         "heal",
         "regen"
       ],
@@ -1662,7 +1634,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "023",
     "sourceUrl": "https://wiki.aniimo.com/item/10002729",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10207.png",
     "elements": [
       "Grass"
     ],
@@ -1734,13 +1706,11 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "burst",
-        "control",
-        "debuff",
+        "break",
         "heal",
         "regen",
-        "shield"
+        "shield",
+        "control"
       ],
       "notes": []
     },
@@ -1751,9 +1721,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "024",
     "sourceUrl": "https://wiki.aniimo.com/item/10002892",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10163.png",
     "elements": [
-      "Earth",
+      "Rock",
       "Grass"
     ],
     "roles": [
@@ -1807,10 +1777,8 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
         "debuff",
-        "regen",
-        "self_scaling"
+        "regen"
       ],
       "notes": []
     },
@@ -1821,9 +1789,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "025",
     "sourceUrl": "https://wiki.aniimo.com/item/10002787",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10163.png",
     "elements": [
-      "Earth",
+      "Rock",
       "Grass"
     ],
     "roles": [
@@ -1893,11 +1861,9 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "control",
         "debuff",
         "regen",
-        "self_scaling"
+        "control"
       ],
       "notes": []
     },
@@ -1908,7 +1874,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "026",
     "sourceUrl": "https://wiki.aniimo.com/item/10002876",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10163.png",
     "elements": [
       "Ice"
     ],
@@ -1972,7 +1938,7 @@
       "tags": [
         "debuff",
         "regen",
-        "self_scaling"
+        "ice_debuff"
       ],
       "notes": []
     },
@@ -1983,7 +1949,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "027",
     "sourceUrl": "https://wiki.aniimo.com/item/10002734",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10333.png",
     "elements": [
       "Fire"
     ],
@@ -2029,10 +1995,7 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "debuff",
-        "regen",
-        "self_scaling"
+        "attack_up"
       ],
       "notes": []
     },
@@ -2043,7 +2006,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "028",
     "sourceUrl": "https://wiki.aniimo.com/item/10002832",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10333.png",
     "elements": [
       "Fire"
     ],
@@ -2108,7 +2071,7 @@
         "attack_up",
         "debuff",
         "regen",
-        "self_scaling"
+        "fire_debuff"
       ],
       "notes": []
     },
@@ -2119,12 +2082,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "029",
     "sourceUrl": "https://wiki.aniimo.com/item/10002867",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10232.png",
     "elements": [
       "Wind"
     ],
     "roles": [
-      "Heal"
+      "Heal",
+      "Support"
     ],
     "stats": {
       "HP": 94,
@@ -2203,12 +2167,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "030",
     "sourceUrl": "https://wiki.aniimo.com/item/10002765",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10232.png",
     "elements": [
       "Wind"
     ],
     "roles": [
-      "Heal"
+      "Heal",
+      "Support"
     ],
     "stats": {
       "HP": 110,
@@ -2303,13 +2268,14 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "031",
     "sourceUrl": "https://wiki.aniimo.com/item/10002888",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10233.png",
     "elements": [
       "Wind",
       "Grass"
     ],
     "roles": [
-      "REGEN"
+      "REGEN",
+      "Support"
     ],
     "stats": {
       "HP": 111,
@@ -2367,8 +2333,6 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "defense_down",
         "regen"
       ],
       "notes": []
@@ -2380,7 +2344,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "032",
     "sourceUrl": "https://wiki.aniimo.com/item/10002693",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10443.png",
     "elements": [
       "Wind"
     ],
@@ -2442,10 +2406,10 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "control",
         "debuff",
-        "regen"
+        "regen",
+        "control",
+        "critical"
       ],
       "notes": []
     },
@@ -2456,7 +2420,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "033",
     "sourceUrl": "https://wiki.aniimo.com/item/10002688",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10443.png",
     "elements": [
       "Wind"
     ],
@@ -2534,10 +2498,10 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "control",
         "debuff",
-        "regen"
+        "regen",
+        "control",
+        "critical"
       ],
       "notes": []
     },
@@ -2548,7 +2512,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "034",
     "sourceUrl": "https://wiki.aniimo.com/item/10002840",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10324.png",
     "elements": [
       "Grass"
     ],
@@ -2595,11 +2559,7 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "burst",
-        "defense_down",
-        "regen",
-        "self_scaling"
+        "critical"
       ],
       "notes": []
     },
@@ -2610,7 +2570,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "035",
     "sourceUrl": "https://wiki.aniimo.com/item/10002821",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10324.png",
     "elements": [
       "Grass"
     ],
@@ -2689,11 +2649,8 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "burst",
-        "defense_down",
         "regen",
-        "self_scaling"
+        "critical"
       ],
       "notes": []
     },
@@ -2704,7 +2661,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "036",
     "sourceUrl": "https://wiki.aniimo.com/item/10002703",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10324.png",
     "elements": [
       "Grass"
     ],
@@ -2769,8 +2726,7 @@
         "attack_up",
         "debuff",
         "heal",
-        "regen",
-        "self_scaling"
+        "critical"
       ],
       "notes": []
     },
@@ -2781,7 +2737,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "037",
     "sourceUrl": "https://wiki.aniimo.com/item/10002781",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10475.png",
     "elements": [
       "Grass"
     ],
@@ -2835,12 +2791,7 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "break_support",
-        "control",
-        "debuff",
-        "regen",
-        "self_scaling"
+        "control"
       ],
       "notes": []
     },
@@ -2851,9 +2802,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "038",
     "sourceUrl": "https://wiki.aniimo.com/item/10002699",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10475.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
       "Support"
@@ -2914,11 +2865,11 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "burst",
-        "control",
         "debuff",
+        "break",
         "regen",
-        "self_scaling"
+        "control",
+        "critical"
       ],
       "notes": []
     },
@@ -2929,7 +2880,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "039",
     "sourceUrl": "https://wiki.aniimo.com/item/10002768",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10475.png",
     "elements": [
       "Grass"
     ],
@@ -2999,13 +2950,8 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "break_support",
-        "burst",
-        "control",
-        "debuff",
-        "regen",
-        "self_scaling"
+        "break",
+        "control"
       ],
       "notes": []
     },
@@ -3016,7 +2962,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "040",
     "sourceUrl": "https://wiki.aniimo.com/item/10002828",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10352.png",
     "elements": [
       "Dark"
     ],
@@ -3063,7 +3009,6 @@
     "analysis": {
       "tags": [
         "heal",
-        "regen",
         "shield"
       ],
       "notes": []
@@ -3075,7 +3020,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "041",
     "sourceUrl": "https://wiki.aniimo.com/item/10002846",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10352.png",
     "elements": [
       "Dark"
     ],
@@ -3137,10 +3082,8 @@
     ],
     "analysis": {
       "tags": [
-        "burst",
         "debuff",
         "heal",
-        "regen",
         "shield"
       ],
       "notes": []
@@ -3152,7 +3095,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "042",
     "sourceUrl": "https://wiki.aniimo.com/item/10002833",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10033.png",
     "elements": [
       "Dark"
     ],
@@ -3206,9 +3149,7 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "regen",
-        "self_scaling"
+        "attack_up"
       ],
       "notes": []
     },
@@ -3219,7 +3160,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "043",
     "sourceUrl": "https://wiki.aniimo.com/item/10002694",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10033.png",
     "elements": [
       "Dark"
     ],
@@ -3297,10 +3238,7 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "burst",
-        "regen",
-        "self_scaling"
+        "attack_up"
       ],
       "notes": []
     },
@@ -3311,12 +3249,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "044",
     "sourceUrl": "https://wiki.aniimo.com/item/10002826",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10033.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
-      "DPS"
+      "DPS",
+      "Support"
     ],
     "stats": {
       "HP": 99,
@@ -3382,10 +3321,9 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "control",
-        "debuff",
         "regen",
-        "self_scaling"
+        "control",
+        "critical"
       ],
       "notes": []
     },
@@ -3396,7 +3334,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "045",
     "sourceUrl": "https://wiki.aniimo.com/item/10002747",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10133.png",
     "elements": [
       "Ice"
     ],
@@ -3450,10 +3388,9 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
         "debuff",
         "regen",
-        "self_scaling"
+        "ice_debuff"
       ],
       "notes": []
     },
@@ -3464,7 +3401,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "046",
     "sourceUrl": "https://wiki.aniimo.com/item/10002900",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10133.png",
     "elements": [
       "Ice"
     ],
@@ -3518,10 +3455,9 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
         "debuff",
         "regen",
-        "self_scaling"
+        "ice_debuff"
       ],
       "notes": []
     },
@@ -3532,7 +3468,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "047",
     "sourceUrl": "https://wiki.aniimo.com/item/10002740",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10133.png",
     "elements": [
       "Ice"
     ],
@@ -3610,11 +3546,9 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "burst",
         "debuff",
         "regen",
-        "self_scaling"
+        "ice_debuff"
       ],
       "notes": []
     },
@@ -3625,9 +3559,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "048",
     "sourceUrl": "https://wiki.aniimo.com/item/10002849",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10222.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
       "BREAK"
@@ -3671,9 +3605,7 @@
     ],
     "analysis": {
       "tags": [
-        "regen",
-        "self_scaling",
-        "shield"
+        "critical"
       ],
       "notes": []
     },
@@ -3684,9 +3616,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "049",
     "sourceUrl": "https://wiki.aniimo.com/item/10002800",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10222.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
       "BREAK"
@@ -3756,8 +3688,7 @@
       "tags": [
         "debuff",
         "regen",
-        "self_scaling",
-        "shield"
+        "critical"
       ],
       "notes": []
     },
@@ -3768,7 +3699,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "050",
     "sourceUrl": "https://wiki.aniimo.com/item/10002848",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10174.png",
     "elements": [
       "Water"
     ],
@@ -3813,11 +3744,7 @@
       }
     ],
     "analysis": {
-      "tags": [
-        "attack_up",
-        "break_support",
-        "regen"
-      ],
+      "tags": [],
       "notes": []
     },
     "lastVerified": "2026-08-28"
@@ -3827,7 +3754,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "051",
     "sourceUrl": "https://wiki.aniimo.com/item/10002723",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10174.png",
     "elements": [
       "Water"
     ],
@@ -3872,11 +3799,7 @@
       }
     ],
     "analysis": {
-      "tags": [
-        "attack_up",
-        "break_support",
-        "regen"
-      ],
+      "tags": [],
       "notes": []
     },
     "lastVerified": "2026-08-28"
@@ -3886,7 +3809,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "052",
     "sourceUrl": "https://wiki.aniimo.com/item/10002841",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10174.png",
     "elements": [
       "Water"
     ],
@@ -3957,8 +3880,7 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "heal",
-        "regen"
+        "heal"
       ],
       "notes": []
     },
@@ -3969,7 +3891,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "053",
     "sourceUrl": "https://wiki.aniimo.com/item/10002891",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10174.png",
     "elements": [
       "Water"
     ],
@@ -4040,10 +3962,8 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
         "debuff",
-        "regen",
-        "self_scaling",
+        "break",
         "shield"
       ],
       "notes": []
@@ -4055,7 +3975,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "054",
     "sourceUrl": "https://wiki.aniimo.com/item/10002778",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10194.png",
     "elements": [
       "Water"
     ],
@@ -4100,11 +4020,7 @@
       }
     ],
     "analysis": {
-      "tags": [
-        "attack_up",
-        "burst",
-        "regen"
-      ],
+      "tags": [],
       "notes": []
     },
     "lastVerified": "2026-08-28"
@@ -4114,7 +4030,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "055",
     "sourceUrl": "https://wiki.aniimo.com/item/10002902",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10194.png",
     "elements": [
       "Water"
     ],
@@ -4159,11 +4075,7 @@
       }
     ],
     "analysis": {
-      "tags": [
-        "attack_up",
-        "burst",
-        "regen"
-      ],
+      "tags": [],
       "notes": []
     },
     "lastVerified": "2026-08-28"
@@ -4173,7 +4085,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "056",
     "sourceUrl": "https://wiki.aniimo.com/item/10002895",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10194.png",
     "elements": [
       "Water"
     ],
@@ -4251,10 +4163,7 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "burst",
-        "regen",
-        "shield"
+        "attack_up"
       ],
       "notes": []
     },
@@ -4265,9 +4174,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "057",
     "sourceUrl": "https://wiki.aniimo.com/item/10002890",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10454.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "DPS"
@@ -4320,9 +4229,7 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "burst",
-        "regen",
-        "self_scaling"
+        "damage_up"
       ],
       "notes": []
     },
@@ -4333,9 +4240,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "058",
     "sourceUrl": "https://wiki.aniimo.com/item/10002801",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10454.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "DPS"
@@ -4404,10 +4311,9 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "burst",
-        "regen",
-        "self_scaling"
+        "damage_up",
+        "break",
+        "regen"
       ],
       "notes": []
     },
@@ -4418,9 +4324,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "059",
     "sourceUrl": "https://wiki.aniimo.com/item/10002791",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10454.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "Support"
@@ -4487,11 +4393,7 @@
       }
     ],
     "analysis": {
-      "tags": [
-        "control",
-        "regen",
-        "self_scaling"
-      ],
+      "tags": [],
       "notes": []
     },
     "lastVerified": "2026-08-28"
@@ -4501,9 +4403,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "060",
     "sourceUrl": "https://wiki.aniimo.com/item/10002704",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10293.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
       "DPS"
@@ -4548,8 +4450,7 @@
     "analysis": {
       "tags": [
         "debuff",
-        "regen",
-        "self_scaling"
+        "regen"
       ],
       "notes": []
     },
@@ -4560,9 +4461,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "061",
     "sourceUrl": "https://wiki.aniimo.com/item/10002701",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10293.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
       "DPS"
@@ -4630,10 +4531,8 @@
     ],
     "analysis": {
       "tags": [
-        "burst",
         "debuff",
-        "regen",
-        "self_scaling"
+        "regen"
       ],
       "notes": []
     },
@@ -4644,7 +4543,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "062",
     "sourceUrl": "https://wiki.aniimo.com/item/10002868",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10027.png",
     "elements": [
       "Dark"
     ],
@@ -4698,12 +4597,8 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "break_support",
-        "control",
-        "debuff",
-        "regen",
-        "shield"
+        "shield",
+        "control"
       ],
       "notes": []
     },
@@ -4714,7 +4609,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "063",
     "sourceUrl": "https://wiki.aniimo.com/item/10002882",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10027.png",
     "elements": [
       "Dark"
     ],
@@ -4784,10 +4679,8 @@
     ],
     "analysis": {
       "tags": [
-        "burst",
-        "control",
-        "debuff",
-        "regen"
+        "regen",
+        "control"
       ],
       "notes": []
     },
@@ -4798,7 +4691,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "064",
     "sourceUrl": "https://wiki.aniimo.com/item/10002847",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10027.png",
     "elements": [
       "Dark"
     ],
@@ -4868,13 +4761,9 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "break_support",
-        "burst",
-        "control",
-        "debuff",
-        "regen",
-        "shield"
+        "break",
+        "shield",
+        "control"
       ],
       "notes": []
     },
@@ -4885,7 +4774,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "065",
     "sourceUrl": "https://wiki.aniimo.com/item/10002904",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10024.png",
     "elements": [
       "Wind"
     ],
@@ -4932,8 +4821,7 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "regen",
+        "break",
         "shield"
       ],
       "notes": []
@@ -4945,7 +4833,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "066",
     "sourceUrl": "https://wiki.aniimo.com/item/10002714",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10025.png",
     "elements": [
       "Wind"
     ],
@@ -4992,9 +4880,7 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "debuff",
-        "regen",
+        "break",
         "shield"
       ],
       "notes": []
@@ -5006,7 +4892,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "067",
     "sourceUrl": "https://wiki.aniimo.com/item/10002861",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10025.png",
     "elements": [
       "Wind"
     ],
@@ -5069,11 +4955,9 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "control",
-        "debuff",
-        "regen",
-        "shield"
+        "break",
+        "shield",
+        "control"
       ],
       "notes": []
     },
@@ -5084,7 +4968,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "068",
     "sourceUrl": "https://wiki.aniimo.com/item/10002854",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10025.png",
     "elements": [
       "Fire"
     ],
@@ -5146,11 +5030,10 @@
     ],
     "analysis": {
       "tags": [
-        "burst",
         "debuff",
         "regen",
-        "self_scaling",
-        "shield"
+        "shield",
+        "fire_debuff"
       ],
       "notes": []
     },
@@ -5161,9 +5044,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "069",
     "sourceUrl": "https://wiki.aniimo.com/item/10002758",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10503.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "DPS"
@@ -5207,11 +5090,8 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "control",
         "debuff",
-        "regen",
-        "self_scaling"
+        "control"
       ],
       "notes": []
     },
@@ -5222,9 +5102,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "070",
     "sourceUrl": "https://wiki.aniimo.com/item/10002752",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10503.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "DPS"
@@ -5292,11 +5172,8 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "control",
         "debuff",
-        "regen",
-        "self_scaling"
+        "control"
       ],
       "notes": []
     },
@@ -5307,9 +5184,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "071",
     "sourceUrl": "https://wiki.aniimo.com/item/10002730",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10285.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "BREAK"
@@ -5352,9 +5229,7 @@
       }
     ],
     "analysis": {
-      "tags": [
-        "regen"
-      ],
+      "tags": [],
       "notes": []
     },
     "lastVerified": "2026-08-28"
@@ -5364,10 +5239,10 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "072",
     "sourceUrl": "https://wiki.aniimo.com/item/10002850",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10285.png",
     "elements": [
       "Fire",
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "BREAK"
@@ -5412,8 +5287,7 @@
     "analysis": {
       "tags": [
         "debuff",
-        "regen",
-        "self_scaling"
+        "fire_debuff"
       ],
       "notes": []
     },
@@ -5424,10 +5298,10 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "073",
     "sourceUrl": "https://wiki.aniimo.com/item/10002724",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10285.png",
     "elements": [
       "Fire",
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "BREAK"
@@ -5496,12 +5370,11 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "burst",
-        "control",
         "debuff",
+        "break",
         "regen",
-        "self_scaling"
+        "control",
+        "fire_debuff"
       ],
       "notes": []
     },
@@ -5512,9 +5385,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "074",
     "sourceUrl": "https://wiki.aniimo.com/item/10002843",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10285.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "BREAK"
@@ -5557,9 +5430,7 @@
       }
     ],
     "analysis": {
-      "tags": [
-        "regen"
-      ],
+      "tags": [],
       "notes": []
     },
     "lastVerified": "2026-08-28"
@@ -5569,9 +5440,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "075",
     "sourceUrl": "https://wiki.aniimo.com/item/10002718",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10285.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "BREAK"
@@ -5642,9 +5513,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "076",
     "sourceUrl": "https://wiki.aniimo.com/item/10002711",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10433.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "Support"
@@ -5688,8 +5559,7 @@
     ],
     "analysis": {
       "tags": [
-        "regen",
-        "self_scaling"
+        "regen"
       ],
       "notes": []
     },
@@ -5700,9 +5570,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "077",
     "sourceUrl": "https://wiki.aniimo.com/item/10002772",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10433.png",
     "elements": [
-      "Earth"
+      "Rock"
     ],
     "roles": [
       "Support"
@@ -5762,8 +5632,7 @@
     ],
     "analysis": {
       "tags": [
-        "regen",
-        "self_scaling"
+        "regen"
       ],
       "notes": []
     },
@@ -5774,9 +5643,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "078",
     "sourceUrl": "https://wiki.aniimo.com/item/10002822",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10143.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
       "Support"
@@ -5820,10 +5689,9 @@
     ],
     "analysis": {
       "tags": [
-        "control",
-        "debuff",
         "heal",
-        "regen"
+        "regen",
+        "control"
       ],
       "notes": []
     },
@@ -5834,9 +5702,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "079",
     "sourceUrl": "https://wiki.aniimo.com/item/10002804",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10143.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
       "Support"
@@ -5880,10 +5748,9 @@
     ],
     "analysis": {
       "tags": [
-        "control",
-        "debuff",
         "heal",
-        "regen"
+        "regen",
+        "control"
       ],
       "notes": []
     },
@@ -5894,9 +5761,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "080",
     "sourceUrl": "https://wiki.aniimo.com/item/10002713",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10143.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
       "Support"
@@ -5973,11 +5840,10 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "control",
-        "debuff",
+        "break",
         "heal",
-        "regen"
+        "regen",
+        "control"
       ],
       "notes": []
     },
@@ -5988,12 +5854,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "081",
     "sourceUrl": "https://wiki.aniimo.com/item/10002754",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10481.png",
     "elements": [
       "Water"
     ],
     "roles": [
-      "REGEN"
+      "REGEN",
+      "Support"
     ],
     "stats": {
       "HP": 102,
@@ -6046,12 +5913,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "082",
     "sourceUrl": "https://wiki.aniimo.com/item/10002755",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10483.png",
     "elements": [
       "Water"
     ],
     "roles": [
-      "REGEN"
+      "REGEN",
+      "Support"
     ],
     "stats": {
       "HP": 120,
@@ -6120,12 +5988,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "083",
     "sourceUrl": "https://wiki.aniimo.com/item/10002874",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10122.png",
     "elements": [
-      "Lightning"
+      "Electric"
     ],
     "roles": [
-      "REGEN"
+      "REGEN",
+      "Support"
     ],
     "stats": {
       "HP": 82,
@@ -6193,9 +6062,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "084",
     "sourceUrl": "https://wiki.aniimo.com/item/10002819",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10383.png",
     "elements": [
-      "Earth",
+      "Rock",
       "Water"
     ],
     "roles": [
@@ -6240,9 +6109,7 @@
     ],
     "analysis": {
       "tags": [
-        "debuff",
-        "regen",
-        "self_scaling"
+        "debuff"
       ],
       "notes": []
     },
@@ -6253,9 +6120,9 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "085",
     "sourceUrl": "https://wiki.aniimo.com/item/10002811",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10383.png",
     "elements": [
-      "Earth",
+      "Rock",
       "Water"
     ],
     "roles": [
@@ -6316,10 +6183,8 @@
     ],
     "analysis": {
       "tags": [
-        "break_support",
         "debuff",
-        "regen",
-        "self_scaling"
+        "regen"
       ],
       "notes": []
     },
@@ -6330,7 +6195,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "086",
     "sourceUrl": "https://wiki.aniimo.com/item/10002855",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10463.png",
     "elements": [
       "Ice"
     ],
@@ -6384,9 +6249,6 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "break_support",
-        "regen",
         "shield"
       ],
       "notes": []
@@ -6398,7 +6260,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "087",
     "sourceUrl": "https://wiki.aniimo.com/item/10002782",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10463.png",
     "elements": [
       "Ice"
     ],
@@ -6468,9 +6330,6 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "break_support",
-        "regen",
         "shield"
       ],
       "notes": []
@@ -6482,13 +6341,14 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "088",
     "sourceUrl": "https://wiki.aniimo.com/item/10002748",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10583.png",
     "elements": [
       "Grass",
       "Water"
     ],
     "roles": [
-      "Heal"
+      "Heal",
+      "Support"
     ],
     "stats": {
       "HP": 104,
@@ -6530,7 +6390,6 @@
     "analysis": {
       "tags": [
         "heal",
-        "regen",
         "shield"
       ],
       "notes": []
@@ -6542,7 +6401,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "089",
     "sourceUrl": "https://wiki.aniimo.com/item/10002744",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10583.png",
     "elements": [
       "Grass",
       "Water"
@@ -6615,7 +6474,6 @@
       "tags": [
         "attack_up",
         "heal",
-        "regen",
         "shield"
       ],
       "notes": []
@@ -6627,7 +6485,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "090",
     "sourceUrl": "https://wiki.aniimo.com/item/10002735",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10623.png",
     "elements": [
       "Water"
     ],
@@ -6674,8 +6532,7 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "regen"
+        "attack_up"
       ],
       "notes": []
     },
@@ -6686,12 +6543,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "091",
     "sourceUrl": "https://wiki.aniimo.com/item/10002834",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10623.png",
     "elements": [
       "Water"
     ],
     "roles": [
-      "DPS"
+      "DPS",
+      "Support"
     ],
     "stats": {
       "HP": 106,
@@ -6760,7 +6618,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "092",
     "sourceUrl": "https://wiki.aniimo.com/item/10002738",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10423.png",
     "elements": [
       "Ice"
     ],
@@ -6806,8 +6664,6 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "regen",
         "shield"
       ],
       "notes": []
@@ -6819,7 +6675,7 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "093",
     "sourceUrl": "https://wiki.aniimo.com/item/10002732",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_PetHead_10423.png",
     "elements": [
       "Ice"
     ],
@@ -6895,12 +6751,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "9997",
     "sourceUrl": "https://wiki.aniimo.com/item/10002823",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10373.png",
     "elements": [
-      "Light"
+      "Holy"
     ],
     "roles": [
-      "DPS"
+      "DPS",
+      "Support"
     ],
     "stats": {
       "HP": 90,
@@ -6966,12 +6823,9 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break_support",
-        "burst",
         "debuff",
-        "heal",
-        "regen",
-        "self_scaling"
+        "break",
+        "regen"
       ],
       "notes": []
     },
@@ -6982,12 +6836,13 @@
     "name": "Official Aniimo Wiki - Complete Aniimo Index",
     "number": "9998",
     "sourceUrl": "https://wiki.aniimo.com/item/10002700",
-    "imageUrl": "https://wiki.aniimo.com/undefinedimages/ogImage.png",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10361.png",
     "elements": [
-      "Light"
+      "Holy"
     ],
     "roles": [
-      "DPS"
+      "DPS",
+      "Support"
     ],
     "stats": {
       "HP": 90,
@@ -7061,11 +6916,9 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "burst",
-        "control",
+        "damage_up",
         "heal",
-        "regen",
-        "self_scaling"
+        "regen"
       ],
       "notes": []
     },
