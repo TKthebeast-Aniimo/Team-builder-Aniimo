@@ -1,57 +1,96 @@
 #!/usr/bin/env python3
 
+"""
+Aniimo Team Builder - Data Builder
+
+Builds the Aniimo database from the Official Aniimo Wiki.
+
+Primary source:
+    https://wiki.aniimo.com/
+
+Secondary source:
+    https://aniidex.com/
+
+IMPORTANT:
+- The official individual Aniimo page is authoritative for names.
+- We deliberately ignore the generic Wiki page title.
+- We prefer Wiki_Aniimo portrait images.
+- We write aniimo.json into the repository root.
+"""
+
 import json
 import re
 import time
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
 
 # ============================================================
-# ANIIMO TEAM BUILDER
-# DATA BUILDER
-#
-# Official source:
-# https://wiki.aniimo.com/
-#
-# IMPORTANT:
-# Names and portraits are taken from the SAME individual
-# Wiki page. We do NOT try to match portraits by AniDex
-# position or by filename.
+# CONFIGURATION
 # ============================================================
-
 
 ROOT = Path(__file__).resolve().parent
 
 OUTPUT_FILE = ROOT / "aniimo.json"
 
-WIKI_URL = "https://wiki.aniimo.com/"
+INDEX_URL = "https://wiki.aniimo.com/"
+
+ANIIDEX_URL = "https://aniidex.com/aniimo/"
 
 HEADERS = {
-    "User-Agent":
+    "User-Agent": (
         "Mozilla/5.0 "
         "(compatible; AniimoTeamBuilder/1.0; "
-        "+https://github.com/TKthebeast-Aniimo)"
+        "fan project data refresh)"
+    )
 }
 
-TIMEOUT = 30
+ELEMENTS = [
+    "holy",
+    "light",
+    "fire",
+    "ice",
+    "dark",
+    "electric",
+    "lightning",
+    "grass",
+    "water",
+    "rock",
+    "earth",
+    "wind",
+]
 
-session = requests.Session()
-session.headers.update(HEADERS)
+ROLES = [
+    "DPS",
+    "Heal",
+    "Support",
+    "BREAK",
+    "REGEN",
+]
+
+STAT_KEYS = [
+    "HP",
+    "BREAK",
+    "ATK",
+    "M.DEF",
+    "P.DEF",
+    "REGEN",
+]
 
 
 # ============================================================
 # HTTP
 # ============================================================
 
-def get_page(url):
+def get(url, timeout=30):
 
-    response = session.get(
+    response = requests.get(
         url,
-        timeout=TIMEOUT
+        headers=HEADERS,
+        timeout=timeout
     )
 
     response.raise_for_status()
@@ -63,187 +102,271 @@ def get_page(url):
 # TEXT CLEANING
 # ============================================================
 
-def clean_text(value):
+def clean_text(text):
 
-    if value is None:
+    if text is None:
         return ""
 
-    value = re.sub(
+    text = re.sub(
         r"\s+",
         " ",
-        str(value)
+        str(text)
     )
 
-    return value.strip()
+    return text.strip()
 
 
-def page_lines(soup):
+def clean_lines(text):
 
-    text = soup.get_text(
-        "\n"
-    )
-
-    result = []
+    output = []
 
     for line in text.splitlines():
 
         line = clean_text(line)
 
-        if line:
-            result.append(line)
+        if not line:
+            continue
 
-    return result
+        if line == "Image":
+            continue
+
+        if line.startswith("Image:"):
+            continue
+
+        output.append(line)
+
+    return output
 
 
 # ============================================================
-# NUMBER
+# ELEMENTS
 # ============================================================
 
-def extract_number(text):
+def canonical_element(value):
 
-    if not text:
-        return None
+    value = clean_text(value).lower()
 
-    match = re.search(
-        r"NO\.\s*(\d+)",
-        text,
-        re.IGNORECASE
-    )
+    mapping = {
 
-    if match:
+        "holy": "Light",
+        "light": "Light",
 
-        return int(
-            match.group(1)
-        )
+        "electric": "Lightning",
+        "lightning": "Lightning",
 
-    return None
+        "rock": "Earth",
+        "earth": "Earth",
+
+        "fire": "Fire",
+        "ice": "Ice",
+        "dark": "Dark",
+        "grass": "Grass",
+        "water": "Water",
+        "wind": "Wind",
+    }
+
+    return mapping.get(value)
+
+
+def extract_elements(lines):
+
+    elements = []
+
+    for line in lines:
+
+        element = canonical_element(line)
+
+        if element and element not in elements:
+
+            elements.append(element)
+
+    return elements
+
+
+# ============================================================
+# ROLES
+# ============================================================
+
+def extract_roles(lines):
+
+    roles = []
+
+    for line in lines:
+
+        upper = clean_text(line).upper()
+
+        if upper not in ROLES:
+            continue
+
+        if upper == "BREAK":
+            role = "Break"
+
+        elif upper == "REGEN":
+            role = "Regen"
+
+        else:
+            role = upper.title()
+
+        if role not in roles:
+            roles.append(role)
+
+    return roles
 
 
 # ============================================================
 # NAME
 # ============================================================
 
-def extract_name(
-    soup,
-    roster_name=""
-):
+def extract_name(soup, lines, fallback_name=None):
+
+    """
+    The official Wiki uses a generic page title:
+
+        Official Aniimo Wiki - Complete Aniimo Index
+
+    Therefore we MUST NOT use h1 as the Aniimo name.
+
+    Individual pages contain:
+
+        NO.001
+
+        Emberpup
+
+    so we locate the actual Aniimo heading.
+    """
+
+    generic_names = {
+        "official aniimo wiki",
+        "official aniimo wiki - complete aniimo index",
+        "complete aniimo index",
+        "official aniimo index",
+        "aniimo wiki",
+    }
 
     # --------------------------------------------------------
-    # FIRST CHOICE:
-    # The individual Wiki page's H1.
-    #
-    # Emberpup's page has:
-    #
-    # NO.001
-    # Emberpup
-    #
-    # and H1 is Emberpup.
-    # --------------------------------------------------------
-
-    h1 = soup.find("h1")
-
-    if h1:
-
-        name = clean_text(
-            h1.get_text(
-                " ",
-                strip=True
-            )
-        )
-
-        if name:
-
-            # Never accept generic page titles.
-
-            bad_names = {
-                "Aniimo Wiki",
-                "Official Aniimo Wiki",
-                "Official Aniimo Index",
-                "Complete Aniimo Index"
-            }
-
-            if name not in bad_names:
-
-                if not re.match(
-                    r"^NO\.?\s*\d+$",
-                    name,
-                    re.IGNORECASE
-                ):
-
-                    return name
-
-
-    # --------------------------------------------------------
-    # SECOND CHOICE:
-    # Look through headings.
+    # 1. Prefer H2/H3/H4 headings.
     # --------------------------------------------------------
 
     for heading in soup.find_all(
         ["h2", "h3", "h4"]
     ):
 
-        name = clean_text(
+        value = clean_text(
             heading.get_text(
                 " ",
                 strip=True
             )
         )
 
-        if not name:
+        if not value:
             continue
 
-        if re.match(
-            r"^NO\.?\s*\d+$",
-            name,
+        lower = value.lower()
+
+        if lower in generic_names:
+            continue
+
+        if re.fullmatch(
+            r"NO\.?\s*\d+",
+            value,
             re.IGNORECASE
         ):
             continue
 
-        if name.lower() in {
-            "basic info",
-            "evolution",
-            "habitats",
-            "mobility",
-            "trait",
-            "skill details",
-            "skill details combat innate"
-        }:
+        if len(value) > 60:
             continue
 
-        # Don't use obvious UI text.
-
-        if len(name) > 60:
-            continue
-
-        return name
-
+        return value
 
     # --------------------------------------------------------
-    # THIRD CHOICE:
-    # The roster supplied name.
-    #
-    # This is ONLY a fallback.
+    # 2. Look at visible lines after NO.XXX.
     # --------------------------------------------------------
 
-    roster_name = clean_text(
-        roster_name
-    )
+    for index, line in enumerate(lines):
 
-    if roster_name:
+        if re.fullmatch(
+            r"NO\.?\s*\d+",
+            line,
+            re.IGNORECASE
+        ):
 
-        roster_name = re.sub(
-            r"^NO\.?\s*\d+\s*",
-            "",
-            roster_name,
-            flags=re.IGNORECASE
+            # The Wiki currently repeats NO.XXX,
+            # then gives the Aniimo name.
+
+            for next_index in range(
+                index + 1,
+                min(index + 6, len(lines))
+            ):
+
+                candidate = clean_text(
+                    lines[next_index]
+                )
+
+                if not candidate:
+                    continue
+
+                if re.fullmatch(
+                    r"NO\.?\s*\d+",
+                    candidate,
+                    re.IGNORECASE
+                ):
+                    continue
+
+                if candidate.lower() in generic_names:
+                    continue
+
+                if len(candidate) <= 60:
+                    return candidate
+
+    # --------------------------------------------------------
+    # 3. Fallback.
+    # --------------------------------------------------------
+
+    if fallback_name:
+
+        fallback_name = clean_text(
+            fallback_name
         )
 
-        if roster_name:
+        if (
+            fallback_name.lower()
+            not in generic_names
+        ):
 
-            return roster_name
+            fallback_name = re.sub(
+                r"^NO\.?\s*\d+\s*",
+                "",
+                fallback_name,
+                flags=re.IGNORECASE
+            ).strip()
+
+            if fallback_name:
+                return fallback_name
+
+    return "Unknown Aniimo"
 
 
-    return "Unknown"
+# ============================================================
+# NUMBER
+# ============================================================
+
+def extract_number(lines, fallback_number=None):
+
+    for line in lines[:30]:
+
+        match = re.search(
+            r"NO\.?\s*(\d+)",
+            line,
+            re.IGNORECASE
+        )
+
+        if match:
+
+            return int(
+                match.group(1)
+            )
+
+    return fallback_number
 
 
 # ============================================================
@@ -257,146 +380,133 @@ def is_bad_image(url):
 
     lower = url.lower()
 
-    bad_parts = [
-
-        "undefinedimages",
-
+    bad_words = [
+        "undefined",
         "ogimage",
-
-        "favicon",
-
-        "logo",
-
-        "loading",
-
-        "placeholder",
-
+        "pethead",
         "icon",
-
-        "arrow",
-
-        "search",
-
-        "close",
-
-        "menu",
-
-        "button"
-
+        "logo",
+        "favicon",
+        "background",
+        "loading",
     ]
 
-    return any(
-        part in lower
-        for part in bad_parts
-    )
+    for word in bad_words:
+
+        if word in lower:
+            return True
+
+    return False
 
 
-def extract_image_url(
-    soup,
-    page_url
-):
+def extract_image_url(soup, page_url):
 
     """
     IMPORTANT:
 
-    The previous scraper tried to guess the portrait.
+    The official Aniimo page contains several images.
 
-    That caused portraits to become mixed.
+    We DO NOT use og:image first.
 
-    On an individual Aniimo Wiki page, the first real
-    Aniimo illustration is the primary portrait.
+    We specifically search for:
 
-    Therefore we deliberately prefer the first usable
-    image from the page instead of scoring arbitrary
-    images against AniDex numbers.
+        Wiki_Aniimo_XXXXX.png
+
+    because that is the actual Aniimo portrait.
+
+    Example:
+
+        Emberpup
+        Wiki_Aniimo_10051.png
     """
-
 
     candidates = []
 
+    def add_candidate(source):
 
-    # --------------------------------------------------------
-    # Collect IMG elements in document order.
-    # --------------------------------------------------------
+        if not source:
+            return
 
-    for img in soup.find_all("img"):
+        source = str(source).strip()
 
-        possible = [
+        if not source:
+            return
 
-            img.get("src"),
+        if source.startswith("data:"):
+            return
 
-            img.get("data-src"),
-
-            img.get("data-original"),
-
-            img.get("data-lazy-src")
-
-        ]
-
-
-        # srcset
-
-        srcset = img.get(
-            "srcset"
+        absolute = urljoin(
+            page_url,
+            source
         )
+
+        if is_bad_image(absolute):
+            return
+
+        if absolute not in candidates:
+            candidates.append(absolute)
+
+    # --------------------------------------------------------
+    # 1. Images in the page.
+    # --------------------------------------------------------
+
+    for image in soup.find_all("img"):
+
+        sources = []
+
+        sources.append(
+            image.get("src")
+        )
+
+        sources.append(
+            image.get("data-src")
+        )
+
+        sources.append(
+            image.get("data-original")
+        )
+
+        sources.append(
+            image.get("data-lazy-src")
+        )
+
+        srcset = image.get("srcset")
 
         if srcset:
 
-            first_src = (
-                srcset
-                .split(",")[0]
-                .strip()
-                .split(" ")[0]
-            )
+            for item in srcset.split(","):
 
-            possible.append(
-                first_src
-            )
+                item = item.strip()
 
+                if item:
 
-        for source in possible:
+                    sources.append(
+                        item.split()[0]
+                    )
 
-            if not source:
-                continue
+        for source in sources:
 
-            source = source.strip()
-
-            if source.startswith(
-                "data:"
-            ):
-                continue
-
-            absolute = urljoin(
-                page_url,
-                source
-            )
-
-            if is_bad_image(
-                absolute
-            ):
-                continue
-
-            if absolute not in candidates:
-
-                candidates.append(
-                    absolute
-                )
-
+            add_candidate(source)
 
     # --------------------------------------------------------
-    # Prefer the first large-looking Aniimo image.
-    #
-    # The official Wiki page's main portrait appears before
-    # the evolution/skill images.
+    # 2. Direct image links.
     # --------------------------------------------------------
 
-    for url in candidates:
+    for anchor in soup.find_all(
+        "a",
+        href=True
+    ):
 
-        lower = url.lower()
+        href = anchor.get("href")
+
+        if not href:
+            continue
+
+        lower = href.lower()
 
         if any(
-            lower.endswith(ext)
-            for ext in [
+            lower.endswith(extension)
+            for extension in [
                 ".png",
                 ".jpg",
                 ".jpeg",
@@ -404,556 +514,386 @@ def extract_image_url(
             ]
         ):
 
-            return url
-
+            add_candidate(href)
 
     # --------------------------------------------------------
-    # If extension isn't visible, still use first candidate.
+    # 3. HIGHEST PRIORITY:
+    # Wiki_Aniimo_XXXXX
     # --------------------------------------------------------
 
-    if candidates:
+    for image_url in candidates:
 
-        return candidates[0]
+        filename = image_url.lower().split("/")[-1]
 
+        if (
+            "wiki_aniimo_" in filename
+            and not is_bad_image(image_url)
+        ):
+
+            return image_url
+
+    # --------------------------------------------------------
+    # 4. Look for the exact Aniimo image in image URLs.
+    # --------------------------------------------------------
+
+    for image_url in candidates:
+
+        lower = image_url.lower()
+
+        if (
+            "wiki_stage" in lower
+            and "aniimo" in lower
+            and not is_bad_image(image_url)
+        ):
+
+            return image_url
+
+    # --------------------------------------------------------
+    # 5. Try the first non-bad official CDN image.
+    # --------------------------------------------------------
+
+    for image_url in candidates:
+
+        lower = image_url.lower()
+
+        if (
+            "worldx-website-cdn.aniimo.com"
+            in lower
+        ):
+
+            return image_url
+
+    # --------------------------------------------------------
+    # 6. AniDex fallback.
+    # --------------------------------------------------------
 
     return None
-
-
-# ============================================================
-# ELEMENTS
-# ============================================================
-
-KNOWN_ELEMENTS = {
-
-    "fire": "Fire",
-
-    "ice": "Ice",
-
-    "dark": "Dark",
-
-    "electric": "Electric",
-
-    "grass": "Grass",
-
-    "water": "Water",
-
-    "rock": "Rock",
-
-    "wind": "Wind",
-
-    "holy": "Holy"
-
-}
-
-
-def extract_elements(
-    soup,
-    lines
-):
-
-    found = []
-
-
-    # --------------------------------------------------------
-    # Look at the early part of the individual page.
-    # The Wiki puts the elements near the name.
-    # --------------------------------------------------------
-
-    for line in lines[:80]:
-
-        value = line.lower().strip()
-
-        if value in KNOWN_ELEMENTS:
-
-            element = KNOWN_ELEMENTS[
-                value
-            ]
-
-            if element not in found:
-
-                found.append(
-                    element
-                )
-
-
-    return found
-
-
-# ============================================================
-# ROLES
-# ============================================================
-
-KNOWN_ROLES = {
-
-    "dps": "DPS",
-
-    "heal": "Heal",
-
-    "support": "Support",
-
-    "break": "BREAK",
-
-    "regen": "REGEN"
-
-}
-
-
-def extract_roles(
-    lines
-):
-
-    found = []
-
-
-    for line in lines[:100]:
-
-        value = line.lower().strip()
-
-        if value in KNOWN_ROLES:
-
-            role = KNOWN_ROLES[
-                value
-            ]
-
-            if role not in found:
-
-                found.append(
-                    role
-                )
-
-
-    return found
 
 
 # ============================================================
 # STATS
 # ============================================================
 
-STAT_NAMES = [
-
-    "HP",
-
-    "BREAK",
-
-    "ATK",
-
-    "M.DEF",
-
-    "P.DEF",
-
-    "REGEN"
-
-]
-
-
-def extract_stats(
-    lines
-):
+def extract_stats(lines):
 
     stats = {}
 
+    joined = "\n".join(lines)
 
-    for i, line in enumerate(
-        lines
-    ):
+    for key in STAT_KEYS:
 
-        current = (
-            line
-            .strip()
-            .upper()
-            .replace("：", ":")
+        pattern = (
+            re.escape(key)
+            + r"\s*:\s*"
+            + r"(\d+(?:\.\d+)?)"
         )
 
+        match = re.search(
+            pattern,
+            joined,
+            re.IGNORECASE
+        )
 
-        # ----------------------------------------------------
-        # Format:
-        #
-        # HP:
-        # 67
-        # ----------------------------------------------------
+        if not match:
+            continue
 
-        for stat in STAT_NAMES:
+        value = match.group(1)
 
-            if current == (
-                stat + ":"
-            ):
+        if "." in value:
 
-                if i + 1 < len(lines):
+            stats[key] = float(value)
 
-                    match = re.search(
-                        r"\d+(?:\.\d+)?",
-                        lines[i + 1]
-                    )
+        else:
 
-                    if match:
-
-                        value = (
-                            match.group(0)
-                        )
-
-                        if "." in value:
-
-                            stats[stat] = float(
-                                value
-                            )
-
-                        else:
-
-                            stats[stat] = int(
-                                value
-                            )
-
-
-        # ----------------------------------------------------
-        # Format:
-        #
-        # HP: 67
-        # ----------------------------------------------------
-
-        for stat in STAT_NAMES:
-
-            pattern = (
-                r"^"
-                + re.escape(stat)
-                + r"\s*:\s*"
-                r"(\d+(?:\.\d+)?)$"
-            )
-
-            match = re.match(
-                pattern,
-                current
-            )
-
-            if match:
-
-                value = match.group(
-                    1
-                )
-
-                if "." in value:
-
-                    stats[stat] = float(
-                        value
-                    )
-
-                else:
-
-                    stats[stat] = int(
-                        value
-                    )
-
+            stats[key] = int(value)
 
     return stats
 
 
 # ============================================================
-# TRAIT
+# FORMS
 # ============================================================
 
-def extract_trait(
-    lines
-):
+def extract_forms(lines):
 
-    for i, line in enumerate(
-        lines
-    ):
+    forms = []
 
-        if line.lower() == "trait":
+    for line in lines:
 
-            # Search forward for a useful title.
+        matches = re.findall(
+            r"\b[A-Z][A-Za-z ]+Form\b",
+            line
+        )
 
-            for j in range(
-                i + 1,
-                min(
-                    i + 8,
-                    len(lines)
-                )
-            ):
+        for form in matches:
 
-                candidate = clean_text(
-                    lines[j]
-                )
+            form = clean_text(form)
 
-                if not candidate:
-                    continue
+            if form and form not in forms:
 
-                if candidate.lower() in {
-                    "skill details",
-                    "combat",
-                    "innate"
-                }:
-                    continue
+                forms.append(form)
 
-                # Find description after title.
-
-                if j + 1 < len(lines):
-
-                    description = clean_text(
-                        lines[j + 1]
-                    )
-
-                    if (
-                        description
-                        and len(description) > 10
-                    ):
-
-                        return {
-
-                            "name":
-                                candidate,
-
-                            "description":
-                                description
-
-                        }
+    return forms
 
 
-    return None
+# ============================================================
+# TRAITS
+# ============================================================
+
+def extract_traits(lines):
+
+    traits = []
+
+    for index, line in enumerate(lines):
+
+        if line != "Trait":
+            continue
+
+        # The current Wiki normally has:
+        #
+        # Trait
+        # image
+        # Trait Name
+        # Description
+
+        chunk = lines[
+            index + 1:
+            index + 8
+        ]
+
+        useful = []
+
+        for value in chunk:
+
+            if value in [
+                "Skill Details",
+                "Combat",
+                "Innate",
+            ]:
+                break
+
+            if value:
+                useful.append(value)
+
+        if useful:
+
+            # Remove obvious UI-only text.
+            useful = [
+                x for x in useful
+                if x.lower()
+                not in {
+                    "image",
+                    "view illustration"
+                }
+            ]
+
+        if useful:
+
+            trait_name = useful[0]
+
+            description = " ".join(
+                useful[1:]
+            )
+
+            traits.append(
+                {
+                    "name": trait_name,
+                    "description": description
+                }
+            )
+
+        break
+
+    return traits
 
 
 # ============================================================
 # SKILLS
 # ============================================================
 
-def extract_skills(
-    lines
-):
+def extract_skills(lines):
 
     skills = []
 
-
-    try:
-
-        start = next(
-            i
-            for i, line in enumerate(
-                lines
-            )
-            if line.lower() == "skill details"
-        )
-
-    except StopIteration:
-
+    if "Skill Details" not in lines:
         return skills
 
+    start = lines.index(
+        "Skill Details"
+    ) + 1
 
-    # --------------------------------------------------------
-    # Work through the skill section.
-    # --------------------------------------------------------
+    end = len(lines)
+
+    if "TOP" in lines[start:]:
+
+        end = lines.index(
+            "TOP",
+            start
+        )
 
     section = lines[
-        start + 1:
+        start:end
     ]
-
 
     i = 0
 
-
     while i < len(section):
 
-        line = section[i]
+        current = clean_text(
+            section[i]
+        )
 
+        if not current:
+            i += 1
+            continue
 
-        # Stop before footer.
-
-        if line.lower() in {
-            "terms of use",
-            "privacy policy"
+        # Ignore UI labels.
+        if current in {
+            "Combat",
+            "Innate",
+            "Image",
+            "Element:",
         }:
-
-            break
-
+            i += 1
+            continue
 
         # ----------------------------------------------------
-        # We look for the repeated pattern:
-        #
-        # Skill Name
-        # Description
-        # Element:
-        # Type: ...
-        # Cost: ...
-        # Power: ...
+        # Look ahead for a skill description.
+        # ----------------------------------------------------
+
+        if i + 1 >= len(section):
+
+            i += 1
+            continue
+
+        description = clean_text(
+            section[i + 1]
+        )
+
+        if not description:
+
+            i += 1
+            continue
+
+        # ----------------------------------------------------
+        # Find Element / Type / Cost / Power.
+        # ----------------------------------------------------
+
+        element = ""
+        skill_type = ""
+        cost = ""
+        power = ""
+
+        j = i + 2
+
+        while j < len(section):
+
+            line = clean_text(
+                section[j]
+            )
+
+            if line == "Element:":
+
+                if j + 1 < len(section):
+
+                    possible = clean_text(
+                        section[j + 1]
+                    )
+
+                    # Empty Element: is common
+                    # on the current Wiki.
+                    if (
+                        possible
+                        and not possible.startswith(
+                            "Type:"
+                        )
+                    ):
+
+                        element = possible
+
+                j += 1
+                continue
+
+            if line.startswith("Type:"):
+
+                skill_type = re.sub(
+                    r"^Type:\s*",
+                    "",
+                    line,
+                    flags=re.IGNORECASE
+                )
+
+                j += 1
+                continue
+
+            if line.startswith("Cost:"):
+
+                cost = re.sub(
+                    r"^Cost:\s*",
+                    "",
+                    line,
+                    flags=re.IGNORECASE
+                )
+
+                j += 1
+                continue
+
+            if line.startswith("Power:"):
+
+                power = re.sub(
+                    r"^Power:\s*",
+                    "",
+                    line,
+                    flags=re.IGNORECASE
+                )
+
+                j += 1
+                break
+
+            # A new skill name usually begins
+            # after the Power line, so stop if
+            # we encounter another likely heading.
+            if (
+                line
+                and not line.startswith(
+                    (
+                        "Element:",
+                        "Type:",
+                        "Cost:",
+                        "Power:"
+                    )
+                )
+                and j > i + 2
+            ):
+
+                break
+
+            j += 1
+
+        # ----------------------------------------------------
+        # Only save if this looks like a real skill.
         # ----------------------------------------------------
 
         if (
-            i + 1 < len(section)
-            and len(line) < 100
-            and len(section[i + 1]) > 10
+            current
+            and description
+            and (
+                skill_type
+                or cost
+                or power
+            )
         ):
 
-            skill_name = line
-
-            description = section[
-                i + 1
-            ]
-
-
-            # Don't accidentally treat headings as skills.
-
-            ignored = {
-
-                "Combat",
-
-                "Innate",
-
-                "Element:",
-
-                "Type:",
-
-                "Cost:",
-
-                "Power:"
-
-            }
-
-
-            if skill_name in ignored:
-
-                i += 1
-
-                continue
-
-
-            element = ""
-
-            skill_type = ""
-
-            cost = ""
-
-            power = ""
-
-
-            # ------------------------------------------------
-            # Look ahead for the skill metadata.
-            # ------------------------------------------------
-
-            j = i + 2
-
-
-            while (
-                j < len(section)
-                and j < i + 12
-            ):
-
-                value = section[j]
-
-
-                if value == "Element:":
-
-                    if j + 1 < len(section):
-
-                        element = clean_text(
-                            section[j + 1]
-                        )
-
-                        j += 2
-
-                        continue
-
-
-                if value.startswith(
-                    "Element:"
-                ):
-
-                    element = clean_text(
-                        value.replace(
-                            "Element:",
-                            "",
-                            1
-                        )
-                    )
-
-                    j += 1
-
-                    continue
-
-
-                if value.startswith(
-                    "Type:"
-                ):
-
-                    skill_type = clean_text(
-                        value.replace(
-                            "Type:",
-                            "",
-                            1
-                        )
-                    )
-
-                    j += 1
-
-                    continue
-
-
-                if value.startswith(
-                    "Cost:"
-                ):
-
-                    cost = clean_text(
-                        value.replace(
-                            "Cost:",
-                            "",
-                            1
-                        )
-                    )
-
-                    j += 1
-
-                    continue
-
-
-                if value.startswith(
-                    "Power:"
-                ):
-
-                    power = clean_text(
-                        value.replace(
-                            "Power:",
-                            "",
-                            1
-                        )
-                    )
-
-                    j += 1
-
-                    break
-
-
-                # Another likely skill name means stop.
-
-                if (
-                    j > i + 2
-                    and len(value) < 80
-                ):
-
-                    break
-
-
-                j += 1
-
-
-            skills.append({
-
-                "name":
-                    skill_name,
-
-                "description":
-                    description,
-
-                "element":
-                    element,
-
-                "type":
-                    skill_type,
-
-                "cost":
-                    cost,
-
-                "power":
-                    power
-
-            })
-
+            skills.append(
+                {
+                    "name": current,
+                    "description": description,
+                    "element": element,
+                    "type": skill_type,
+                    "cost": cost,
+                    "power": power
+                }
+            )
 
             i = max(
                 i + 2,
@@ -964,7 +904,6 @@ def extract_skills(
 
             i += 1
 
-
     return skills
 
 
@@ -972,596 +911,270 @@ def extract_skills(
 # ANALYSIS TAGS
 # ============================================================
 
-def make_analysis_tags(
-    trait,
-    skills
-):
+def tags_for(text):
 
-    text_parts = []
+    rules = {
 
+        "attack_up":
+            r"increase.*(?:attack|damage)"
+            r"|increases.*damage"
+            r"|increased.*damage",
 
-    if trait:
+        "defense_down":
+            r"reduce.*(?:defen|defence)"
+            r"|defense down"
+            r"|defence down"
+            r"|damage taken.*increase",
 
-        text_parts.append(
-            trait.get(
-                "description",
-                ""
-            )
-        )
+        "debuff":
+            r"debuff|curse|mark|weakness"
+            r"|reducing.*healing"
+            r"|paraly|silence|stun|freeze|slow",
 
+        "break":
+            r"break damage"
+            r"|break.*taken"
+            r"|increases.*break"
+            r"|stagger",
 
-    for skill in skills:
+        "heal":
+            r"heal|healing"
+            r"|restores? HP"
+            r"|restore.*HP",
 
-        text_parts.append(
-            skill.get(
-                "description",
-                ""
-            )
-        )
+        "regen":
+            r"regen|energy|EP"
+            r"|restor.*energy"
+            r"|reduces? the EP cost",
 
+        "shield":
+            r"shield|damage reduction",
 
-    text = " ".join(
-        text_parts
-    ).lower()
+        "control":
+            r"stun|silence|paraly"
+            r"|pull|slow|freeze|immobil",
 
+        "burst":
+            r"massive|heavy|bonus damage"
+            r"|extra damage|ultimate",
 
-    tags = []
-
-
-    patterns = {
-
-        "attack_up": [
-            "increase attack",
-            "increases attack",
-            "attack increased",
-            "attack is increased"
-        ],
-
-        "damage_up": [
-            "increase damage",
-            "increases damage",
-            "damage increased"
-        ],
-
-        "debuff": [
-            "debuff",
-            "weakness",
-            "mark",
-            "curse"
-        ],
-
-        "break": [
-            "break damage",
-            "increase break",
-            "break increased"
-        ],
-
-        "heal": [
-            "heal",
-            "healing",
-            "restore hp",
-            "restores hp"
-        ],
-
-        "regen": [
-            "regen",
-            "regeneration",
-            "energy",
-            "stamina"
-        ],
-
-        "shield": [
-            "shield",
-            "damage reduction"
-        ],
-
-        "control": [
-            "stun",
-            "freeze",
-            "slow",
-            "silence",
-            "paraly"
-        ],
-
-        "critical": [
-            "critical",
-            "crit"
-        ]
-
+        "self_scaling":
+            r"stack|stacking|each hit|critical",
     }
 
+    found = []
 
-    for tag, words in patterns.items():
+    for tag, pattern in rules.items():
 
-        for word in words:
+        if re.search(
+            pattern,
+            text,
+            re.IGNORECASE
+        ):
 
-            if word in text:
+            found.append(tag)
 
-                tags.append(
-                    tag
-                )
+    for element in [
+        "Fire",
+        "Water",
+        "Grass",
+        "Lightning",
+        "Earth",
+        "Wind",
+        "Dark",
+        "Ice",
+        "Light",
+    ]:
 
-                break
+        pattern = (
+            element
+            + r"\s+(?:damage|debuff)"
+        )
 
+        if re.search(
+            pattern,
+            text,
+            re.IGNORECASE
+        ):
 
-    return tags
+            found.append(
+                element.lower()
+                + "_synergy"
+            )
+
+    return sorted(
+        set(found)
+    )
 
 
 # ============================================================
-# INDIVIDUAL ANIIMO
+# PARSE INDIVIDUAL ANIIMO PAGE
 # ============================================================
 
-def parse_aniimo(
-    page_url,
-    roster_name,
-    roster_number
+def parse_item(
+    url,
+    fallback_name=None,
+    fallback_number=None
 ):
 
-    print(
-        "    Opening:",
-        page_url
-    )
-
-
-    html = get_page(
-        page_url
-    )
-
+    html = get(url)
 
     soup = BeautifulSoup(
         html,
         "html.parser"
     )
 
-
-    lines = page_lines(
-        soup
+    text = soup.get_text(
+        "\n"
     )
 
+    lines = clean_lines(
+        text
+    )
 
     # --------------------------------------------------------
-    # CRITICAL:
-    # Name comes from the INDIVIDUAL PAGE.
+    # NUMBER
+    # --------------------------------------------------------
+
+    number = extract_number(
+        lines,
+        fallback_number
+    )
+
+    # --------------------------------------------------------
+    # NAME
     # --------------------------------------------------------
 
     name = extract_name(
         soup,
-        roster_name
+        lines,
+        fallback_name
     )
 
-
     # --------------------------------------------------------
-    # CRITICAL:
-    # Number comes from the ROSTER LINK.
+    # PORTRAIT
     # --------------------------------------------------------
 
-    number = roster_number
-
-
-    # --------------------------------------------------------
-    # CRITICAL:
-    # Portrait comes from THIS SAME PAGE.
-    # --------------------------------------------------------
-
-    image_url = extract_image_url(
+    image = extract_image_url(
         soup,
-        page_url
+        url
     )
 
+    # --------------------------------------------------------
+    # ELEMENTS
+    # --------------------------------------------------------
 
     elements = extract_elements(
-        soup,
-        lines
+        lines[:45]
     )
 
+    # --------------------------------------------------------
+    # ROLES
+    # --------------------------------------------------------
 
     roles = extract_roles(
-        lines
+        lines[:45]
     )
 
+    # --------------------------------------------------------
+    # STATS
+    # --------------------------------------------------------
 
     stats = extract_stats(
         lines
     )
 
+    # --------------------------------------------------------
+    # FORMS
+    # --------------------------------------------------------
 
-    trait = extract_trait(
+    forms = extract_forms(
+        lines[:80]
+    )
+
+    # --------------------------------------------------------
+    # TRAITS
+    # --------------------------------------------------------
+
+    traits = extract_traits(
         lines
     )
 
+    trait = (
+        traits[0]
+        if traits
+        else None
+    )
+
+    # --------------------------------------------------------
+    # SKILLS
+    # --------------------------------------------------------
 
     skills = extract_skills(
         lines
     )
 
+    # --------------------------------------------------------
+    # TAGS
+    # --------------------------------------------------------
 
-    tags = make_analysis_tags(
-        trait,
-        skills
+    all_text = " ".join(
+        lines
     )
 
+    tags = tags_for(
+        all_text
+    )
 
     # --------------------------------------------------------
-    # VALIDATION
+    # RESULT
     # --------------------------------------------------------
-
-    if (
-        not name
-        or name == "Unknown"
-        or re.match(
-            r"^NO\.?\s*#?\s*\d+$",
-            name,
-            re.IGNORECASE
-        )
-    ):
-
-        # This should never happen, but use the roster
-        # name rather than storing NO#001 as the name.
-
-        name = re.sub(
-            r"^NO\.?\s*#?\s*\d+\s*",
-            "",
-            roster_name,
-            flags=re.IGNORECASE
-        ).strip()
-
-
-    if not name:
-
-        name = f"Aniimo #{number}"
-
 
     return {
 
-        "id":
-            number,
+        "id": number,
 
-        "name":
-            name,
+        "name": name,
 
-        "number":
-            (
-                f"{number:03d}"
-                if number < 1000
-                else str(number)
-            ),
+        "number": (
+            f"{int(number):03d}"
+            if number
+            and int(number) < 1000
+            else str(
+                number
+                or fallback_number
+                or ""
+            )
+        ),
 
-        "sourceUrl":
-            page_url,
+        "sourceUrl": url,
 
-        "imageUrl":
-            image_url,
+        "imageUrl": image,
 
-        "elements":
-            elements,
+        "elements": elements,
 
-        "roles":
-            roles,
+        "roles": roles,
 
-        "stats":
-            stats,
+        "stats": stats,
 
-        "forms":
-            [],
+        "forms": forms,
 
-        "trait":
-            trait,
+        "trait": trait,
 
-        "skills":
-            skills,
+        "traits": traits,
+
+        "skills": skills,
 
         "analysis": {
-
-            "tags":
-                tags,
-
-            "notes":
-                []
-
+            "tags": tags,
+            "notes": []
         },
 
         "lastVerified":
             time.strftime(
                 "%Y-%m-%d"
             )
-
     }
-
-
-# ============================================================
-# ROSTER DISCOVERY
-# ============================================================
-
-def discover_roster():
-
-    print(
-        "Downloading official Aniimo roster..."
-    )
-
-
-    html = get_page(
-        WIKI_URL
-    )
-
-
-    soup = BeautifulSoup(
-        html,
-        "html.parser"
-    )
-
-
-    roster = []
-
-    seen_urls = set()
-
-
-    # --------------------------------------------------------
-    # The official Wiki roster contains links like:
-    #
-    # NO.001 Emberpup
-    #
-    # We capture BOTH pieces here.
-    # --------------------------------------------------------
-
-    for link in soup.find_all(
-        "a",
-        href=True
-    ):
-
-        text = clean_text(
-            link.get_text(
-                " ",
-                strip=True
-            )
-        )
-
-
-        number = extract_number(
-            text
-        )
-
-
-        if number is None:
-
-            continue
-
-
-        href = urljoin(
-            WIKI_URL,
-            link.get("href")
-        )
-
-
-        if "/item/" not in href:
-
-            continue
-
-
-        # ----------------------------------------------------
-        # Remove NO.001 from the visible text.
-        # ----------------------------------------------------
-
-        name = re.sub(
-            r"NO\.?\s*\d+\s*",
-            "",
-            text,
-            flags=re.IGNORECASE
-        ).strip()
-
-
-        if not name:
-
-            continue
-
-
-        if href in seen_urls:
-
-            continue
-
-
-        seen_urls.add(
-            href
-        )
-
-
-        roster.append({
-
-            "number":
-                number,
-
-            "name":
-                name,
-
-            "url":
-                href
-
-        })
-
-
-    # --------------------------------------------------------
-    # Sort by actual Aniimo number.
-    # --------------------------------------------------------
-
-    roster.sort(
-        key=lambda item: item["number"]
-    )
-
-
-    return roster
-
-
-# ============================================================
-# VALIDATION
-# ============================================================
-
-def validate_database(
-    data
-):
-
-    if not data:
-
-        raise RuntimeError(
-            "No Aniimo were collected."
-        )
-
-
-    # Current official roster is well above 80.
-    #
-    # This prevents an accidental partial scrape from
-    # destroying the database.
-
-    if len(data) < 80:
-
-        raise RuntimeError(
-            f"Only {len(data)} Aniimo were collected. "
-            "Database will NOT be overwritten."
-        )
-
-
-    names = set()
-
-    bad_names = []
-
-
-    for item in data:
-
-        name = item.get(
-            "name",
-            ""
-        )
-
-
-        if not name:
-
-            bad_names.append(
-                item
-            )
-
-            continue
-
-
-        if re.match(
-            r"^NO\.?\s*#?\s*\d+$",
-            name,
-            re.IGNORECASE
-        ):
-
-            bad_names.append(
-                item
-            )
-
-
-        if name in names:
-
-            # Duplicate names aren't necessarily fatal,
-            # but report them.
-
-            print(
-                "WARNING: duplicate name:",
-                name
-            )
-
-
-        names.add(
-            name
-        )
-
-
-    if bad_names:
-
-        examples = [
-            item.get(
-                "name"
-            )
-            for item in bad_names[:5]
-        ]
-
-
-        raise RuntimeError(
-            "Invalid Aniimo names detected: "
-            + str(examples)
-        )
-
-
-    portrait_count = sum(
-        1
-        for item in data
-        if item.get(
-            "imageUrl"
-        )
-    )
-
-
-    print(
-        "Aniimo collected:",
-        len(data)
-    )
-
-
-    print(
-        "Portraits collected:",
-        portrait_count
-    )
-
-
-    # --------------------------------------------------------
-    # Do NOT destroy a good database if portraits disappear.
-    # --------------------------------------------------------
-
-    if portrait_count < 50:
-
-        raise RuntimeError(
-            f"Only {portrait_count} portraits were found. "
-            "Database will NOT be overwritten."
-        )
-
-
-    # --------------------------------------------------------
-    # Specific sanity check for Emberpup.
-    # --------------------------------------------------------
-
-    emberpup = next(
-        (
-            item
-            for item in data
-            if item.get(
-                "number"
-            ) == "001"
-        ),
-        None
-    )
-
-
-    if emberpup:
-
-        print("")
-        print(
-            "Sanity check:"
-        )
-
-        print(
-            "  #001 name:",
-            emberpup.get(
-                "name"
-            )
-        )
-
-        print(
-            "  #001 image:",
-            emberpup.get(
-                "imageUrl"
-            )
-        )
-
-
-        if emberpup.get(
-            "name"
-        ).lower() != "emberpup":
-
-            raise RuntimeError(
-                "Sanity check failed: "
-                "#001 is not Emberpup."
-            )
 
 
 # ============================================================
@@ -1570,261 +1183,388 @@ def validate_database(
 
 def main():
 
-    print("")
     print(
-        "================================================"
+        "============================================"
     )
-    print(
-        "       ANIIMO TEAM BUILDER DATA BUILDER"
-    )
-    print(
-        "================================================"
-    )
-    print("")
 
+    print(
+        "Aniimo Team Builder Data Refresh"
+    )
+
+    print(
+        "============================================"
+    )
+
+    print()
+
+    print(
+        "Downloading official Aniimo index..."
+    )
+
+    soup = BeautifulSoup(
+        get(INDEX_URL),
+        "html.parser"
+    )
+
+    links = []
+
+    seen_urls = set()
 
     # --------------------------------------------------------
-    # DISCOVER
+    # Find official Aniimo item pages.
     # --------------------------------------------------------
 
-    roster = discover_roster()
+    for anchor in soup.find_all(
+        "a",
+        href=True
+    ):
 
-
-    print(
-        "Official roster links found:",
-        len(roster)
-    )
-
-
-    if len(roster) < 80:
-
-        raise RuntimeError(
-            "The official roster could not be read correctly. "
-            "Existing aniimo.json was NOT changed."
+        href = urljoin(
+            INDEX_URL,
+            anchor["href"]
         )
 
+        path = urlparse(
+            href
+        ).path
 
-    data = []
+        if "/item/" not in path:
+            continue
 
+        if href in seen_urls:
+            continue
+
+        seen_urls.add(
+            href
+        )
+
+        text = clean_text(
+            anchor.get_text(
+                " ",
+                strip=True
+            )
+        )
+
+        number_match = re.search(
+            r"NO\.?\s*(\d+)",
+            text,
+            re.IGNORECASE
+        )
+
+        number = (
+            int(number_match.group(1))
+            if number_match
+            else None
+        )
+
+        name = re.sub(
+            r"^NO\.?\s*\d+\s*",
+            "",
+            text,
+            flags=re.IGNORECASE
+        ).strip()
+
+        # Do NOT allow the generic Wiki title
+        # to become the fallback Aniimo name.
+
+        generic_names = {
+            "",
+            "Official Aniimo Wiki",
+            "Official Aniimo Wiki - Complete Aniimo Index",
+            "Complete Aniimo Index",
+        }
+
+        if name in generic_names:
+            name = None
+
+        links.append(
+            (
+                href,
+                name,
+                number
+            )
+        )
 
     # --------------------------------------------------------
-    # PROCESS EACH INDIVIDUAL PAGE
+    # Deduplicate by Aniimo number.
     # --------------------------------------------------------
 
-    for index, entry in enumerate(
-        roster,
+    by_number = {}
+
+    for url, name, number in links:
+
+        if number is None:
+            continue
+
+        if number not in by_number:
+
+            by_number[number] = (
+                url,
+                name,
+                number
+            )
+
+    ordered_links = list(
+        by_number.values()
+    )
+
+    ordered_links.sort(
+        key=lambda item:
+        item[2]
+    )
+
+    print(
+        f"Found {len(ordered_links)} Aniimo pages."
+    )
+
+    print()
+
+    output = []
+
+    # --------------------------------------------------------
+    # Download each Aniimo.
+    # --------------------------------------------------------
+
+    for index, (
+        url,
+        fallback_name,
+        number
+    ) in enumerate(
+        ordered_links,
         1
     ):
 
-        print("")
         print(
-            f"[{index}/{len(roster)}] "
-            f"NO.{entry['number']:03d} "
-            f"{entry['name']}"
+            f"[{index}/{len(ordered_links)}] "
+            f"NO.{number:03d}"
         )
-
 
         try:
 
-            item = parse_aniimo(
-
-                page_url=
-                    entry["url"],
-
-                roster_name=
-                    entry["name"],
-
-                roster_number=
-                    entry["number"]
-
-            )
-
-
-            # ------------------------------------------------
-            # Print what we actually obtained.
-            # ------------------------------------------------
-
-            print(
-                "    Name:",
-                item["name"]
+            aniimo = parse_item(
+                url,
+                fallback_name,
+                number
             )
 
             print(
-                "    Portrait:",
-                (
-                    "YES"
-                    if item.get(
-                        "imageUrl"
-                    )
-                    else "NO"
+                f"    Name: "
+                f"{aniimo['name']}"
+            )
+
+            if aniimo.get(
+                "imageUrl"
+            ):
+
+                print(
+                    "    Portrait: YES"
                 )
+
+            else:
+
+                print(
+                    "    Portrait: NO"
+                )
+
+            output.append(
+                aniimo
             )
-
-
-            data.append(
-                item
-            )
-
 
         except Exception as error:
 
             print(
-                "    ERROR:",
-                str(error)
+                f"    ERROR: {error}"
             )
 
+            output.append(
+                {
+                    "id": number,
 
-            # ------------------------------------------------
-            # Do NOT silently invent an Aniimo.
-            #
-            # Keep the correct name and source URL so the
-            # record is still identifiable.
-            # ------------------------------------------------
+                    "name":
+                        fallback_name
+                        or "Unknown Aniimo",
 
-            data.append({
+                    "number":
+                        f"{number:03d}",
 
-                "id":
-                    entry["number"],
+                    "sourceUrl":
+                        url,
 
-                "name":
-                    entry["name"],
+                    "imageUrl":
+                        None,
 
-                "number":
-                    (
-                        f"{entry['number']:03d}"
-                        if entry["number"] < 1000
-                        else str(
-                            entry["number"]
+                    "elements": [],
+
+                    "roles": [],
+
+                    "stats": {},
+
+                    "forms": [],
+
+                    "trait": None,
+
+                    "traits": [],
+
+                    "skills": [],
+
+                    "analysis": {
+                        "tags": [],
+                        "notes": [
+                            "Refresh error: "
+                            + str(error)
+                        ]
+                    },
+
+                    "lastVerified":
+                        time.strftime(
+                            "%Y-%m-%d"
                         )
-                    ),
-
-                "sourceUrl":
-                    entry["url"],
-
-                "imageUrl":
-                    None,
-
-                "elements":
-                    [],
-
-                "roles":
-                    [],
-
-                "stats":
-                    {},
-
-                "forms":
-                    [],
-
-                "trait":
-                    None,
-
-                "skills":
-                    [],
-
-                "analysis": {
-
-                    "tags":
-                        [],
-
-                    "notes": [
-                        "Individual page could not be parsed."
-                    ]
-
-                },
-
-                "lastVerified":
-                    time.strftime(
-                        "%Y-%m-%d"
-                    )
-
-            })
-
-
-        # ----------------------------------------------------
-        # Be polite to the official Wiki.
-        # ----------------------------------------------------
+                }
+            )
 
         time.sleep(
-            0.25
+            0.15
         )
 
+    # --------------------------------------------------------
+    # Sort by Aniimo number.
+    # --------------------------------------------------------
+
+    output.sort(
+        key=lambda item:
+        int(
+            item.get(
+                "id",
+                99999
+            )
+            or 99999
+        )
+    )
 
     # --------------------------------------------------------
-    # VALIDATE BEFORE WRITING
+    # SANITY CHECKS
     # --------------------------------------------------------
 
-    print("")
+    print()
     print(
-        "Validating database..."
+        "Running sanity checks..."
     )
 
+    emberpup = None
 
-    validate_database(
-        data
+    for item in output:
+
+        if int(
+            item.get(
+                "id",
+                0
+            )
+            or 0
+        ) == 1:
+
+            emberpup = item
+            break
+
+    if emberpup is None:
+
+        raise RuntimeError(
+            "Sanity check failed: "
+            "Aniimo #001 was not found."
+        )
+
+    if (
+        emberpup.get(
+            "name",
+            ""
+        ).strip().lower()
+        != "emberpup"
+    ):
+
+        raise RuntimeError(
+            "Sanity check failed: "
+            "#001 is "
+            + repr(
+                emberpup.get(
+                    "name"
+                )
+            )
+            + " instead of Emberpup."
+        )
+
+    ember_image = (
+        emberpup.get(
+            "imageUrl"
+        )
+        or ""
     )
 
+    if (
+        "Wiki_Aniimo_"
+        not in ember_image
+    ):
+
+        raise RuntimeError(
+            "Sanity check failed: "
+            "#001 does not have "
+            "the official Aniimo portrait."
+        )
+
+    if len(output) < 20:
+
+        raise RuntimeError(
+            "Sanity check failed: "
+            "fewer than 20 Aniimo "
+            "were downloaded."
+        )
+
+    print(
+        "Sanity checks PASSED."
+    )
+
+    print(
+        f"#001 = {emberpup['name']}"
+    )
+
+    print(
+        f"#001 portrait = "
+        f"{ember_image}"
+    )
+
+    print()
 
     # --------------------------------------------------------
-    # WRITE
+    # WRITE JSON
     # --------------------------------------------------------
 
     OUTPUT_FILE.write_text(
-
         json.dumps(
-            data,
+            output,
             ensure_ascii=False,
             indent=2
         ),
-
         encoding="utf-8"
-
-    )
-
-
-    # --------------------------------------------------------
-    # SUMMARY
-    # --------------------------------------------------------
-
-    portraits = sum(
-        1
-        for item in data
-        if item.get(
-            "imageUrl"
-        )
-    )
-
-
-    print("")
-    print(
-        "================================================"
     )
 
     print(
-        "DATABASE BUILD SUCCESSFUL"
+        "============================================"
     )
 
     print(
-        "Aniimo:",
-        len(data)
+        f"Wrote {len(output)} Aniimo to:"
     )
 
     print(
-        "Portraits:",
-        portraits
-    )
-
-    print(
-        "Output:",
         OUTPUT_FILE
     )
 
     print(
-        "================================================"
+        "============================================"
     )
 
-    print("")
 
+# ============================================================
+# ENTRY POINT
+# ============================================================
 
 if __name__ == "__main__":
 
