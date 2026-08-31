@@ -178,7 +178,6 @@ const details =
 document.addEventListener("DOMContentLoaded", function () {
 
     /*
-       IMPORTANT:
        Render the canonical roster FIRST.
        This means the website is usable immediately.
     */
@@ -265,13 +264,6 @@ function isBadPortrait(url) {
     }
 
     const value = String(url).toLowerCase();
-
-    /*
-       The current JSON contains many of these incorrect
-       Wiki_PetHead images.
-
-       Ignore them.
-    */
 
     if (value.includes("undefinedimages")) {
         return true;
@@ -361,8 +353,6 @@ async function loadDatabase() {
 
         /*
            MERGE DATABASE INTO CANONICAL ROSTER.
-
-           This is the critical fix.
 
            The database supplies detailed information.
 
@@ -474,7 +464,7 @@ async function loadDatabase() {
                         },
 
                 /*
-                   Ignore the broken Wiki_PetHead URLs.
+                   Ignore broken Wiki_PetHead URLs.
 
                    Use AniDex instead.
                 */
@@ -514,7 +504,6 @@ async function loadDatabase() {
 
 
         /*
-           IMPORTANT:
            Only replace the roster if the merge succeeded.
         */
 
@@ -552,7 +541,7 @@ async function loadDatabase() {
         /*
            NEVER destroy the working roster.
 
-           If aniimo.json is broken, we simply keep the
+           If aniimo.json is broken, simply keep the
            canonical roster.
         */
 
@@ -998,12 +987,6 @@ function renderTeam() {
 
     });
 
-
-    /*
-       Clicking a team slot makes that slot active.
-       The next roster Aniimo clicked goes into it.
-    */
-
 }
 
 
@@ -1053,10 +1036,9 @@ document.addEventListener(
 );
 
 
-/*
-   Clicking a roster card while a team slot is active
-   adds that Aniimo to the selected slot.
-*/
+/* =====================================================
+   TEAM ANIIMO SELECTION
+   ===================================================== */
 
 document.addEventListener(
     "click",
@@ -1071,11 +1053,6 @@ document.addEventListener(
             return;
         }
 
-
-        /*
-           Do not interfere with normal details behaviour
-           unless the user is selecting a team.
-        */
 
         const id =
             Number(
@@ -1508,6 +1485,10 @@ function showAniimoDetails(aniimo) {
     }
 
 
+    /*
+       Open the details panel.
+    */
+
     detailsPanel.classList.remove(
         "hidden"
     );
@@ -1571,6 +1552,10 @@ function showAniimoDetails(aniimo) {
 
     }
 
+
+    /*
+       TRAITS
+    */
 
     const traits =
         aniimo.traits &&
@@ -1636,6 +1621,10 @@ function showAniimoDetails(aniimo) {
 
     }
 
+
+    /*
+       SKILLS / ABILITIES
+    */
 
     let skillsHTML = "";
 
@@ -1731,6 +1720,10 @@ function showAniimoDetails(aniimo) {
     }
 
 
+    /*
+       SYNERGY TAGS
+    */
+
     const tags =
         aniimo.analysis &&
         Array.isArray(
@@ -1777,6 +1770,10 @@ function showAniimoDetails(aniimo) {
             :
             "";
 
+
+    /*
+       RENDER DETAILS
+    */
 
     details.innerHTML = `
 
@@ -1826,6 +1823,29 @@ function showAniimoDetails(aniimo) {
         ${tagsHTML}
 
     `;
+
+
+    /*
+       =================================================
+       RESTORED BEHAVIOUR
+       =================================================
+
+       Once the details have been rendered, automatically
+       scroll the page down to the details panel.
+
+       This restores the old behaviour where tapping an
+       Aniimo immediately takes you to its abilities,
+       stats, traits, etc.
+    */
+
+    requestAnimationFrame(function() {
+
+        detailsPanel.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
 
 }
 
