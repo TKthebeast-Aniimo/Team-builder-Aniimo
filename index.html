@@ -83,74 +83,83 @@
     </section>
 
 
-    <!-- FILTERS -->
+    <!-- ROSTER -->
 
-    <section class="panel">
+    <section class="panel" id="rosterPanel">
 
-        <h2>Aniimo Roster</h2>
-
-        <div class="controls">
-
-            <input
-                id="searchInput"
-                type="search"
-                placeholder="Search Aniimo..."
-            >
-
-            <select id="elementFilter">
-
-                <option value="all">
-                    All Elements
-                </option>
-
-                <option value="fire">🔥 Fire</option>
-                <option value="water">💧 Water</option>
-                <option value="grass">🌿 Grass</option>
-                <option value="ice">❄️ Ice</option>
-                <option value="electric">⚡ Electric</option>
-                <option value="wind">🌪️ Wind</option>
-                <option value="rock">🪨 Rock</option>
-                <option value="dark">🌑 Dark</option>
-                <option value="holy">✨ Holy</option>
-
-            </select>
-
+        <div class="panel-header">
+            <h2>Aniimo Roster</h2>
+            <button id="toggleRoster" class="toggle-button" type="button" aria-expanded="true">
+                Hide Roster
+            </button>
         </div>
 
+        <div id="rosterContent">
 
-        <div id="roleFilters" class="role-filters">
+            <div class="controls">
 
-            <button class="role-button active" data-role="all">
-                All
-            </button>
+                <input
+                    id="searchInput"
+                    type="search"
+                    placeholder="Search Aniimo..."
+                >
 
-            <button class="role-button" data-role="DPS">
-                DPS
-            </button>
+                <select id="elementFilter">
 
-            <button class="role-button" data-role="Support">
-                Support
-            </button>
+                    <option value="all">
+                        All Elements
+                    </option>
 
-            <button class="role-button" data-role="REGEN">
-                Regen
-            </button>
+                    <option value="fire">🔥 Fire</option>
+                    <option value="water">💧 Water</option>
+                    <option value="grass">🌿 Grass</option>
+                    <option value="ice">❄️ Ice</option>
+                    <option value="electric">⚡ Electric</option>
+                    <option value="wind">🌪️ Wind</option>
+                    <option value="rock">🪨 Rock</option>
+                    <option value="dark">🌑 Dark</option>
+                    <option value="holy">✨ Holy</option>
 
-            <button class="role-button" data-role="BREAK">
-                Break
-            </button>
+                </select>
 
-            <button class="role-button" data-role="Heal">
-                Heal
-            </button>
+            </div>
+
+
+            <div id="roleFilters" class="role-filters">
+
+                <button class="role-button active" data-role="all">
+                    All
+                </button>
+
+                <button class="role-button" data-role="DPS">
+                    DPS
+                </button>
+
+                <button class="role-button" data-role="Support">
+                    Support
+                </button>
+
+                <button class="role-button" data-role="REGEN">
+                    Regen
+                </button>
+
+                <button class="role-button" data-role="BREAK">
+                    Break
+                </button>
+
+                <button class="role-button" data-role="Heal">
+                    Heal
+                </button>
+
+            </div>
+
+            <div id="rosterStatus" class="status">
+                Loading roster...
+            </div>
+
+            <div id="roster" class="roster"></div>
 
         </div>
-
-        <div id="rosterStatus" class="status">
-            Loading roster...
-        </div>
-
-        <div id="roster" class="roster"></div>
 
     </section>
 
