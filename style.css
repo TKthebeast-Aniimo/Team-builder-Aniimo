@@ -62,6 +62,44 @@ button {
 }
 
 
+/* PANEL HEADER + TOGGLE */
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.panel-header h2 {
+    margin: 0;
+}
+
+.toggle-button {
+    background: #222c38;
+    color: #dbe3eb;
+    border: 1px solid #3b4856;
+    border-radius: 8px;
+    padding: 8px 14px;
+    white-space: nowrap;
+}
+
+.toggle-button:hover {
+    background: #2e9f50;
+    border-color: #54cf73;
+    color: white;
+}
+
+#rosterPanel.collapsed #rosterContent {
+    display: none;
+}
+
+#rosterPanel.collapsed .panel-header {
+    margin-bottom: 0;
+}
+
+
 /* TEAM */
 
 .team-slots {
@@ -257,6 +295,23 @@ button {
     font-size: 12px;
 }
 
+/* Stats on roster cards */
+.card-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    margin-top: 8px;
+    font-size: 11px;
+    color: #9ca8b5;
+}
+
+.card-stats span {
+    background: #0e141b;
+    border-radius: 4px;
+    padding: 2px 4px;
+    text-align: center;
+}
+
 
 /* DETAILS */
 
@@ -389,6 +444,10 @@ button {
     .detail-header img {
         width: 140px;
         height: 140px;
+    }
+
+    .panel-header {
+        flex-wrap: wrap;
     }
 
 }
