@@ -27,7 +27,72 @@
         "description": "Increases damage dealt to enemies weak to your element by 15%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Fire Kick",
+        "description": "Jumps up to dodge an attack, allowing flames to encircle itself before delivering a dive-kick, dealing damage to all targets near the kick. A successful dodge will also deal 120% damage and increase damage by 20% for 20s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "72",
+        "description": "Pebble Kick",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "72",
+        "description": "Fire Bolt",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -68,7 +133,72 @@
         "description": "Increases damage dealt to enemies weak to your element by 15%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Fire Kick",
+        "description": "Jumps up to dodge an attack, allowing flames to encircle itself before delivering a dive-kick, dealing damage to all targets near the kick. A successful dodge will also deal 120% damage and increase damage by 20% for 20s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "72",
+        "description": "Pebble Kick",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "72",
+        "description": "Fire Bolt",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -112,7 +242,120 @@
         "description": "Increases damage dealt to enemies weak to your element by 15%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Fire Kick",
+        "description": "Jumps up to dodge an attack, allowing flames to encircle itself before delivering a dive-kick, dealing damage to all targets near the kick. A successful dodge will also deal 120% damage and increase damage by 20% for 20s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "72",
+        "description": "Pebble Kick",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "72",
+        "description": "Burn Breaker",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "88",
+        "description": "Lightning Kick",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "72",
+        "description": "Fire Bolt",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Falling Star",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "170",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -154,7 +397,88 @@
         "description": "After using 8 basic attacks in battle, Inferlupa enters Full Energy, enhancing its next skill. Damage dealt by that skill is treated as basic attack damage."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Unbroken Flameruff Spirit",
+        "description": "Fires a Flameruff Spirit that ricochets between targets, increasing BREAK efficiency against them by 10% per stack, up to 3 stacks, for 20s. Ricochets 5 times by default. While in the [Full Energy] state, ricochets 7 times.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Hunting Pack",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Crossfire",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "65",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Wolfpack Onslaught",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -192,7 +516,56 @@
         "description": "For 5s after using a skill, basic attack hits deal additional damage equal to 5 Might."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Shooting Star Bombs",
+        "description": "Shoots stars to attack a target, dealing damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "61",
+        "description": "Star Glide",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "74",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -232,7 +605,120 @@
         "description": "For 5s after using a skill, basic attack hits deal additional damage equal to 5 Might."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Shadow Magic",
+        "description": "Immediately breaks free of control effects and retreats from the target, leaving a clone behind for 20s. The clone cannot be attacked and mimics the user's basic attacks and skills, dealing damage equal to 20% of the user's damage. Use the skill again to swap places with the clone. The clone is destroyed if it moves more than 20m away from the user.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Chill Glide",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "74",
+        "description": "Shooting Star Glide",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "74",
+        "description": "Shooting Stars",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Aquatic Glide",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "74",
+        "description": "Comet Aureus",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "166",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -269,7 +755,104 @@
         "description": "When switching Aniimo in battle, restores 12.5 EP to the next Chirpi family member switched in. Triggers once every 20s at most."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Leaf Tornado",
+        "description": "Releases a leaf vortex at the target location, dealing damage and pulling enemies toward the center.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Tornado Wind Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "March",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Water Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -307,7 +890,120 @@
         "description": "When switching Aniimo in battle, restores 12.5 EP to the next Chirpi family member switched in. Triggers once every 20s at most."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Leaf Tornado",
+        "description": "Releases a leaf vortex at the target location, dealing damage and pulling enemies toward the center.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Spiral Blade",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "62",
+        "description": "Water Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Waltz",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Zephyr's Breath",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "92",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -350,7 +1046,136 @@
         "description": "Increases critical rate by 20% while flying."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Lightning Splitter",
+        "description": "Fires multiple Electric Projectiles at nearby targets. If multiple projectiles hit the same unit, Cornet's damage increases by 30% for 15s. Hold the Skill button to automatically enter the Fly state after the skill is cast.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Wind Bomb Rush",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "157",
+        "description": "Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Scream Splitter",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Water Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Leaf Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Avian Harmony Ensemble",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -390,7 +1215,120 @@
         "description": "While shielded, BREAK efficiency +40%.When triggering BREAK, plays [Concerto], reducing the whole team's stamina cost by 30%.When you have 3 Movement-series buffs, increases all Movement effects by 30%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Leaf Tornado",
+        "description": "Releases a leaf vortex at the target location, dealing damage and pulling enemies toward the center.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Pause Gust",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "48",
+        "description": "Water Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "59",
+        "description": "Gale Guard",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "54",
+        "description": "〔主译〕Lay down arms 〔备选〕Cease hostilities",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -436,7 +1374,56 @@
         "description": "While on grass, damage increases by 20%. After entering battle, each skill hit grants 1 [Dance Power]. At 24, the next skill costs no EP."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Floral Storm",
+        "description": "Spins while moving and releases magical petals that track targets. The number of petals released increases by 1 over time, up to 3 at once. Tap the skill again to stop casting.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "26",
+        "description": "Vortex of Petals",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "46",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -480,7 +1467,88 @@
         "description": "While on grass, damage increases by 20%. After entering battle, each skill hit grants 1 [Dance Power]. At 24, the next skill costs no EP."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Focused Beam",
+        "description": "Fires an energy beam at targets ahead. After gaining 24 points of [Dance Power], the next skill cast has a larger range.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "120",
+        "description": "Floral Storm",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "26",
+        "description": "Vortex of Petals",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "46",
+        "description": "Dancing Petals",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "187",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -516,7 +1584,72 @@
         "description": "While in water terrain, reduces the EP cost of all skills by 10%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Healing Water",
+        "description": "Restores HP to all allies equal to 10% of the caster’s max HP, and restores HP to the caster equal to 12% of their max HP over 5s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Water Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Ice Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "heal",
@@ -552,7 +1685,72 @@
         "description": "While in water terrain, reduces the EP cost of all skills by 10%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Healing Water",
+        "description": "Restores HP to all allies equal to 10% of the caster’s max HP, and restores HP to the caster equal to 12% of their max HP over 5s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Water Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Ice Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "heal",
@@ -590,7 +1788,120 @@
         "description": "While in water terrain, reduces the EP cost of all skills by 10%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Healing Water",
+        "description": "Restores HP to all allies equal to 10% of the caster’s max HP, and restores HP to the caster equal to 12% of their max HP over 5s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Ice Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Glimmer Shot",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Bubble Rush",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "32",
+        "description": "Water Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Spring of Life",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -630,7 +1941,88 @@
         "description": "While off field, creates a patch of grass under a teammate after they cast 3 skills."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Blooms of Vigor",
+        "description": "Creates a circular magic field underfoot, restoring 1 EP every second to Grass-type teammates within range for 12s. The field also upgrades nearby grass into Vitality Blooms, restoring 1% HP every second to Grass-type teammates within range.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Cyclone of Leaves",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "33",
+        "description": "Vine Entanglement",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "16",
+        "description": "Lotus Bloom",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "heal",
@@ -667,7 +2059,72 @@
         "description": "After using 6 basic attacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Cloud Orb",
+        "description": "Throws a missile condensed from clouds at the target. If the user is [Shrouded in Mist], the missile creates a larger explosion on hit, dealing damage equal to 250% Might.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Thunder Bolt",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Cloud Shield",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "regen",
@@ -706,7 +2163,120 @@
         "description": "After using 6 basic attacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Nimbi Burst",
+        "description": "Inhales, then slams the ground, triggering an explosion that deals AoE damage in a circular area around itself. Increases teammates' damage and BREAK efficiency by 6% for 15s. If the user is [Shrouded in Mist], the damage and BREAK efficiency boost also applies to all nearby allies, with the boost increased to 11%.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Nebula Burst",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Cloud Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Thunder Bolt",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Cloud Shield",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Collectible Drop",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -744,7 +2314,88 @@
         "description": "Every 10s, the next skill applies 1 stack of [Drowsiness] to the target. At 3 stacks, the target enters [Nightmare] for 20s. Targets in [Nightmare] have their Dark Resistance reduced by 17% and cannot move or cast skills for 3s. Taking damage removes the control effect."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Nimbi Attack",
+        "description": "Summons a Nimbi that charges toward the caster, damaging targets in its path and applying 1 stack of [Drowsiness]. Use again to send the Nimbi charging back toward the target.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Nightmare Devourer",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Hypnotic Cloud Shot",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Dream Blast",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -784,7 +2435,72 @@
         "description": "For every 1,000 max HP, increases BREAK damage by 2%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Gravel Tackle",
+        "description": "Ram into the target with your body, dealing Earth damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "Euphoric Sonic Blast",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Plant Charge",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -826,7 +2542,120 @@
         "description": "Every 18s, the next skill applies [Curse] to enemies hit for 10s. Dark basic attacks restore 0.25 EP when hitting enemies with [Curse]."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Malice Burst",
+        "description": "Releases a large energy shock wave around the target, dealing damage to enemies hit and reducing their healing received by 50% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "68",
+        "description": "Euphoric Sonic Blast",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Shard Impact",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Black Hole Domain",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "54",
+        "description": "Oozing Malice",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "68",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Annihilation Bomb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "burst",
@@ -866,7 +2695,104 @@
         "description": "Increases BREAK damage by % for every 21,000 max HP. Upon entering battle, summons 1 Hummin to assist. An additional Hummin is summoned every 10s, up to a maximum of 3."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Nutrient Absorption",
+        "description": "Roots itself firmly in the soil, gaining 20% Damage Reduction and 2% continuous healing per second.Instantly restores 50% HP to all Hummin, and increases nearby Hummin's damage by 20% and BREAK efficiency by 20%.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Haunting Choir",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "47",
+        "description": "Gravel Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "Off-Key Shock Wave",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "Breaking Roar",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "165",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -912,7 +2838,72 @@
         "description": "Skills build Momentum when they deal damage, up to 6 stacks. Momentum gain is doubled during tunneling. At max stacks, increases BREAK efficiency by 30% for 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "The Luminus Gust",
+        "description": "Spins Cores around itself, continuously dealing damage and applying Earth Debuff for 6s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "35",
+        "description": "Verdant Beam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "66",
+        "description": "Leaf Slash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -956,7 +2947,104 @@
         "description": "Skills build Momentum when they deal damage, up to 6 stacks. Momentum gain is doubled during tunneling. At max stacks, increases BREAK efficiency by 30% for 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "The Luminus Gust",
+        "description": "Spins Cores around itself, continuously dealing damage and applying Earth Debuff for 6s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "35",
+        "description": "Charged Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "75",
+        "description": "Leaf Slash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Verdant Beam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "66",
+        "description": "Quake Impact",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "173",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -997,7 +3085,88 @@
         "description": "Basic attacks apply [Ice Debuff]. Deals 35% extra BREAK to targets with more than 5 stacks of [Ice Debuff]."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Ice Spikes",
+        "description": "Creates an ice spike ahead, attacking and freezing the target for1s. Can be used during tunneling. Afterward, dashes forward and emerges from underground.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Icy Gravel Dance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Frost Slam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Freezing Claws",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "173",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "debuff",
@@ -1038,7 +3207,56 @@
         "description": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff]."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Trick Fire Ring",
+        "description": "Launches a fire ring that expands then contracts to attack the target. The farther the target is, the more damage it will take, up to 50% increased damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "35",
+        "description": "Fire Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1080,7 +3298,88 @@
         "description": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff]."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Trick Fire Ring",
+        "description": "Launches a fire ring that expands then contracts to attack the target. The farther the target is, the more damage it will take, up to 50% increased damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "35",
+        "description": "Phantom Barrage",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Fire Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "Phantom Flame Cannon",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "100",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1120,7 +3419,104 @@
         "description": "When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Purifying Dance",
+        "description": "Removes all debuffs on surrounding teammates. Once the debuffs are removed, increases their EP recovery rate by 20% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Healing Dance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Phantom Dance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Wind of Rejuvenation",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Wind of Regeneration",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1160,7 +3556,136 @@
         "description": "When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Purifying Dance",
+        "description": "Removes all debuffs on surrounding teammates. Once the debuffs are removed, increases their EP recovery rate by 20% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Healing Dance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Phantom Dance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Wind of Rejuvenation",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Phantomflutter",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Wind of Regeneration",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Help! Gracewing!",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "150",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1200,7 +3725,88 @@
         "description": "Increases max EP by 10."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Hypnotic Spores",
+        "description": "On hit, inflicts [Hypnosis] on the target, increasing their damage taken by 25% and preventing them from acting. Removed when the target takes damage. Lasts 5s. Does not affect Grass-type Aniimo.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "28",
+        "description": "Energy Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Ethereal Light Wave",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Butterfly Dance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1236,7 +3842,88 @@
         "description": "When a skill applies a debuff to a target, Wind damage for the whole team increases by 20% for 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Ice Arc Strike",
+        "description": "Performs an arc-shaped sweep that deals Ice damage. Enemies hit while affected by [Weakness Mark] are also stunned for 1.5s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Arc Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Water Arc Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Sonar Attack",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1275,7 +3962,120 @@
         "description": "When a skill applies a debuff to a target, Wind damage for the whole team increases by 20% for 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Ice Arc Strike",
+        "description": "Performs an arc-shaped sweep that deals Ice damage. Enemies hit while affected by [Weakness Mark] are also stunned for 1.5s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Detect Weakness",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Arc Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Tactical Kick",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Water Arc Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Target Weakness",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1317,7 +4117,56 @@
         "description": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting 15s. Each basic attack costs 1 stack of [Sword Dance] to deal 180% extra damage."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Thorny Defense",
+        "description": "Enters a defensive stance, reducing damage taken by 20% While in this state, it counters when attacked. If attacked just as the skill is used, its critical rate increases by 30% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "75",
+        "description": "Thorny Impact",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "57",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1361,7 +4210,120 @@
         "description": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting 15s. Each basic attack costs 1 stack of [Sword Dance] to deal 180% extra damage."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Thorny Defense",
+        "description": "Enters a defensive stance, reducing damage taken by 20% While in this state, it counters when attacked. If attacked just as the skill is used, its critical rate increases by 30% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "75",
+        "description": "Aqua Defense",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "75",
+        "description": "Thorny Impact",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "57",
+        "description": "Lightning Impact",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "57",
+        "description": "Thorny Rain",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Elegant Waltz",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "172",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1399,7 +4361,88 @@
         "description": "When a teammate deals basic attack damage, gains 1 stack of [Rose Mark], up to 10 stacks. Each stack of [Rose Mark] reduces Melloblum's EP cost by 3."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Thorny Blessing",
+        "description": "Grants Thorny Blessing to the whole team. When dealing Grass critical damage to a target, creates thorns beneath it that deal damage. Triggers up to 1 time every 0.5s for 14s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "14",
+        "description": "Healing Rose",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Blasting Roses",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Rose Garden",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1441,7 +4484,72 @@
         "description": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases critical rate by 15% for 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Frost Strike",
+        "description": "Strikes targets around itself and applies [Silence] to targets hit for 1.5s. While [Silence] is active, targets cannot use skills.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Jittering Beats",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Rhythm Combo",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "36",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1479,7 +4587,88 @@
         "description": "The first skill this Aniimo uses within 5s of entering battle does not consume EP. Cooldown: 17s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Lightning Break",
+        "description": "Attacks the targets while break dancing.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "54",
+        "description": "Thunder Sweep",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "80",
+        "description": "Electricity Shock",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Lightning Storm",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1523,7 +4712,104 @@
         "description": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases critical rate by 15% for 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Wild Show",
+        "description": "Hold to charge the microphone, then release to unleash a massive sound wave, damaging targets in front. A well-timed release deals an additional 30% BREAK damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "70",
+        "description": "Frost Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Jittering Beats",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Rhythm Combo",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "36",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Sonic Boom",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1562,7 +4848,56 @@
         "description": "When a skill deals damage to a target, reduces the target's Dark Resistance by 7% for 20s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Blossoming Moment",
+        "description": "Jumps up to dodge an attack, allowing a scent to encircle itself before dive-pecking the targets to deal damage. A successful dodge will generate a shield equal to 10% of max HP for 20s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "38",
+        "description": "Withering Bloom",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "10",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "heal",
@@ -1597,7 +4932,88 @@
         "description": "When a skill deals damage to a target, reduces the target's Dark Resistance by 7% for 20s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Withering Bloom",
+        "description": "Releases a fragrance, dealing damage to targets in range and restoring HP to all team members equal to 的4% of its own max HP. If there is only one target in range, the healing amount is doubled.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "22",
+        "description": "Blossoming Moment",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "38",
+        "description": "Fragrance Marking",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Fragrance Bomb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "burst",
@@ -1639,7 +5055,72 @@
         "description": "Defeating a target grants 1 stack of Battlelust, increasing damage by 25% for 20s. Stacks up to 2 times."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Scythe Dance",
+        "description": "Spins to slash, dealing Dark damage 3 times to all nearby targets. Each hit increases own damage by 8%, up to 32%, for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Forest Whirl",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Dark Dash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "25",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1682,7 +5163,120 @@
         "description": "Defeating a target grants 1 stack of Battlelust, increasing damage by 25% for 20s. Stacks up to 2 times."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Dark Soul",
+        "description": "Transports itself to a target and attacks. If the target has less than 50% HP left, for each 1% HP lost, increases the Aniimo's damage by 1%. Defeating a target with this skill grants a time-limited free recast.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "Fire Dash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "25",
+        "description": "Dark Dash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "25",
+        "description": "Scythe Dance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Forest Whirl",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Dimension Rupture",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1723,7 +5317,104 @@
         "description": "Restores 4 EP when a skill lands a critical hit."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Lightning Blade Storm",
+        "description": "After dashing to close in on the target, it continuously consumes Energy to perform consecutive slashes. When Energy is depleted or clicked again, it unleashes a Spinning Slash that deals 26 Might damage. For every 3 consecutive slashes accumulated by this skill, the final Spinning Slash deals 100% increased damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "35",
+        "description": "Lightning Blade Impact",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "52",
+        "description": "Enhanced Lightning Blade",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Enhanced Light Blade",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Thunder Lance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1763,7 +5454,72 @@
         "description": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases critical rate of that damage by 15%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Ice Strikes",
+        "description": "Lunges forward and spins to create a magic field that fires 3 ice blades for 3 hits, dealing damage and applying 5 stacks of [Ice Debuff].",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "55",
+        "description": "Night Slash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "55",
+        "description": "Boomerang Blade",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1803,7 +5559,72 @@
         "description": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases critical rate of that damage by 15%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Ice Strikes",
+        "description": "Lunges forward and spins to create a magic field that fires 3 ice blades for 3 hits, dealing damage and applying 5 stacks of [Ice Debuff].",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "55",
+        "description": "Night Slash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "55",
+        "description": "Boomerang Blade",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1844,7 +5665,120 @@
         "description": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases critical rate of that damage by 15%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Frost Tail Strike",
+        "description": "Flips forward toward the target and slams the ground with a tail strike, dealing damage. Can consume 10 stacks of [Ice Debuff] to deal 85% extra damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Boomerang Blade",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "Prismana Slash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "75",
+        "description": "Ice Strikes",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "55",
+        "description": "Night Slash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "55",
+        "description": "Ice Tornado",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "155",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -1885,7 +5819,56 @@
         "description": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to 5% HP. All skills cost 12 less EP, but UP cannot be gained. Lasts 6s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "High-Voltage Dash",
+        "description": "Charges toward the targets while electrified to deal damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "48",
+        "description": "Thunder Tail",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "regen",
@@ -1925,7 +5908,104 @@
         "description": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to 5% HP. All skills cost 12 less EP, but UP cannot be gained. Lasts 6s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Lightning Cross",
+        "description": "Channels the power of lightning, sending a pushing lightning claw mark forward that deals up to 3 hits to enemies. This skill gains 50% additional critical rate.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Electrified Impact",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "33",
+        "description": "Dark Claw",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "52",
+        "description": "Lightning Claw",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Lightning Flash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "debuff",
@@ -1964,7 +6044,56 @@
         "description": "When entering battle, if the team has an opposite-sex Susuta family member, increases own BREAK efficiency by 30% for 15s. Cooldown: 20s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Water Cannon",
+        "description": "Jumps up and hurls a huge water ball at the target, dealing AoE damage and creating a puddle.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "Water Dash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "74",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2002,7 +6131,56 @@
         "description": "When entering battle, if the team has an opposite-sex Susuta family member, increases own BREAK efficiency by 30% for 15s. Cooldown: 20s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Water Cannon",
+        "description": "Jumps up and hurls a huge water ball at the target, dealing AoE damage and creating a puddle.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "Water Dash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "74",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2038,7 +6216,104 @@
         "description": "Increases Water damage by12% for all opposite-sex Aniimo on the team."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Water Cannon",
+        "description": "Jumps up and hurls a huge water ball at the target, dealing AoE damage and creating a puddle.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "Surge",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "72",
+        "description": "Dark Tide",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "76",
+        "description": "Surf",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Wrath of the Sea",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2078,7 +6353,104 @@
         "description": "When entering battle, if the team has an opposite-sex Susuta family member, increases own BREAK efficiency by 30% for 15s. Cooldown: 20s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Water Cannon",
+        "description": "Jumps up and hurls a huge water ball at the target, dealing AoE damage and creating a puddle.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "Water Cannonade",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "39",
+        "description": "Hydro Roll",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "19",
+        "description": "Splash Shield",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Home Run",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "176",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2119,7 +6491,56 @@
         "description": "While in water terrain or after absorbing water, increases Water damage by 20% for 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Torrent Slam",
+        "description": "Throws a shell at the target. Nearby puddles deal extra damage equal to 30% of the original Might and increasing Water damage by 15% for 20s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "47",
+        "description": "Hydro Roll",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "83",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2157,7 +6578,56 @@
         "description": "While in water terrain or after absorbing water, increases Water damage by 20% for 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Torrent Slam",
+        "description": "Throws a shell at the target. Nearby puddles deal extra damage equal to 30% of the original Might and increasing Water damage by 15% for 20s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "47",
+        "description": "Hydro Roll",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "83",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2198,7 +6668,120 @@
         "description": "While in water terrain or after absorbing water, increases Water damage by 20% for 20s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Flowing Water Slash",
+        "description": "Gathers water currents to perform 3 consecutive slashes. If all hits strike the target, unleashes one additional powerful slash. When near water, absorbs water to deal extra damage equal to 30% Might, upgrading the slash into a Waterblade Slash.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "61",
+        "description": "Prismana Slam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "47",
+        "description": "Torrent Slam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "47",
+        "description": "Thunder Slam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "47",
+        "description": "Hydro Roll",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "83",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Torrent Blade",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2238,7 +6821,72 @@
         "description": "Moving and using skills builds Overload Energy. When Overload Energy is full, the next skill gains 40% bonus damage."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Stone Ball Drift",
+        "description": "Spins around to deal damage to a target in front. Each hit increases damage by 8% for 20s, stacking up to 4 times.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "61",
+        "description": "Stone Ball Cutter",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Ice Ball Cutting",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2277,7 +6925,104 @@
         "description": "Moving and using skills builds [Overload Energy]. When fully charged, the next skill deals 40% extra damage and immediately brings [Sandstorm Spin] to maximum speed."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Ice Ball Cutting",
+        "description": "Raises the ice ball and rolls forward, dealing a large amount of damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Stone Ball Cutter",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Stone Ball Drift",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "61",
+        "description": "Sandstorm Spin",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Rock Ball Blast",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "195",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2315,7 +7060,104 @@
         "description": "[Rock Piles] created by Bouldus can be destroyed by Waleetle's [Stone Ball Drift], releasing shock waves and applying [Disintegration] to the target.[Disintegration]: Each stack reduces Earth Resistance by 3%% and Movement Speed by 5% for 20s. Stacks up to 6 times."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Clay Ball",
+        "description": "Throws a clay ball in a straight line in the direction faced, dealing damage on hit and applying Crumble effect.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Rock Tackle",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Ice Sphere",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "10",
+        "description": "Rolling Ball",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "10",
+        "description": "Boulder Blast",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "175",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "control",
@@ -2352,7 +7194,56 @@
         "description": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Thunder Field",
+        "description": "Generates a thunder field that keeps following the target. Targets within the thunder field that receive a Lightning attack will be hit by an additional Lightning attack and be inflicted with a Lightning Debuff. The thunder field lasts for 8s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "1",
+        "description": "Lightning Dart",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "burst",
@@ -2392,7 +7283,104 @@
         "description": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Thunder Field",
+        "description": "Generates a thunder field that keeps following the target. Targets within the thunder field that receive a Lightning attack will be hit by an additional Lightning attack and be inflicted with a Lightning Debuff. The thunder field lasts for 8s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "1",
+        "description": "Lightning Dart",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "Thunder Imprint",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "1",
+        "description": "Radiant Dart",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Thunderfeather Volley",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "burst",
@@ -2433,7 +7421,72 @@
         "description": "Increases BREAK by 0."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Defense Mode",
+        "description": "Entering Defense Mode grants 20% damage reduction. Generates a shock wave when hit, dealing damage equal to 10 Might.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "36",
+        "description": "Guardbreak Slam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Guardbreak Smash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2477,7 +7530,104 @@
         "description": "Deals 30% extra damage to targets affected by control effects or BREAK."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Weakening Smash",
+        "description": "Jumps up and smashes down on the target to deal damage. Up to three consecutive smashes are allowed, and the third smash will stun the target for 1s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Elastic Sword",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "62",
+        "description": "Shadow Cut",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "85",
+        "description": "Weakening Slam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Ironclad Armament",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "220",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "burst",
@@ -2517,7 +7667,104 @@
         "description": "Increases BREAK by 0."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Guardbreak Slam",
+        "description": "Jumps up and smashes down on the target to deal damage. Up to three consecutive smashes are allowed, and the third smash will stun the target for 1s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Bouncy Sling",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "55",
+        "description": "Ballistic Guard",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "52",
+        "description": "Guardbreak Smash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Heavy Slam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2559,7 +7806,56 @@
         "description": "After being attacked, increases BREAK efficiency by 30% for 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Wind Tackle",
+        "description": "Tackles and knocks back small-sized targets. Increases own damage reduction by 15% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Overcharged Claw Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "68",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2598,7 +7894,56 @@
         "description": "After being attacked, increases BREAK efficiency by 30% for 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Wind Tackle",
+        "description": "Tackles and knocks back small-sized targets. Increases own damage reduction by 15% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Overcharged Claw Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "68",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2638,7 +7983,88 @@
         "description": "After being attacked, increases BREAK efficiency by 30% for 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Wind Tackle",
+        "description": "Tackles and knocks back small-sized targets. Increases own damage reduction by 15% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Wind Counter",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "69",
+        "description": "Overcharged Claw Strike",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "68",
+        "description": "Skyfall",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "175",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2678,7 +8104,88 @@
         "description": "Deals 40% extra damage to enemies with more than 5 stacks of Fire Debuff."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Fiery Charge",
+        "description": "Charges at the target to deal damage. If used while flying, dives at the target and stops flying. On hit, gains a shield equal to 5% of max HP for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Lava Breath",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "62",
+        "description": "Flaming Claws",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "Hot Breath",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "156",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "burst",
@@ -2718,7 +8225,56 @@
         "description": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state.[Enraged] increases ATK Speed and own skill damage by 30%, increases the EP recovery rate by 25%, and prevents [Rage] gain. Lasts 20s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Fanatic Clawing",
+        "description": "Claws the target up to 4 times. When the fourth hit lands, the next skill gains double [Rage].In the [Enraged] state, each hit applies 2/2/2/6 stacks of [Claw Mark], up to 12 stacks.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Earthquake",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "53",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2758,7 +8314,104 @@
         "description": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state.[Enraged] increases ATK Speed and own skill damage by 30%, increases the EP recovery rate by 25%, and prevents [Rage] gain. Lasts 20s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Claw of Madness",
+        "description": "Claws the target up to 4 times. When the fourth hit lands, the next skill gains double [Rage].In the [Enraged] state, each hit applies 2/2/2/6 stacks of [Claw Mark], up to 12 stacks.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Fanatic Clawing",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Earthquake",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "53",
+        "description": "Critical Hit",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "76",
+        "description": "Rock Smash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "227",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2797,7 +8450,56 @@
         "description": "While in [Tunneling] state, can cast skills and deals 30% extra BREAK."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Earth Spikes",
+        "description": "Generates a line of stone spikes that extend forward, piercing all targets in their path.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "68",
+        "description": "Stone Shell",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "33",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "regen"
@@ -2833,7 +8535,56 @@
         "description": "After spending a total of EP, gains [Pyro Charge]. Every 502s, applies 1 stack of Fire Debuff to nearby targets for 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Fiery Punch",
+        "description": "Dashes forward with a punch, dealing damage and piercing through targets. Also removes all [Fire Debuff] stacks from the target. Each stack of [Fire Debuff] deals additional damage equal to 5% Might.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Lava Breath",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "debuff",
@@ -2874,7 +8625,104 @@
         "description": "After spending a total of EP, gains [Pyro Charge]. Every 502s, applies 1 stack of Fire Debuff to nearby targets for 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Lava Punch",
+        "description": "Dashes forward with a punch, dealing damage and piercing through targets. Also removes all [Fire Debuff] stacks from the target. Each stack of [Fire Debuff] deals additional damage equal to 5% Might.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Magma Surge",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "53",
+        "description": "Dark Energy Surge",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "53",
+        "description": "Lava Breath",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "40",
+        "description": "Burning Sun",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "150",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -2916,7 +8764,56 @@
         "description": "While in [Tunneling] state, can cast skills and deals 30% extra BREAK."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Earth Spikes",
+        "description": "Generates a line of stone spikes that extend forward, piercing all targets in their path.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "68",
+        "description": "Stone Shell",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "33",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "regen"
@@ -2951,7 +8848,88 @@
         "description": "While in [Tunneling] state, can cast skills and deals 30% extra BREAK."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Earth Spikes",
+        "description": "Generates a line of stone spikes that extend forward, piercing all targets in their path.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "68",
+        "description": "Seismic Wave",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "155",
+        "description": "Stone Shell",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "33",
+        "description": "Meteors",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "189",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "regen"
@@ -2984,7 +8962,56 @@
         "description": "When a skill or Ultimate hits a target, reduces the target’s Earth Resistance by 2%. Stacks up to 5 times and lasts 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Smoke Screen",
+        "description": "Deploy smoke to obscure vision—targets cannot be aimed through the smoke.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Roll Out",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "31",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "burst",
@@ -3019,7 +9046,88 @@
         "description": "When a skill or Ultimate hits a target, reduces the target’s Earth Resistance by 2%. Stacks up to 5 times and lasts 10s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Smoke Screen",
+        "description": "Deploy smoke to obscure vision—targets cannot be aimed through the smoke.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Turret Mode",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "35",
+        "description": "Ant Nest Sentinel",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "10",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Annihilation Barrage",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "burst",
@@ -3054,7 +9162,56 @@
         "description": "Teammates who receive this Aniimo's skill buff also gain 25% Lightning damage for 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Swift Retreat",
+        "description": "Moves back rapidly, leaving a clone behind that uses Lightning Discharge to attack targets and slow them by 15% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "53",
+        "description": "Lightning Discharge",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "control",
@@ -3091,7 +9248,56 @@
         "description": "Teammates who receive this Aniimo's skill buff also gain 25% Lightning damage for 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Swift Retreat",
+        "description": "Moves back rapidly, leaving a clone behind that uses Lightning Discharge to attack targets and slow them by 15% for 10s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "53",
+        "description": "Lightning Discharge",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "control",
@@ -3131,7 +9337,120 @@
         "description": "Teammates who receive this Aniimo's skill buff also gain 25% Lightning damage for 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Healing Impact",
+        "description": "Fires an energy beam. Hold the skill button to keep firing, damaging targets within range and healing teammates within range for 2% HP every second.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Swift Retreat",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "53",
+        "description": "Water Rush",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Lightning Discharge",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Spotlight Moment",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Self-Destruction",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "80",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3172,7 +9491,56 @@
         "description": "Every 12s, enters Bathing. The next skill cast creates a puddle."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Here Comes the Bubble",
+        "description": "Casts a giant bubble, reducing the movement speed of targets within range by 15%and their EP recovery rate by 20%. Also increases the movement speed of allies within range by 15%.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Bubble Blast",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3208,7 +9576,88 @@
         "description": "Every 12s, enters Bathing. The next skill cast creates a puddle."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Bubbles",
+        "description": "Creates a bubble field. Each time a teammate casts a Water skill inside the field, 1 bubble is generated, up to 6 bubbles. Lasts 15s. Tap the skill button again to detonate all bubbles. Each bubble restores 2.5 EP. After absorbing a puddle, restores an additional 10EP.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Here Comes the Bubble",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Bubble Blast",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Crazy Bubbles",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3245,7 +9694,88 @@
         "description": "When casting a skill with less than 20 EP, restores 2.5 EP."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Disruptive Current",
+        "description": "Releases a current of electricity, damaging targets ahead.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "34",
+        "description": "Charged Geyser",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Beat of Passion",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "52",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Electric Dance Frenzy",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "regen"
@@ -3282,7 +9812,56 @@
         "description": "When entering battle, restores 2.5 EP for each Earth-type Aniimo on the team. Cooldown: 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Coral Trap",
+        "description": "Creates a coral trap ahead for 5s. It deals damage to targets every second and applies 1 stack of Earth Debuff.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Quicksand Slam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "28",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "debuff",
@@ -3322,7 +9901,88 @@
         "description": "When entering battle, restores 2.5 EP for each Earth-type Aniimo on the team. Cooldown: 15s."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Coral Impact",
+        "description": "Deals damage to the target and applies [Coral Mark] for 6s. When [Coral Mark] ends, the marked target takes additional damage equal to 3 Might for each instance of Earth damage taken while the mark was active, and the user restores 1 EP.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "10",
+        "description": "Coral Trap",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Quicksand Slam",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "28",
+        "description": "Coral Prison",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "70",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "break",
@@ -3361,7 +10021,72 @@
         "description": "After casting 3 skills, enhances the next skill used during Icebreaker and adds an extra effect.When HP is below 75%, increases BREAK efficiency by 20%. When HP is below 50%, increases BREAK efficiency by 40%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Ground Slam",
+        "description": "Leaps toward the target and slams down, dealing circular AoE damage. When enhanced, gains an Ice Shield equal to 10% of max HP and creates a ring-shaped Ice Prison around the target for 8s. Recast to cancel the Ice Prison.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Sand Rush",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Icebreaker",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3399,7 +10124,104 @@
         "description": "After casting 3 skills, enhances the next skill used during Icebreaker and adds an extra effect.When HP is below 75%, increases BREAK efficiency by 20%. When HP is below 50%, increases BREAK efficiency by 40%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Ground Slam",
+        "description": "Leaps toward the target and slams down, dealing circular AoE damage. When enhanced, gains an Ice Shield equal to 10% of max HP and creates a ring-shaped Ice Prison around the target for 8s. Recast to cancel the Ice Prison.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Sand Rush",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Wave Surge",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "67",
+        "description": "Icebreaker",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Aurora Protection",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3436,7 +10258,56 @@
         "description": "Automatically restores 1 [Bubble Energy] every 3s. Each time this Aniimo’s skill deals damage to a target, restores an extra 3. Stores up to 10. Casting [Baa-Baa Healbubb] consumes 10 to restore an extra 12%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Baa-Baa Healbubb",
+        "description": "While floating and moving, heals all allies within range for 12% of the caster’s Max HP over 6s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Baa-Baa Sweetbubb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "heal",
@@ -3473,7 +10344,104 @@
         "description": "Automatically restores 1 [Bubble Energy] every 3s. Each time this Aniimo’s skill deals damage to a target, restores an extra 3. Stores up to 10. Casting [Baa-Baa Healbubb] consumes 10 to restore an extra 12%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Baa-Baa Leaf Shot",
+        "description": "Shoots a Grass Orb to attack the target, reducing its 5%Grass Resistance for 20s on hit.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "20",
+        "description": "Baa-Baa Sweetbubb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "Baa-Baa Darkbubb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "50",
+        "description": "Baa-Baa Healbubb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Leafwave Bubble",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3512,7 +10480,56 @@
         "description": "Each basic attack and skill triggers the gacha once, randomly firing an orange, purple, blue, or gold bubble and adding that bubble color to the gacha slots. Gold bubbles have a 1% chance to appear, while each other color has a 33% chance to appear. When the slots hold 5 bubbles of the same color, or when a gold bubble appears, all bubbles are cleared and [Jackpot] begins for 10s. In [Jackpot], basic attacks and skills no longer trigger the gacha and always fire Rainbow Bubbles. Basic attack damage +60%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Rigged Odds",
+        "description": "Consumes the least common bubble color. The next basic attack is guaranteed to fire the most common color, and basic attack damage increases by 25% for 15s.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Clearance Sale",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "124",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3548,7 +10565,88 @@
         "description": "Each basic attack and skill triggers the gacha once, randomly firing an orange, purple, blue, or gold bubble and adding that bubble color to the gacha slots. Gold bubbles have a 1% chance to appear, while each other color has a 33% chance to appear. When the slots hold 5 bubbles of the same color, or when a gold bubble appears, all bubbles are cleared and [Jackpot] begins for 10s. In [Jackpot], basic attacks and skills no longer trigger the gacha and always fire Rainbow Bubbles. Basic attack damage +60%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Clearance Sale",
+        "description": "Continuously spits bubbles at the target for 5s. The user can move while casting, but movement speed is reduced. This skill's damage counts as basic attack damage.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "124",
+        "description": "Rigged Odds",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Enhanced Bubble",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "43",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Super Jackpot",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3584,7 +10682,56 @@
         "description": "For every 1% HP lost, increases damage by 0.8%, up to 48%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Wild Dance",
+        "description": "Unleashes rapid slashes in succession. Gains 20% damage reduction during the attack.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "33",
+        "description": "Demon Steps",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "13",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3621,7 +10768,88 @@
         "description": "For every 1% HP lost, increases damage by 0.8%, up to 48%."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Demonic State",
+        "description": "This Aniimo enters [Demonic State], continuously consuming energy. Press the Skill button again to end the state. When the state ends, deals damage around this Aniimo and restores HP equal to 30% of the damage dealt during this state, up to 50% of max HP. [Demonic State] increases skill damage by 30% and changes skill cost to 10% of current HP. After 6 skill casts, holding basic attack deals additional damage equal to 50 Might.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "65",
+        "description": "Wild Dance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "33",
+        "description": "Demon Steps",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "13",
+        "description": "Ashfrost Judgment",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "154",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3660,7 +10888,104 @@
         "description": "When not attacking with an advantageous element, final damage increases by 20%.Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals 100% extra damage, and restores 0.5% HP."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Moon Impact",
+        "description": "Drops a full moon onto the target, triggering an explosion and dealing damage. If it hits a target with [Fox Mark], deals additional small-area damage around the target equal to 10%.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "45",
+        "description": "Moon-Washed",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Lunar Eclipse",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Lumin Bolts",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "55",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "6",
+        "description": "Selene's Judgment",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
@@ -3701,7 +11026,120 @@
         "description": "When not attacking with an advantageous element, final damage increases by 20%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill."
       }
     ],
-    "skills": [],
+    "skills": [
+      {
+        "name": "Light Bombardment",
+        "description": "Dive from the air to attack the target, causing a holy explosion upon landing. If you possess [Ring of Kim Sol], this Damage is increased by 30%.",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "62",
+        "description": "Sun-Kissed",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "0",
+        "description": "Holy Roar",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "30",
+        "description": "Holy Storm",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "60",
+        "description": "Light Bombardment",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "62",
+        "description": "Helios' Judgment",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "167",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": ""
+      }
+    ],
     "analysis": {
       "tags": [
         "attack_up",
