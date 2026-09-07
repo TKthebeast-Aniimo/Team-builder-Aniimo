@@ -15,6 +15,8 @@ IMPORTANT:
 - The official individual Aniimo page is authoritative for names.
 - We deliberately ignore the generic Wiki page title.
 - We prefer Wiki_Aniimo portrait images.
+- We support the current Wiki's separate-line stat format.
+- We support the current Wiki's skill layout.
 - We write aniimo.json into the repository root.
 """
 
@@ -217,7 +219,11 @@ def extract_roles(lines):
 # NAME
 # ============================================================
 
-def extract_name(soup, lines, fallback_name=None):
+def extract_name(
+    soup,
+    lines,
+    fallback_name=None
+):
 
     """
     The official Wiki uses a generic page title:
@@ -229,7 +235,6 @@ def extract_name(soup, lines, fallback_name=None):
     Individual pages contain:
 
         NO.001
-
         Emberpup
 
     so we locate the actual Aniimo heading.
@@ -290,9 +295,6 @@ def extract_name(soup, lines, fallback_name=None):
             re.IGNORECASE
         ):
 
-            # The Wiki currently repeats NO.XXX,
-            # then gives the Aniimo name.
-
             for next_index in range(
                 index + 1,
                 min(index + 6, len(lines))
@@ -350,7 +352,10 @@ def extract_name(soup, lines, fallback_name=None):
 # NUMBER
 # ============================================================
 
-def extract_number(lines, fallback_number=None):
+def extract_number(
+    lines,
+    fallback_number=None
+):
 
     for line in lines[:30]:
 
@@ -399,25 +404,19 @@ def is_bad_image(url):
     return False
 
 
-def extract_image_url(soup, page_url):
+def extract_image_url(
+    soup,
+    page_url
+):
 
     """
-    IMPORTANT:
-
     The official Aniimo page contains several images.
-
-    We DO NOT use og:image first.
 
     We specifically search for:
 
         Wiki_Aniimo_XXXXX.png
 
     because that is the actual Aniimo portrait.
-
-    Example:
-
-        Emberpup
-        Wiki_Aniimo_10051.png
     """
 
     candidates = []
@@ -447,28 +446,17 @@ def extract_image_url(soup, page_url):
             candidates.append(absolute)
 
     # --------------------------------------------------------
-    # 1. Images in the page.
+    # 1. Images in page.
     # --------------------------------------------------------
 
     for image in soup.find_all("img"):
 
-        sources = []
-
-        sources.append(
-            image.get("src")
-        )
-
-        sources.append(
-            image.get("data-src")
-        )
-
-        sources.append(
-            image.get("data-original")
-        )
-
-        sources.append(
-            image.get("data-lazy-src")
-        )
+        sources = [
+            image.get("src"),
+            image.get("data-src"),
+            image.get("data-original"),
+            image.get("data-lazy-src"),
+        ]
 
         srcset = image.get("srcset")
 
@@ -479,7 +467,6 @@ def extract_image_url(soup, page_url):
                 item = item.strip()
 
                 if item:
-
                     sources.append(
                         item.split()[0]
                     )
@@ -523,7 +510,11 @@ def extract_image_url(soup, page_url):
 
     for image_url in candidates:
 
-        filename = image_url.lower().split("/")[-1]
+        filename = (
+            image_url
+            .lower()
+            .split("/")[-1]
+        )
 
         if (
             "wiki_aniimo_" in filename
@@ -533,7 +524,7 @@ def extract_image_url(soup, page_url):
             return image_url
 
     # --------------------------------------------------------
-    # 4. Look for the exact Aniimo image in image URLs.
+    # 4. Wiki stage Aniimo image.
     # --------------------------------------------------------
 
     for image_url in candidates:
@@ -549,7 +540,7 @@ def extract_image_url(soup, page_url):
             return image_url
 
     # --------------------------------------------------------
-    # 5. Try the first non-bad official CDN image.
+    # 5. Official CDN fallback.
     # --------------------------------------------------------
 
     for image_url in candidates:
@@ -564,7 +555,7 @@ def extract_image_url(soup, page_url):
             return image_url
 
     # --------------------------------------------------------
-    # 6. AniDex fallback.
+    # 6. No usable official image.
     # --------------------------------------------------------
 
     return None
@@ -576,11 +567,93 @@ def extract_image_url(soup, page_url):
 
 def extract_stats(lines):
 
+    """
+    Supports BOTH formats:
+
+        HP: 67
+
+    and the current Wiki format:
+
+        HP:
+        67
+    """
+
     stats = {}
+
+    # --------------------------------------------------------
+    # Stat labels.
+    # --------------------------------------------------------
+
+    stat_pattern = re.compile(
+        r"^(HP|BREAK|ATK|M\.DEF|P\.DEF|REGEN):?$",
+        re.IGNORECASE
+    )
+
+    # --------------------------------------------------------
+    # 1. Current Wiki two-line format.
+    # --------------------------------------------------------
+
+    for index, line in enumerate(lines):
+
+        current = clean_text(line)
+
+        if not current:
+            continue
+
+        match = stat_pattern.fullmatch(
+            current
+        )
+
+        if not match:
+            continue
+
+        key = match.group(1).upper()
+
+        # Search a few lines ahead.
+        for next_index in range(
+            index + 1,
+            min(index + 5, len(lines))
+        ):
+
+            possible = clean_text(
+                lines[next_index]
+            )
+
+            if not possible:
+                continue
+
+            # Another stat means this stat has no value.
+            if stat_pattern.fullmatch(
+                possible
+            ):
+                break
+
+            value_match = re.fullmatch(
+                r"(\d+(?:\.\d+)?)",
+                possible
+            )
+
+            if value_match:
+
+                value = value_match.group(1)
+
+                if "." in value:
+                    stats[key] = float(value)
+                else:
+                    stats[key] = int(value)
+
+                break
+
+    # --------------------------------------------------------
+    # 2. Inline format.
+    # --------------------------------------------------------
 
     joined = "\n".join(lines)
 
     for key in STAT_KEYS:
+
+        if key in stats:
+            continue
 
         pattern = (
             re.escape(key)
@@ -600,11 +673,8 @@ def extract_stats(lines):
         value = match.group(1)
 
         if "." in value:
-
             stats[key] = float(value)
-
         else:
-
             stats[key] = int(value)
 
     return stats
@@ -616,20 +686,62 @@ def extract_stats(lines):
 
 def extract_forms(lines):
 
+    """
+    Extracts Aniimo forms.
+
+    Supports examples such as:
+
+        Basic Form
+        Highland Form
+        Mountain Woods Form
+    """
+
     forms = []
 
     for line in lines:
 
+        value = clean_text(line)
+
+        if not value:
+            continue
+
+        # ----------------------------------------------------
+        # Exact form line.
+        # ----------------------------------------------------
+
+        if re.fullmatch(
+            r"[A-Za-z][A-Za-z0-9 '&-]*Form",
+            value,
+            re.IGNORECASE
+        ):
+
+            if value.lower() not in {
+                "form",
+                "view form",
+            }:
+
+                if value not in forms:
+                    forms.append(value)
+
+            continue
+
+        # ----------------------------------------------------
+        # Form embedded in another line.
+        # ----------------------------------------------------
+
         matches = re.findall(
-            r"\b[A-Z][A-Za-z ]+Form\b",
-            line
+            r"\b[A-Z][A-Za-z0-9 '&-]+Form\b",
+            value
         )
 
         for form in matches:
 
             form = clean_text(form)
 
-            if form and form not in forms:
+            if (
+                form
+                and form not in forms
+            ):
 
                 forms.append(form)
 
@@ -646,24 +758,22 @@ def extract_traits(lines):
 
     for index, line in enumerate(lines):
 
-        if line != "Trait":
+        if clean_text(line) != "Trait":
             continue
-
-        # The current Wiki normally has:
-        #
-        # Trait
-        # image
-        # Trait Name
-        # Description
 
         chunk = lines[
             index + 1:
-            index + 8
+            index + 10
         ]
 
         useful = []
 
         for value in chunk:
+
+            value = clean_text(value)
+
+            if not value:
+                continue
 
             if value in [
                 "Skill Details",
@@ -672,20 +782,13 @@ def extract_traits(lines):
             ]:
                 break
 
-            if value:
-                useful.append(value)
+            if value.lower() in {
+                "image",
+                "view illustration",
+            }:
+                continue
 
-        if useful:
-
-            # Remove obvious UI-only text.
-            useful = [
-                x for x in useful
-                if x.lower()
-                not in {
-                    "image",
-                    "view illustration"
-                }
-            ]
+            useful.append(value)
 
         if useful:
 
@@ -713,6 +816,24 @@ def extract_traits(lines):
 
 def extract_skills(lines):
 
+    """
+    Parses the current official Wiki skill structure.
+
+    Expected structure resembles:
+
+        Skill Details
+        Combat
+        Innate
+        Skill Name
+        Description
+        Element:
+        Type: Physical
+        Cost: 0
+        Power: 72
+        Next Skill
+        ...
+    """
+
     skills = []
 
     if "Skill Details" not in lines:
@@ -722,18 +843,41 @@ def extract_skills(lines):
         "Skill Details"
     ) + 1
 
-    end = len(lines)
+    section = lines[start:]
 
-    if "TOP" in lines[start:]:
+    # --------------------------------------------------------
+    # Stop at footer.
+    # --------------------------------------------------------
 
-        end = lines.index(
-            "TOP",
-            start
-        )
+    stop_words = {
+        "TOP",
+        "Terms of Use",
+        "Privacy Policy",
+    }
 
-    section = lines[
-        start:end
-    ]
+    cleaned_section = []
+
+    for line in section:
+
+        value = clean_text(line)
+
+        if value in stop_words:
+            break
+
+        cleaned_section.append(value)
+
+    section = cleaned_section
+
+    # --------------------------------------------------------
+    # UI labels.
+    # --------------------------------------------------------
+
+    ignored = {
+        "",
+        "Combat",
+        "Innate",
+        "Image",
+    }
 
     i = 0
 
@@ -743,46 +887,39 @@ def extract_skills(lines):
             section[i]
         )
 
-        if not current:
+        if current in ignored:
             i += 1
             continue
 
-        # Ignore UI labels.
-        if current in {
-            "Combat",
-            "Innate",
-            "Image",
-            "Element:",
-        }:
+        # Metadata cannot be a skill name.
+        if (
+            current.startswith("Type:")
+            or current.startswith("Cost:")
+            or current.startswith("Power:")
+            or current == "Element:"
+        ):
+
             i += 1
             continue
 
-        # ----------------------------------------------------
-        # Look ahead for a skill description.
-        # ----------------------------------------------------
-
+        # A skill needs a description after it.
         if i + 1 >= len(section):
-
-            i += 1
-            continue
+            break
 
         description = clean_text(
             section[i + 1]
         )
 
         if not description:
-
             i += 1
             continue
-
-        # ----------------------------------------------------
-        # Find Element / Type / Cost / Power.
-        # ----------------------------------------------------
 
         element = ""
         skill_type = ""
         cost = ""
         power = ""
+
+        found_metadata = False
 
         j = i + 2
 
@@ -792,96 +929,109 @@ def extract_skills(lines):
                 section[j]
             )
 
+            # ------------------------------------------------
+            # Element
+            # ------------------------------------------------
+
             if line == "Element:":
 
-                if j + 1 < len(section):
+                # Element may be blank on official pages.
+                if (
+                    j + 1 < len(section)
+                    and not section[j + 1].startswith(
+                        (
+                            "Type:",
+                            "Cost:",
+                            "Power:"
+                        )
+                    )
+                ):
 
                     possible = clean_text(
                         section[j + 1]
                     )
 
-                    # Empty Element: is common
-                    # on the current Wiki.
-                    if (
-                        possible
-                        and not possible.startswith(
-                            "Type:"
-                        )
-                    ):
-
+                    if possible:
                         element = possible
+                        j += 1
 
                 j += 1
                 continue
 
-            if line.startswith("Type:"):
+            # ------------------------------------------------
+            # Type
+            # ------------------------------------------------
+
+            if line.lower().startswith("type:"):
 
                 skill_type = re.sub(
                     r"^Type:\s*",
                     "",
                     line,
                     flags=re.IGNORECASE
-                )
+                ).strip()
+
+                found_metadata = True
 
                 j += 1
                 continue
 
-            if line.startswith("Cost:"):
+            # ------------------------------------------------
+            # Cost
+            # ------------------------------------------------
+
+            if line.lower().startswith("cost:"):
 
                 cost = re.sub(
                     r"^Cost:\s*",
                     "",
                     line,
                     flags=re.IGNORECASE
-                )
+                ).strip()
+
+                found_metadata = True
 
                 j += 1
                 continue
 
-            if line.startswith("Power:"):
+            # ------------------------------------------------
+            # Power
+            # ------------------------------------------------
+
+            if line.lower().startswith("power:"):
 
                 power = re.sub(
                     r"^Power:\s*",
                     "",
                     line,
                     flags=re.IGNORECASE
-                )
+                ).strip()
+
+                found_metadata = True
 
                 j += 1
+
                 break
 
-            # A new skill name usually begins
-            # after the Power line, so stop if
-            # we encounter another likely heading.
-            if (
-                line
-                and not line.startswith(
-                    (
-                        "Element:",
-                        "Type:",
-                        "Cost:",
-                        "Power:"
-                    )
-                )
-                and j > i + 2
-            ):
+            # ------------------------------------------------
+            # If metadata has already been found and another
+            # normal line appears, it is probably next skill.
+            # ------------------------------------------------
+
+            if found_metadata and line:
 
                 break
 
             j += 1
 
         # ----------------------------------------------------
-        # Only save if this looks like a real skill.
+        # Save valid skill.
         # ----------------------------------------------------
 
         if (
             current
             and description
-            and (
-                skill_type
-                or cost
-                or power
-            )
+            and found_metadata
         ):
 
             skills.append(
@@ -1065,7 +1215,7 @@ def parse_item(
     # --------------------------------------------------------
 
     elements = extract_elements(
-        lines[:45]
+        lines
     )
 
     # --------------------------------------------------------
@@ -1073,7 +1223,7 @@ def parse_item(
     # --------------------------------------------------------
 
     roles = extract_roles(
-        lines[:45]
+        lines
     )
 
     # --------------------------------------------------------
@@ -1089,7 +1239,7 @@ def parse_item(
     # --------------------------------------------------------
 
     forms = extract_forms(
-        lines[:80]
+        lines
     )
 
     # --------------------------------------------------------
@@ -1264,9 +1414,6 @@ def main():
             flags=re.IGNORECASE
         ).strip()
 
-        # Do NOT allow the generic Wiki title
-        # to become the fallback Aniimo name.
-
         generic_names = {
             "",
             "Official Aniimo Wiki",
@@ -1350,6 +1497,21 @@ def main():
             print(
                 f"    Name: "
                 f"{aniimo['name']}"
+            )
+
+            print(
+                f"    Stats: "
+                f"{len(aniimo.get('stats', {}))}"
+            )
+
+            print(
+                f"    Forms: "
+                f"{len(aniimo.get('forms', []))}"
+            )
+
+            print(
+                f"    Skills: "
+                f"{len(aniimo.get('skills', []))}"
             )
 
             if aniimo.get(
@@ -1516,6 +1678,61 @@ def main():
             "fewer than 20 Aniimo "
             "were downloaded."
         )
+
+    # --------------------------------------------------------
+    # DATA QUALITY REPORT
+    # --------------------------------------------------------
+
+    with_stats = sum(
+        1
+        for item in output
+        if item.get("stats")
+    )
+
+    with_forms = sum(
+        1
+        for item in output
+        if item.get("forms")
+    )
+
+    with_skills = sum(
+        1
+        for item in output
+        if item.get("skills")
+    )
+
+    with_traits = sum(
+        1
+        for item in output
+        if item.get("traits")
+    )
+
+    print()
+    print(
+        "Data quality report:"
+    )
+
+    print(
+        f"    Aniimo downloaded: {len(output)}"
+    )
+
+    print(
+        f"    With stats:        {with_stats}"
+    )
+
+    print(
+        f"    With forms:        {with_forms}"
+    )
+
+    print(
+        f"    With skills:       {with_skills}"
+    )
+
+    print(
+        f"    With traits:       {with_traits}"
+    )
+
+    print()
 
     print(
         "Sanity checks PASSED."
