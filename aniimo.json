@@ -52,8 +52,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/001/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/001/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -76,23 +76,15 @@
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Scorching Flames Increases damage dealt to elementally countered targets by 25%.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Scorching Flames",
-      "description": "Increases damage dealt to elementally countered targets by 25%."
-    },
-    "traits": [
-      {
-        "name": "Scorching Flames",
-        "description": "Increases damage dealt to elementally countered targets by 25%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Fire Kick",
-        "description": "Quickly leaps up with brief Invincible to dodge attacks, then wraps itself in flame and dives down to attack, dealing damage to targets around the landing point. When successfully dodging a target’s attack, deals 120% damage and increases damage by 20% for 20s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -172,7 +164,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 2,
@@ -227,8 +219,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/002/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/002/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -251,23 +243,15 @@
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Scorching Flames Increases damage dealt to elementally countered targets by 25%.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Scorching Flames",
-      "description": "Increases damage dealt to elementally countered targets by 25%."
-    },
-    "traits": [
-      {
-        "name": "Scorching Flames",
-        "description": "Increases damage dealt to elementally countered targets by 25%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Fire Kick",
-        "description": "Quickly leaps up with brief Invincible to dodge attacks, then wraps itself in flame and dives down to attack, dealing damage to targets around the landing point. When successfully dodging a target’s attack, deals 120% damage and increases damage by 20% for 20s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -347,7 +331,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 3,
@@ -432,8 +416,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/003/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/003/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -448,28 +432,22 @@
       }
     ],
     "habitats": [
-      "Beast Fang Ridge"
+      "Beast Fang Ridge",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Scorching Flames Increases damage dealt to elementally countered targets by 25%.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Scorching Flames",
-      "description": "Increases damage dealt to elementally countered targets by 25%."
-    },
-    "traits": [
-      {
-        "name": "Scorching Flames",
-        "description": "Increases damage dealt to elementally countered targets by 25%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Fire Kick",
-        "description": "Quickly leaps up with brief Invincible to dodge attacks, then wraps itself in flame and dives down to attack, dealing damage to targets around the landing point. When successfully dodging a target’s attack, deals 120% damage and increases damage by 20% for 20s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -606,7 +584,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 4,
@@ -645,44 +623,21 @@
         "habitats": [],
         "homelandAbility": null,
         "mobility": null
-      },
-      {
-        "name": "Prismana Form",
-        "url": "https://wiki.aniimo.com/item/004/prismana-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
       }
     ],
     "habitats": [],
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Full Energy After using 8 basic attacks in battle, Inferlupa enters Full Energy, enhancing its next skill. Damage dealt by that skill is treated as basic attack damage.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Full Energy",
-      "description": "After using 8 basic attacks in battle, Inferlupa enters Full Energy, enhancing its next skill. Damage dealt by that skill is treated as basic attack damage."
-    },
-    "traits": [
-      {
-        "name": "Full Energy",
-        "description": "After using 8 basic attacks in battle, Inferlupa enters Full Energy, enhancing its next skill. Damage dealt by that skill is treated as basic attack damage."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Blazing Wolf Assault",
-        "description": "Summons 2 clones to attack the selected location. Summons 1 extra clone that gains [Super Armor] for 10s while in the [Full Energy] state.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -798,7 +753,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 5,
@@ -844,25 +799,14 @@
       "Echoback Landing",
       "Forest of Falling Stars"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Climb Lv.1 Fly Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Grand Sorcerer",
-      "description": "For 5s after using a skill, basic attack hits deal additional damage equal to 6 Might."
-    },
-    "traits": [
-      {
-        "name": "Grand Sorcerer",
-        "description": "For 5s after using a skill, basic attack hits deal additional damage equal to 6 Might."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Shooting Star Bombs",
-        "description": "Shoots stars to attack a target, dealing damage.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -923,7 +867,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 6,
@@ -964,8 +908,8 @@
         "mobility": null
       },
       {
-        "name": "Rainstorm Form",
-        "url": "https://wiki.aniimo.com/item/006/rainstorm-form",
+        "name": "Rainfall Form",
+        "url": "https://wiki.aniimo.com/item/006/rainfall-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -995,27 +939,18 @@
       }
     ],
     "habitats": [
-      "Forest of Falling Stars"
+      "Forest of Falling Stars",
+      "Home Abilities",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Grand Sorcerer",
-      "description": "For 5s after using a skill, basic attack hits deal additional damage equal to 6 Might."
-    },
-    "traits": [
-      {
-        "name": "Grand Sorcerer",
-        "description": "For 5s after using a skill, basic attack hits deal additional damage equal to 6 Might."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Shadow Magic",
-        "description": "Immediately breaks free of control effects and retreats from the target, leaving a clone behind for 20s. The clone cannot be attacked and mimics the user's basic attacks and skills, dealing damage equal to 20% of the user's damage. Use the skill again to swap places with the clone. The clone is destroyed if it moves more than 20m away from the user.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -1069,7 +1004,7 @@
       },
       {
         "name": "74",
-        "description": "Starfall",
+        "description": "Shooting Stars",
         "element": "",
         "type": "",
         "cost": "",
@@ -1149,7 +1084,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 7,
@@ -1225,25 +1160,14 @@
       "Beast Fang Ridge",
       "Blitzwood"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Band Member",
-      "description": "When switching Aniimo in battle, restores 20 EP to the next Chirpi family member switched in. Triggers once every 20s at most."
-    },
-    "traits": [
-      {
-        "name": "Band Member",
-        "description": "When switching Aniimo in battle, restores 20 EP to the next Chirpi family member switched in. Triggers once every 20s at most."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Leaf Tornado",
-        "description": "Releases a leaf vortex at the target location, dealing damage and pulling enemies toward the center. Continuously absorbs puddles nearby, dealing 100% extra damage upon successful absorption.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -1361,7 +1285,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 8,
@@ -1432,31 +1356,23 @@
       }
     ],
     "habitats": [
-      "The Argent Strait"
+      "The Argent Strait",
+      "Home Abilities",
+      "3",
+      "Pathfinding"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Take Off",
-      "description": "Enters the Flying state to evade attacks from ground enemies. Takes more DMG while airborne.",
+      "description": "Enters the Flying state to evade attacks from ground enemies. Takes more DMG while airborne. Aniimo Traits Band Member When switching Aniimo in battle, restores 20 EP to the next Chirpi family member switched in. Triggers once every 20s at most.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018401_Skill_9400102_Icon.png"
     },
-    "trait": {
-      "name": "Band Member",
-      "description": "When switching Aniimo in battle, restores 20 EP to the next Chirpi family member switched in. Triggers once every 20s at most."
-    },
-    "traits": [
-      {
-        "name": "Band Member",
-        "description": "When switching Aniimo in battle, restores 20 EP to the next Chirpi family member switched in. Triggers once every 20s at most."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Leaf Tornado",
-        "description": "Releases a leaf vortex at the target location, dealing damage and pulling enemies toward the center. Continuously absorbs puddles nearby, dealing 100% extra damage upon successful absorption.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -1546,7 +1462,7 @@
       },
       {
         "name": "0",
-        "description": "Zephyr's Breath",
+        "description": "Zephyr’s Breath",
         "element": "",
         "type": "",
         "cost": "",
@@ -1591,7 +1507,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 9,
@@ -1677,31 +1593,23 @@
       }
     ],
     "habitats": [
-      "The Argent Strait"
+      "The Argent Strait",
+      "Home Abilities",
+      "3",
+      "Pathfinding"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.3"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Take Off",
-      "description": "Enters the Flying state to evade attacks from ground enemies. Takes more DMG while airborne.",
+      "description": "Enters the Flying state to evade attacks from ground enemies. Takes more DMG while airborne. Aniimo Traits Air Superiority Increases Crit Rate by 20% while flying.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018401_Skill_9400102_Icon.png"
     },
-    "trait": {
-      "name": "Air Superiority",
-      "description": "Increases critical rate by 20% while flying."
-    },
-    "traits": [
-      {
-        "name": "Air Superiority",
-        "description": "Increases critical rate by 20% while flying."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Lightning Splitter",
-        "description": "Fires multiple Electric Projectiles at nearby targets. If multiple projectiles hit the same unit, [paralyzes] the target for 5s. Hold the skill button to automatically enter the Fly state after the skill is cast.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -1855,7 +1763,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 10,
@@ -1927,24 +1835,19 @@
       }
     ],
     "habitats": [
-      "The Argent Strait"
+      "The Argent Strait",
+      "Home Abilities",
+      "3",
+      "Aniimo Traits"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Victory Concerto",
-      "description": "While shielded, BREAK efficiency +40%.When triggering BREAK, plays [Concerto], reducing the whole team's stamina cost by 30%.When you have 3 Movement-series buffs, increases all Movement effects by 30%."
-    },
-    "traits": [
-      {
-        "name": "Victory Concerto",
-        "description": "While shielded, BREAK efficiency +40%.When triggering BREAK, plays [Concerto], reducing the whole team's stamina cost by 30%.When you have 3 Movement-series buffs, increases all Movement effects by 30%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Leaf Tornado",
-        "description": "Releases a leaf vortex at the target location, dealing damage and pulling enemies toward the center. Continuously absorbs puddles nearby, dealing 100% extra damage upon successful absorption.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -1962,7 +1865,7 @@
       },
       {
         "name": "45",
-        "description": "Pause Gust",
+        "description": "Resting Whirlwind",
         "element": "",
         "type": "",
         "cost": "",
@@ -2034,7 +1937,7 @@
       },
       {
         "name": "54",
-        "description": "Ceasefire Drum",
+        "description": "Truce",
         "element": "",
         "type": "",
         "cost": "",
@@ -2081,7 +1984,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 11,
@@ -2196,8 +2099,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/011/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/011/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -2212,28 +2115,22 @@
       }
     ],
     "habitats": [
-      "Sea of Flowers"
+      "Sea of Flowers",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Blooming",
-      "description": "Flowers bloom wherever it dances.",
-      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1021106_Skill_9400139_Icon.png"
+      "description": "Flowers bloom wherever it dances. Aniimo Traits Disco Aniimo While on Turf, Damage Amp increases by 30%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP.",
+      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057300_Skill_9400150_Icon.png"
     },
-    "trait": {
-      "name": "Disco Aniimo",
-      "description": "While on grass, Damage Amp increases by 30%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24 [Dance Power], the next skill costs no EP."
-    },
-    "traits": [
-      {
-        "name": "Disco Aniimo",
-        "description": "While on grass, Damage Amp increases by 30%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24 [Dance Power], the next skill costs no EP."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Floral Storm",
-        "description": "Spins while moving and releases magical petals that track targets. The number of petals released increases by 1 over time, up to 3 at once. Press the skill again to stop casting.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -2247,7 +2144,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1021106_Skill_9400139_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057300_Skill_9400150_Icon.png"
       },
       {
         "name": "30",
@@ -2295,7 +2192,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 12,
@@ -2410,8 +2307,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/012/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/012/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -2426,28 +2323,22 @@
       }
     ],
     "habitats": [
-      "Sea of Flowers"
+      "Sea of Flowers",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Blooming",
-      "description": "Flowers bloom wherever it dances.",
-      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1021106_Skill_9400139_Icon.png"
+      "description": "Flowers bloom wherever it dances. Aniimo Traits Disco Aniimo While on Turf, Damage Amp increases by 30%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24, the next skill costs no EP.",
+      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057300_Skill_9400150_Icon.png"
     },
-    "trait": {
-      "name": "Disco Aniimo",
-      "description": "While on grass, Damage Amp increases by 30%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24 [Dance Power], the next skill costs no EP."
-    },
-    "traits": [
-      {
-        "name": "Disco Aniimo",
-        "description": "While on grass, Damage Amp increases by 30%. After entering battle, each skill hit grants 1 [Dance Power]. Hitting multiple targets does not grant extra [Dance Power]. At 24 [Dance Power], the next skill costs no EP."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Focused Beam",
-        "description": "Fires an energy beam at targets ahead. After gaining 24 points of [Dance Power], the next skill cast has a larger range.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -2461,7 +2352,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1021106_Skill_9400139_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057300_Skill_9400150_Icon.png"
       },
       {
         "name": "120",
@@ -2543,7 +2434,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 13,
@@ -2584,8 +2475,8 @@
         "mobility": null
       },
       {
-        "name": "Sea of Flowers Form",
-        "url": "https://wiki.aniimo.com/item/013/sea-of-flowers-form",
+        "name": "Flowerfield Form",
+        "url": "https://wiki.aniimo.com/item/013/flowerfield-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -2617,27 +2508,17 @@
     "habitats": [
       "Nimbus Fields",
       "The Mistwoods",
-      "Forest of Falling Stars"
+      "Forest of Falling Stars",
+      "Home Abilities"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Swim Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Water Spirit",
-      "description": "While in water terrain, reduces the EP cost of all skills by 16%."
-    },
-    "traits": [
-      {
-        "name": "Water Spirit",
-        "description": "While in water terrain, reduces the EP cost of all skills by 16%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Healing Water",
-        "description": "Restores HP to all allies equal to 8% of the caster’s max HP, and restores HP to the caster equal to 12% of their max HP over 5s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -2687,7 +2568,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "20",
@@ -2715,7 +2596,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 14,
@@ -2756,8 +2637,8 @@
         "mobility": null
       },
       {
-        "name": "Sea of Flowers Form",
-        "url": "https://wiki.aniimo.com/item/014/sea-of-flowers-form",
+        "name": "Flowerfield Form",
+        "url": "https://wiki.aniimo.com/item/014/flowerfield-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -2789,27 +2670,17 @@
     "habitats": [
       "Nimbus Fields",
       "The Mistwoods",
-      "Forest of Falling Stars"
+      "Forest of Falling Stars",
+      "Home Abilities"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Swim Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Water Spirit",
-      "description": "While in water terrain, reduces the EP cost of all skills by 16%."
-    },
-    "traits": [
-      {
-        "name": "Water Spirit",
-        "description": "While in water terrain, reduces the EP cost of all skills by 16%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Healing Water",
-        "description": "Restores HP to all allies equal to 8% of the caster’s max HP, and restores HP to the caster equal to 12% of their max HP over 5s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -2859,7 +2730,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "20",
@@ -2887,7 +2758,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 15,
@@ -2929,8 +2800,8 @@
         "mobility": null
       },
       {
-        "name": "Sea of Flowers Form",
-        "url": "https://wiki.aniimo.com/item/015/sea-of-flowers-form",
+        "name": "Flowerfield Form",
+        "url": "https://wiki.aniimo.com/item/015/flowerfield-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -2975,25 +2846,14 @@
       }
     ],
     "habitats": [],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Swim Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Water Spirit",
-      "description": "While in water terrain, reduces the EP cost of all skills by 16%."
-    },
-    "traits": [
-      {
-        "name": "Water Spirit",
-        "description": "While in water terrain, reduces the EP cost of all skills by 16%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Healing Water",
-        "description": "Restores HP to all allies equal to 8% of the caster’s max HP, and restores HP to the caster equal to 12% of their max HP over 5s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -3043,7 +2903,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1004300_Skill_10300020_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1062300_Skill_10301190_Icon.png"
       },
       {
         "name": "20",
@@ -3061,7 +2921,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "32",
@@ -3070,7 +2930,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1004300_Skill_10300050_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1065300_Skill_10301440_Icon.png"
       },
       {
         "name": "Magic",
@@ -3128,7 +2988,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 16,
@@ -3171,27 +3031,19 @@
       }
     ],
     "habitats": [
-      "The Mistwoods"
+      "The Mistwoods",
+      "Home Abilities",
+      "2",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Swim Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Power of Nature",
-      "description": "While off field, creates a patch of grass under a teammate after they cast 3 skills."
-    },
-    "traits": [
-      {
-        "name": "Power of Nature",
-        "description": "While off field, creates a patch of grass under a teammate after they cast 3 skills."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Vitality Blooms",
-        "description": "Creates a circular magic field underfoot, restoring 2.4 EP every second to Grass-type teammates within range for 12s. The field also upgrades nearby grass into Vitality Blooms, restoring 1% HP every second to Grass-type teammates within range.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -3289,7 +3141,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 17,
@@ -3329,8 +3181,8 @@
         "mobility": null
       },
       {
-        "name": "Rainstorm Form",
-        "url": "https://wiki.aniimo.com/item/017/rainstorm-form",
+        "name": "Rainfall Form",
+        "url": "https://wiki.aniimo.com/item/017/rainfall-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -3375,32 +3227,23 @@
       }
     ],
     "habitats": [
+      "Crescent Bay",
       "Nimbus Fields",
-      "The Argent Strait"
+      "The Argent Strait",
+      "Home Abilities"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Puff Up",
-      "description": "Puffs up, allowing you to jump higher and perform one dash while airborne.",
+      "description": "Puffs up, allowing it to jump higher and perform one dash while airborne. Aniimo Traits Shrouded in Mist Gains 1 stack after being off the field for 5s or casting a basic attack. At 4 stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill’s effects.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026105_Skill_9400105_Icon.png"
     },
-    "trait": {
-      "name": "Shrouded in Mist",
-      "description": "After using 4 basic attacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects."
-    },
-    "traits": [
-      {
-        "name": "Shrouded in Mist",
-        "description": "After using 4 basic attacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Cloud Orb",
-        "description": "Throws a missile condensed from clouds at the target. If the user is [Shrouded in Mist], the missile creates a larger explosion on hit, dealing damage equal to 180% Might.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -3473,12 +3316,15 @@
     ],
     "analysis": {
       "tags": [
+        "control",
+        "debuff",
         "regen",
+        "self_scaling",
         "shield"
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 18,
@@ -3518,8 +3364,8 @@
         "mobility": null
       },
       {
-        "name": "Rainstorm Form",
-        "url": "https://wiki.aniimo.com/item/018/rainstorm-form",
+        "name": "Rainfall Form",
+        "url": "https://wiki.aniimo.com/item/018/rainfall-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -3579,31 +3425,22 @@
       }
     ],
     "habitats": [
-      "Nimbus Fields"
+      "Nimbus Fields",
+      "Home Abilities",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
-      "name": "Cloudwalk",
-      "description": "Floats freely among the clouds.",
+      "name": "Cloud Float",
+      "description": "Float freely among the clouds. Aniimo Traits Shrouded in Mist Gains 1 stack after being off the field for 5s or casting a basic attack. At 4 stacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill’s effects.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026201_Skill_9400130_Icon.png"
     },
-    "trait": {
-      "name": "Shrouded in Mist",
-      "description": "After using 4 basic attacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects."
-    },
-    "traits": [
-      {
-        "name": "Shrouded in Mist",
-        "description": "After using 4 basic attacks, enters [Shrouded in Mist] state. Casting a skill consumes this state to enhance the skill's effects."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Nimbi Burst",
-        "description": "Inhales, then slams the ground, triggering an explosion that deals AoE damage in a circular area around itself. Increases teammates' damage and BREAK efficiency by 15 for 20s. If the user is [Shrouded in Mist], the damage and BREAK efficiency boost also applies to all nearby allies, with the boost increased to 30.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -3732,13 +3569,16 @@
       "tags": [
         "attack_up",
         "break",
+        "control",
+        "debuff",
         "heal",
         "regen",
+        "self_scaling",
         "shield"
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 19,
@@ -3779,25 +3619,14 @@
       }
     ],
     "habitats": [],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Counting Sheep",
-      "description": "Every 10s, the next skill applies 1 stack of [Drowsiness] to the target. At 3 stacks, the target enters [Nightmare] for 20s. Targets in [Nightmare] have their Dark Resistance reduced by 27% and cannot move or cast skills for 3s. Taking damage removes the control effect."
-    },
-    "traits": [
-      {
-        "name": "Counting Sheep",
-        "description": "Every 10s, the next skill applies 1 stack of [Drowsiness] to the target. At 3 stacks, the target enters [Nightmare] for 20s. Targets in [Nightmare] have their Dark Resistance reduced by 27% and cannot move or cast skills for 3s. Taking damage removes the control effect."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Nimbi Attack",
-        "description": "Summons a Nimbi that follows the caster, damaging targets in its path and applying 1 stack of [Drowsiness]. When hitting the caster, the Nimbi charges back toward the target.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -3895,7 +3724,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 20,
@@ -3959,23 +3788,15 @@
     "homelandAbility": null,
     "mobility": {
       "name": "Dig In",
-      "description": "Firmly rooted in the soil.",
+      "description": "Roots firmly into the ground. Aniimo Traits Energized For every 1,000 max HP, increases BREAK damage by 2%.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020101_Skill_9400134_Icon.png"
     },
-    "trait": {
-      "name": "Energized",
-      "description": "For every 1,000 max HP, increases BREAK damage by 2%."
-    },
-    "traits": [
-      {
-        "name": "Energized",
-        "description": "For every 1,000 max HP, increases BREAK damage by 2%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Gravel Tackle",
-        "description": "Ram into the target with your body, dealing Earth damage.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -4054,11 +3875,11 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 21,
-    "name": "Witchin",
+    "name": "Hexxin",
     "number": "021",
     "sourceUrl": "https://wiki.aniimo.com/item/021/basic-form",
     "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10203.png",
@@ -4069,11 +3890,11 @@
     "roles": [
       "Regen"
     ],
-    "attributeScore": 542,
+    "attributeScore": 554,
     "stats": {
       "HP": 115,
       "BREAK": 50,
-      "ATK": 88,
+      "ATK": 100,
       "M.DEF": 90,
       "P.DEF": 84,
       "REGEN": 115
@@ -4126,28 +3947,23 @@
       }
     ],
     "habitats": [
-      "The Mistwoods"
+      "The Mistwoods",
+      "Home Abilities",
+      "2",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Luminous Seed",
-      "description": "Throws luminous seeds that light up the surrounding area when they land.",
+      "description": "Throws luminous seeds that light up the surrounding area when they land. Aniimo Traits Prank Every 18s, the next skill applies [Curse] to enemies hit for 10s. Dark basic attacks restore 0.4 EP when hitting enemies with [Curse].",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1014302_Skill_9400023_Icon.png"
     },
-    "trait": {
-      "name": "Prank",
-      "description": "Every 18s, the next skill applies [Curse] to enemies hit for 10s. Dark basic attacks restore 0.4 EP when hitting enemies with [Curse]."
-    },
-    "traits": [
-      {
-        "name": "Prank",
-        "description": "Every 18s, the next skill applies [Curse] to enemies hit for 10s. Dark basic attacks restore 0.4 EP when hitting enemies with [Curse]."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Malice Burst",
-        "description": "Releases a wide-area energy burst around the target, dealing damage to targets hit and reducing subsequent shield values gained by 44% for 20s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -4164,7 +3980,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1014302_Skill_9400023_Icon.png"
       },
       {
-        "name": "68",
+        "name": "82",
         "description": "Euphoric Sonic Blast",
         "element": "",
         "type": "",
@@ -4182,7 +3998,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020300_Skill_11200193_Icon.png"
       },
       {
-        "name": "30",
+        "name": "36",
         "description": "Shard Impact",
         "element": "",
         "type": "",
@@ -4200,7 +4016,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020300_Skill_10800300_Icon.png"
       },
       {
-        "name": "54",
+        "name": "65",
         "description": "Black Hole Domain",
         "element": "",
         "type": "",
@@ -4218,7 +4034,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020300_Skill_11200193_Icon.png"
       },
       {
-        "name": "54",
+        "name": "65",
         "description": "Oozing Malice",
         "element": "",
         "type": "",
@@ -4236,7 +4052,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020300_Skill_11200230_Icon.png"
       },
       {
-        "name": "68",
+        "name": "82",
         "description": "ATK",
         "element": "",
         "type": "",
@@ -4283,7 +4099,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 22,
@@ -4342,20 +4158,12 @@
     "habitats": [],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Prank Master",
-      "description": "Increases BREAK damage by % for every 21,000 max HP. Upon entering battle, summons 1 Hummin to assist. An additional Hummin is summoned every 10s, up to a maximum of 3."
-    },
-    "traits": [
-      {
-        "name": "Prank Master",
-        "description": "Increases BREAK damage by % for every 21,000 max HP. Upon entering battle, summons 1 Hummin to assist. An additional Hummin is summoned every 10s, up to a maximum of 3."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Draw Nourishment",
-        "description": "Roots itself firmly in the soil, granting self and Hummin 20% BREAK efficiency.Instantly restores 50% HP to all Hummins, and heals self and nearby Hummins for 2% HP every second.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -4391,7 +4199,7 @@
       },
       {
         "name": "47",
-        "description": "Gravel Strike",
+        "description": "Noisy Strikes",
         "element": "",
         "type": "",
         "cost": "",
@@ -4474,7 +4282,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 23,
@@ -4563,29 +4371,21 @@
     "habitats": [
       "Zephyrus Landbridge",
       "Nimbus Fields",
-      "Berylline Causeway",
+      "Berylline Vale",
       "Beast Fang Ridge"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Tunnel",
-      "description": "Tunnels underground to become immune to all ranged attacks by continuously consuming stamina. Pound skills can launch the Aniimo into the air.",
+      "description": "Enters the Tunneling state, becoming immune to ranged attacks while continuously consuming stamina, but can be knocked into the air by pound skills. Aniimo Traits Stealth Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by 30% for 20s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1028400_Skill_9400091_Icon.png"
     },
-    "trait": {
-      "name": "Stealth",
-      "description": "Skills build Momentum when they deal damage, up to 6 stacks. Momentum gain is doubled during tunneling. At max stacks, increases BREAK efficiency by 30% for 20s."
-    },
-    "traits": [
-      {
-        "name": "Stealth",
-        "description": "Skills build Momentum when they deal damage, up to 6 stacks. Momentum gain is doubled during tunneling. At max stacks, increases BREAK efficiency by 30% for 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "The Luminus Gust",
-        "description": "Spins Cores around itself, continuously dealing damage and applying Earth Debuff for 5.5s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -4666,7 +4466,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 24,
@@ -4753,28 +4553,23 @@
       }
     ],
     "habitats": [
-      "Berylline Causeway"
+      "Berylline Vale",
+      "Home Abilities",
+      "3",
+      "2"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Tunnel",
-      "description": "Tunnels underground to become immune to all ranged attacks by continuously consuming stamina. Pound skills can launch the Aniimo into the air.",
+      "description": "Enters the Tunneling state, becoming immune to ranged attacks while continuously consuming stamina, but can be knocked into the air by pound skills. Aniimo Traits Stealth Builds Momentum when dealing damage, up to 6 stacks. Momentum gain is doubled while tunneling. At max stacks, BREAK efficiency increases by 30% for 20s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1028400_Skill_9400091_Icon.png"
     },
-    "trait": {
-      "name": "Stealth",
-      "description": "Skills build Momentum when they deal damage, up to 6 stacks. Momentum gain is doubled during tunneling. At max stacks, increases BREAK efficiency by 30% for 20s."
-    },
-    "traits": [
-      {
-        "name": "Stealth",
-        "description": "Skills build Momentum when they deal damage, up to 6 stacks. Momentum gain is doubled during tunneling. At max stacks, increases BREAK efficiency by 30% for 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "The Luminus Gust",
-        "description": "Spins Cores around itself, continuously dealing damage and applying Earth Debuff for 5.5s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -4891,7 +4686,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 25,
@@ -4935,23 +4730,15 @@
     "homelandAbility": null,
     "mobility": {
       "name": "Tunnel",
-      "description": "Tunnels underground to become immune to all ranged attacks by continuously consuming stamina. Pound skills can launch the Aniimo into the air.",
+      "description": "Enters the Tunneling state, becoming immune to ranged attacks while continuously consuming stamina, but can be knocked into the air by pound skills. Aniimo Traits Frostbite Sunder Basic attacks apply [Ice Debuff]. Deals 35% extra BREAK to targets with more than 5 stacks of [Ice Debuff].",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1028400_Skill_9400091_Icon.png"
     },
-    "trait": {
-      "name": "Frostbite Sunder",
-      "description": "Basic attacks apply [Ice Debuff]. Deals 35% extra BREAK to targets with more than 5 stacks of [Ice Debuff]."
-    },
-    "traits": [
-      {
-        "name": "Frostbite Sunder",
-        "description": "Basic attacks apply [Ice Debuff]. Deals 35% extra BREAK to targets with more than 5 stacks of [Ice Debuff]."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Ice Spikes",
-        "description": "Creates an ice spike ahead, attacking and [freezing] the target for 1s. Can be used during tunneling. Afterward, dashes forward and emerges from underground.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -5048,7 +4835,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 26,
@@ -5118,8 +4905,8 @@
         "mobility": null
       },
       {
-        "name": "Sea of Flowers Form",
-        "url": "https://wiki.aniimo.com/item/026/sea-of-flowers-form",
+        "name": "Flowerfield Form",
+        "url": "https://wiki.aniimo.com/item/026/flowerfield-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -5136,24 +4923,17 @@
     "habitats": [
       "Nimbus Fields",
       "Beast Fang Ridge",
-      "Blitzwood"
+      "Blitzwood",
+      "Home Abilities"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Blazing Flames",
-      "description": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff]."
-    },
-    "traits": [
-      {
-        "name": "Blazing Flames",
-        "description": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff]."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Trick Fire Ring",
-        "description": "Launches a fire ring that expands then contracts to attack the target. The farther the target is, the more damage it will take, up to 50% increased damage.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -5215,7 +4995,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 27,
@@ -5285,8 +5065,8 @@
         "mobility": null
       },
       {
-        "name": "Sea of Flowers Form",
-        "url": "https://wiki.aniimo.com/item/027/sea-of-flowers-form",
+        "name": "Flowerfield Form",
+        "url": "https://wiki.aniimo.com/item/027/flowerfield-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -5301,24 +5081,19 @@
       }
     ],
     "habitats": [
-      "Beast Fang Ridge"
+      "Beast Fang Ridge",
+      "Home Abilities",
+      "3",
+      "Aniimo Traits"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Blazing Flames",
-      "description": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff]."
-    },
-    "traits": [
-      {
-        "name": "Blazing Flames",
-        "description": "Always has 20 stacks of [Fire Debuff]. [Trick Fire Ring] applies 4 stacks of [Fire Debuff], while [Fire Orb] applies 3 stacks of [Fire Debuff]."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Trick Fire Ring",
-        "description": "Launches a fire ring that expands then contracts to attack the target. The farther the target is, the more damage it will take, up to 50% increased damage.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -5416,7 +5191,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 28,
@@ -5457,8 +5232,8 @@
         "mobility": null
       },
       {
-        "name": "Sea of Flowers Form",
-        "url": "https://wiki.aniimo.com/item/028/sea-of-flowers-form",
+        "name": "Flowerfield Form",
+        "url": "https://wiki.aniimo.com/item/028/flowerfield-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -5487,8 +5262,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/028/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/028/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -5508,29 +5283,18 @@
       "The Mistwoods",
       "Blitzwood"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Luminous Prowl",
-      "description": "Enter a Cloaked state shrouded by pink mist",
+      "description": "Enters the Cloak state, concealed by pink mist. Aniimo Traits Flutter Heal When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_9400062_Icon.png"
     },
-    "trait": {
-      "name": "Flutter Heal",
-      "description": "When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP."
-    },
-    "traits": [
-      {
-        "name": "Flutter Heal",
-        "description": "When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Purifying Dance",
-        "description": "Removes all debuffs on surrounding teammates. Once the debuffs are removed, increases their EP recovery rate by 20% for 10s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -5649,7 +5413,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 29,
@@ -5690,8 +5454,8 @@
         "mobility": null
       },
       {
-        "name": "Sea of Flowers Form",
-        "url": "https://wiki.aniimo.com/item/029/sea-of-flowers-form",
+        "name": "Flowerfield Form",
+        "url": "https://wiki.aniimo.com/item/029/flowerfield-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -5720,8 +5484,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/029/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/029/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -5736,29 +5500,18 @@
       }
     ],
     "habitats": [],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Luminous Prowl",
-      "description": "Enter a Cloaked state shrouded by pink mist",
+      "description": "Enters the Cloak state, concealed by pink mist. Aniimo Traits Flutter Heal When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_9400062_Icon.png"
     },
-    "trait": {
-      "name": "Flutter Heal",
-      "description": "When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP."
-    },
-    "traits": [
-      {
-        "name": "Flutter Heal",
-        "description": "When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Purifying Dance",
-        "description": "Removes all debuffs on surrounding teammates. Once the debuffs are removed, increases their EP recovery rate by 20% for 10s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -5830,7 +5583,7 @@
       },
       {
         "name": "0",
-        "description": "Phantomflutter",
+        "description": "Phantomfly",
         "element": "",
         "type": "",
         "cost": "",
@@ -5913,7 +5666,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 31,
@@ -5954,27 +5707,19 @@
       }
     ],
     "habitats": [
-      "Forest of Falling Stars"
+      "Cloudreach Falls",
+      "Forest of Falling Stars",
+      "Home Abilities",
+      "1"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Judgment Storm",
-      "description": "When a skill applies a debuff to a target, Wind Boost for the whole team increases by 16% for20s."
-    },
-    "traits": [
-      {
-        "name": "Judgment Storm",
-        "description": "When a skill applies a debuff to a target, Wind Boost for the whole team increases by 16% for20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Ice Arc Strike",
-        "description": "Arc-shaped sweeping attack dealing Ice damage. Enemies hit that are in the [Weakness Mark] state are additionally afflicted with [Frozen] for 2.5s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -5982,7 +5727,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10441.png"
       },
       {
-        "name": "Physical",
+        "name": "Support",
         "description": "Cost:",
         "element": "",
         "type": "",
@@ -5991,13 +5736,13 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Feature_144102_Icon.png"
       },
       {
-        "name": "20",
+        "name": "30",
         "description": "Arc Strike",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10200430_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900480_Icon.png"
       },
       {
         "name": "Physical",
@@ -6010,48 +5755,12 @@
       },
       {
         "name": "20",
-        "description": "Water Arc Strike",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10301540_Icon.png"
-      },
-      {
-        "name": "Physical",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900480_Icon.png"
-      },
-      {
-        "name": "20",
-        "description": "Sonar Attack",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026200_Skill_14400000_Icon.png"
-      },
-      {
-        "name": "Support",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
-      },
-      {
-        "name": "30",
         "description": "ATK",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026200_Skill_14400000_Icon.png"
       },
       {
         "name": "Magic",
@@ -6060,7 +5769,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": null
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       }
     ],
     "analysis": {
@@ -6072,7 +5781,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 32,
@@ -6113,50 +5822,24 @@
       }
     ],
     "habitats": [
-      "Forest of Falling Stars"
+      "Cloudreach Falls",
+      "Forest of Falling Stars",
+      "Home Abilities",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Judgment Storm",
-      "description": "When a skill applies a debuff to a target, Wind Boost for the whole team increases by 16% for20s."
-    },
-    "traits": [
-      {
-        "name": "Judgment Storm",
-        "description": "When a skill applies a debuff to a target, Wind Boost for the whole team increases by 16% for20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Ice Arc Strike",
-        "description": "Arc-shaped sweeping attack dealing Ice damage. Enemies hit that are in the [Weakness Mark] state are additionally afflicted with [Frozen] for 2.5s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10443.png"
-      },
-      {
-        "name": "Physical",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Feature_144102_Icon.png"
-      },
-      {
-        "name": "20",
-        "description": "Detect Weakness",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10200430_Icon.png"
       },
       {
         "name": "Support",
@@ -6165,7 +5848,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900480_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Feature_144102_Icon.png"
       },
       {
         "name": "0",
@@ -6174,7 +5857,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900490_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900480_Icon.png"
       },
       {
         "name": "Physical",
@@ -6183,7 +5866,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900520_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900490_Icon.png"
       },
       {
         "name": "20",
@@ -6192,7 +5875,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10301540_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900520_Icon.png"
       },
       {
         "name": "Physical",
@@ -6205,30 +5888,12 @@
       },
       {
         "name": "45",
-        "description": "Water Arc Strike",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900500_Icon.png"
-      },
-      {
-        "name": "Physical",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
-      },
-      {
-        "name": "20",
         "description": "ATK",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044300_Skill_10900500_Icon.png"
       },
       {
         "name": "Magic",
@@ -6237,7 +5902,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": null
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
         "name": "6",
@@ -6246,7 +5911,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": null
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
         "name": "Support",
@@ -6267,7 +5932,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 33,
@@ -6324,24 +5989,18 @@
     ],
     "habitats": [
       "Sea of Flowers",
-      "Rosetower Woods"
+      "Rosetower Woods",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Sword Dance",
-      "description": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting 15s. Each basic attack costs 1 stack of [Sword Dance] to deal 180% extra damage."
-    },
-    "traits": [
-      {
-        "name": "Sword Dance",
-        "description": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting 15s. Each basic attack costs 1 stack of [Sword Dance] to deal 180% extra damage."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Thorny Defense",
-        "description": "Enters a defensive stance, reducing damage taken by 20% While in this state, it counters when attacked. If attacked just as the skill is used, its critical rate increases by 30% for 15s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -6405,7 +6064,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 34,
@@ -6491,24 +6150,18 @@
       }
     ],
     "habitats": [
-      "Sea of Flowers"
+      "Sea of Flowers",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Sword Dance",
-      "description": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting 15s. Each basic attack costs 1 stack of [Sword Dance] to deal 180% extra damage."
-    },
-    "traits": [
-      {
-        "name": "Sword Dance",
-        "description": "Each skill used grants 1 stack of [Sword Dance], up to 4 stacks, lasting 15s. Each basic attack costs 1 stack of [Sword Dance] to deal 180% extra damage."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Thorny Defense",
-        "description": "Enters a defensive stance, reducing damage taken by 20% While in this state, it counters when attacked. If attacked just as the skill is used, its critical rate increases by 30% for 15s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -6644,7 +6297,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 35,
@@ -6682,42 +6335,21 @@
         "habitats": [],
         "homelandAbility": null,
         "mobility": null
-      },
-      {
-        "name": "Prismana Form",
-        "url": "https://wiki.aniimo.com/item/035/prismana-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
       }
     ],
     "habitats": [
-      "Rosetower Woods"
+      "Rosetower Woods",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Phantom Opening",
-      "description": "When a teammate deals basic attack damage, gains 1 stack of [Rose Mark], up to 10 stacks. Each stack of [Rose Mark] reduces Melloblum's EP cost by 3."
-    },
-    "traits": [
-      {
-        "name": "Phantom Opening",
-        "description": "When a teammate deals basic attack damage, gains 1 stack of [Rose Mark], up to 10 stacks. Each stack of [Rose Mark] reduces Melloblum's EP cost by 3."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Thorny Blessing",
-        "description": "Grants Thorny Blessing to the whole team. When dealing Grass critical damage to a target, creates thorns beneath it that deal damage. Triggers up to 1 time every 0.5s for 15s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -6834,7 +6466,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 36,
@@ -6904,8 +6536,8 @@
         "mobility": null
       },
       {
-        "name": "Sea of Flowers Form",
-        "url": "https://wiki.aniimo.com/item/036/sea-of-flowers-form",
+        "name": "Flowerfield Form",
+        "url": "https://wiki.aniimo.com/item/036/flowerfield-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -6920,24 +6552,18 @@
       }
     ],
     "habitats": [
-      "Rosetower Woods"
+      "Rosetower Woods",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Tuning",
-      "description": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases critical rate by 20% for 15s."
-    },
-    "traits": [
-      {
-        "name": "Tuning",
-        "description": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases critical rate by 20% for 15s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Frost Strike",
-        "description": "Strikes targets around itself. Targets hit enter a Frozen state for 2.5s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -7019,7 +6645,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 37,
@@ -7089,8 +6715,8 @@
         "mobility": null
       },
       {
-        "name": "Sea of Flowers Form",
-        "url": "https://wiki.aniimo.com/item/037/sea-of-flowers-form",
+        "name": "Flowerfield Form",
+        "url": "https://wiki.aniimo.com/item/037/flowerfield-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -7105,24 +6731,18 @@
       }
     ],
     "habitats": [
-      "Rosetower Woods"
+      "Rosetower Woods",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Tuning",
-      "description": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases critical rate by 20% for 15s."
-    },
-    "traits": [
-      {
-        "name": "Tuning",
-        "description": "Each skill cast grants 1 stack of [Volume], up to 6 stacks. At 6 stacks of [Volume], increases critical rate by 20% for 15s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Wild Show",
-        "description": "Hold to charge the microphone, then release to unleash a massive sound wave, damaging targets in front. A well-timed release deals an additional 30% BREAK damage.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -7241,7 +6861,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 38,
@@ -7283,27 +6903,18 @@
     ],
     "habitats": [
       "Sea of Flowers",
-      "Rosetower Woods"
+      "Rosetower Woods",
+      "Home Abilities",
+      "1"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Dangerous Fragrance",
-      "description": "When a skill deals damage to a target, reduces the target's Dark Resistance by 12% for 20s."
-    },
-    "traits": [
-      {
-        "name": "Dangerous Fragrance",
-        "description": "When a skill deals damage to a target, reduces the target's Dark Resistance by 12% for 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Blossoming Moment",
-        "description": "Jumps up to dodge an attack, allowing a scent to encircle itself before dive-pecking the targets to deal damage. A successful dodge will generate a shield equal to 10% of max HP for 20s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -7364,7 +6975,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 39,
@@ -7405,31 +7016,22 @@
       }
     ],
     "habitats": [
-      "Sea of Flowers"
+      "Sea of Flowers",
+      "Home Abilities",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Take Off",
-      "description": "Enters the Flying state to evade attacks from ground enemies. Takes more DMG while airborne.",
+      "description": "Enters the Flying state to evade attacks from ground enemies. Takes more DMG while airborne. Aniimo Traits Dangerous Fragrance When deals damage to a target, reduces the target’s Dark Resistance by 12% for 20s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018401_Skill_9400102_Icon.png"
     },
-    "trait": {
-      "name": "Dangerous Fragrance",
-      "description": "When a skill deals damage to a target, reduces the target's Dark Resistance by 12% for 20s."
-    },
-    "traits": [
-      {
-        "name": "Dangerous Fragrance",
-        "description": "When a skill deals damage to a target, reduces the target's Dark Resistance by 12% for 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Withering Bloom",
-        "description": "Releases a fragrance, dealing damage to targets in range and restoring HP to all team members equal to 的5% of its own max HP. If there is only one target in range, the healing amount is doubled.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -7465,7 +7067,7 @@
       },
       {
         "name": "38",
-        "description": "Fragrance Marking",
+        "description": "Secret Fragrance Mark",
         "element": "",
         "type": "",
         "cost": "",
@@ -7528,7 +7130,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 40,
@@ -7599,31 +7201,22 @@
       }
     ],
     "habitats": [
-      "Berylline Causeway"
+      "Berylline Vale",
+      "Home Abilities",
+      "1"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Cloak",
-      "description": "Enter Cloak state.",
+      "description": "Enter Cloak state. Aniimo Traits Battle Fervor Defeating a target grants 1 stack of Battlelust, increasing damage by 25% for 20s. Stacks up to 2 times.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_9400062_Icon.png"
     },
-    "trait": {
-      "name": "Battle Fervor",
-      "description": "Defeating a target grants 1 stack of Battlelust, increasing damage by 25% for 20s. Stacks up to 2 times."
-    },
-    "traits": [
-      {
-        "name": "Battle Fervor",
-        "description": "Defeating a target grants 1 stack of Battlelust, increasing damage by 25% for 20s. Stacks up to 2 times."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Scythe Dance",
-        "description": "Spins to slash, dealing Dark damage 3 times to all nearby targets. Each hit increases own damage by 4%, up to 32%, for 10s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -7702,7 +7295,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 41,
@@ -7788,31 +7381,22 @@
       }
     ],
     "habitats": [
-      "Berylline Causeway"
+      "Berylline Vale",
+      "Home Abilities",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Cloak",
-      "description": "Enter Cloak state.",
+      "description": "Enter Cloak state. Aniimo Traits Battle Fervor Defeating a target grants 1 stack of Battlelust, increasing damage by 25% for 20s. Stacks up to 2 times.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_9400062_Icon.png"
     },
-    "trait": {
-      "name": "Battle Fervor",
-      "description": "Defeating a target grants 1 stack of Battlelust, increasing damage by 25% for 20s. Stacks up to 2 times."
-    },
-    "traits": [
-      {
-        "name": "Battle Fervor",
-        "description": "Defeating a target grants 1 stack of Battlelust, increasing damage by 25% for 20s. Stacks up to 2 times."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Dark Soul",
-        "description": "Transports itself to a target and attacks. If the target has less than 50% HP left, for each 1% HP lost, increases the Aniimo's damage by 1%. Defeating a target with this skill grants a time-limited free recast.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -7847,7 +7431,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_11200011_Icon.png"
       },
       {
-        "name": "15",
+        "name": "22",
         "description": "Dark Dash",
         "element": "",
         "type": "",
@@ -7946,7 +7530,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 42,
@@ -8003,28 +7587,22 @@
     ],
     "habitats": [
       "Beast Fang Ridge",
-      "Driftwise Meadow"
+      "Driftwise Meadow",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Biting Wind When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by 15%.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Biting Wind",
-      "description": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases critical rate of that damage by 15%."
-    },
-    "traits": [
-      {
-        "name": "Biting Wind",
-        "description": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases critical rate of that damage by 15%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Ice Strikes",
-        "description": "Lunges forward and spins to create a magic field that fires 3 ice blades for 3 hits, dealing damage and applying 5 stacks of [Ice Debuff].",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -8104,7 +7682,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 43,
@@ -8161,28 +7739,22 @@
     ],
     "habitats": [
       "Beast Fang Ridge",
-      "Driftwise Meadow"
+      "Driftwise Meadow",
+      "Home Abilities",
+      "2"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Biting Wind When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by 15%.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Biting Wind",
-      "description": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases critical rate of that damage by 15%."
-    },
-    "traits": [
-      {
-        "name": "Biting Wind",
-        "description": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases critical rate of that damage by 15%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Ice Strikes",
-        "description": "Lunges forward and spins to create a magic field that fires 3 ice blades for 3 hits, dealing damage and applying 5 stacks of [Ice Debuff].",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -8262,7 +7834,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 44,
@@ -8302,21 +7874,6 @@
         "mobility": null
       },
       {
-        "name": "Prismana Form",
-        "url": "https://wiki.aniimo.com/item/044/prismana-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
         "name": "Nighttime Form",
         "url": "https://wiki.aniimo.com/item/044/nighttime-form",
         "imageUrl": null,
@@ -8333,28 +7890,22 @@
       }
     ],
     "habitats": [
-      "Beast Fang Ridge"
+      "Beast Fang Ridge",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Biting Wind When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases Crit Rate of that damage by 15%.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Biting Wind",
-      "description": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases critical rate of that damage by 15%."
-    },
-    "traits": [
-      {
-        "name": "Biting Wind",
-        "description": "When dealing damage to targets with more than 5 stacks of [Ice Debuff], increases critical rate of that damage by 15%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Frost Tail Strike",
-        "description": "Flips forward toward the target and slams the ground with a tail strike, dealing damage. Can consume 10 stacks of [Ice Debuff] to deal 85% extra damage.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -8489,7 +8040,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 45,
@@ -8529,8 +8080,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/045/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/045/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -8545,31 +8096,22 @@
       }
     ],
     "habitats": [
-      "Blitzwood"
+      "Blitzwood",
+      "Home Abilities",
+      "1"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Climb Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "High Jump",
-      "description": "Allows you to perform a higher jump.",
+      "description": "Allows you to perform a higher jump. Aniimo Traits Power Sustain After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to 5% HP. All skills cost 12 less EP, but UP cannot be gained. Lasts 6s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1022100_Skill_9400109_Icon.png"
     },
-    "trait": {
-      "name": "Power Sustain",
-      "description": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to 5% HP. All skills cost 12 less EP, but UP cannot be gained. Lasts 6s."
-    },
-    "traits": [
-      {
-        "name": "Power Sustain",
-        "description": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to 5% HP. All skills cost 12 less EP, but UP cannot be gained. Lasts 6s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "High-Voltage Dash",
-        "description": "Charges toward the targets while electrified to deal damage.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -8630,7 +8172,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 46,
@@ -8644,14 +8186,14 @@
     "roles": [
       "Break"
     ],
-    "attributeScore": 530,
+    "attributeScore": 544,
     "stats": {
-      "HP": 100,
+      "HP": 112,
       "BREAK": 104,
-      "ATK": 100,
+      "ATK": 90,
       "M.DEF": 70,
       "P.DEF": 70,
-      "REGEN": 86
+      "REGEN": 98
     },
     "forms": [
       {
@@ -8685,8 +8227,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/046/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/046/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -8701,31 +8243,22 @@
       }
     ],
     "habitats": [
-      "Blitzwood"
+      "Blitzwood",
+      "Home Abilities",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Climb Lv.3"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "High Jump",
-      "description": "Allows you to perform a higher jump.",
+      "description": "Allows you to perform a higher jump. Aniimo Traits Power Sustain After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to 5% HP. All skills cost 12 less EP, but UP cannot be gained. Lasts 6s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1022100_Skill_9400109_Icon.png"
     },
-    "trait": {
-      "name": "Power Sustain",
-      "description": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to 5% HP. All skills cost 12 less EP, but UP cannot be gained. Lasts 6s."
-    },
-    "traits": [
-      {
-        "name": "Power Sustain",
-        "description": "After skills land 6 critical hits, becomes [Overcharged], immediately gaining a shield equal to 5% HP. All skills cost 12 less EP, but UP cannot be gained. Lasts 6s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Lightning Cross",
-        "description": "Channels the power of lightning, sending a pushing lightning claw mark forward that deals up to 3 hits to targets. This skill gains 50% additional critical rate.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -8841,7 +8374,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 47,
@@ -8882,27 +8415,18 @@
       }
     ],
     "habitats": [
-      "Blitzwood"
+      "Blitzwood",
+      "Home Abilities",
+      "1"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Climb Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Raging Fire",
-      "description": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25."
-    },
-    "traits": [
-      {
-        "name": "Raging Fire",
-        "description": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Pinecone Bomb",
-        "description": "Throws a flaming pinecone that bursts on impact, scattering an additional 3 pinecone fragments in all directions. Targets hit are inflicted with the [Pinecone] Mark.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -8919,26 +8443,8 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1005304_Feature_10503_Icon.png"
       },
       {
-        "name": "38",
-        "description": "松果风弹",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1051100_Skill_10500490_Icon.png"
-      },
-      {
-        "name": "Physical",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1051100_Skill_10900640_Icon.png"
-      },
-      {
-        "name": "45",
-        "description": "Heavy Tail Strike",
+        "name": "40",
+        "description": "Pinecone Bomb",
         "element": "",
         "type": "",
         "cost": "",
@@ -8952,11 +8458,11 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1051100_Skill_11200620_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1051100_Skill_10500490_Icon.png"
       },
       {
-        "name": "40",
-        "description": "松果影弹",
+        "name": "38",
+        "description": "ATK",
         "element": "",
         "type": "",
         "cost": "",
@@ -8971,24 +8477,6 @@
         "cost": "",
         "power": "",
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
-      },
-      {
-        "name": "45",
-        "description": "ATK",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
-      },
-      {
-        "name": "Physical",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": null
       }
     ],
     "analysis": {
@@ -9001,7 +8489,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 48,
@@ -9042,27 +8530,18 @@
       }
     ],
     "habitats": [
-      "Blitzwood"
+      "Blitzwood",
+      "Home Abilities",
+      "2"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Climb Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Raging Fire",
-      "description": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25."
-    },
-    "traits": [
-      {
-        "name": "Raging Fire",
-        "description": "After using a skill, the next basic attack used within 10s will directly release the final hit of the basic attack, and its Might is increased from 4 to 25."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "松果影弹",
-        "description": "抛出一枚暗元素松果，落地时向四周溅射出额外3枚松果碎片，命中的目标会被附加【松果】标记。",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -9079,31 +8558,13 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1005304_Feature_10503_Icon.png"
       },
       {
-        "name": "45",
-        "description": "Pinecone Bomb",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1051100_Skill_11200620_Icon.png"
-      },
-      {
-        "name": "Physical",
-        "description": "Cost:",
+        "name": "38",
+        "description": "Heavy Tail Strike",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1051100_Skill_10500490_Icon.png"
-      },
-      {
-        "name": "38",
-        "description": "松果风弹",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1051100_Skill_10900640_Icon.png"
       },
       {
         "name": "Physical",
@@ -9115,8 +8576,8 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1051100_Skill_10500500_Icon.png"
       },
       {
-        "name": "45",
-        "description": "Heavy Tail Strike",
+        "name": "40",
+        "description": "Blazing Fist Barrage",
         "element": "",
         "type": "",
         "cost": "",
@@ -9133,8 +8594,8 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1005300_Skill_10500000_Icon.png"
       },
       {
-        "name": "40",
-        "description": "Blazing Fist Barrage",
+        "name": "85",
+        "description": "ATK",
         "element": "",
         "type": "",
         "cost": "",
@@ -9151,31 +8612,13 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
-        "name": "85",
-        "description": "ATK",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
-      },
-      {
-        "name": "Physical",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": null
-      },
-      {
         "name": "6",
         "description": "Blazing Rush",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": null
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
         "name": "Physical",
@@ -9197,7 +8640,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 49,
@@ -9253,27 +8696,18 @@
       }
     ],
     "habitats": [
-      "Echoback Landing"
+      "Echoback Landing",
+      "Home Abilities",
+      "1"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Swim Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Appeal",
-      "description": "When entering battle, if the team has an opposite-sex Susuta family member, increases own BREAK efficiency by 30% for 15s. Cooldown: 20s."
-    },
-    "traits": [
-      {
-        "name": "Appeal",
-        "description": "When entering battle, if the team has an opposite-sex Susuta family member, increases own BREAK efficiency by 30% for 15s. Cooldown: 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Water Cannon",
-        "description": "Jumps up and hurls a huge water ball at the target, dealing AoE damage and creating a puddle.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -9305,7 +8739,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_10300100_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10301120_Icon.png"
       },
       {
         "name": "74",
@@ -9314,7 +8748,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "Physical",
@@ -9334,7 +8768,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 50,
@@ -9390,27 +8824,18 @@
       }
     ],
     "habitats": [
-      "Echoback Landing"
+      "Echoback Landing",
+      "Home Abilities",
+      "2"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Swim Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Appeal",
-      "description": "When entering battle, if the team has an opposite-sex Susuta family member, increases own BREAK efficiency by 30% for 15s. Cooldown: 20s."
-    },
-    "traits": [
-      {
-        "name": "Appeal",
-        "description": "When entering battle, if the team has an opposite-sex Susuta family member, increases own BREAK efficiency by 30% for 15s. Cooldown: 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Water Cannon",
-        "description": "Jumps up and hurls a huge water ball at the target, dealing AoE damage and creating a puddle.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -9442,7 +8867,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_10300100_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10301120_Icon.png"
       },
       {
         "name": "74",
@@ -9451,7 +8876,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "Physical",
@@ -9471,7 +8896,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 51,
@@ -9527,25 +8952,14 @@
       }
     ],
     "habitats": [],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Swim Lv.3"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Radiant Charm",
-      "description": "Increases Water damage by16% for all opposite-sex Aniimo on the team."
-    },
-    "traits": [
-      {
-        "name": "Radiant Charm",
-        "description": "Increases Water damage by16% for all opposite-sex Aniimo on the team."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Water Cannon",
-        "description": "Jumps up and hurls a huge water ball at the target, dealing AoE damage and creating a puddle.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -9604,7 +9018,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "Physical",
@@ -9635,7 +9049,7 @@
       },
       {
         "name": "6",
-        "description": "Sea in Wrath",
+        "description": "Wrath of the Sea",
         "element": "",
         "type": "",
         "cost": "",
@@ -9663,7 +9077,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 52,
@@ -9734,27 +9148,18 @@
       }
     ],
     "habitats": [
-      "Echoback Landing"
+      "Echoback Landing",
+      "Home Abilities",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Swim Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Appeal",
-      "description": "When entering battle, if the team has an opposite-sex Susuta family member, increases own BREAK efficiency by 30% for 15s. Cooldown: 20s."
-    },
-    "traits": [
-      {
-        "name": "Appeal",
-        "description": "When entering battle, if the team has an opposite-sex Susuta family member, increases own BREAK efficiency by 30% for 15s. Cooldown: 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Water Cannon",
-        "description": "Jumps up and hurls a huge water ball at the target, dealing AoE damage and creating a puddle.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -9795,7 +9200,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1019400_Skill_10300080_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017400_Skill_10300083_Icon.png"
       },
       {
         "name": "Physical",
@@ -9822,7 +9227,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "30",
@@ -9872,7 +9277,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 53,
@@ -9913,26 +9318,19 @@
       }
     ],
     "habitats": [
-      "新月海湾",
+      "Crescent Bay",
       "Echoback Landing",
-      "夕阳海原"
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Tidal Heart",
-      "description": "While in water terrain or after absorbing water, increases Water damage by 20% for 10s."
-    },
-    "traits": [
-      {
-        "name": "Tidal Heart",
-        "description": "While in water terrain or after absorbing water, increases Water damage by 20% for 10s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Torrent Slam",
-        "description": "Strikes the target with a shell. If there’s a water environment nearby, activates puddles within the hit range to deal additional damage equal to 30% Might and increase Damage Amp by 15% for 20s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -9964,7 +9362,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1019400_Skill_10300080_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017400_Skill_10300083_Icon.png"
       },
       {
         "name": "83",
@@ -9973,7 +9371,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "Physical",
@@ -9992,7 +9390,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 54,
@@ -10033,24 +9431,18 @@
       }
     ],
     "habitats": [
-      "Echoback Landing"
+      "Echoback Landing",
+      "Home Abilities",
+      "2"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Tidal Heart",
-      "description": "While in water terrain or after absorbing water, increases Water damage by 20% for 10s."
-    },
-    "traits": [
-      {
-        "name": "Tidal Heart",
-        "description": "While in water terrain or after absorbing water, increases Water damage by 20% for 10s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Torrent Slam",
-        "description": "Strikes the target with a shell. If there’s a water environment nearby, activates puddles within the hit range to deal additional damage equal to 30% Might and increase Damage Amp by 15% for 20s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -10082,7 +9474,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1019400_Skill_10300080_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017400_Skill_10300083_Icon.png"
       },
       {
         "name": "83",
@@ -10091,7 +9483,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "Physical",
@@ -10110,7 +9502,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 55,
@@ -10183,20 +9575,12 @@
     "habitats": [],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Tidal Heart",
-      "description": "While in water terrain or after absorbing water, increases Water damage by 25% for 20s."
-    },
-    "traits": [
-      {
-        "name": "Tidal Heart",
-        "description": "While in water terrain or after absorbing water, increases Water damage by 25% for 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Flowing Water Slash",
-        "description": "Gathers water and unleashes 3 consecutive slashes. Hitting the target with all slashes triggers an additional powerful slash. When near a water environment, absorbs water and empowers the slashes into water blade slashes, dealing additional damage equal to 30% Might.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -10255,7 +9639,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1019400_Skill_10300080_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017400_Skill_10300083_Icon.png"
       },
       {
         "name": "Physical",
@@ -10264,7 +9648,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "47",
@@ -10330,7 +9714,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 56,
@@ -10386,28 +9770,22 @@
       }
     ],
     "habitats": [
-      "Berylline Causeway"
+      "Berylline Vale",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Overloaded Engine Moving and using skills builds [Overload Energy]. When [Overload Energy] is full, the next skill gains 40% bonus damage.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Overloaded Engine",
-      "description": "Moving and using skills builds Overload Energy. When Overload Energy is full, the next skill gains 40% bonus damage."
-    },
-    "traits": [
-      {
-        "name": "Overloaded Engine",
-        "description": "Moving and using skills builds Overload Energy. When Overload Energy is full, the next skill gains 40% bonus damage."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Stone Ball Drift",
-        "description": "Spins around to deal damage to a target in front. Each hit increases damage by 8% for 20s, stacking up to 4 times.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -10425,7 +9803,7 @@
       },
       {
         "name": "61",
-        "description": "Stone Ball Cutter",
+        "description": "Mud Ball Slice",
         "element": "",
         "type": "",
         "cost": "",
@@ -10487,7 +9865,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 57,
@@ -10501,11 +9879,11 @@
     "roles": [
       "Dps"
     ],
-    "attributeScore": 516,
+    "attributeScore": 522,
     "stats": {
       "HP": 90,
       "BREAK": 52,
-      "ATK": 114,
+      "ATK": 120,
       "M.DEF": 80,
       "P.DEF": 80,
       "REGEN": 100
@@ -10540,46 +9918,25 @@
         "habitats": [],
         "homelandAbility": null,
         "mobility": null
-      },
-      {
-        "name": "Prismana Form",
-        "url": "https://wiki.aniimo.com/item/057/prismana-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
       }
     ],
     "habitats": [
-      "Berylline Causeway"
+      "Berylline Vale",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Overloaded Engine Moving and using skills builds [Overload Energy]. When fully charged, the next skill deals 40% extra damage and immediately brings [Sandstorm Spin] to maximum speed.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Overloaded Engine",
-      "description": "Moving and using skills builds [Overload Energy]. When fully charged, the next skill deals 40% extra damage and immediately brings [Sandstorm Spin] to maximum speed."
-    },
-    "traits": [
-      {
-        "name": "Overloaded Engine",
-        "description": "Moving and using skills builds [Overload Energy]. When fully charged, the next skill deals 40% extra damage and immediately brings [Sandstorm Spin] to maximum speed."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Dark Wheel Slash",
-        "description": "Lift the stone Aniipod and roll forward at high speed, dealing Damage to targets ahead and an additional 400% Damage to Shields.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -10615,7 +9972,7 @@
       },
       {
         "name": "67",
-        "description": "Stone Ball Cutter",
+        "description": "Mud Ball Slice",
         "element": "",
         "type": "",
         "cost": "",
@@ -10633,7 +9990,7 @@
       },
       {
         "name": "67",
-        "description": "Stone Ball Drift",
+        "description": "Mud Ball Drift",
         "element": "",
         "type": "",
         "cost": "",
@@ -10669,7 +10026,7 @@
       },
       {
         "name": "18",
-        "description": "Rock Ball Blast",
+        "description": "Mudwheel Ashburst",
         "element": "",
         "type": "",
         "cost": "",
@@ -10715,7 +10072,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 58,
@@ -10771,24 +10128,18 @@
       }
     ],
     "habitats": [
-      "Berylline Causeway"
+      "Berylline Vale",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Rock Empowerment",
-      "description": "[Rock Piles] created by Bouldus can be destroyed by Waleetle's [Stone Ball Drift], releasing shock waves and applying [Disintegration] to the target.[Disintegration]: Each stack reduces Earth Resistance by 6%% and Movement Speed by 5% for 20s. Stacks up to 6 times."
-    },
-    "traits": [
-      {
-        "name": "Rock Empowerment",
-        "description": "[Rock Piles] created by Bouldus can be destroyed by Waleetle's [Stone Ball Drift], releasing shock waves and applying [Disintegration] to the target.[Disintegration]: Each stack reduces Earth Resistance by 6%% and Movement Speed by 5% for 20s. Stacks up to 6 times."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Clay Ball",
-        "description": "Throws a clay ball in a straight line in the direction faced, dealing damage on hit and applying Crumble effect.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -10811,7 +10162,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1045400_Skill_10800480_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1043100_Skill_10800330_Icon.png"
       },
       {
         "name": "Physical",
@@ -10903,7 +10254,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 59,
@@ -10944,31 +10295,22 @@
       }
     ],
     "habitats": [
-      "Driftwise Meadow"
+      "Driftwise Meadow",
+      "Home Abilities",
+      "1"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Scurry",
-      "description": "Rushes forward a short distance.",
+      "description": "Rushes forward a short distance. Aniimo Traits Thunderbond When this Aniimo’s attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Thunderbond",
-      "description": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s."
-    },
-    "traits": [
-      {
-        "name": "Thunderbond",
-        "description": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Thunder Field",
-        "description": "Generates a thunder field that keeps following the target. Targets within the thunder field that receive a Lightning attack will be hit by an additional Lightning attack and be inflicted with a Lightning Debuff. The thunder field lasts for 8s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -11030,7 +10372,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 60,
@@ -11086,31 +10428,22 @@
       }
     ],
     "habitats": [
-      "Driftwise Meadow"
+      "Driftwise Meadow",
+      "Home Abilities",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.3"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Scurry",
-      "description": "Rushes forward a short distance.",
+      "description": "Rushes forward a short distance. Aniimo Traits Thunderbond When this Aniimo’s attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Thunderbond",
-      "description": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s."
-    },
-    "traits": [
-      {
-        "name": "Thunderbond",
-        "description": "When this Aniimo's attack hits a target, it gains 1 stack of [Thunderbond]. At 30 stacks, it enters the [Thunderwing Stance] when using its next skill or Ultimate. Lasts 10s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Thunder Field",
-        "description": "Generates a thunder field that keeps following the target. Targets within the thunder field that receive a Lightning attack will be hit by an additional Lightning attack and be inflicted with a Lightning Debuff. The thunder field lasts for 8s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -11163,7 +10496,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1029300_Skill_10400350_Icon.png"
       },
       {
-        "name": "1",
+        "name": "2",
         "description": "Radiant Dart",
         "element": "",
         "type": "",
@@ -11227,7 +10560,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 61,
@@ -11282,8 +10615,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/061/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/061/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -11298,28 +10631,22 @@
       }
     ],
     "habitats": [
-      "Russet Highlands"
+      "Russet Highlands",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Detection",
-      "description": "Gives you a special detective vision that allows you to see metal objects and cloaked Aniimo nearby.",
+      "description": "Gives you a special detective vision that allows you to see metal objects and cloaked Aniimo nearby. Aniimo Traits Guardbreak Resonance Increases BREAK by 0.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002102_Skill_9400031_Icon.png"
     },
-    "trait": {
-      "name": "Guardbreak Resonance",
-      "description": "Increases BREAK by 0."
-    },
-    "traits": [
-      {
-        "name": "Guardbreak Resonance",
-        "description": "Increases BREAK by 0."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Defense Mode",
-        "description": "Entering Defense Mode grants 20% damage reduction. Generates a shock wave when hit, dealing damage equal to 10 Might.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -11369,7 +10696,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002100_Skill_10200270_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1059300_Skill_10301220_Icon.png"
       },
       {
         "name": "45",
@@ -11401,7 +10728,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 62,
@@ -11456,8 +10783,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/062/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/062/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -11490,23 +10817,15 @@
     "homelandAbility": null,
     "mobility": {
       "name": "Hookshot",
-      "description": "Stretch your arm toward the center of view. Pull yourself to walls or enemies on hit. Hold skill button to aim.",
+      "description": "Stretch your arm toward the center of view. Pull yourself to walls or enemies on hit. Hold skill button to aim. Aniimo Traits Pursuit When dealing damage to targets in Controlled or Break State, increases an additional 30% Damage Amp.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002602_Skill_9400041_Icon.png"
     },
-    "trait": {
-      "name": "Pursuit",
-      "description": "When dealing damage to targets in Controlled or Break State, increases an additional 30% Damage Amp."
-    },
-    "traits": [
-      {
-        "name": "Pursuit",
-        "description": "When dealing damage to targets in Controlled or Break State, increases an additional 30% Damage Amp."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Weakening Smash",
-        "description": "Jumps up and smashes down on the target to deal damage. Up to three consecutive smashes are allowed, and the third smash will stun the target for 1s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -11538,7 +10857,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002100_Skill_10200270_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1059300_Skill_10301220_Icon.png"
       },
       {
         "name": "62",
@@ -11624,7 +10943,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 63,
@@ -11679,8 +10998,8 @@
         "mobility": null
       },
       {
-        "name": "Mountain Woods Form",
-        "url": "https://wiki.aniimo.com/item/063/mountain-woods-form",
+        "name": "Timberline Form",
+        "url": "https://wiki.aniimo.com/item/063/timberline-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -11695,28 +11014,22 @@
       }
     ],
     "habitats": [
-      "Russet Highlands"
+      "Russet Highlands",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Detection",
-      "description": "Gives you a special detective vision that allows you to see metal objects and cloaked Aniimo nearby.",
+      "description": "Gives you a special detective vision that allows you to see metal objects and cloaked Aniimo nearby. Aniimo Traits Guardbreak Resonance Increases BREAK by 0.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002102_Skill_9400031_Icon.png"
     },
-    "trait": {
-      "name": "Guardbreak Resonance",
-      "description": "Increases BREAK by 0."
-    },
-    "traits": [
-      {
-        "name": "Guardbreak Resonance",
-        "description": "Increases BREAK by 0."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Guardbreak Slam",
-        "description": "Jumps up and smashes down on the target to deal damage. Up to three consecutive smashes are allowed, and the third smash will stun the target for 1s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -11775,7 +11088,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002100_Skill_10200270_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1059300_Skill_10301220_Icon.png"
       },
       {
         "name": "Physical",
@@ -11835,7 +11148,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 64,
@@ -11891,28 +11204,22 @@
       }
     ],
     "habitats": [
-      "Russet Highlands"
+      "Russet Highlands",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Bilateral",
-      "description": "Enters Bilateral mode to see a different perspective.",
+      "description": "Enters Bilateral mode to see a different perspective. Aniimo Traits Counter Strike After being attacked, increases BREAK efficiency by 25% for 10s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002401_Skill_9400051_Icon.png"
     },
-    "trait": {
-      "name": "Counter Strike",
-      "description": "After being attacked, increases BREAK efficiency by 25% for 10s."
-    },
-    "traits": [
-      {
-        "name": "Counter Strike",
-        "description": "After being attacked, increases BREAK efficiency by 25% for 10s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Wind Tackle",
-        "description": "Tackles and knocks back small-sized targets. Increases own damage reduction by 15% for 10s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -11974,7 +11281,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 65,
@@ -12030,28 +11337,22 @@
       }
     ],
     "habitats": [
-      "Russet Highlands"
+      "Russet Highlands",
+      "Home Abilities",
+      "2"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Bilateral",
-      "description": "Enters Bilateral mode to see a different perspective.",
+      "description": "Enters Bilateral mode to see a different perspective. Aniimo Traits Counter Strike After being attacked, increases BREAK efficiency by 25% for 10s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002401_Skill_9400051_Icon.png"
     },
-    "trait": {
-      "name": "Counter Strike",
-      "description": "After being attacked, increases BREAK efficiency by 25% for 10s."
-    },
-    "traits": [
-      {
-        "name": "Counter Strike",
-        "description": "After being attacked, increases BREAK efficiency by 25% for 10s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Wind Tackle",
-        "description": "Tackles and knocks back small-sized targets. Increases own damage reduction by 15% for 10s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -12114,7 +11415,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 66,
@@ -12170,31 +11471,22 @@
       }
     ],
     "habitats": [
-      "Russet Highlands"
+      "Russet Highlands",
+      "Home Abilities",
+      "3"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Bilateral",
-      "description": "Enters Bilateral mode to see a different perspective.",
+      "description": "Enters Bilateral mode to see a different perspective. Aniimo Traits Counter Strike After being attacked, increases BREAK efficiency by 25% for 10s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002401_Skill_9400051_Icon.png"
     },
-    "trait": {
-      "name": "Counter Strike",
-      "description": "After being attacked, increases BREAK efficiency by 25% for 10s."
-    },
-    "traits": [
-      {
-        "name": "Counter Strike",
-        "description": "After being attacked, increases BREAK efficiency by 25% for 10s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Wind Tackle",
-        "description": "Tackles and knocks back small-sized targets. Increases own damage reduction by 15% for 10s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -12294,7 +11586,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 67,
@@ -12332,47 +11624,21 @@
         "habitats": [],
         "homelandAbility": null,
         "mobility": null
-      },
-      {
-        "name": "Prismana Form",
-        "url": "https://wiki.aniimo.com/item/067/prismana-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
       }
     ],
     "habitats": [],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Bilateral",
-      "description": "Enters Bilateral mode to see a different perspective.",
+      "description": "Enters Bilateral mode to see a different perspective. Aniimo Traits Power of Fire Deals 30% extra damage to targets with more than 5 stacks of Fire Debuff.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1002401_Skill_9400051_Icon.png"
     },
-    "trait": {
-      "name": "Power of Fire",
-      "description": "Deals 30% extra damage to targets with more than 5 stacks of Fire Debuff."
-    },
-    "traits": [
-      {
-        "name": "Power of Fire",
-        "description": "Deals 30% extra damage to targets with more than 5 stacks of Fire Debuff."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Fiery Charge",
-        "description": "Charges at the target to deal damage. If used while flying, dives at the target and stops flying. On hit, gains a shield equal to 5% of max HP for 10s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -12489,7 +11755,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 68,
@@ -12530,28 +11796,22 @@
       }
     ],
     "habitats": [
-      "Rosetower Woods"
+      "Rosetower Woods",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Head Hammer",
-      "description": "Use Head Hammer to launch a Shock Wave.",
+      "description": "Uses Head Hammer to deliver a powerful impact. Aniimo Traits Raging Rampage Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state.[Enraged] increases own skill damage by 30%, increases the REGEN rate by 25%, and prevents [Rage] gain. Lasts 20s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1050100_Skill_9400137_Icon.png"
     },
-    "trait": {
-      "name": "Raging Rampage",
-      "description": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state.[Enraged] increases ATK Speed and own skill damage by 30%, increases the EP recovery rate by 25%, and prevents [Rage] gain. Lasts 20s."
-    },
-    "traits": [
-      {
-        "name": "Raging Rampage",
-        "description": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state.[Enraged] increases ATK Speed and own skill damage by 30%, increases the EP recovery rate by 25%, and prevents [Rage] gain. Lasts 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Fanatic Clawing",
-        "description": "Claws the target up to 4 times. When the fourth hit lands, the next skill gains double [Rage].In the [Enraged] state, each hit applies 2/2/2/6 stacks of [Claw Mark], up to 12 stacks.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -12614,7 +11874,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 69,
@@ -12670,28 +11930,22 @@
       }
     ],
     "habitats": [
-      "Rosetower Woods"
+      "Rosetower Woods",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Head Hammer",
-      "description": "Use Head Hammer to launch a Shock Wave.",
+      "description": "Uses Head Hammer to deliver a powerful impact. Aniimo Traits Raging Rampage Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state.[Enraged] increases own skill damage by 30%, increases the REGEN rate by 25%, and prevents [Rage] gain. Lasts 20s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1050100_Skill_9400137_Icon.png"
     },
-    "trait": {
-      "name": "Raging Rampage",
-      "description": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state.[Enraged] increases ATK Speed and own skill damage by 30%, increases the EP recovery rate by 25%, and prevents [Rage] gain. Lasts 20s."
-    },
-    "traits": [
-      {
-        "name": "Raging Rampage",
-        "description": "Builds [Rage] during battle. Basic attacks grant 2 points, every 10 EP spent on skills grants 10, and taking damage grants 2. At 100 points, enters the [Enraged] state.[Enraged] increases ATK Speed and own skill damage by 30%, increases the EP recovery rate by 25%, and prevents [Rage] gain. Lasts 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Claw of Madness",
-        "description": "Claws the target up to 4 times. When the fourth hit lands, the next skill gains double [Rage].In the [Enraged] state, each hit applies 2/2/2/6 stacks of [Claw Mark], up to 12 stacks.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -12808,7 +12062,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 70,
@@ -12849,28 +12103,22 @@
       }
     ],
     "habitats": [
-      "Zephyrus Landbridge"
+      "Zephyrus Landbridge",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Tunnel",
-      "description": "Tunnels underground to become immune to all ranged attacks by continuously consuming stamina. Pound skills can launch the Aniimo into the air.",
+      "description": "Enters the Tunneling state, becoming immune to ranged attacks while continuously consuming stamina, but can be knocked into the air by pound skills. Aniimo Traits Earth Affinity While in [Tunneling] state, can cast skills and deal 20% extra BREAK damage.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1028400_Skill_9400091_Icon.png"
     },
-    "trait": {
-      "name": "Earth Affinity",
-      "description": "While in [Tunneling] state, can cast skills and deal 20% extra BREAK."
-    },
-    "traits": [
-      {
-        "name": "Earth Affinity",
-        "description": "While in [Tunneling] state, can cast skills and deal 20% extra BREAK."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Earth Spikes",
-        "description": "Generates a line of stone spikes that extend forward, piercing all targets in their path.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -12925,11 +12173,12 @@
     ],
     "analysis": {
       "tags": [
+        "break",
         "regen"
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 71,
@@ -12971,24 +12220,19 @@
       }
     ],
     "habitats": [
-      "Zephyrus Landbridge"
+      "Zephyrus Landbridge",
+      "Home Abilities",
+      "1",
+      "2"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Pyro Charge",
-      "description": "After spending a total of EP, gains [Pyro Charge]. Every 502s, applies 1 stack of Fire Debuff to nearby targets for 10s."
-    },
-    "traits": [
-      {
-        "name": "Pyro Charge",
-        "description": "After spending a total of EP, gains [Pyro Charge]. Every 502s, applies 1 stack of Fire Debuff to nearby targets for 10s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Fiery Punch",
-        "description": "Dashes forward with a punch, dealing damage and piercing through targets. Also removes all [Fire Debuff] stacks from the target. Each stack of [Fire Debuff] deals additional damage equal to 5% Might.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -13049,7 +12293,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 72,
@@ -13106,28 +12350,23 @@
       }
     ],
     "habitats": [
-      "Zephyrus Landbridge"
+      "Zephyrus Landbridge",
+      "Home Abilities",
+      "2",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Fast and Furious",
-      "description": "Enters Fast and Furious state, increasing movement speed while allowing you to knock away certain obstacles, consuming stamina.",
+      "description": "Enters Fast and Furious state, increasing movement speed while allowing you to knock away certain obstacles, consuming stamina. Aniimo Traits Pyro Charge After spending a total of 50 EP, gains [Pyro Charge]. Every 2s, applies 1 stack of [Fire Debuff] to nearby targets for 10s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Pyro Charge",
-      "description": "After spending a total of EP, gains [Pyro Charge]. Every 502s, applies 1 stack of Fire Debuff to nearby targets for 10s."
-    },
-    "traits": [
-      {
-        "name": "Pyro Charge",
-        "description": "After spending a total of EP, gains [Pyro Charge]. Every 502s, applies 1 stack of Fire Debuff to nearby targets for 10s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Lava Punch",
-        "description": "Dashes forward with a punch, dealing damage and piercing through targets. Also removes all [Fire Debuff] stacks from the target. Each stack of [Fire Debuff] deals additional damage equal to 5% Might.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -13246,7 +12485,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 73,
@@ -13290,23 +12529,15 @@
     "homelandAbility": null,
     "mobility": {
       "name": "Tunnel",
-      "description": "Tunnels underground to become immune to all ranged attacks by continuously consuming stamina. Pound skills can launch the Aniimo into the air.",
+      "description": "Enters the Tunneling state, becoming immune to ranged attacks while continuously consuming stamina, but can be knocked into the air by pound skills. Aniimo Traits Earth Affinity While in [Tunneling] state, can cast skills and deal 20% extra BREAK damage.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1028400_Skill_9400091_Icon.png"
     },
-    "trait": {
-      "name": "Earth Affinity",
-      "description": "While in [Tunneling] state, can cast skills and deal 20% extra BREAK."
-    },
-    "traits": [
-      {
-        "name": "Earth Affinity",
-        "description": "While in [Tunneling] state, can cast skills and deal 20% extra BREAK."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Earth Spikes",
-        "description": "Generates a line of stone spikes that extend forward, piercing all targets in their path.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -13361,11 +12592,12 @@
     ],
     "analysis": {
       "tags": [
+        "break",
         "regen"
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 74,
@@ -13409,23 +12641,15 @@
     "homelandAbility": null,
     "mobility": {
       "name": "Tunnel",
-      "description": "Tunnels underground to become immune to all ranged attacks by continuously consuming stamina. Pound skills can launch the Aniimo into the air.",
+      "description": "Enters the Tunneling state, becoming immune to ranged attacks while continuously consuming stamina, but can be knocked into the air by pound skills. Aniimo Traits Earth Affinity While in [Tunneling] state, can cast skills and deal 20% extra BREAK damage.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1028400_Skill_9400091_Icon.png"
     },
-    "trait": {
-      "name": "Earth Affinity",
-      "description": "While in [Tunneling] state, can cast skills and deal 20% extra BREAK."
-    },
-    "traits": [
-      {
-        "name": "Earth Affinity",
-        "description": "While in [Tunneling] state, can cast skills and deal 20% extra BREAK."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Earth Spikes",
-        "description": "Generates a line of stone spikes that extend forward, piercing all targets in their path.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -13479,7 +12703,7 @@
       },
       {
         "name": "30",
-        "description": "Meteors",
+        "description": "Meteor Shower",
         "element": "",
         "type": "",
         "cost": "",
@@ -13516,11 +12740,12 @@
     ],
     "analysis": {
       "tags": [
+        "break",
         "regen"
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 75,
@@ -13561,27 +12786,18 @@
       }
     ],
     "habitats": [
-      "Zephyrus Landbridge"
+      "Zephyrus Landbridge",
+      "Home Abilities",
+      "1"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Potent Erosion",
-      "description": "When a skill or an Ultimate hits a target, reduces the target’s Earth Resistance by 2% for 20s. Stacks up to 10 times."
-    },
-    "traits": [
-      {
-        "name": "Potent Erosion",
-        "description": "When a skill or an Ultimate hits a target, reduces the target’s Earth Resistance by 2% for 20s. Stacks up to 10 times."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Smoke Screen",
-        "description": "Deploys a smokescreen that obscures vision. Targets cannot be aimed at through the smoke.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -13599,7 +12815,7 @@
       },
       {
         "name": "0",
-        "description": "Roll Out",
+        "description": "Rolling Mud Ball",
         "element": "",
         "type": "",
         "cost": "",
@@ -13638,11 +12854,12 @@
       "tags": [
         "burst",
         "regen",
-        "self_scaling"
+        "self_scaling",
+        "shield"
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 76,
@@ -13683,24 +12900,18 @@
       }
     ],
     "habitats": [
-      "Zephyrus Landbridge"
+      "Zephyrus Landbridge",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Potent Erosion",
-      "description": "When a skill or an Ultimate hits a target, reduces the target’s Earth Resistance by 2% for 20s. Stacks up to 10 times."
-    },
-    "traits": [
-      {
-        "name": "Potent Erosion",
-        "description": "When a skill or an Ultimate hits a target, reduces the target’s Earth Resistance by 2% for 20s. Stacks up to 10 times."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Smoke Screen",
-        "description": "Deploys a smokescreen that obscures vision. Targets cannot be aimed at through the smoke.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -13718,7 +12929,7 @@
       },
       {
         "name": "0",
-        "description": "Turret Mode",
+        "description": "Cannon Mode",
         "element": "",
         "type": "",
         "cost": "",
@@ -13772,7 +12983,7 @@
       },
       {
         "name": "6",
-        "description": "Annihilation Barrage",
+        "description": "Devastation Cannon",
         "element": "",
         "type": "",
         "cost": "",
@@ -13793,11 +13004,12 @@
       "tags": [
         "burst",
         "regen",
-        "self_scaling"
+        "self_scaling",
+        "shield"
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 77,
@@ -13838,28 +13050,22 @@
       }
     ],
     "habitats": [
-      "Tideblossom Coast"
+      "Tideblossom Coast",
+      "Home Abilities",
+      "1"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Glow",
-      "description": "Emits light from above to illuminate surroundings.",
+      "description": "Emits light from above to illuminate surroundings. Aniimo Traits Arc Surge Teammates who receive this Aniimo’s skill buff also gain a 12% Lightning boost for 20s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1014302_Skill_9400023_Icon.png"
     },
-    "trait": {
-      "name": "Arc Surge",
-      "description": "Teammates who receive this Aniimo's skill buff also gain 12%% Lightning damage for 20s."
-    },
-    "traits": [
-      {
-        "name": "Arc Surge",
-        "description": "Teammates who receive this Aniimo's skill buff also gain 12%% Lightning damage for 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Swift Retreat",
-        "description": "Moves back rapidly, leaving a clone behind that uses Lightning Discharge to attack targets and slow them by 15% for 10s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -13921,7 +13127,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 78,
@@ -13962,28 +13168,22 @@
       }
     ],
     "habitats": [
-      "Tideblossom Coast"
+      "Tideblossom Coast",
+      "Home Abilities",
+      "2"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Glow",
-      "description": "Emits light from above to illuminate surroundings.",
+      "description": "Emits light from above to illuminate surroundings. Aniimo Traits Arc Surge Teammates who receive this Aniimo’s skill buff also gain a 12% Lightning boost for 20s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1014302_Skill_9400023_Icon.png"
     },
-    "trait": {
-      "name": "Arc Surge",
-      "description": "Teammates who receive this Aniimo's skill buff also gain 12%% Lightning damage for 20s."
-    },
-    "traits": [
-      {
-        "name": "Arc Surge",
-        "description": "Teammates who receive this Aniimo's skill buff also gain 12%% Lightning damage for 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Swift Retreat",
-        "description": "Moves back rapidly, leaving a clone behind that uses Lightning Discharge to attack targets and slow them by 15% for 10s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -14045,7 +13245,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 79,
@@ -14085,8 +13285,8 @@
         "mobility": null
       },
       {
-        "name": "Rainstorm Form",
-        "url": "https://wiki.aniimo.com/item/079/rainstorm-form",
+        "name": "Rainfall Form",
+        "url": "https://wiki.aniimo.com/item/079/rainfall-form",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -14116,28 +13316,22 @@
       }
     ],
     "habitats": [
-      "Tideblossom Coast"
+      "Tideblossom Coast",
+      "Home Abilities",
+      "3"
     ],
     "homelandAbility": null,
     "mobility": {
       "name": "Glow",
-      "description": "Emits light from above to illuminate surroundings.",
+      "description": "Emits light from above to illuminate surroundings. Aniimo Traits Arc Surge Teammates who receive this Aniimo’s skill buff also gain a 12% Lightning boost for 20s.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1014302_Skill_9400023_Icon.png"
     },
-    "trait": {
-      "name": "Arc Surge",
-      "description": "Teammates who receive this Aniimo's skill buff also gain 12%% Lightning damage for 20s."
-    },
-    "traits": [
-      {
-        "name": "Arc Surge",
-        "description": "Teammates who receive this Aniimo's skill buff also gain 12%% Lightning damage for 20s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Healing Impact",
-        "description": "Fires an energy beam. Hold the skill key to keep firing, dealing damage to enemies in range and restoring 2% HP per second to allies in range. After 3s of continuous casting, removes negative status effects on self.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -14209,7 +13403,7 @@
       },
       {
         "name": "20",
-        "description": "Spotlight Moment",
+        "description": "Lightning Surge",
         "element": "",
         "type": "",
         "cost": "",
@@ -14273,7 +13467,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 80,
@@ -14315,31 +13509,23 @@
       }
     ],
     "habitats": [
-      "Tideblossom Coast"
+      "Tideblossom Coast",
+      "Home Abilities",
+      "1",
+      "Pathfinding"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.1 Swim Lv.1"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Floaty Bubble",
-      "description": "Scrubs itself to create a large bubble around itself.",
+      "description": "Scrubs itself to create a large bubble around itself. Aniimo Traits Bubble Every 12s, enters Bathing. The next skill cast creates a puddle.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026201_Skill_9400130_Icon.png"
     },
-    "trait": {
-      "name": "Bubble",
-      "description": "Every 12s, enters Bathing. The next skill cast creates a puddle."
-    },
-    "traits": [
-      {
-        "name": "Bubble",
-        "description": "Every 12s, enters Bathing. The next skill cast creates a puddle."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Here Comes the Bubble",
-        "description": "Releases a giant bubble, reducing the movement speed of targets within range by 15% and their EP recovery rate by 20%. Also increases the movement speed of allies within range by 15%. Lasts for 15s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -14389,7 +13575,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       }
     ],
     "analysis": {
@@ -14399,7 +13585,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 81,
@@ -14441,31 +13627,23 @@
       }
     ],
     "habitats": [
-      "Tideblossom Coast"
+      "Tideblossom Coast",
+      "Home Abilities",
+      "3",
+      "Pathfinding"
     ],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.3 Swim Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Floaty Bubble",
-      "description": "Scrubs itself to create a large bubble around itself.",
+      "description": "Scrubs itself to create a large bubble around itself. Aniimo Traits Bubble Every 12s, enters Bathing. The next skill cast creates a puddle.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026201_Skill_9400130_Icon.png"
     },
-    "trait": {
-      "name": "Bubble",
-      "description": "Every 12s, enters Bathing. The next skill cast creates a puddle."
-    },
-    "traits": [
-      {
-        "name": "Bubble",
-        "description": "Every 12s, enters Bathing. The next skill cast creates a puddle."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Bubbles",
-        "description": "Creates a bubble field. Each time a teammate casts a Water skill inside the field, 1 bubble is generated, up to 6 bubbles. Lasts 15s. Press the skill button again to detonate all bubbles. Each bubble restores 4 EP. After absorbing a puddle, restores an additional 10 EP.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -14524,7 +13702,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1048300_Skill_10301070_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1062300_Skill_10301340_Icon.png"
       },
       {
         "name": "Support",
@@ -14533,7 +13711,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1017200_Skill_16200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
         "name": "0",
@@ -14561,7 +13739,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 82,
@@ -14605,20 +13783,12 @@
     "habitats": [],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Power Surge",
-      "description": "When casting a skill with less than 20 EP, restores 4 EP."
-    },
-    "traits": [
-      {
-        "name": "Power Surge",
-        "description": "When casting a skill with less than 20 EP, restores 4 EP."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Disruptive Current",
-        "description": "Releases a current of electricity, damaging targets ahead.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -14641,7 +13811,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1012200_Skill_10400052_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1071300_Skill_10400490_Icon.png"
       },
       {
         "name": "Support",
@@ -14713,7 +13883,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 10002,
@@ -14756,20 +13926,12 @@
     "habitats": [],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Spotlight Moment",
-      "description": "The first skill this Aniimo uses within 5s of entering battle does not consume EP. Cooldown: 15s."
-    },
-    "traits": [
-      {
-        "name": "Spotlight Moment",
-        "description": "The first skill this Aniimo uses within 5s of entering battle does not consume EP. Cooldown: 15s."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Lightning Break",
-        "description": "Attacks the targets while break dancing.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -14869,7 +14031,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 10003,
@@ -14926,29 +14088,18 @@
       }
     ],
     "habitats": [],
-    "homelandAbility": {
-      "name": "Pathfinding",
-      "description": "Fly Lv.2"
-    },
+    "homelandAbility": null,
     "mobility": {
       "name": "Cloak",
-      "description": "Enter Cloak state.",
+      "description": "Enter Cloak state. Aniimo Traits Electro Stash Restores 4 EP when a skill lands a critical hit.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_9400062_Icon.png"
     },
-    "trait": {
-      "name": "Electro Stash",
-      "description": "Restores 4 EP when a skill lands a critical hit."
-    },
-    "traits": [
-      {
-        "name": "Electro Stash",
-        "description": "Restores 4 EP when a skill lands a critical hit."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Lightning Rush",
-        "description": "After dashing to close in on the target, it continuously consumes Energy to perform consecutive slashes. When Energy is depleted or clicked again, it unleashes a Spinning Slash that deals 26 Might damage. For every 3 consecutive slashes accumulated by this skill, the final Spinning Slash deals 100% increased damage.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -14984,7 +14135,7 @@
       },
       {
         "name": "45",
-        "description": "Lightning Surge",
+        "description": "Enhanced Lightning Blade",
         "element": "",
         "type": "",
         "cost": "",
@@ -15065,11 +14216,492 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
+  },
+  {
+    "id": 10004,
+    "name": "Hoptail",
+    "number": "10004",
+    "sourceUrl": "https://wiki.aniimo.com/item/10004/basic-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10223.png",
+    "elements": [
+      "Wind",
+      "Lightning"
+    ],
+    "roles": [
+      "Dps"
+    ],
+    "attributeScore": 505,
+    "stats": {
+      "HP": 95,
+      "BREAK": 50,
+      "ATK": 125,
+      "M.DEF": 85,
+      "P.DEF": 65,
+      "REGEN": 85
+    },
+    "forms": [
+      {
+        "name": "Basic Form",
+        "url": "https://wiki.aniimo.com/item/10004/basic-form/1000",
+        "imageUrl": null,
+        "stats": {},
+        "attributeScore": null,
+        "elements": [],
+        "roles": [],
+        "traits": [],
+        "trait": null,
+        "skills": [],
+        "habitats": [],
+        "homelandAbility": null,
+        "mobility": null
+      }
+    ],
+    "habitats": [],
+    "homelandAbility": null,
+    "mobility": {
+      "name": "High Jump",
+      "description": "Allows you to perform a higher jump. Aniimo Traits Elastic Potential Upon entering combat, Hoptail gains 1 stack of [Elasticity] each time it lands a tail attack hit or bounces. At 4 stacks of [Elasticity], gains [Elastic Burst], enhancing its skills.",
+      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1022100_Skill_9400109_Icon.png"
+    },
+    "trait": null,
+    "traits": [],
+    "skills": [
+      {
+        "name": "Combat Skills",
+        "description": "Innate Skills",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10223.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1022100_Skill_9400109_Icon.png"
+      },
+      {
+        "name": "58",
+        "description": "Spring Thrust",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1022300_Feature_122301_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1022300_Skill_10400460_Icon.png"
+      },
+      {
+        "name": "68",
+        "description": "Tail Flick Combo",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1022300_Skill_10900460_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1022300_Skill_10900440_Icon.png"
+      },
+      {
+        "name": "35",
+        "description": "Bouncy",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1022300_Skill_10900470_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026200_Skill_14400000_Icon.png"
+      },
+      {
+        "name": "168",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      }
+    ],
+    "analysis": {
+      "tags": [
+        "attack_up",
+        "control",
+        "debuff",
+        "regen",
+        "self_scaling"
+      ],
+      "notes": []
+    },
+    "lastVerified": "2026-11-02"
+  },
+  {
+    "id": 10006,
+    "name": "Hypnyto",
+    "number": "10006",
+    "sourceUrl": "https://wiki.aniimo.com/item/10006/basic-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10574.png",
+    "elements": [
+      "Wind"
+    ],
+    "roles": [
+      "Dps"
+    ],
+    "attributeScore": 520,
+    "stats": {
+      "HP": 103,
+      "BREAK": 50,
+      "ATK": 130,
+      "M.DEF": 70,
+      "P.DEF": 70,
+      "REGEN": 97
+    },
+    "forms": [
+      {
+        "name": "Basic Form",
+        "url": "https://wiki.aniimo.com/item/10006/basic-form/1000",
+        "imageUrl": null,
+        "stats": {},
+        "attributeScore": null,
+        "elements": [],
+        "roles": [],
+        "traits": [],
+        "trait": null,
+        "skills": [],
+        "habitats": [],
+        "homelandAbility": null,
+        "mobility": null
+      },
+      {
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/10006/prismana-form/1000",
+        "imageUrl": null,
+        "stats": {},
+        "attributeScore": null,
+        "elements": [],
+        "roles": [],
+        "traits": [],
+        "trait": null,
+        "skills": [],
+        "habitats": [],
+        "homelandAbility": null,
+        "mobility": null
+      }
+    ],
+    "habitats": [],
+    "homelandAbility": null,
+    "mobility": {
+      "name": "Gust",
+      "description": "Flaps the wings to create a rectangular wind field that lasts 5s. Aniimo Traits Refracted Feather Array When a Basic Attack lands a hit, drops 1 [Refracting Feather] behind the target. The feather lasts 15s. This effect can trigger only once every 3s. Up to 3 instances of [Refracting Feather] can exist at the same time. No more feathers will drop while 3 are already present. For each [Refracting Feather] present, increases the caster’s Crit Rate by 6%.",
+      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057300_Skill_9400150_Icon.png"
+    },
+    "trait": null,
+    "traits": [],
+    "skills": [
+      {
+        "name": "Combat Skills",
+        "description": "Innate Skills",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10574.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057300_Skill_9400150_Icon.png"
+      },
+      {
+        "name": "63",
+        "description": "Gale Bind",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057403_Feature_157401_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057400_Skill_10900700_Icon.png"
+      },
+      {
+        "name": "30",
+        "description": "Gleamwing Chase",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057400_Skill_10900710_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057400_Skill_11300210_Icon.png"
+      },
+      {
+        "name": "30",
+        "description": "Dazzling Prismglare",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057400_Skill_10900690_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057400_Skill_10900730_Icon.png"
+      },
+      {
+        "name": "75",
+        "description": "Bewinged Kaleido-Eye",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026200_Skill_14400000_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "165",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": null
+      }
+    ],
+    "analysis": {
+      "tags": [
+        "attack_up",
+        "control",
+        "debuff",
+        "regen"
+      ],
+      "notes": []
+    },
+    "lastVerified": "2026-11-02"
+  },
+  {
+    "id": 10007,
+    "name": "Jaguaraun",
+    "number": "10007",
+    "sourceUrl": "https://wiki.aniimo.com/item/10007/basic-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10713.png",
+    "elements": [
+      "Lightning"
+    ],
+    "roles": [
+      "Break"
+    ],
+    "attributeScore": 540,
+    "stats": {
+      "HP": 110,
+      "BREAK": 106,
+      "ATK": 90,
+      "M.DEF": 72,
+      "P.DEF": 77,
+      "REGEN": 85
+    },
+    "forms": [
+      {
+        "name": "Basic Form",
+        "url": "https://wiki.aniimo.com/item/10007/basic-form/1000",
+        "imageUrl": null,
+        "stats": {},
+        "attributeScore": null,
+        "elements": [],
+        "roles": [],
+        "traits": [],
+        "trait": null,
+        "skills": [],
+        "habitats": [],
+        "homelandAbility": null,
+        "mobility": null
+      }
+    ],
+    "habitats": [],
+    "homelandAbility": null,
+    "mobility": null,
+    "trait": null,
+    "traits": [],
+    "skills": [
+      {
+        "name": "Combat Skills",
+        "description": "Innate Skills",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10713.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1071300_Feature_171301_Icon.png"
+      },
+      {
+        "name": "15",
+        "description": "Thunder Rush Claw",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1071300_Skill_10400490_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1071300_Skill_10400500_Icon.png"
+      },
+      {
+        "name": "70",
+        "description": "Thundercloud Surge",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1071300_Skill_10400480_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1014300_Skill_14000000_Icon.png"
+      },
+      {
+        "name": "35",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1071300_Skill_10400510_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "6",
+        "description": "Thunder Rush Call",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": null
+      }
+    ],
+    "analysis": {
+      "tags": [
+        "attack_up",
+        "break",
+        "regen",
+        "self_scaling"
+      ],
+      "notes": []
+    },
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 11001,
-    "name": "Little Fire Spirit",
+    "name": "Sparkelf",
     "number": "11001",
     "sourceUrl": "https://wiki.aniimo.com/item/11001/basic-form",
     "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_69993.png",
@@ -15123,20 +14755,12 @@
     "habitats": [],
     "homelandAbility": null,
     "mobility": null,
-    "trait": {
-      "name": "Reliable Fire Companion",
-      "description": "When in a party, increases party 15% Fire Elemental Boost. When Energy is above 40, the effect increases to 20%."
-    },
-    "traits": [
-      {
-        "name": "Reliable Fire Companion",
-        "description": "When in a party, increases party 15% Fire Elemental Boost. When Energy is above 40, the effect increases to 20%."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Inspiration",
-        "description": "Ignites flames to inspire the whole team, increasing team Fire Elemental Damage by 15% for 12s.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -15226,7 +14850,7 @@
       },
       {
         "name": "6",
-        "description": "Keep the Fire Bolt going together!",
+        "description": "Keep the Fire Bolt Going!",
         "element": "",
         "type": "",
         "cost": "",
@@ -15255,7 +14879,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 99996,
@@ -15300,23 +14924,15 @@
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Lunar Power When not attacking with an advantageous element, final damage increases by 30%.Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals 100% extra damage, and restores 0.5% HP.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Lunar Power",
-      "description": "When not attacking with an advantageous element, final damage increases by 30%.Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals 100% extra damage, and restores 0.5% HP."
-    },
-    "traits": [
-      {
-        "name": "Lunar Power",
-        "description": "When not attacking with an advantageous element, final damage increases by 30%.Casting a skill or Ultimate grants 4 stacks of [Silver Moon Mark]. Each basic attack hit consumes 1 stack, deals 100% extra damage, and restores 0.5% HP."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Moon Impact",
-        "description": "Drops a full moon onto the target, triggering an explosion and dealing damage. If it hits a target with [Fox Mark], deals additional small-area damage around the target equal to 10%.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -15406,7 +15022,7 @@
       },
       {
         "name": "6",
-        "description": "Selene's Judgment",
+        "description": "Selene’s Judgment",
         "element": "",
         "type": "",
         "cost": "",
@@ -15435,7 +15051,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   },
   {
     "id": 99998,
@@ -15480,23 +15096,15 @@
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
-      "description": "Enters Hustle state, increasing movement speed by consuming stamina.",
+      "description": "Enters the Hustle state to move at high speed by continuously consuming stamina. Aniimo Traits Solar Grace When not attacking with an advantageous element, final damage increases by 30%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill.",
       "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1036100_Skill_9400107_Icon.png"
     },
-    "trait": {
-      "name": "Solar Grace",
-      "description": "When not attacking with an advantageous element, final damage increases by 30%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill."
-    },
-    "traits": [
-      {
-        "name": "Solar Grace",
-        "description": "When not attacking with an advantageous element, final damage increases by 30%. Every 4 basic attacks grants [Solar Halo], enhancing the next skill."
-      }
-    ],
+    "trait": null,
+    "traits": [],
     "skills": [
       {
-        "name": "Light Bombardment",
-        "description": "Dives from the air at the target, causing a Holy Light explosion upon landing. If you have Ring of the Golden Sun, this damage is increased by 30%.",
+        "name": "Combat Skills",
+        "description": "Innate Skills",
         "element": "",
         "type": "",
         "cost": "",
@@ -15586,7 +15194,7 @@
       },
       {
         "name": "6",
-        "description": "Helios' Judgment",
+        "description": "Helios’ Judgment",
         "element": "",
         "type": "",
         "cost": "",
@@ -15615,6 +15223,6 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-10-26"
+    "lastVerified": "2026-11-02"
   }
 ]
