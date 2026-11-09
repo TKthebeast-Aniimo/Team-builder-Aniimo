@@ -164,7 +164,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 2,
@@ -331,7 +331,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 3,
@@ -584,14 +584,14 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 4,
     "name": "Inferlupa",
     "number": "004",
-    "sourceUrl": "https://wiki.aniimo.com/item/004/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10055.png",
+    "sourceUrl": "https://wiki.aniimo.com/item/004/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1005503.png",
     "elements": [
       "Fire",
       "Dark"
@@ -610,8 +610,8 @@
     },
     "forms": [
       {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/004/basic-form",
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/004/prismana-form/1000",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -642,7 +642,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10055.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1005503.png"
       },
       {
         "name": "Physical",
@@ -753,7 +753,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 5,
@@ -867,7 +867,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 6,
@@ -1084,7 +1084,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 7,
@@ -1285,63 +1285,34 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 8,
-    "name": "Tromber",
+    "name": "Pouchwisp",
     "number": "008",
-    "sourceUrl": "https://wiki.aniimo.com/item/008/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10184.png",
+    "sourceUrl": "https://wiki.aniimo.com/item/008/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1063303.png",
     "elements": [
-      "Wind"
+      "Dark"
     ],
     "roles": [
+      "Regen",
       "Support"
     ],
-    "attributeScore": 531,
+    "attributeScore": 520,
     "stats": {
-      "HP": 113,
-      "BREAK": 51,
-      "ATK": 119,
-      "M.DEF": 81,
-      "P.DEF": 79,
-      "REGEN": 88
+      "HP": 101,
+      "BREAK": 50,
+      "ATK": 110,
+      "M.DEF": 70,
+      "P.DEF": 80,
+      "REGEN": 109
     },
     "forms": [
       {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/008/basic-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Beach Form",
-        "url": "https://wiki.aniimo.com/item/008/beach-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Highland Form",
-        "url": "https://wiki.aniimo.com/item/008/highland-form",
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/008/prismana-form/1000",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -1355,18 +1326,9 @@
         "mobility": null
       }
     ],
-    "habitats": [
-      "The Argent Strait",
-      "Home Abilities",
-      "3",
-      "Pathfinding"
-    ],
+    "habitats": [],
     "homelandAbility": null,
-    "mobility": {
-      "name": "Take Off",
-      "description": "Enters the Flying state to evade attacks from ground enemies. Takes more DMG while airborne. Aniimo Traits Band Member When switching Aniimo in battle, restores 20 EP to the next Chirpi family member switched in. Triggers once every 20s at most.",
-      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018401_Skill_9400102_Icon.png"
-    },
+    "mobility": null,
     "trait": null,
     "traits": [],
     "skills": [
@@ -1377,79 +1339,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10184.png"
-      },
-      {
-        "name": "Magic",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018401_Skill_9400102_Icon.png"
-      },
-      {
-        "name": "45",
-        "description": "Tornado",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018401_Feature_11873_Icon.png"
-      },
-      {
-        "name": "Magic",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10600600_Icon.png"
-      },
-      {
-        "name": "59",
-        "description": "Spiral Blade",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10900041_Icon.png"
-      },
-      {
-        "name": "Magic",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10900242_Icon.png"
-      },
-      {
-        "name": "62",
-        "description": "Water Tornado",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10300220_Icon.png"
-      },
-      {
-        "name": "Magic",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10900230_Icon.png"
-      },
-      {
-        "name": "45",
-        "description": "Waltz",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10900290_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1063303.png"
       },
       {
         "name": "Support",
@@ -1458,11 +1348,65 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026200_Skill_14400000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1063300_Feature_163301_Icon.png"
       },
       {
         "name": "0",
-        "description": "Zephyr’s Breath",
+        "description": "Showhand",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1063300_Skill_11200570_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1063300_Skill_11200580_Icon.png"
+      },
+      {
+        "name": "20",
+        "description": "Gold-Siphon Nali",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1063300_Skill_11200590_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1063300_Skill_11200670_Icon.png"
+      },
+      {
+        "name": "33",
+        "description": "High-Roller Toss",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_11200000_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1063300_Skill_11200600_Icon.png"
+      },
+      {
+        "name": "20",
+        "description": "Attack",
         "element": "",
         "type": "",
         "cost": "",
@@ -1479,8 +1423,8 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
-        "name": "92",
-        "description": "ATK",
+        "name": "6",
+        "description": "Golden Patronage",
         "element": "",
         "type": "",
         "cost": "",
@@ -1488,7 +1432,7 @@
         "imageUrl": null
       },
       {
-        "name": "Magic",
+        "name": "Support",
         "description": "Cost:",
         "element": "",
         "type": "",
@@ -1500,14 +1444,15 @@
     "analysis": {
       "tags": [
         "attack_up",
+        "break",
         "burst",
         "control",
-        "regen",
-        "self_scaling"
+        "debuff",
+        "regen"
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 9,
@@ -1763,64 +1708,35 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 10,
-    "name": "Tubster",
+    "name": "Glameep",
     "number": "010",
-    "sourceUrl": "https://wiki.aniimo.com/item/010/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10187.png",
+    "sourceUrl": "https://wiki.aniimo.com/item/010/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1058301.png",
     "elements": [
-      "Wind"
+      "Dark",
+      "Grass"
     ],
     "roles": [
-      "Break",
+      "Heal",
       "Support"
     ],
-    "attributeScore": 550,
+    "attributeScore": 530,
     "stats": {
-      "HP": 108,
-      "BREAK": 107,
-      "ATK": 80,
-      "M.DEF": 109,
-      "P.DEF": 66,
-      "REGEN": 80
+      "HP": 117,
+      "BREAK": 50,
+      "ATK": 100,
+      "M.DEF": 80,
+      "P.DEF": 91,
+      "REGEN": 92
     },
     "forms": [
       {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/010/basic-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Beach Form",
-        "url": "https://wiki.aniimo.com/item/010/beach-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Highland Form",
-        "url": "https://wiki.aniimo.com/item/010/highland-form",
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/010/prismana-form/1000",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -1834,14 +1750,13 @@
         "mobility": null
       }
     ],
-    "habitats": [
-      "The Argent Strait",
-      "Home Abilities",
-      "3",
-      "Aniimo Traits"
-    ],
+    "habitats": [],
     "homelandAbility": null,
-    "mobility": null,
+    "mobility": {
+      "name": "Bubble Drift",
+      "description": "Blows a large floating bubble. Aniimo Traits Bubble Energy After entering battle, restores 1 [Bubble Energy] every 4s, and restores 3 [Bubble Energy] each time your skills damage a target. After storing 10, enters the [Energy Full] state, enhancing your next skill.",
+      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026201_Skill_9400130_Icon.png"
+    },
     "trait": null,
     "traits": [],
     "skills": [
@@ -1852,7 +1767,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10187.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1058301.png"
       },
       {
         "name": "Magic",
@@ -1861,16 +1776,16 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018700_Feature_118701_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026201_Skill_9400130_Icon.png"
       },
       {
-        "name": "45",
-        "description": "Resting Whirlwind",
+        "name": "20",
+        "description": "Baa Bubble Wave",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10600600_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1058301_Feature_158301_Icon.png"
       },
       {
         "name": "Magic",
@@ -1879,16 +1794,16 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018700_Skill_10900540_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1058300_Skill_10600900_Icon.png"
       },
       {
-        "name": "48",
-        "description": "Water Tornado",
+        "name": "50",
+        "description": "Dark Tide Wave Assault",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10300220_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1058300_Skill_10301260_Icon.png"
       },
       {
         "name": "Magic",
@@ -1897,16 +1812,34 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10900041_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1058300_Skill_11200610_Icon.png"
       },
       {
-        "name": "45",
-        "description": "Tornado",
+        "name": "50",
+        "description": "Ripples of Floating Duckweed",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018700_Skill_10900161_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1032400_Skill_10600590_Icon.png"
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1057300_Skill_10900670_Icon.png"
+      },
+      {
+        "name": "0",
+        "description": "Baa-Baa Wind Bomb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1058300_Skill_10600890_Icon.png"
       },
       {
         "name": "Magic",
@@ -1915,29 +1848,11 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1018400_Skill_10900290_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1032400_Skill_14200000_Icon.png"
       },
       {
-        "name": "59",
-        "description": "Gale Guard",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026200_Skill_14400000_Icon.png"
-      },
-      {
-        "name": "Magic",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
-      },
-      {
-        "name": "54",
-        "description": "Truce",
+        "name": "20",
+        "description": "Leafwave Bubble",
         "element": "",
         "type": "",
         "cost": "",
@@ -1951,7 +1866,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": null
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
         "name": "0",
@@ -1975,16 +1890,14 @@
     "analysis": {
       "tags": [
         "attack_up",
-        "break",
-        "burst",
-        "control",
+        "debuff",
+        "heal",
         "regen",
-        "self_scaling",
         "shield"
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 11,
@@ -2192,7 +2105,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 12,
@@ -2434,7 +2347,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 13,
@@ -2596,7 +2509,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 14,
@@ -2758,7 +2671,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 15,
@@ -2988,7 +2901,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 16,
@@ -3141,7 +3054,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 17,
@@ -3324,7 +3237,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 18,
@@ -3578,7 +3491,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 19,
@@ -3724,7 +3637,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 20,
@@ -3875,7 +3788,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 21,
@@ -4099,49 +4012,35 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 22,
-    "name": "Tuckin",
+    "name": "Royalby",
     "number": "022",
-    "sourceUrl": "https://wiki.aniimo.com/item/022/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10207.png",
+    "sourceUrl": "https://wiki.aniimo.com/item/022/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1061403.png",
     "elements": [
-      "Grass"
+      "Light",
+      "Wind"
     ],
     "roles": [
-      "Break",
+      "Regen",
       "Support"
     ],
-    "attributeScore": 550,
+    "attributeScore": 524,
     "stats": {
-      "HP": 106,
-      "BREAK": 100,
-      "ATK": 80,
-      "M.DEF": 110,
-      "P.DEF": 83,
-      "REGEN": 71
+      "HP": 104,
+      "BREAK": 53,
+      "ATK": 106,
+      "M.DEF": 73,
+      "P.DEF": 73,
+      "REGEN": 115
     },
     "forms": [
       {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/022/basic-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Mountain Form",
-        "url": "https://wiki.aniimo.com/item/022/mountain-form",
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/022/prismana-form/1000",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -4168,7 +4067,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10207.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1061403.png"
       },
       {
         "name": "Support",
@@ -4177,16 +4076,16 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020701_Feature_120701_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1061400_Feature_161401_Icon.png"
       },
       {
         "name": "0",
-        "description": "Haunting Choir",
+        "description": "Royal Pressure",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020700_Skill_10800111_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1061400_Skill_10900600_Icon.png"
       },
       {
         "name": "Magic",
@@ -4195,34 +4094,16 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020100_Skill_10600530_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1061400_Skill_10900590_Icon.png"
       },
       {
-        "name": "47",
-        "description": "Noisy Strikes",
+        "name": "5",
+        "description": "Puffby Bomb",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020700_Skill_10800310_Icon.png"
-      },
-      {
-        "name": "Physical",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020700_Skill_10600092_Icon.png"
-      },
-      {
-        "name": "39",
-        "description": "Off-Key Shock Wave",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1020700_Skill_10600260_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1061400_Skill_10900630_Icon.png"
       },
       {
         "name": "Magic",
@@ -4231,11 +4112,29 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1032400_Skill_14200000_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1061400_Skill_11300200_Icon.png"
       },
       {
-        "name": "39",
-        "description": "Breaking Roar",
+        "name": "20",
+        "description": "Puff Lightshot",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1061400_Skill_10900610_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026200_Skill_14400000_Icon.png"
+      },
+      {
+        "name": "20",
+        "description": "All Shall Bow to the Crown",
         "element": "",
         "type": "",
         "cost": "",
@@ -4243,7 +4142,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
-        "name": "Physical",
+        "name": "Magic",
         "description": "Cost:",
         "element": "",
         "type": "",
@@ -4252,7 +4151,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
-        "name": "165",
+        "name": "100",
         "description": "ATK",
         "element": "",
         "type": "",
@@ -4272,9 +4171,6 @@
     ],
     "analysis": {
       "tags": [
-        "attack_up",
-        "break",
-        "burst",
         "control",
         "debuff",
         "heal",
@@ -4282,7 +4178,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 23,
@@ -4466,7 +4362,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 24,
@@ -4686,7 +4582,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 25,
@@ -4835,7 +4731,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 26,
@@ -4995,7 +4891,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 27,
@@ -5191,301 +5087,34 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 28,
-    "name": "Flutternym",
+    "name": "Jeburst",
     "number": "028",
-    "sourceUrl": "https://wiki.aniimo.com/item/028/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10231.png",
+    "sourceUrl": "https://wiki.aniimo.com/item/028/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1069301.png",
     "elements": [
-      "Wind"
+      "Dark",
+      "Water"
     ],
     "roles": [
-      "Heal",
-      "Support"
+      "Break"
     ],
-    "attributeScore": 437,
+    "attributeScore": 542,
     "stats": {
-      "HP": 94,
-      "BREAK": 41,
-      "ATK": 81,
-      "M.DEF": 68,
-      "P.DEF": 68,
-      "REGEN": 85
+      "HP": 104,
+      "BREAK": 106,
+      "ATK": 88,
+      "M.DEF": 80,
+      "P.DEF": 80,
+      "REGEN": 84
     },
     "forms": [
       {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/028/basic-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Flowerfield Form",
-        "url": "https://wiki.aniimo.com/item/028/flowerfield-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Nighttime Form",
-        "url": "https://wiki.aniimo.com/item/028/nighttime-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Timberline Form",
-        "url": "https://wiki.aniimo.com/item/028/timberline-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      }
-    ],
-    "habitats": [
-      "Sea of Flowers",
-      "Nimbus Fields",
-      "The Mistwoods",
-      "Blitzwood"
-    ],
-    "homelandAbility": null,
-    "mobility": {
-      "name": "Luminous Prowl",
-      "description": "Enters the Cloak state, concealed by pink mist. Aniimo Traits Flutter Heal When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP.",
-      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_9400062_Icon.png"
-    },
-    "trait": null,
-    "traits": [],
-    "skills": [
-      {
-        "name": "Combat Skills",
-        "description": "Innate Skills",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10231.png"
-      },
-      {
-        "name": "Support",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_9400062_Icon.png"
-      },
-      {
-        "name": "0",
-        "description": "Healing Dance",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023102_Feature_12371_Icon.png"
-      },
-      {
-        "name": "Support",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023100_Skill_10600110_Icon.png"
-      },
-      {
-        "name": "0",
-        "description": "Phantom Dance",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1004500_Skill_10600301_Icon.png"
-      },
-      {
-        "name": "Support",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023100_Skill_11200270_Icon.png"
-      },
-      {
-        "name": "0",
-        "description": "Wind of Rejuvenation",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023100_Skill_10900221_Icon.png"
-      },
-      {
-        "name": "Support",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023100_Skill_10800450_Icon.png"
-      },
-      {
-        "name": "0",
-        "description": "Wind of Regeneration",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026200_Skill_14400000_Icon.png"
-      },
-      {
-        "name": "Support",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
-      },
-      {
-        "name": "0",
-        "description": "ATK",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
-      },
-      {
-        "name": "Magic",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": null
-      }
-    ],
-    "analysis": {
-      "tags": [
-        "attack_up",
-        "break",
-        "burst",
-        "debuff",
-        "heal",
-        "regen",
-        "shield"
-      ],
-      "notes": []
-    },
-    "lastVerified": "2026-11-02"
-  },
-  {
-    "id": 29,
-    "name": "Gracewing",
-    "number": "029",
-    "sourceUrl": "https://wiki.aniimo.com/item/029/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10232.png",
-    "elements": [
-      "Wind"
-    ],
-    "roles": [
-      "Heal",
-      "Support"
-    ],
-    "attributeScore": 532,
-    "stats": {
-      "HP": 110,
-      "BREAK": 50,
-      "ATK": 98,
-      "M.DEF": 85,
-      "P.DEF": 85,
-      "REGEN": 104
-    },
-    "forms": [
-      {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/029/basic-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Flowerfield Form",
-        "url": "https://wiki.aniimo.com/item/029/flowerfield-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Nighttime Form",
-        "url": "https://wiki.aniimo.com/item/029/nighttime-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Timberline Form",
-        "url": "https://wiki.aniimo.com/item/029/timberline-form",
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/028/prismana-form/1000",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -5501,11 +5130,7 @@
     ],
     "habitats": [],
     "homelandAbility": null,
-    "mobility": {
-      "name": "Luminous Prowl",
-      "description": "Enters the Cloak state, concealed by pink mist. Aniimo Traits Flutter Heal When entering battle as the active Aniimo, increases healing by 20%. If off field, appears as a phantom. When other Aniimo cast skills or Ultimates, restores HP equal to 0.5% of max HP.",
-      "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_9400062_Icon.png"
-    },
+    "mobility": null,
     "trait": null,
     "traits": [],
     "skills": [
@@ -5516,100 +5141,82 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10232.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1069301.png"
       },
       {
-        "name": "Support",
+        "name": "Physical",
         "description": "Cost:",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_9400062_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1069300_Feature_169301_Icon.png"
       },
       {
-        "name": "0",
-        "description": "Healing Dance",
+        "name": "15",
+        "description": "Gale-Wing Spin",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023102_Feature_12371_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1069300_Skill_10301450_Icon.png"
       },
       {
-        "name": "Support",
+        "name": "Physical",
         "description": "Cost:",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023100_Skill_10600110_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1069300_Skill_10900740_Icon.png"
       },
       {
-        "name": "0",
-        "description": "Phantom Dance",
+        "name": "15",
+        "description": "Darkwing Spin",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1004500_Skill_10600301_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1069300_Skill_11200650_Icon.png"
       },
       {
-        "name": "Support",
+        "name": "Physical",
         "description": "Cost:",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023100_Skill_11200270_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1069300_Skill_10301460_Icon.png"
       },
       {
-        "name": "0",
-        "description": "Wind of Rejuvenation",
+        "name": "15",
+        "description": "Waterfall Pool",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023100_Skill_10900221_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1069300_Skill_10301470_Icon.png"
       },
       {
-        "name": "Support",
+        "name": "Physical",
         "description": "Cost:",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023200_Skill_10600251_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1054300_Skill_10300000_Icon.png"
       },
       {
-        "name": "0",
-        "description": "Phantomfly",
+        "name": "45",
+        "description": "Rushing Current Strike",
         "element": "",
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023100_Skill_10800450_Icon.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1069300_Skill_10301480_Icon.png"
       },
       {
-        "name": "Support",
-        "description": "Cost:",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023200_Skill_10900430_Icon.png"
-      },
-      {
-        "name": "0",
-        "description": "Wind of Regeneration",
-        "element": "",
-        "type": "",
-        "cost": "",
-        "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1026200_Skill_14400000_Icon.png"
-      },
-      {
-        "name": "Support",
+        "name": "Physical",
         "description": "Cost:",
         "element": "",
         "type": "",
@@ -5618,8 +5225,8 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
-        "name": "0",
-        "description": "Help! Gracewing!",
+        "name": "60",
+        "description": "ATK",
         "element": "",
         "type": "",
         "cost": "",
@@ -5627,7 +5234,7 @@
         "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
       },
       {
-        "name": "Support",
+        "name": "Physical",
         "description": "Cost:",
         "element": "",
         "type": "",
@@ -5636,7 +5243,173 @@
         "imageUrl": null
       },
       {
-        "name": "150",
+        "name": "6",
+        "description": "Skyward Torrent",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": null
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": null
+      }
+    ],
+    "analysis": {
+      "tags": [
+        "burst",
+        "debuff",
+        "heal",
+        "regen",
+        "self_scaling"
+      ],
+      "notes": []
+    },
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "id": 29,
+    "name": "Ekrim",
+    "number": "029",
+    "sourceUrl": "https://wiki.aniimo.com/item/029/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1044403.png",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "roles": [
+      "Break"
+    ],
+    "attributeScore": 542,
+    "stats": {
+      "HP": 110,
+      "BREAK": 108,
+      "ATK": 88,
+      "M.DEF": 70,
+      "P.DEF": 76,
+      "REGEN": 90
+    },
+    "forms": [
+      {
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/029/prismana-form/1000",
+        "imageUrl": null,
+        "stats": {},
+        "attributeScore": null,
+        "elements": [],
+        "roles": [],
+        "traits": [],
+        "trait": null,
+        "skills": [],
+        "habitats": [],
+        "homelandAbility": null,
+        "mobility": null
+      }
+    ],
+    "habitats": [],
+    "homelandAbility": null,
+    "mobility": null,
+    "trait": null,
+    "traits": [],
+    "skills": [
+      {
+        "name": "Combat Skills",
+        "description": "Innate Skills",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1044403.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044403_Feature_144402_Icon.png"
+      },
+      {
+        "name": "50",
+        "description": "Shadow Avatar",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044400_Skill_11200440_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044400_Skill_11200420_Icon.png"
+      },
+      {
+        "name": "104",
+        "description": "Guilty Hook",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044400_Skill_11200430_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044400_Skill_10500750_Icon.png"
+      },
+      {
+        "name": "73",
+        "description": "Flamewing Slash",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1044400_Skill_11200450_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1003200_Skill_11200000_Icon.png"
+      },
+      {
+        "name": "15",
+        "description": "Honor Among Thieves",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "Physical",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "130",
         "description": "ATK",
         "element": "",
         "type": "",
@@ -5645,7 +5418,7 @@
         "imageUrl": null
       },
       {
-        "name": "Magic",
+        "name": "Physical",
         "description": "Cost:",
         "element": "",
         "type": "",
@@ -5658,15 +5431,161 @@
       "tags": [
         "attack_up",
         "break",
-        "burst",
-        "debuff",
-        "heal",
+        "control",
         "regen",
-        "shield"
+        "self_scaling"
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "id": 30,
+    "name": "Somniwing",
+    "number": "030",
+    "sourceUrl": "https://wiki.aniimo.com/item/030/prismana-form",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10233.png",
+    "elements": [
+      "Wind",
+      "Grass"
+    ],
+    "roles": [
+      "Regen",
+      "Support"
+    ],
+    "attributeScore": 538,
+    "stats": {
+      "HP": 111,
+      "BREAK": 50,
+      "ATK": 92,
+      "M.DEF": 85,
+      "P.DEF": 85,
+      "REGEN": 115
+    },
+    "forms": [
+      {
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/030/prismana-form",
+        "imageUrl": null,
+        "stats": {},
+        "attributeScore": null,
+        "elements": [],
+        "roles": [],
+        "traits": [],
+        "trait": null,
+        "skills": [],
+        "habitats": [],
+        "homelandAbility": null,
+        "mobility": null
+      }
+    ],
+    "habitats": [],
+    "homelandAbility": null,
+    "mobility": null,
+    "trait": null,
+    "traits": [],
+    "skills": [
+      {
+        "name": "Combat Skills",
+        "description": "Innate Skills",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10233.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023300_Feature_12374_Icon.png"
+      },
+      {
+        "name": "28",
+        "description": "Energy Orb",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023300_Skill_10600340_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023300_Skill_10600490_Icon.png"
+      },
+      {
+        "name": "30",
+        "description": "Ethereal Light Wave",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1058300_Skill_10600900_Icon.png"
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1032400_Skill_14200000_Icon.png"
+      },
+      {
+        "name": "0",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1023300_Skill_10600360_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "6",
+        "description": "Butterfly Dance",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "Support",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": null
+      }
+    ],
+    "analysis": {
+      "tags": [
+        "attack_up",
+        "break",
+        "defense_down",
+        "regen"
+      ],
+      "notes": []
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 31,
@@ -5781,7 +5700,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 32,
@@ -5932,7 +5851,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 33,
@@ -6064,7 +5983,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 34,
@@ -6297,15 +6216,16 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 35,
     "name": "Melloblum",
     "number": "035",
-    "sourceUrl": "https://wiki.aniimo.com/item/035/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10324.png",
+    "sourceUrl": "https://wiki.aniimo.com/item/035/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1032402.png",
     "elements": [
+      "Light",
       "Grass"
     ],
     "roles": [
@@ -6322,8 +6242,8 @@
     },
     "forms": [
       {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/035/basic-form",
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/035/prismana-form/1000",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -6337,11 +6257,7 @@
         "mobility": null
       }
     ],
-    "habitats": [
-      "Rosetower Woods",
-      "Home Abilities",
-      "3"
-    ],
+    "habitats": [],
     "homelandAbility": null,
     "mobility": null,
     "trait": null,
@@ -6354,7 +6270,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10324.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1032402.png"
       },
       {
         "name": "Magic",
@@ -6466,7 +6382,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 36,
@@ -6645,7 +6561,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 37,
@@ -6861,7 +6777,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 38,
@@ -6975,7 +6891,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 39,
@@ -7130,7 +7046,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 40,
@@ -7295,7 +7211,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 41,
@@ -7530,7 +7446,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 42,
@@ -7682,7 +7598,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 43,
@@ -7834,15 +7750,16 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 44,
     "name": "Glynsera",
     "number": "044",
-    "sourceUrl": "https://wiki.aniimo.com/item/044/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10133.png",
+    "sourceUrl": "https://wiki.aniimo.com/item/044/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1013301.png",
     "elements": [
+      "Light",
       "Ice"
     ],
     "roles": [
@@ -7859,23 +7776,8 @@
     },
     "forms": [
       {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/044/basic-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Nighttime Form",
-        "url": "https://wiki.aniimo.com/item/044/nighttime-form",
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/044/prismana-form/1000",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -7889,11 +7791,7 @@
         "mobility": null
       }
     ],
-    "habitats": [
-      "Beast Fang Ridge",
-      "Home Abilities",
-      "3"
-    ],
+    "habitats": [],
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
@@ -7910,7 +7808,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10133.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1013301.png"
       },
       {
         "name": "Physical",
@@ -8040,7 +7938,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 45,
@@ -8172,7 +8070,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 46,
@@ -8374,7 +8272,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 47,
@@ -8489,7 +8387,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 48,
@@ -8640,7 +8538,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 49,
@@ -8768,7 +8666,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 50,
@@ -8896,7 +8794,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 51,
@@ -9077,7 +8975,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 52,
@@ -9277,7 +9175,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 53,
@@ -9390,7 +9288,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 54,
@@ -9502,7 +9400,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 55,
@@ -9714,7 +9612,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 56,
@@ -9865,15 +9763,16 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 57,
     "name": "Waleetle",
     "number": "057",
-    "sourceUrl": "https://wiki.aniimo.com/item/057/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10453.png",
+    "sourceUrl": "https://wiki.aniimo.com/item/057/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1045302.png",
     "elements": [
+      "Dark",
       "Earth"
     ],
     "roles": [
@@ -9890,23 +9789,8 @@
     },
     "forms": [
       {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/057/basic-form",
-        "imageUrl": null,
-        "stats": {},
-        "attributeScore": null,
-        "elements": [],
-        "roles": [],
-        "traits": [],
-        "trait": null,
-        "skills": [],
-        "habitats": [],
-        "homelandAbility": null,
-        "mobility": null
-      },
-      {
-        "name": "Snowfield Form",
-        "url": "https://wiki.aniimo.com/item/057/snowfield-form",
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/057/prismana-form/1000",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -9920,11 +9804,7 @@
         "mobility": null
       }
     ],
-    "habitats": [
-      "Berylline Vale",
-      "Home Abilities",
-      "3"
-    ],
+    "habitats": [],
     "homelandAbility": null,
     "mobility": {
       "name": "Hustle",
@@ -9941,7 +9821,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10453.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1045302.png"
       },
       {
         "name": "Physical",
@@ -10072,7 +9952,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 58,
@@ -10254,7 +10134,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 59,
@@ -10372,7 +10252,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 60,
@@ -10560,7 +10440,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 61,
@@ -10728,7 +10608,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 62,
@@ -10943,7 +10823,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 63,
@@ -11148,7 +11028,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 64,
@@ -11281,7 +11161,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 65,
@@ -11415,7 +11295,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 66,
@@ -11586,16 +11466,17 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 67,
     "name": "Infergon",
     "number": "067",
-    "sourceUrl": "https://wiki.aniimo.com/item/067/basic-form",
-    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10025.png",
+    "sourceUrl": "https://wiki.aniimo.com/item/067/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1002503.png",
     "elements": [
-      "Fire"
+      "Fire",
+      "Wind"
     ],
     "roles": [
       "Dps"
@@ -11611,8 +11492,8 @@
     },
     "forms": [
       {
-        "name": "Basic Form",
-        "url": "https://wiki.aniimo.com/item/067/basic-form",
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/067/prismana-form/1000",
         "imageUrl": null,
         "stats": {},
         "attributeScore": null,
@@ -11643,7 +11524,7 @@
         "type": "",
         "cost": "",
         "power": "",
-        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10025.png"
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_1002503.png"
       },
       {
         "name": "Physical",
@@ -11755,7 +11636,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 68,
@@ -11874,7 +11755,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 69,
@@ -12062,7 +11943,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 70,
@@ -12178,7 +12059,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 71,
@@ -12293,7 +12174,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 72,
@@ -12485,7 +12366,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 73,
@@ -12597,7 +12478,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 74,
@@ -12745,7 +12626,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 75,
@@ -12859,7 +12740,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 76,
@@ -13009,7 +12890,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 77,
@@ -13127,7 +13008,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 78,
@@ -13245,7 +13126,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 79,
@@ -13467,7 +13348,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 80,
@@ -13585,7 +13466,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 81,
@@ -13739,7 +13620,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 82,
@@ -13883,7 +13764,133 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
+  },
+  {
+    "id": 10001,
+    "name": "Irisalis",
+    "number": "10001",
+    "sourceUrl": "https://wiki.aniimo.com/item/10001/prismana-form/1000",
+    "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10213.png",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [
+      "Dps"
+    ],
+    "attributeScore": 540,
+    "stats": {
+      "HP": 90,
+      "BREAK": 56,
+      "ATK": 130,
+      "M.DEF": 78,
+      "P.DEF": 78,
+      "REGEN": 108
+    },
+    "forms": [
+      {
+        "name": "Prismana Form",
+        "url": "https://wiki.aniimo.com/item/10001/prismana-form/1000",
+        "imageUrl": null,
+        "stats": {},
+        "attributeScore": null,
+        "elements": [],
+        "roles": [],
+        "traits": [],
+        "trait": null,
+        "skills": [],
+        "habitats": [],
+        "homelandAbility": null,
+        "mobility": null
+      }
+    ],
+    "habitats": [],
+    "homelandAbility": null,
+    "mobility": null,
+    "trait": null,
+    "traits": [],
+    "skills": [
+      {
+        "name": "Combat Skills",
+        "description": "Innate Skills",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/Wiki_Aniimo_10213.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1021300_Feature_121302_Icon.png"
+      },
+      {
+        "name": "60",
+        "description": "Irisalis Shadow",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1021300_Skill_10600630_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1021300_Skill_10600640_Icon.png"
+      },
+      {
+        "name": "90",
+        "description": "Florae Descent",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1021300_Skill_10600660_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/1032400_Skill_14200000_Icon.png"
+      },
+      {
+        "name": "240",
+        "description": "ATK",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      },
+      {
+        "name": "Magic",
+        "description": "Cost:",
+        "element": "",
+        "type": "",
+        "cost": "",
+        "power": "",
+        "imageUrl": "https://worldx-website-cdn.aniimo.com/official-website/worldx/wiki_stage/init/0_Item_152100_Icon.png"
+      }
+    ],
+    "analysis": {
+      "tags": [
+        "burst",
+        "regen"
+      ],
+      "notes": []
+    },
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 10002,
@@ -14031,7 +14038,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 10003,
@@ -14216,7 +14223,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 10004,
@@ -14368,7 +14375,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 10006,
@@ -14551,7 +14558,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 10007,
@@ -14697,7 +14704,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 11001,
@@ -14879,7 +14886,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 99996,
@@ -15051,7 +15058,7 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   },
   {
     "id": 99998,
@@ -15223,6 +15230,6 @@
       ],
       "notes": []
     },
-    "lastVerified": "2026-11-02"
+    "lastVerified": "2026-11-09"
   }
 ]
